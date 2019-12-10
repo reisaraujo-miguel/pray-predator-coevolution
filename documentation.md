@@ -15,3 +15,16 @@ direction.
 For each of the three types of obstacles there is an associated variable that determines the rotation in relation to this 
 obstacle. Therefore there will be three rotation values from which a weighted average is taken. Both the rotation values and 
 the weights are evolutive parameters, as well as the individual's speed, all of them are randomly initialized.
+
+Rotation variables:
+- plant_const
+- wand_const
+- carn_const
+
+Weight variables:
+- plant_weight
+- wand_weight
+- canr_weight
+
+The rotation variables assume values from 0 to 100. In the scale adopted the circle is divided in 100 parts, therefore
+a variable of value __n__ corresponds to a rotation of n hundredths of a full circle. The weight variables assume
