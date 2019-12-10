@@ -9,11 +9,6 @@ An evolutionary algorithm written in c++ to evolve a pray-predator environment.
 The environment consists of plants (green), herbivores (blue) and carnivores (pink), the herbivores and carnivores coevolve over time learning to interact with each other. The elitism selection method with mutation was employed, as well as predation and inheritance techniques.
 <br/>
 
-## Installing OpenCV
-The GUI was developed with OpenCV which can be installed running the following command: 
-
-    $ sudo apt-get install libopencv-dev
-
 ## Predation
 Every 15 generations (or other chosen interval) the worst individual from both pray and predator's population in eliminated and replaced by a random individual. This technique increases the population's diversity counterbalancing the quick convergence due to the elitism method.
 <br/>
