@@ -74,6 +74,18 @@ void initialize_carnivores(std::vector<population> &pop, Type matrix[][XSIZE]){
         ind.wand_weight = rand()%11;
         ind.carn_weight = rand()%11;
 
+        if(i == 0){ // initializing apt individual
+            ind.plant_const = 30;
+            ind.wand_const = 0;
+            ind.carn_const = 30;
+
+            ind.plant_weight = 0;
+            ind.wand_weight = 10;
+            ind.carn_weight = 0;
+
+            ind.speed = 20;
+        }
+
         //printf("(%d) %d %d %d %d %d %d\n",i,ind.plant_const,ind.wand_const,ind.carn_const,ind.plant_weight,ind.wand_weight,ind.carn_weight);
         
         ind.best = false;
