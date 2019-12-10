@@ -11,13 +11,13 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 
-#include "game.h"
+#include "global.h"
 
 using namespace std;
 using namespace cv;
 
 
-Mat print_wonderers(std::vector<population> &pop){
+Mat print_wanderers(std::vector<population> &pop){
 
     Vec3b red = Vec3b(0,0,255); 
     Vec3b green = Vec3b(0,255,0); 

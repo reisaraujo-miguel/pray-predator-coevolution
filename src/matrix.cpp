@@ -9,7 +9,7 @@
 #include <vector>
 #include <deque>
 
-#include "game.h"
+#include "global.h"
 
 using namespace std;
 
@@ -40,7 +40,7 @@ int check_disponibility(Type matrix[][XSIZE], int x, int y){
 bool check_for_obstacles(int x0, int y0, float angle, int speed, int *type){
     bool obstacles = false;
 
-    extern vector<population> wonderers;
+    extern vector<population> wanderers;
     extern vector<plants> plants_pop;
     extern vector<population> carnivores; 
 
@@ -85,18 +85,18 @@ bool check_for_obstacles(int x0, int y0, float angle, int speed, int *type){
     // sin(perp_angle) = -cos(angle)
     // so that the director vector is (sin(angle), -cos(angle))
 
-    int size = wonderers.size();
+    int size = wanderers.size();
     int i;
     for(i=0; i<size; i++){
-        if((wonderers[i].x != x0) && (wonderers[i].y != y0)){ // if I'm not myself
+        if((wanderers[i].x != x0) && (wanderers[i].y != y0)){ // if I'm not myself
 
-            distance = Cos*(wonderers[i].y - y0) - Sin*(wonderers[i].x - x0);
+            distance = Cos*(wanderers[i].y - y0) - Sin*(wanderers[i].x - x0);
             if(distance < 0)
                 distance = -distance;
             if(distance <= 2*RADIUS_WONDER){
 
-                distance1 = Sin*(wonderers[i].y - y1) + Cos*(wonderers[i].x - x1);
-                distance2 = Sin*(wonderers[i].y - y2) + Cos*(wonderers[i].x - x2);
+                distance1 = Sin*(wanderers[i].y - y1) + Cos*(wanderers[i].x - x1);
+                distance2 = Sin*(wanderers[i].y - y2) + Cos*(wanderers[i].x - x2);
                 
                 if(distance1 < 0)
                     distance1 = -distance1;
@@ -293,7 +293,7 @@ void genetic_rotation(std::vector<population> &pop, int index){
 
 
 
-void initialize_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]){
+void initialize_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]){
 
     Vec3b red = Vec3b(0,0,255); 
     Vec3b green = Vec3b(0,255,0); 
@@ -343,11 +343,15 @@ void initialize_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]){
         ind.h_count = 0;
 
         ind.plant_const = rand()%MAX_CONST; // up to 100
+
         ind.wond_const = rand()%MAX_CONST;
+
         ind.carn_const = rand()%MAX_CONST; 
 
         ind.plant_weight = rand()%MAX_WEIGHT;
+
         ind.wond_weight = rand()%MAX_WEIGHT;
+
         ind.carn_weight = rand()%MAX_WEIGHT;
 
         //printf("(%d) %d %d %d %d %d %d\n",i,ind.plant_const,ind.wond_const,ind.carn_const,ind.plant_weight,ind.wond_weight,ind.carn_weight);
@@ -371,7 +375,7 @@ void initialize_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]){
     }
 }
 
-void import_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]){
+void import_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]){
 
     Vec3b red = Vec3b(0,0,255); 
     Vec3b green = Vec3b(0,255,0); 
@@ -382,7 +386,7 @@ void import_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]){
     Vec3b violet = Vec3b(200,0,119);
     Vec3b yellow = Vec3b(0,184,196);
 
-    printf("WONDERERS\n");
+    printf("WANDERERS\n");
     printf("plant_const plant_weight wond_const wond_weight carn_const carn_weight speed\n");
     int i, prob;
     for(i=0; i<POP_WONDER; i++){
@@ -424,7 +428,7 @@ void import_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]){
     }
 }
 
-void move_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]){
+void move_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]){
 
     Vec3b red = Vec3b(0,0,255); 
     Vec3b green = Vec3b(0,255,0); 
@@ -503,7 +507,7 @@ void move_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]){
     }
 }
 
-void random_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]){
+void random_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]){
 
     int i, prob;
     int size = pop.size();

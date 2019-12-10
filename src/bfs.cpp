@@ -8,7 +8,7 @@
 #include <vector>
 #include <deque>
 
-#include "game.h"
+#include "global.h"
 
 using namespace std;
 

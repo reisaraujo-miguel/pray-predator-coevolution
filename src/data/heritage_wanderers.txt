@@ -1,0 +1,36 @@
+NEW INDIVIDUAL - Generation:1
+Parent1(0) Energy:76 Average energy:7 Heritage:76 0 0 0 0
+Parent2(1) Energy:20 Average energy:2 Heritage:20 0 0 0 0
+Child heritage:48 0 0 0 0
+NEW INDIVIDUAL - Generation:1
+Parent1(0) Energy:76 Average energy:7 Heritage:76 0 0 0 0
+Parent2(2) Energy:20 Average energy:2 Heritage:20 0 0 0 0
+Child heritage:48 0 0 0 0
+NEW INDIVIDUAL - Generation:1
+Parent1(0) Energy:76 Average energy:7 Heritage:76 0 0 0 0
+Parent2(3) Energy:0 Average energy:0 Heritage:0 0 0 0 0
+Child heritage:38 0 0 0 0
+NEW INDIVIDUAL - Generation:1
+Parent1(0) Energy:76 Average energy:7 Heritage:76 0 0 0 0
+Parent2(4) Energy:-1 Average energy:0 Heritage:-1 0 0 0 0
+Child heritage:37 0 0 0 0
+NEW INDIVIDUAL - Generation:1
+Parent1(0) Energy:76 Average energy:7 Heritage:76 0 0 0 0
+Parent2(5) Energy:0 Average energy:0 Heritage:0 0 0 0 0
+Child heritage:38 0 0 0 0
+NEW INDIVIDUAL - Generation:1
+Parent1(0) Energy:76 Average energy:7 Heritage:76 0 0 0 0
+Parent2(6) Energy:16 Average energy:1 Heritage:16 0 0 0 0
+Child heritage:46 0 0 0 0
+NEW INDIVIDUAL - Generation:1
+Parent1(0) Energy:76 Average energy:7 Heritage:76 0 0 0 0
+Parent2(7) Energy:0 Average energy:0 Heritage:0 0 0 0 0
+Child heritage:38 0 0 0 0
+NEW INDIVIDUAL - Generation:1
+Parent1(0) Energy:76 Average energy:7 Heritage:76 0 0 0 0
+Parent2(8) Energy:40 Average energy:4 Heritage:40 0 0 0 0
+Child heritage:58 0 0 0 0
+NEW INDIVIDUAL - Generation:1
+Parent1(0) Energy:76 Average energy:7 Heritage:76 0 0 0 0
+Parent2(9) Energy:-7 Average energy:0 Heritage:-7 0 0 0 0
+Child heritage:34 0 0 0 0

@@ -17,7 +17,7 @@ using namespace cv;
 #define SPEED_MUTATION 1
 
 // mutation probability:
-#define CHILD_MUTATION_PROB 100  // wonderers
+#define CHILD_MUTATION_PROB 100  // wanderers
 #define CARN_CHILD_MUTATION_PROB 100
 #define CONST_UP 20
 #define CONST_DOWN 20
@@ -84,7 +84,7 @@ typedef struct{
 
     int energy;
 
-    // wonderers only
+    // wanderers only
     int health;
     int hurt;
 
@@ -121,12 +121,12 @@ void first_wonderer_bfs(int startx, int starty, int* xobs, int* yobs);
 void obstacles_bfs(int startx, int starty, int* xplant, int* yplant, int* xwond, int* ywond, int* xcarn, int* ycarn);
 
 
-/************************************************ WONDERERS ***************************************************************/
+/************************************************ WANDERERS ***************************************************************/
 
-void initialize_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]);
-void import_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]);
-void move_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]);
-void random_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]);
+void initialize_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]);
+void import_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]);
+void move_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]);
+void random_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]);
 void rotation_equation(std::vector<population> &pop, int index, int obs_type, float deviation);
 void genetic_rotation(std::vector<population> &pop, int index);
 
@@ -169,5 +169,5 @@ void best_carnivore_heritage(std::vector<population> &pop);
 
 /******************************************************* GUI *************************************************************/
 
-Mat print_wonderers(std::vector<population> &pop);
+Mat print_wanderers(std::vector<population> &pop);
 Mat print_img(std::vector<population> &wond_pop, std::vector<plants> &plants_pop, std::vector<population> &carn_pop);

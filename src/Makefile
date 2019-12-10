@@ -5,7 +5,7 @@ CFLAGS=-I. -g -Wall -O3 -march=native -fopenmp `pkg-config --cflags --libs openc
 
 LIBS=-lm
 
-DEPS=game.h				# dependency on the include files		
+DEPS=global.h				# dependency on the include files		
 
 OBJ= matrix.o interface.o bfs.o GA.o carnivores.o main.o 
 
