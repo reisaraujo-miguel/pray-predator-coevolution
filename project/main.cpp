@@ -22,7 +22,7 @@ int WAIT = 1;
 using namespace std;
 using namespace cv;
 
-const char *environment = "Predator-Prey Environment";
+const char *environment = "Predator-Prey Coevolution";
 const char *arq1 = "./data/wonderers.txt";
 const char *arq2 = "./data/carnivores.txt";
 

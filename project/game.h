@@ -5,9 +5,9 @@
 using namespace std;
 using namespace cv;
 
-#define HERITAGE 5
+#define HERITAGE 10
 #define MATING_INTERVAL 200
-#define MIGRATION 10
+#define MIGRATION 15
 
 ////////////////////////// MUTATION //////////////////////
 
@@ -51,7 +51,7 @@ using namespace cv;
 
 #define POP_WONDER 10
 #define POP_PLANTS 10
-#define POP_CARN 10
+#define POP_CARN 5
 
 #define RADIUS_WONDER 5
 #define RADIUS_PLANTS 5

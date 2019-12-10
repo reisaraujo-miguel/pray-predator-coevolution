@@ -104,7 +104,8 @@ void elitism(std::vector<population> &pop, Type matrix[][XSIZE]){
         pop[i].health = 0;
         pop[i].hurt = 0;
         pop[i].best = false;
-        pop[i].color = pink;
+        //pop[i].color = pink;
+        pop[i].color = blue;
 
         matrix[pop[i].y][pop[i].x] = W;
     }
@@ -233,7 +234,8 @@ void tournament(std::vector<population> &pop, Type matrix[][XSIZE]){
         pop[i].health = 0;
         pop[i].hurt = 0;
         pop[i].best = false;
-        pop[i].color = pink;
+        //pop[i].color = pink;
+        pop[i].color = blue;
 
         matrix[pop[i].y][pop[i].x] = W;
     }
@@ -507,7 +509,8 @@ void elitism_heritage(std::vector<population> &pop, Type matrix[][XSIZE]){
         pop[i].health = 0;
         pop[i].hurt = 0;
         pop[i].best = false;
-        pop[i].color = pink;
+        //pop[i].color = pink;
+        pop[i].color = blue;
 
         matrix[pop[i].y][pop[i].x] = W;
     }
@@ -636,7 +639,8 @@ void tournament_heritage(std::vector<population> &pop, Type matrix[][XSIZE]){
         pop[i].health = 0;
         pop[i].hurt = 0;
         pop[i].best = false;
-        pop[i].color = pink;
+        //pop[i].color = pink;
+        pop[i].color = blue;
 
         matrix[pop[i].y][pop[i].x] = W;
     }

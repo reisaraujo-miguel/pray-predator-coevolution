@@ -67,23 +67,18 @@ void initialize_carnivores(std::vector<population> &pop, Type matrix[][XSIZE]){
         ind.h_count = 0;
 
         ind.plant_const = rand()%101;
-        if(i == 0) ind.plant_const = 30;
         ind.wond_const = rand()%101;
-        if(i == 0) ind.wond_const = 0;
         ind.carn_const = rand()%101;
-        if(i == 0) ind.carn_const = 30;
 
         ind.plant_weight = rand()%11;
-        if(i == 0) ind.plant_weight = 0;
         ind.wond_weight = rand()%11;
-        if(i == 0) ind.wond_weight = 10;
         ind.carn_weight = rand()%11;
-        if(i == 0) ind.carn_weight = 0;
 
         //printf("(%d) %d %d %d %d %d %d\n",i,ind.plant_const,ind.wond_const,ind.carn_const,ind.plant_weight,ind.wond_weight,ind.carn_weight);
         
         ind.best = false;
-        ind.color = orange;
+        //ind.color = orange;
+        ind.color = pink;
 
         matrix[ind.y][ind.x] = C;
 
@@ -182,7 +177,8 @@ void carnivores_elitism(std::vector<population> &pop, Type matrix[][XSIZE]){
         pop[i].angle = (float)(rand()%200*PI)/100;
         pop[i].energy = 0;
         pop[i].best = false;
-        pop[i].color = orange;
+        //pop[i].color = orange;
+        pop[i].color = pink;
 
         matrix[pop[i].y][pop[i].x] = C;
     }
@@ -307,7 +303,8 @@ void carnivores_tournament(std::vector<population> &pop, Type matrix[][XSIZE]){
         pop[i].angle = (float)(rand()%200*PI)/100;
         pop[i].energy = 0;
         pop[i].best = false;
-        pop[i].color = orange;
+        //pop[i].color = orange;
+        pop[i].color = pink;
 
         matrix[pop[i].y][pop[i].x] = C;
     }
@@ -509,7 +506,8 @@ void move_carnivores(std::vector<population> &pop, Type matrix[][XSIZE]){
             else{
                 printf("ERRO (%d) Angle: %f Coordinates: (%d,%d) Should be coordinates: (%d,%d)\n",i,pop[i].angle,pop[i].x,pop[i].y,x,y);
             }
-            pop[i].color = orange;  
+            //pop[i].color = orange;
+            pop[i].color = pink;  
         }
         else if(obstacles == true){ // don't move
             if(type == W){ // EAT and HURT PRAY (on check for obstacles)
@@ -694,7 +692,8 @@ void import_carnivores(std::vector<population> &pop, Type matrix[][XSIZE]){
         printf("(%d) %d %d %d %d %d %d\n",i,ind.plant_const,ind.wond_const,ind.carn_const,ind.plant_weight,ind.wond_weight,ind.carn_weight);
         
         ind.best = false;
-        ind.color = orange;
+        //ind.color = orange;
+        ind.color = pink;
 
         matrix[ind.y][ind.x] = C;
 
@@ -823,7 +822,8 @@ void carnivores_elitism_heritage(std::vector<population> &pop, Type matrix[][XSI
         pop[i].energy = 0;
         pop[i].average_energy = 0;
         pop[i].best = false;
-        pop[i].color = orange;
+        //pop[i].color = orange;
+        pop[i].color = pink;
 
         matrix[pop[i].y][pop[i].x] = C;
     }
@@ -948,7 +948,8 @@ void carnivores_tournament_heritage(std::vector<population> &pop, Type matrix[][
         pop[i].angle = (float)(rand()%200*PI)/100;
         pop[i].energy = 0;
         pop[i].best = false;
-        pop[i].color = orange;
+        //pop[i].color = orange;
+        pop[i].color = pink;
 
         matrix[pop[i].y][pop[i].x] = C;
     }

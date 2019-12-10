@@ -320,7 +320,6 @@ void initialize_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]){
         }
 
         ind.speed = rand()%MAX_SPEED;
-        if(i == 0)ind.speed = 20;
         ind.angle = (float)(rand()%628)/100;  // 628 = 2*PI*100
         //printf("%f",ind.angle);
         ind.energy = 0;
@@ -344,27 +343,18 @@ void initialize_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]){
         ind.h_count = 0;
 
         ind.plant_const = rand()%MAX_CONST; // up to 100
-        if(i == 0 || i == 1)ind.plant_const = 0;
-
         ind.wond_const = rand()%MAX_CONST;
-        if(i == 0 || i == 1) ind.wond_const = 30;
-
         ind.carn_const = rand()%MAX_CONST; 
-        if(i == 0 || i == 1)ind.carn_const = 30;
 
         ind.plant_weight = rand()%MAX_WEIGHT;
-        if(i == 0 || i == 1) ind.plant_weight = 10;
-
         ind.wond_weight = rand()%MAX_WEIGHT;
-        if(i == 0 || i == 1) ind.wond_weight = 0;
-
         ind.carn_weight = rand()%MAX_WEIGHT;
-        if(i == 0 || i == 1) ind.carn_weight = 0;
 
         //printf("(%d) %d %d %d %d %d %d\n",i,ind.plant_const,ind.wond_const,ind.carn_const,ind.plant_weight,ind.wond_weight,ind.carn_weight);
         
         ind.best = false;
-        ind.color = pink;
+        //ind.color = pink;
+        ind.color = blue;
 
         matrix[ind.y][ind.x] = W;
 
@@ -425,7 +415,8 @@ void import_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]){
         printf("(%d) %d %d %d %d %d %d\n",i,ind.plant_const,ind.wond_const,ind.carn_const,ind.plant_weight,ind.wond_weight,ind.carn_weight);
         
         ind.best = false;
-        ind.color = pink;
+        //ind.color = pink;
+        ind.color = blue;
 
         matrix[ind.y][ind.x] = W;
 
@@ -443,6 +434,7 @@ void move_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]){
     Vec3b orange = Vec3b(0,108,238);
     Vec3b violet = Vec3b(200,0,119);
     Vec3b yellow = Vec3b(0,184,196);
+    Vec3b cyan = Vec3b(255,238,0);
 
     int i, move_x, move_y, x, y;
     bool obstacles = false;
@@ -486,17 +478,20 @@ void move_wonderers(std::vector<population> &pop, Type matrix[][XSIZE]){
             else{
                 printf("ERRO (%d) Angle: %f Coordinates: (%d,%d) Should be coordinates: (%d,%d)\n",i,pop[i].angle,pop[i].x,pop[i].y,x,y);
             }
-            pop[i].color = pink;  
+            //pop[i].color = pink;  
+            pop[i].color = blue;  
         }
         else if(obstacles == true){ // don't move
 
             if(type == P){ // EAT
                 pop[i].health++;
-                pop[i].color = blue; 
+                //pop[i].color = blue; 
+                pop[i].color = cyan; 
             }
             else if(type == C){ // DIE?
                 pop[i].hurt++;
-                pop[i].color = violet; 
+                //pop[i].color = violet;
+                pop[i].color = blue; 
                 /////////////////////////////// REFLEX ARC ////////////////////////////////
                 pop[i].angle = pop[i].angle + PI;
             }
