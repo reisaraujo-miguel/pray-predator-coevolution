@@ -64,7 +64,7 @@ Mat print_wanderers(std::vector<population> &pop){
     return image;
 }
 
-Mat print_img(std::vector<population> &wond_pop, std::vector<plants> &plants_pop, std::vector<population> &carn_pop){
+Mat print_img(std::vector<population> &wand_pop, std::vector<plants> &plants_pop, std::vector<population> &carn_pop){
 
     Vec3b red = Vec3b(0,0,255); 
     Vec3b green = Vec3b(0,255,0); 
@@ -90,15 +90,15 @@ Mat print_img(std::vector<population> &wond_pop, std::vector<plants> &plants_pop
     float y_to_pixel = (float)IMG_HEIGHT/(float)(YSIZE);
     
     int i, size;
-    size = wond_pop.size();
+    size = wand_pop.size();
     for(i=0; i<size; i++){
-        x_pixel =  (int)((wond_pop[i].x)*(x_to_pixel));
-        y_pixel =  (int)((wond_pop[i].y)*(y_to_pixel));
+        x_pixel =  (int)((wand_pop[i].x)*(x_to_pixel));
+        y_pixel =  (int)((wand_pop[i].y)*(y_to_pixel));
         if(x_pixel >= 0 && x_pixel <= IMG_WIDTH && y_pixel >= 0 && y_pixel <= IMG_HEIGHT){
-            circle(image, Point(x_pixel,y_pixel), y_to_pixel*RADIUS_WONDER, wond_pop[i].color, -1,  LINE_8 );
+            circle(image, Point(x_pixel,y_pixel), y_to_pixel*RADIUS_WANDER, wand_pop[i].color, -1,  LINE_8 );
             //sprintf(label, "%d", i);
             //putText(image, label, Point(x_pixel/*-5*/,y_pixel/*+5*/), FONT_HERSHEY_SIMPLEX, 0.5, CV_RGB(0,0,0), 1);
-            line (image, Point(x_pixel+(cos(wond_pop[i].angle)*y_to_pixel*RADIUS_WONDER),y_pixel+(sin(wond_pop[i].angle)*y_to_pixel*RADIUS_WONDER)), Point(x_pixel+(cos(wond_pop[i].angle)*3*y_to_pixel*RADIUS_WONDER),y_pixel+(sin(wond_pop[i].angle)*3*y_to_pixel*RADIUS_WONDER)), Scalar(0,0,0), 1, LINE_8);
+            line (image, Point(x_pixel+(cos(wand_pop[i].angle)*y_to_pixel*RADIUS_WANDER),y_pixel+(sin(wand_pop[i].angle)*y_to_pixel*RADIUS_WANDER)), Point(x_pixel+(cos(wand_pop[i].angle)*3*y_to_pixel*RADIUS_WANDER),y_pixel+(sin(wand_pop[i].angle)*3*y_to_pixel*RADIUS_WANDER)), Scalar(0,0,0), 1, LINE_8);
         }
     }
 

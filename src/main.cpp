@@ -78,16 +78,16 @@ int main(int argc, char** argv){
     Arq1 = fopen(arq1,"a+");
     int s;
     fprintf(Arq1,"\n%d\n",COUNT);
-    fprintf(Arq1,"(index) plant_const plant_weight wond_const wond_weight carn_const carn_weight speed health hurt energy\n");
+    fprintf(Arq1,"(index) plant_const plant_weight wand_const wand_weight carn_const carn_weight speed health hurt energy\n");
     for(s=0; s<size; s++){
-        fprintf(Arq1,"(%2d) %2d %2d %2d %2d %2d %2d %2d\n",s,wanderers[s].plant_const, wanderers[s].plant_weight, wanderers[s].wond_const, wanderers[s].wond_weight, wanderers[s].carn_const, wanderers[s].carn_weight, wanderers[s].speed);
+        fprintf(Arq1,"(%2d) %2d %2d %2d %2d %2d %2d %2d\n",s,wanderers[s].plant_const, wanderers[s].plant_weight, wanderers[s].wand_const, wanderers[s].wand_weight, wanderers[s].carn_const, wanderers[s].carn_weight, wanderers[s].speed);
     }
     FILE* Arq2;
     Arq2 = fopen(arq2,"a+");
     fprintf(Arq2,"\n%d\n",COUNT);
-    fprintf(Arq2,"(index) plant_const plant_weight wond_const wond_weight carn_const carn_weight speed energy\n");
+    fprintf(Arq2,"(index) plant_const plant_weight wand_const wand_weight carn_const carn_weight speed energy\n");
     for(s=0; s<size; s++){
-        fprintf(Arq2,"(%2d) %2d %2d %2d %2d %2d %2d %2d\n",s,carnivores[s].plant_const, carnivores[s].plant_weight, carnivores[s].wond_const, carnivores[s].wond_weight, carnivores[s].carn_const, carnivores[s].carn_weight, carnivores[s].speed);
+        fprintf(Arq2,"(%2d) %2d %2d %2d %2d %2d %2d %2d\n",s,carnivores[s].plant_const, carnivores[s].plant_weight, carnivores[s].wand_const, carnivores[s].wand_weight, carnivores[s].carn_const, carnivores[s].carn_weight, carnivores[s].speed);
     }
     COUNT++;
 
@@ -124,7 +124,7 @@ int main(int argc, char** argv){
                 s = wanderers.size();
                 fprintf(Arq1,"\n%d\n",COUNT/MATING_INTERVAL);
                 for(s=0; s<size; s++){
-                    fprintf(Arq1,"(%2d) %2d %2d %2d %2d %2d %2d %2d %2d %2d Energy:%d\n",s,wanderers[s].plant_const, wanderers[s].plant_weight, wanderers[s].wond_const, wanderers[s].wond_weight, wanderers[s].carn_const, wanderers[s].carn_weight, wanderers[s].speed, wanderers[s].health, wanderers[s].hurt, ((HEALTH_CONST*wanderers[s].health)-(HURT_CONST*wanderers[s].hurt)));
+                    fprintf(Arq1,"(%2d) %2d %2d %2d %2d %2d %2d %2d %2d %2d Energy:%d\n",s,wanderers[s].plant_const, wanderers[s].plant_weight, wanderers[s].wand_const, wanderers[s].wand_weight, wanderers[s].carn_const, wanderers[s].carn_weight, wanderers[s].speed, wanderers[s].health, wanderers[s].hurt, ((HEALTH_CONST*wanderers[s].health)-(HURT_CONST*wanderers[s].hurt)));
                 }
 
             
@@ -132,7 +132,7 @@ int main(int argc, char** argv){
                 s = carnivores.size();
                 fprintf(Arq2,"\n%d\n",COUNT/MATING_INTERVAL);
                 for(s=0; s<size; s++){
-                    fprintf(Arq2,"(%2d) %2d %2d %2d %2d %2d %2d %2d Energy:%d\n",s,carnivores[s].plant_const, carnivores[s].plant_weight, carnivores[s].wond_const, carnivores[s].wond_weight, carnivores[s].carn_const, carnivores[s].carn_weight, carnivores[s].speed, carnivores[s].energy);
+                    fprintf(Arq2,"(%2d) %2d %2d %2d %2d %2d %2d %2d Energy:%d\n",s,carnivores[s].plant_const, carnivores[s].plant_weight, carnivores[s].wand_const, carnivores[s].wand_weight, carnivores[s].carn_const, carnivores[s].carn_weight, carnivores[s].speed, carnivores[s].energy);
                 }
 
             elitism_heritage(wanderers,matrix);
@@ -167,23 +167,23 @@ int main(int argc, char** argv){
                     goto end;
                 if(k == 32){ // if SPACE    
                     FILE* Arq3;
-                    Arq3 = fopen("./data/real_time_data_wonderes.txt","a+");
+                    Arq3 = fopen("./data/real_time_data_wanderes.txt","a+");
                     int s;
                     s = wanderers.size();
                     fprintf(Arq3,"\n%d\n",COUNT/MATING_INTERVAL);
-                    fprintf(Arq3,"(index) plant_const plant_weight wond_const wond_weight carn_const carn_weight speed health hurt energy\n");
+                    fprintf(Arq3,"(index) plant_const plant_weight wand_const wand_weight carn_const carn_weight speed health hurt energy\n");
                     for(s=0; s<size; s++){
                         wanderers[s].energy = (HEALTH_CONST*wanderers[s].health) - (HURT_CONST*wanderers[s].hurt);
-                        fprintf(Arq3,"(%2d) %2d %2d %2d %2d %2d %2d %2d %2d %2d %2d\n",s,wanderers[s].plant_const, wanderers[s].plant_weight, wanderers[s].wond_const, wanderers[s].wond_weight, wanderers[s].carn_const, wanderers[s].carn_weight, wanderers[s].speed, wanderers[s].health, wanderers[s].hurt, wanderers[s].energy);
+                        fprintf(Arq3,"(%2d) %2d %2d %2d %2d %2d %2d %2d %2d %2d %2d\n",s,wanderers[s].plant_const, wanderers[s].plant_weight, wanderers[s].wand_const, wanderers[s].wand_weight, wanderers[s].carn_const, wanderers[s].carn_weight, wanderers[s].speed, wanderers[s].health, wanderers[s].hurt, wanderers[s].energy);
                     }
                     fclose(Arq3);
 
                     Arq3 = fopen("./data/real_time_data_carnivores.txt","a+");
                     s = carnivores.size();
                     fprintf(Arq3,"\n%d\n",COUNT/MATING_INTERVAL);
-                    fprintf(Arq3,"(index) plant_const plant_weight wond_const wond_weight carn_const carn_weight speed energy\n");
+                    fprintf(Arq3,"(index) plant_const plant_weight wand_const wand_weight carn_const carn_weight speed energy\n");
                     for(s=0; s<size; s++){
-                        fprintf(Arq3,"(%2d) %2d %2d %2d %2d %2d %2d %2d %2d\n",s,carnivores[s].plant_const, carnivores[s].plant_weight, carnivores[s].wond_const, carnivores[s].wond_weight, carnivores[s].carn_const, carnivores[s].carn_weight, carnivores[s].speed, carnivores[s].energy);
+                        fprintf(Arq3,"(%2d) %2d %2d %2d %2d %2d %2d %2d %2d\n",s,carnivores[s].plant_const, carnivores[s].plant_weight, carnivores[s].wand_const, carnivores[s].wand_weight, carnivores[s].carn_const, carnivores[s].carn_weight, carnivores[s].speed, carnivores[s].energy);
                     }
                     fclose(Arq3);
                 }

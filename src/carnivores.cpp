@@ -67,14 +67,14 @@ void initialize_carnivores(std::vector<population> &pop, Type matrix[][XSIZE]){
         ind.h_count = 0;
 
         ind.plant_const = rand()%101;
-        ind.wond_const = rand()%101;
+        ind.wand_const = rand()%101;
         ind.carn_const = rand()%101;
 
         ind.plant_weight = rand()%11;
-        ind.wond_weight = rand()%11;
+        ind.wand_weight = rand()%11;
         ind.carn_weight = rand()%11;
 
-        //printf("(%d) %d %d %d %d %d %d\n",i,ind.plant_const,ind.wond_const,ind.carn_const,ind.plant_weight,ind.wond_weight,ind.carn_weight);
+        //printf("(%d) %d %d %d %d %d %d\n",i,ind.plant_const,ind.wand_const,ind.carn_const,ind.plant_weight,ind.wand_weight,ind.carn_weight);
         
         ind.best = false;
         //ind.color = orange;
@@ -133,10 +133,10 @@ void carnivores_elitism(std::vector<population> &pop, Type matrix[][XSIZE]){
     extern int COUNT;
     if(COUNT%(MIGRATION*MATING_INTERVAL) == 0){
         foreigner.plant_const = rand()%101; // up to 100
-        foreigner.wond_const = rand()%101;
+        foreigner.wand_const = rand()%101;
         foreigner.carn_const = rand()%101;
         foreigner.plant_weight = rand()%11;
-        foreigner.wond_weight = rand()%11;
+        foreigner.wand_weight = rand()%11;
         foreigner.carn_weight = rand()%11;
         foreigner.speed = rand()%MAX_SPEED;
         //foreigner.speed = 20;
@@ -240,10 +240,10 @@ void carnivores_tournament(std::vector<population> &pop, Type matrix[][XSIZE]){
     extern int COUNT;
     if(COUNT%(MIGRATION*MATING_INTERVAL) == 0){
         foreigner.plant_const = rand()%101; // up to 100
-        foreigner.wond_const = rand()%101;
+        foreigner.wand_const = rand()%101;
         foreigner.carn_const = rand()%101;
         foreigner.plant_weight = rand()%11;
-        foreigner.wond_weight = rand()%11;
+        foreigner.wand_weight = rand()%11;
         foreigner.carn_weight = rand()%11;
         foreigner.speed = rand()%MAX_SPEED;
         //foreigner.speed = 20;
@@ -318,11 +318,11 @@ population carnivores_cross_over(std::vector<population> &pop, int p1, int p2){
     population ind;
 
     ind.plant_const = (pop[p1].plant_const + pop[p2].plant_const)/2;
-    ind.wond_const = (pop[p1].wond_const + pop[p2].wond_const)/2;
+    ind.wand_const = (pop[p1].wand_const + pop[p2].wand_const)/2;
     ind.carn_const = (pop[p1].carn_const + pop[p2].carn_const)/2;
 
     ind.plant_weight = (pop[p1].plant_weight + pop[p2].plant_weight)/2;
-    ind.wond_weight = (pop[p1].wond_weight + pop[p2].wond_weight)/2;
+    ind.wand_weight = (pop[p1].wand_weight + pop[p2].wand_weight)/2;
     ind.carn_weight = (pop[p1].carn_weight + pop[p2].carn_weight)/2;
 
     ind.speed = (pop[p1].speed + pop[p2].speed)/2;
@@ -360,11 +360,11 @@ void carnivores_mutation(population* ind){
 
     prob = rand()%100;
     if(prob < CONST_UP){
-        (*ind).wond_const = (*ind).wond_const + ANGLE_MUTATION;
+        (*ind).wand_const = (*ind).wand_const + ANGLE_MUTATION;
         //printf("Mutated constant\n");
     }
     else if(prob < (CONST_UP+CONST_DOWN)){
-        (*ind).wond_const = (*ind).wond_const - ANGLE_MUTATION;
+        (*ind).wand_const = (*ind).wand_const - ANGLE_MUTATION;
         //printf("Mutated constant\n");
     }
 
@@ -393,11 +393,11 @@ void carnivores_mutation(population* ind){
 
     prob = rand()%100;
     if(prob < WEIGHT_UP){
-        (*ind).wond_weight = (*ind).wond_weight + WEIGHT_MUTATION;
+        (*ind).wand_weight = (*ind).wand_weight + WEIGHT_MUTATION;
         //printf("Mutated constant\n");
     }
     else if(prob < (WEIGHT_UP+WEIGHT_DOWN)){
-        (*ind).wond_weight = (*ind).wond_weight - WEIGHT_MUTATION;
+        (*ind).wand_weight = (*ind).wand_weight - WEIGHT_MUTATION;
         //printf("Mutated constant\n");
     }
 
@@ -662,7 +662,7 @@ void import_carnivores(std::vector<population> &pop, Type matrix[][XSIZE]){
     Vec3b yellow = Vec3b(0,184,196);
 
     printf("CARNIVORES\n");
-    printf("plant_const plant_weight wond_const wond_weight carn_const carn_weight speed\n");
+    printf("plant_const plant_weight wand_const wand_weight carn_const carn_weight speed\n");
     int i, prob;
     for(i=0; i<POP_CARN; i++){
 
@@ -678,7 +678,7 @@ void import_carnivores(std::vector<population> &pop, Type matrix[][XSIZE]){
             goto retry;
         }
 
-        scanf("%d %d %d %d %d %d %d",&ind.plant_const,&ind.plant_weight,&ind.wond_const,&ind.wond_weight,&ind.carn_const,&ind.carn_weight,&ind.speed);
+        scanf("%d %d %d %d %d %d %d",&ind.plant_const,&ind.plant_weight,&ind.wand_const,&ind.wand_weight,&ind.carn_const,&ind.carn_weight,&ind.speed);
 
         ind.angle = (float)(rand()%200*PI)/100;
         ind.energy = 0;
@@ -689,7 +689,7 @@ void import_carnivores(std::vector<population> &pop, Type matrix[][XSIZE]){
         ind.average_energy = 0;
         ind.h_count = 0;
 
-        printf("(%d) %d %d %d %d %d %d\n",i,ind.plant_const,ind.wond_const,ind.carn_const,ind.plant_weight,ind.wond_weight,ind.carn_weight);
+        printf("(%d) %d %d %d %d %d %d\n",i,ind.plant_const,ind.wand_const,ind.carn_const,ind.plant_weight,ind.wand_weight,ind.carn_weight);
         
         ind.best = false;
         //ind.color = orange;
@@ -757,10 +757,10 @@ void carnivores_elitism_heritage(std::vector<population> &pop, Type matrix[][XSI
     extern int COUNT;
     if(COUNT%(MIGRATION*MATING_INTERVAL) == 0){
         foreigner.plant_const = rand()%MAX_CONST; // up to 100
-        foreigner.wond_const = rand()%MAX_CONST;
+        foreigner.wand_const = rand()%MAX_CONST;
         foreigner.carn_const = rand()%MAX_CONST;
         foreigner.plant_weight = rand()%MAX_WEIGHT;
-        foreigner.wond_weight = rand()%MAX_WEIGHT;
+        foreigner.wand_weight = rand()%MAX_WEIGHT;
         foreigner.carn_weight = rand()%MAX_WEIGHT;
         foreigner.speed = rand()%MAX_SPEED;
         //foreigner.speed = 20;
@@ -885,10 +885,10 @@ void carnivores_tournament_heritage(std::vector<population> &pop, Type matrix[][
     extern int COUNT;
     if(COUNT%(MIGRATION*MATING_INTERVAL) == 0){
         foreigner.plant_const = rand()%101; // up to 100
-        foreigner.wond_const = rand()%101;
+        foreigner.wand_const = rand()%101;
         foreigner.carn_const = rand()%101;
         foreigner.plant_weight = rand()%11;
-        foreigner.wond_weight = rand()%11;
+        foreigner.wand_weight = rand()%11;
         foreigner.carn_weight = rand()%11;
         foreigner.speed = rand()%MAX_SPEED;
         //foreigner.speed = 20;
@@ -963,11 +963,11 @@ population carnivores_cross_over_heritage(std::vector<population> &pop, int p1, 
     population ind;
 
     ind.plant_const = (pop[p1].plant_const + pop[p2].plant_const)/2;
-    ind.wond_const = (pop[p1].wond_const + pop[p2].wond_const)/2;
+    ind.wand_const = (pop[p1].wand_const + pop[p2].wand_const)/2;
     ind.carn_const = (pop[p1].carn_const + pop[p2].carn_const)/2;
 
     ind.plant_weight = (pop[p1].plant_weight + pop[p2].plant_weight)/2;
-    ind.wond_weight = (pop[p1].wond_weight + pop[p2].wond_weight)/2;
+    ind.wand_weight = (pop[p1].wand_weight + pop[p2].wand_weight)/2;
     ind.carn_weight = (pop[p1].carn_weight + pop[p2].carn_weight)/2;
 
     ind.speed = (pop[p1].speed + pop[p2].speed)/2;

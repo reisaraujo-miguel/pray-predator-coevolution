@@ -68,17 +68,17 @@ bool check_for_obstacles(int x0, int y0, float angle, int speed, int *type){
 
     // start point and bottom limit
     float x1, y1, distance1;
-    // OBS: if change bellow, change ALSO distance1 and 2 parameters to (speed) intead of (speed+2*RADIUS_WONDER)
+    // OBS: if change bellow, change ALSO distance1 and 2 parameters to (speed) intead of (speed+2*RADIUS_WANDER)
 
-    //x1 = x0 + Cos*2*RADIUS_WONDER;
-    //y1 = y0 + Sin*2*RADIUS_WONDER;
-    x1 = x0 + Cos*RADIUS_WONDER;
-    y1 = y0 + Sin*RADIUS_WONDER;
+    //x1 = x0 + Cos*2*RADIUS_WANDER;
+    //y1 = y0 + Sin*2*RADIUS_WANDER;
+    x1 = x0 + Cos*RADIUS_WANDER;
+    y1 = y0 + Sin*RADIUS_WANDER;
 
     // end point and top limit
     float x2, y2, distance2;
-    x2 = x0 + Cos*(speed+2*RADIUS_WONDER);
-    y2 = y0 + Sin*(speed+2*RADIUS_WONDER);
+    x2 = x0 + Cos*(speed+2*RADIUS_WANDER);
+    y2 = y0 + Sin*(speed+2*RADIUS_WANDER);
 
     // for the perpendicular line, its perp_angle is given by <angle-90>
     // cos(perp_angle) = sin(angle)
@@ -93,7 +93,7 @@ bool check_for_obstacles(int x0, int y0, float angle, int speed, int *type){
             distance = Cos*(wanderers[i].y - y0) - Sin*(wanderers[i].x - x0);
             if(distance < 0)
                 distance = -distance;
-            if(distance <= 2*RADIUS_WONDER){
+            if(distance <= 2*RADIUS_WANDER){
 
                 distance1 = Sin*(wanderers[i].y - y1) + Cos*(wanderers[i].x - x1);
                 distance2 = Sin*(wanderers[i].y - y2) + Cos*(wanderers[i].x - x2);
@@ -104,7 +104,7 @@ bool check_for_obstacles(int x0, int y0, float angle, int speed, int *type){
                     distance2 = -distance2;
 
                 // distance to both restrictive perpendicular lines must be less than or equal to speed
-                if(distance1 <= (speed+2*RADIUS_WONDER) && distance2 <= (speed+2*RADIUS_WONDER)){
+                if(distance1 <= (speed+2*RADIUS_WANDER) && distance2 <= (speed+2*RADIUS_WANDER)){
                     obstacles = true;
                     *type = W;
                     return obstacles;
@@ -118,7 +118,7 @@ bool check_for_obstacles(int x0, int y0, float angle, int speed, int *type){
         distance = Cos*(carnivores[i].y - y0) - Sin*(carnivores[i].x - x0);
         if(distance < 0)
             distance = -distance;
-        if(distance <= 2*RADIUS_WONDER){
+        if(distance <= 2*RADIUS_WANDER){
 
             distance1 = Sin*(carnivores[i].y - y1) + Cos*(carnivores[i].x - x1);
             distance2 = Sin*(carnivores[i].y - y2) + Cos*(carnivores[i].x - x2);
@@ -129,7 +129,7 @@ bool check_for_obstacles(int x0, int y0, float angle, int speed, int *type){
                 distance2 = -distance2;
 
             // distance to both restrictive perpendicular lines must be less than or equal to speed
-            if(distance1 <= (speed+2*RADIUS_WONDER) && distance2 <= (speed+2*RADIUS_WONDER)){
+            if(distance1 <= (speed+2*RADIUS_WANDER) && distance2 <= (speed+2*RADIUS_WANDER)){
                 obstacles = true;
                 *type = C;
                 return obstacles;
@@ -142,7 +142,7 @@ bool check_for_obstacles(int x0, int y0, float angle, int speed, int *type){
         distance = Cos*(plants_pop[i].y - y0) - Sin*(plants_pop[i].x - x0);
         if(distance < 0)
             distance = -distance;
-        if(distance <= 2*RADIUS_WONDER){
+        if(distance <= 2*RADIUS_WANDER){
 
             distance1 = Sin*(plants_pop[i].y - y1) + Cos*(plants_pop[i].x - x1);
             distance2 = Sin*(plants_pop[i].y - y2) + Cos*(plants_pop[i].x - x2);
@@ -153,7 +153,7 @@ bool check_for_obstacles(int x0, int y0, float angle, int speed, int *type){
                 distance2 = -distance2;
 
             // distance to both restrictive perpendicular lines must be less than or equal to speed
-            if(distance1 <= (speed+2*RADIUS_WONDER) && distance2 <= (speed+2*RADIUS_WONDER)){
+            if(distance1 <= (speed+2*RADIUS_WANDER) && distance2 <= (speed+2*RADIUS_WANDER)){
                 obstacles = true;
                 *type = P;
 
@@ -231,14 +231,14 @@ void rotation_equation(std::vector<population> &pop, int index, int obs_type, fl
 void genetic_rotation(std::vector<population> &pop, int index){
 
     float plant_rotation;
-    float wond_rotation;
+    float wand_rotation;
     float carn_rotation;
 
     int xplant, yplant;
     float plant_angle;
 
-    int xwond, ywond;
-    float wond_angle;
+    int xwand, ywand;
+    float wand_angle;
 
     int xcarn, ycarn;
     float carn_angle;
@@ -248,10 +248,10 @@ void genetic_rotation(std::vector<population> &pop, int index){
     float p=0, c=0, w=0;
 
 
-    obstacles_bfs(pop[index].x, pop[index].y, &xplant, &yplant, &xwond, &ywond, &xcarn, &ycarn);
+    obstacles_bfs(pop[index].x, pop[index].y, &xplant, &yplant, &xwand, &ywand, &xcarn, &ycarn);
 
     plant_angle = calculate_angle(pop[index].x, pop[index].y, xplant, yplant, pop[index].angle);
-    wond_angle = calculate_angle(pop[index].x, pop[index].y, xwond, ywond, pop[index].angle);
+    wand_angle = calculate_angle(pop[index].x, pop[index].y, xwand, ywand, pop[index].angle);
     carn_angle = calculate_angle(pop[index].x, pop[index].y, xcarn, ycarn, pop[index].angle);
 
     if(isnan(plant_angle) == 0){ // not NAN
@@ -263,16 +263,16 @@ void genetic_rotation(std::vector<population> &pop, int index){
         plant_rotation = 0;
     }
 
-    if(isnan(wond_angle) == 0){
-        wond_rotation = ((float)pop[index].wond_const)*2*PI/100;
-        wond_rotation = pop[index].wond_weight*(wond_rotation + wond_angle);
+    if(isnan(wand_angle) == 0){
+        wand_rotation = ((float)pop[index].wand_const)*2*PI/100;
+        wand_rotation = pop[index].wand_weight*(wand_rotation + wand_angle);
         w = 1;
     }
     else{
-        wond_rotation = 0;
+        wand_rotation = 0;
     }
 
-    if(isnan(wond_angle) == 0){
+    if(isnan(wand_angle) == 0){
         carn_rotation = ((float)pop[index].carn_const)*2*PI/100;
         carn_rotation = pop[index].carn_weight*(carn_rotation + carn_angle);
         c = 1;
@@ -281,7 +281,7 @@ void genetic_rotation(std::vector<population> &pop, int index){
         carn_rotation = 0;
     }
 
-    angle = (plant_rotation + wond_rotation + carn_rotation)/(w*pop[index].wond_weight + p*pop[index].plant_weight + c*pop[index].carn_weight);
+    angle = (plant_rotation + wand_rotation + carn_rotation)/(w*pop[index].wand_weight + p*pop[index].plant_weight + c*pop[index].carn_weight);
     angle = pop[index].angle + angle;
 
     if((isnan(angle) == 0) && (isfinite(angle) != 0)){ // not NAN and FINITE
@@ -305,7 +305,7 @@ void initialize_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]){
     Vec3b yellow = Vec3b(0,184,196);
 
     int i, prob;
-    for(i=0; i<POP_WONDER; i++){
+    for(i=0; i<POP_WANDER; i++){
 
         srand(time(0)+i);
 
@@ -344,17 +344,17 @@ void initialize_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]){
 
         ind.plant_const = rand()%MAX_CONST; // up to 100
 
-        ind.wond_const = rand()%MAX_CONST;
+        ind.wand_const = rand()%MAX_CONST;
 
         ind.carn_const = rand()%MAX_CONST; 
 
         ind.plant_weight = rand()%MAX_WEIGHT;
 
-        ind.wond_weight = rand()%MAX_WEIGHT;
+        ind.wand_weight = rand()%MAX_WEIGHT;
 
         ind.carn_weight = rand()%MAX_WEIGHT;
 
-        //printf("(%d) %d %d %d %d %d %d\n",i,ind.plant_const,ind.wond_const,ind.carn_const,ind.plant_weight,ind.wond_weight,ind.carn_weight);
+        //printf("(%d) %d %d %d %d %d %d\n",i,ind.plant_const,ind.wand_const,ind.carn_const,ind.plant_weight,ind.wand_weight,ind.carn_weight);
         
         ind.best = false;
         //ind.color = pink;
@@ -387,9 +387,9 @@ void import_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]){
     Vec3b yellow = Vec3b(0,184,196);
 
     printf("WANDERERS\n");
-    printf("plant_const plant_weight wond_const wond_weight carn_const carn_weight speed\n");
+    printf("plant_const plant_weight wand_const wand_weight carn_const carn_weight speed\n");
     int i, prob;
-    for(i=0; i<POP_WONDER; i++){
+    for(i=0; i<POP_WANDER; i++){
 
         srand(time(0)+i);
 
@@ -403,7 +403,7 @@ void import_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]){
             goto retry;
         }
 
-        scanf("%d %d %d %d %d %d %d",&ind.plant_const,&ind.plant_weight,&ind.wond_const,&ind.wond_weight,&ind.carn_const,&ind.carn_weight,&ind.speed);
+        scanf("%d %d %d %d %d %d %d",&ind.plant_const,&ind.plant_weight,&ind.wand_const,&ind.wand_weight,&ind.carn_const,&ind.carn_weight,&ind.speed);
 
         ind.angle = (float)(rand()%200*PI)/100;
         ind.energy = 0;
@@ -416,7 +416,7 @@ void import_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]){
         ind.average_energy = 0;
         ind.h_count = 0;
 
-        printf("(%d) %d %d %d %d %d %d\n",i,ind.plant_const,ind.wond_const,ind.carn_const,ind.plant_weight,ind.wond_weight,ind.carn_weight);
+        printf("(%d) %d %d %d %d %d %d\n",i,ind.plant_const,ind.wand_const,ind.carn_const,ind.plant_weight,ind.wand_weight,ind.carn_weight);
         
         ind.best = false;
         //ind.color = pink;

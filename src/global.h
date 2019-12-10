@@ -49,11 +49,11 @@ using namespace cv;
 
 //////////////////////// POPULATION ////////////////////////
 
-#define POP_WONDER 10
+#define POP_WANDER 10
 #define POP_PLANTS 10
 #define POP_CARN 5
 
-#define RADIUS_WONDER 5
+#define RADIUS_WANDER 5
 #define RADIUS_PLANTS 5
 #define RADIUS_CARN 5
 
@@ -65,7 +65,7 @@ using namespace cv;
 #define H 1   // herbivore
 #define C 2   // carnivore
 #define P 3   // plant
-#define W 4   // wonderer
+#define W 4   // wanderer
 
 ///////////////////////// PARETO CURVE /////////////////////
 
@@ -92,7 +92,7 @@ typedef struct{
 
     // genes
     int plant_const, plant_weight;  // 0 to 100, 0 to 10
-    int wond_const, wond_weight;  // 0 to 100, 0 to 10
+    int wand_const, wand_weight;  // 0 to 100, 0 to 10
     int carn_const, carn_weight;
 
     deque <int> heritage; // use only PUSH_FRONT and POP_BACK
@@ -117,8 +117,8 @@ bool check_for_obstacles(int x0, int y0, float angle, int speed, int* type);
 void first_obstacle_bfs(int startx, int starty, int* xobs, int* yobs, int* type_obs);
 float calculate_angle(int x, int y, int xobs, int yobs, float dir_angle);
 void first_plant_bfs(int startx, int starty, int* xobs, int* yobs);
-void first_wonderer_bfs(int startx, int starty, int* xobs, int* yobs);
-void obstacles_bfs(int startx, int starty, int* xplant, int* yplant, int* xwond, int* ywond, int* xcarn, int* ycarn);
+void first_wanderer_bfs(int startx, int starty, int* xobs, int* yobs);
+void obstacles_bfs(int startx, int starty, int* xplant, int* yplant, int* xwand, int* ywand, int* xcarn, int* ycarn);
 
 
 /************************************************ WANDERERS ***************************************************************/
@@ -132,13 +132,13 @@ void genetic_rotation(std::vector<population> &pop, int index);
 
 void elitism(std::vector<population> &pop, Type matrix[][XSIZE]);
 void tournament(std::vector<population> &pop, Type matrix[][XSIZE]);
-void best_wonderer(std::vector<population> &pop);
+void best_wanderer(std::vector<population> &pop);
 population cross_over(std::vector<population> &pop, int p1, int p2);
 void mutation(population* ind);
 
 void elitism_heritage(std::vector<population> &pop, Type matrix[][XSIZE]);
 void tournament_heritage(std::vector<population> &pop, Type matrix[][XSIZE]);
-void best_wonderer_heritage(std::vector<population> &pop);
+void best_wanderer_heritage(std::vector<population> &pop);
 population cross_over_heritage(std::vector<population> &pop, int p1, int p2);
 
 
@@ -170,4 +170,4 @@ void best_carnivore_heritage(std::vector<population> &pop);
 /******************************************************* GUI *************************************************************/
 
 Mat print_wanderers(std::vector<population> &pop);
-Mat print_img(std::vector<population> &wond_pop, std::vector<plants> &plants_pop, std::vector<population> &carn_pop);
+Mat print_img(std::vector<population> &wand_pop, std::vector<plants> &plants_pop, std::vector<population> &carn_pop);

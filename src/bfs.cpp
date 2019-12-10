@@ -155,7 +155,7 @@ void first_plant_bfs(int startx, int starty, int* xobs, int* yobs){
     *yobs = 0;
 }
 
-void first_wonderer_bfs(int startx, int starty, int* xobs, int* yobs){
+void first_wanderer_bfs(int startx, int starty, int* xobs, int* yobs){
 
     extern Type matrix[YSIZE][XSIZE];
 
@@ -215,11 +215,11 @@ void first_wonderer_bfs(int startx, int starty, int* xobs, int* yobs){
 }
 
 
-void obstacles_bfs(int startx, int starty, int* xplant, int* yplant, int* xwond, int* ywond, int* xcarn, int* ycarn){
+void obstacles_bfs(int startx, int starty, int* xplant, int* yplant, int* xwand, int* ywand, int* xcarn, int* ycarn){
 
     // stores whether obstacle was already found or not
     bool plant = false;
-    bool wond = false;
+    bool wand = false;
     bool carn = false;
 
     extern Type matrix[YSIZE][XSIZE];
@@ -267,14 +267,14 @@ void obstacles_bfs(int startx, int starty, int* xplant, int* yplant, int* xwond,
                         *yplant = nextY;
                         plant = true;
 
-                        if(wond == true && carn == true){
+                        if(wand == true && carn == true){
                             return;
                         }
                     }
-                    if((matrix[nextY][nextX] == W) && (wond == false)){   
-                        *xwond = nextX;
-                        *ywond = nextY;
-                        wond = true;
+                    if((matrix[nextY][nextX] == W) && (wand == false)){   
+                        *xwand = nextX;
+                        *ywand = nextY;
+                        wand = true;
                         
                         if(plant == true && carn == true){
                             return;
@@ -285,7 +285,7 @@ void obstacles_bfs(int startx, int starty, int* xplant, int* yplant, int* xwond,
                         *ycarn = nextY;
                         carn = true;
                         
-                        if(plant == true && wond == true){
+                        if(plant == true && wand == true){
                             return;
                         }
                     }
@@ -298,6 +298,6 @@ void obstacles_bfs(int startx, int starty, int* xplant, int* yplant, int* xwond,
         }
     }
     
-    *xwond = *ywond = *xplant = *yplant = *xcarn = *ycarn = 0;
+    *xwand = *ywand = *xplant = *yplant = *xcarn = *ycarn = 0;
 }
 
