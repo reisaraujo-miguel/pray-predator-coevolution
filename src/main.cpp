@@ -1,6 +1,6 @@
 #define GUI_ON 1
 
-int WAIT = 1;
+int WAIT = 1;   // how many seconds each frame lasts, in case the GUI is turned on
 
 #include <time.h>
 #include <stdio.h>
