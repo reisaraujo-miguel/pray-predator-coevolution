@@ -14,5 +14,5 @@ Every 15 generations (or other chosen interval) the worst individual from both p
 <br/>
 
 ## Inheritance
-Due to the noise inherent to the environment and the established interactions the population's fitness can suddenly deteriorate from one generation to the other. To avoid this the offspring inherit their parent's fitness score decreasing the probability of a bad individual obtaining by luck a good score that allows it to pass on its genes to the offspring.
+Due to the noise inherent to the environment and the established interactions the population's fitness can suddenly deteriorate from one generation to the other. To avoid this the offspring inherit their parent's fitness score decreasing the probability of a bad individual obtaining by luck a good score that allows it to pass on its genes to the next generation.
 
