@@ -10,7 +10,6 @@ The goal of this project was do develop an environment consisting of plants (gre
 
 Further details can be found on:
 [documentation.md](https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/documentation.md)
-and on the following video https://youtu.be/56S2KHZQ_J0.
 <br/>
 
 <!---
