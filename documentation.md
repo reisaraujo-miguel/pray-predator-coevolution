@@ -105,3 +105,4 @@ canr_weight = 0
 ```
 Meaning that it goes towards the herbivores and exclusively prioritizes eating.
 
+## Behavior Analysis
