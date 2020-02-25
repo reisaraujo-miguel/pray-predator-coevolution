@@ -1,0 +1,5015 @@
+QtdHerbivores: 10
+QtdCarnivores: 5
+QtdPlants: 15
+QtdGenerations: 1000
+HealthWeight: 20
+HurtWeight: 1
+FramesPerGeneration: 100
+HerbivoresHeritage: 5
+CarnivoresHeritage: 5
+
+GENERATION 0
+Herbivores: 440 0 0 0 99 0 0 0 0 -120
+Health: 22 0 0 0 5 0 0 0 0 0
+Hurt: 0 0 0 0 1 0 0 0 0 120
+Carnivores: 78 0 1 0 0
+GENERATION 1
+Herbivores: 360 19 0 -32 -1 -1 -13 -2 0 -174
+Health: 18 1 0 0 0 0 0 0 0 0
+Hurt: 0 1 0 32 1 1 13 2 0 174
+Carnivores: 87 2 20 0 0
+GENERATION 2
+Herbivores: 440 3 0 0 0 0 20 -30 0 -3
+Health: 22 1 0 0 0 0 1 0 0 0
+Hurt: 0 17 0 0 0 0 0 30 0 3
+Carnivores: 15 3 0 2 0
+GENERATION 3
+Herbivores: 394 177 134 -1 57 104 129 15 54 18
+Health: 20 9 7 1 3 6 7 4 3 1
+Hurt: 6 3 6 21 3 16 11 65 6 2
+Carnivores: 7 5 33 39 2
+GENERATION 4
+Herbivores: 475 139 140 89 380 320 240 160 177 8
+Health: 24 7 7 5 19 16 12 8 9 4
+Hurt: 5 1 0 11 0 0 0 0 3 72
+Carnivores: 18 6 5 29 6
+GENERATION 5
+Herbivores: 240 82 120 167 219 7 133 118 113 -48
+Health: 12 8 6 10 11 5 10 6 6 5
+Hurt: 0 78 0 33 1 93 67 2 7 148
+Carnivores: 91 48 71 25 18
+GENERATION 6
+Herbivores: 218 -84 40 240 -62 -174 220 135 95 -99
+Health: 11 0 3 12 3 0 11 10 5 0
+Hurt: 2 84 20 0 122 174 0 65 5 99
+Carnivores: 91 61 87 31 10
+GENERATION 7
+Herbivores: 198 196 -5 102 -77 257 80 80 100 -99
+Health: 10 10 6 6 2 13 4 4 5 0
+Hurt: 2 4 125 18 117 3 0 0 0 99
+Carnivores: 62 65 13 77 33
+GENERATION 8
+Herbivores: 235 180 158 78 112 261 128 59 100 35
+Health: 12 9 8 4 6 14 10 3 5 3
+Hurt: 5 0 2 2 8 19 72 1 0 25
+Carnivores: 4 23 32 6 2
+GENERATION 9
+Herbivores: 300 40 -95 186 151 239 -22 212 140 -153
+Health: 15 2 3 10 8 12 1 11 7 1
+Hurt: 0 0 155 14 9 1 42 8 0 173
+Carnivores: 72 78 86 0 12
+GENERATION 10
+Herbivores: 360 256 277 194 233 57 337 211 200 -33
+Health: 18 13 14 10 12 3 17 11 10 0
+Hurt: 0 4 3 6 7 3 3 9 0 33
+Carnivores: 6 2 6 29 0
+GENERATION 11
+Herbivores: 178 200 140 240 199 170 235 200 39 5
+Health: 9 10 7 12 10 9 12 10 2 1
+Hurt: 2 0 0 0 1 10 5 0 1 15
+Carnivores: 3 1 5 15 0
+GENERATION 12
+Herbivores: 396 196 319 219 215 313 227 193 173 16
+Health: 20 10 16 11 11 17 12 10 9 1
+Hurt: 4 4 1 1 5 27 13 7 7 4
+Carnivores: 17 11 13 2 1
+GENERATION 13
+Herbivores: 358 86 108 219 179 357 234 160 157 9
+Health: 18 5 6 11 9 18 13 8 8 1
+Hurt: 2 14 12 1 1 3 26 0 3 11
+Carnivores: 24 5 7 8 0
+GENERATION 14
+Herbivores: 319 158 199 179 359 178 339 184 240 -79
+Health: 16 10 12 9 18 9 17 10 12 3
+Hurt: 1 42 41 1 1 2 1 16 0 139
+Carnivores: 46 8 44 43 5
+GENERATION 15
+Herbivores: 540 122 279 200 420 23 240 270 168 56
+Health: 27 7 14 10 21 4 12 14 10 4
+Hurt: 0 18 1 0 0 57 0 10 32 24
+Carnivores: 25 25 2 3 26
+GENERATION 16
+Herbivores: 240 213 150 233 260 275 275 160 199 213
+Health: 12 11 8 12 13 14 14 8 10 12
+Hurt: 0 7 10 7 0 5 5 0 1 27
+Carnivores: 12 3 6 9 4
+GENERATION 17
+Herbivores: 280 220 172 360 64 72 177 238 297 117
+Health: 14 11 9 18 5 4 9 12 15 6
+Hurt: 0 0 8 0 36 8 3 2 3 3
+Carnivores: 17 8 0 13 0
+GENERATION 18
+Herbivores: 400 180 235 280 159 198 233 300 238 40
+Health: 20 9 12 14 8 10 13 15 12 2
+Hurt: 0 0 5 0 1 2 27 0 2 0
+Carnivores: 14 1 0 0 1
+GENERATION 19
+Herbivores: 300 221 255 178 115 156 168 153 295 121
+Health: 15 12 13 10 6 8 9 8 15 7
+Hurt: 0 19 5 22 5 4 12 7 5 19
+Carnivores: 20 12 8 6 5
+GENERATION 20
+Herbivores: 440 247 124 -55 280 -95 180 100 0 20
+Health: 22 13 9 3 14 4 9 5 0 1
+Hurt: 0 13 56 115 0 175 0 0 0 0
+Carnivores: 88 47 7 11 1
+GENERATION 21
+Herbivores: 310 240 120 240 107 139 159 212 239 40
+Health: 16 12 6 12 6 7 8 11 12 2
+Hurt: 10 0 0 0 13 1 1 8 1 0
+Carnivores: 6 6 2 0 3
+GENERATION 22
+Herbivores: 440 160 246 53 155 -27 160 140 280 40
+Health: 22 8 13 4 9 0 8 7 14 2
+Hurt: 0 0 14 27 25 27 0 0 0 0
+Carnivores: 54 8 0 25 0
+GENERATION 23
+Herbivores: 300 220 180 183 360 36 92 118 60 9
+Health: 15 12 9 11 18 2 6 6 3 1
+Hurt: 0 20 0 37 0 4 28 2 0 11
+Carnivores: 27 6 1 30 1
+GENERATION 24
+Herbivores: 446 132 260 328 140 195 218 294 137 95
+Health: 23 7 13 18 7 12 14 15 9 5
+Hurt: 14 8 0 32 0 45 62 6 43 5
+Carnivores: 65 25 24 13 0
+GENERATION 25
+Herbivores: 162 176 179 220 54 78 80 19 99 38
+Health: 9 10 9 11 5 4 4 1 5 2
+Hurt: 18 24 1 0 46 2 0 1 1 2
+Carnivores: 46 0 10 15 0
+GENERATION 26
+Herbivores: 400 233 155 137 254 119 178 234 77 75
+Health: 20 12 9 7 13 6 9 12 4 6
+Hurt: 0 7 25 3 6 1 2 6 3 45
+Carnivores: 25 15 2 8 3
+GENERATION 27
+Herbivores: 235 152 119 27 120 39 57 137 77 81
+Health: 13 8 6 4 6 2 3 8 4 5
+Hurt: 25 8 1 53 0 1 3 23 3 19
+Carnivores: 31 14 5 11 13
+GENERATION 28
+Herbivores: 300 57 -9 122 52 77 54 100 53 6
+Health: 15 3 1 7 3 4 3 5 3 3
+Hurt: 0 3 29 18 8 3 6 0 7 54
+Carnivores: 18 5 17 25 0
+GENERATION 29
+Herbivores: 66 240 165 192 140 115 9 160 100 40
+Health: 6 12 9 10 7 6 1 8 5 2
+Hurt: 54 0 15 8 0 5 11 0 0 0
+Carnivores: 19 3 19 7 18
+GENERATION 30
+Herbivores: 213 138 117 158 239 278 74 169 -12 40
+Health: 11 7 6 8 12 14 4 9 1 2
+Hurt: 7 2 3 2 1 2 6 11 32 0
+Carnivores: 14 4 7 3 6
+GENERATION 31
+Herbivores: 127 119 216 139 177 86 61 132 17 58
+Health: 8 6 11 7 9 5 5 7 1 3
+Hurt: 33 1 4 1 3 14 39 8 3 2
+Carnivores: 26 4 6 21 1
+GENERATION 32
+Herbivores: 180 118 138 178 95 120 160 120 36 38
+Health: 9 6 7 9 5 6 8 6 2 2
+Hurt: 0 2 2 2 5 0 0 0 4 2
+Carnivores: 0 3 3 2 0
+GENERATION 33
+Herbivores: 280 80 220 237 139 140 31 154 79 38
+Health: 14 4 11 12 7 7 2 8 4 2
+Hurt: 0 0 0 3 1 0 9 6 1 2
+Carnivores: 4 2 4 5 0
+GENERATION 34
+Herbivores: 397 258 260 278 277 159 177 200 220 65
+Health: 20 13 13 14 14 8 9 11 11 7
+Hurt: 3 2 0 2 3 1 3 20 0 75
+Carnivores: 21 17 16 19 5
+GENERATION 35
+Herbivores: 440 177 279 363 178 396 180 374 346 75
+Health: 22 10 14 19 9 21 9 19 18 7
+Hurt: 0 23 1 17 2 24 0 6 14 65
+Carnivores: 44 10 7 13 6
+GENERATION 36
+Herbivores: 440 395 278 138 248 344 400 379 240 117
+Health: 22 20 14 7 13 18 20 19 12 6
+Hurt: 0 5 2 2 12 16 0 1 0 3
+Carnivores: 3 0 9 11 0
+GENERATION 37
+Herbivores: 317 209 160 298 280 168 140 219 219 220
+Health: 16 11 8 15 14 14 7 11 11 11
+Hurt: 3 11 0 2 0 112 0 1 1 0
+Carnivores: 39 30 8 1 1
+GENERATION 38
+Herbivores: 400 280 199 245 80 120 55 60 117 12
+Health: 20 14 10 16 4 6 3 3 6 2
+Hurt: 0 0 1 75 0 0 5 0 3 28
+Carnivores: 29 27 8 10 0
+GENERATION 39
+Herbivores: 577 297 247 416 179 380 335 303 190 99
+Health: 29 15 13 21 9 19 17 16 10 5
+Hurt: 3 3 13 4 1 0 5 17 10 1
+Carnivores: 0 0 18 5 2
+GENERATION 40
+Herbivores: 378 340 200 316 359 140 340 209 433 -18
+Health: 19 17 10 17 18 7 17 11 22 0
+Hurt: 2 0 0 24 1 0 0 11 7 18
+Carnivores: 17 0 0 14 0
+GENERATION 41
+Herbivores: 279 237 279 227 260 240 120 390 430 -17
+Health: 14 12 14 13 13 12 7 20 22 0
+Hurt: 1 3 1 33 0 0 20 10 10 17
+Carnivores: 5 2 3 14 0
+GENERATION 42
+Herbivores: 560 -84 65 300 479 300 410 254 216 20
+Health: 28 3 8 15 24 15 21 13 11 1
+Hurt: 0 144 95 0 1 0 10 6 4 0
+Carnivores: 70 7 68 0 1
+GENERATION 43
+Herbivores: 440 243 320 318 132 219 260 234 239 73
+Health: 22 14 16 17 7 11 13 12 12 4
+Hurt: 0 37 0 22 8 1 0 6 1 7
+Carnivores: 5 18 0 15 2
+GENERATION 44
+Herbivores: 400 339 212 180 213 280 81 286 140 60
+Health: 20 17 11 9 11 14 7 15 7 3
+Hurt: 0 1 8 0 7 0 59 14 0 0
+Carnivores: 21 8 13 8 0
+GENERATION 45
+Herbivores: 280 307 192 100 101 18 120 200 280 -153
+Health: 14 16 10 5 9 1 6 10 14 3
+Hurt: 0 13 8 0 79 2 0 0 0 213
+Carnivores: 92 22 29 93 7
+GENERATION 46
+Herbivores: 236 162 158 -65 171 235 128 39 180 6
+Health: 12 11 8 1 9 12 8 3 9 5
+Hurt: 4 58 2 85 9 5 32 21 0 94
+Carnivores: 69 30 28 6 15
+GENERATION 47
+Herbivores: 277 331 216 220 220 256 125 351 236 239
+Health: 14 17 11 11 12 13 7 18 12 12
+Hurt: 3 9 4 0 20 4 15 9 4 1
+Carnivores: 7 9 6 7 8
+GENERATION 48
+Herbivores: 397 240 53 240 157 193 100 340 120 -19
+Health: 20 12 5 12 8 10 6 17 6 0
+Hurt: 3 0 47 0 3 7 20 0 0 19
+Carnivores: 30 26 0 7 2
+GENERATION 49
+Herbivores: 279 249 170 140 98 151 135 199 71 100
+Health: 14 13 9 7 5 9 7 10 4 5
+Hurt: 1 11 10 0 2 29 5 1 9 0
+Carnivores: 5 19 0 4 1
+GENERATION 50
+Herbivores: 140 80 177 120 59 56 60 116 80 74
+Health: 7 6 9 6 3 5 3 6 4 4
+Hurt: 0 40 3 0 1 44 0 4 0 6
+Carnivores: 21 6 15 1 11
+GENERATION 51
+Herbivores: 176 118 193 198 113 120 71 77 23 33
+Health: 9 6 10 10 6 6 4 4 2 2
+Hurt: 4 2 7 2 7 0 9 3 17 7
+Carnivores: 4 4 0 8 18
+GENERATION 52
+Herbivores: 340 218 233 167 197 180 174 173 99 40
+Health: 17 11 12 10 10 9 10 9 5 2
+Hurt: 0 2 7 33 3 0 26 7 1 0
+Carnivores: 23 5 7 3 1
+GENERATION 53
+Herbivores: 320 215 200 220 339 169 140 180 220 80
+Health: 16 11 10 11 17 9 7 9 11 4
+Hurt: 0 5 0 0 1 11 0 0 0 0
+Carnivores: 7 1 0 4 0
+GENERATION 54
+Herbivores: 340 220 320 260 180 299 159 217 116 120
+Health: 17 11 16 13 9 15 8 11 6 6
+Hurt: 0 0 0 0 0 1 1 3 4 0
+Carnivores: 1 3 0 0 0
+GENERATION 55
+Herbivores: 380 140 240 120 121 216 103 340 196 120
+Health: 19 7 12 6 8 11 8 17 10 6
+Hurt: 0 0 0 0 39 4 57 0 4 0
+Carnivores: 28 1 11 15 0
+GENERATION 56
+Herbivores: 120 280 40 144 132 114 -4 59 40 -31
+Health: 6 14 2 9 7 6 0 3 2 1
+Hurt: 0 0 0 36 8 6 4 1 0 51
+Carnivores: 35 10 6 18 2
+GENERATION 57
+Herbivores: 344 376 196 120 185 146 280 117 260 132
+Health: 18 19 10 6 10 8 14 7 13 7
+Hurt: 16 4 4 0 15 14 0 23 0 8
+Carnivores: 14 12 11 7 1
+GENERATION 58
+Herbivores: 295 200 126 100 180 140 140 120 79 43
+Health: 15 10 9 5 9 7 7 6 4 5
+Hurt: 5 0 54 0 0 0 0 0 1 57
+Carnivores: 24 0 3 0 7
+GENERATION 59
+Herbivores: 420 220 217 257 134 285 133 190 158 127
+Health: 21 11 11 13 8 15 8 10 8 7
+Hurt: 0 0 3 3 26 15 27 10 2 13
+Carnivores: 17 7 15 10 2
+GENERATION 60
+Herbivores: 319 260 160 129 160 116 169 135 100 39
+Health: 16 13 8 7 8 6 9 7 5 2
+Hurt: 1 0 0 11 0 4 11 5 0 1
+Carnivores: 6 7 3 0 1
+GENERATION 61
+Herbivores: 300 194 115 79 180 320 219 200 185 16
+Health: 15 10 6 4 9 16 11 10 10 1
+Hurt: 0 6 5 1 0 0 1 0 15 4
+Carnivores: 2 0 9 6 0
+GENERATION 62
+Herbivores: 260 158 95 60 159 77 85 120 78 120
+Health: 13 8 5 3 8 4 5 6 4 6
+Hurt: 0 2 5 0 1 3 15 0 2 0
+Carnivores: 2 4 0 4 2
+GENERATION 63
+Herbivores: 300 160 119 137 120 199 79 331 300 40
+Health: 15 8 6 7 6 10 4 17 15 2
+Hurt: 0 0 1 3 0 1 1 9 0 0
+Carnivores: 5 4 0 0 0
+GENERATION 64
+Herbivores: 240 20 60 280 140 135 80 40 71 60
+Health: 12 1 3 14 7 7 4 2 4 3
+Hurt: 0 0 0 0 0 5 0 0 9 0
+Carnivores: 6 0 0 2 0
+GENERATION 65
+Herbivores: 254 253 112 36 160 200 140 240 118 96
+Health: 13 13 6 2 8 10 8 12 6 5
+Hurt: 6 7 8 4 0 0 20 0 2 4
+Carnivores: 4 6 4 5 4
+GENERATION 66
+Herbivores: 190 260 60 160 160 180 180 78 117 107
+Health: 10 13 3 8 8 9 9 4 6 6
+Hurt: 10 0 0 0 0 0 0 2 3 13
+Carnivores: 3 5 3 5 0
+GENERATION 67
+Herbivores: 209 140 21 60 220 60 69 200 219 -198
+Health: 12 7 5 3 11 3 4 10 11 0
+Hurt: 31 0 79 0 0 0 11 0 1 198
+Carnivores: 100 1 4 0 1
+GENERATION 68
+Herbivores: 220 139 91 56 178 200 180 120 140 24
+Health: 11 7 6 3 10 10 9 6 7 3
+Hurt: 0 1 29 4 22 0 0 0 0 36
+Carnivores: 12 9 1 26 1
+GENERATION 69
+Herbivores: 354 220 314 257 180 217 280 123 240 115
+Health: 18 11 16 13 9 11 14 7 12 6
+Hurt: 6 0 6 3 0 3 0 17 0 5
+Carnivores: 3 13 4 2 0
+GENERATION 70
+Herbivores: 339 295 240 292 100 220 320 236 200 -13
+Health: 17 15 12 15 5 11 16 12 10 0
+Hurt: 1 5 0 8 0 0 0 4 0 13
+Carnivores: 4 2 1 2 10
+GENERATION 71
+Herbivores: 340 236 251 190 220 80 320 152 160 0
+Health: 17 12 13 10 11 4 16 9 8 0
+Hurt: 0 4 9 10 0 0 0 28 0 0
+Carnivores: 11 0 0 12 0
+GENERATION 72
+Herbivores: 320 257 259 300 199 300 141 257 280 -19
+Health: 16 13 13 15 10 15 10 13 14 0
+Hurt: 0 3 1 0 1 0 59 3 0 19
+Carnivores: 28 1 11 2 0
+GENERATION 73
+Herbivores: 360 178 194 175 200 119 35 180 183 0
+Health: 18 9 10 10 10 6 2 9 10 0
+Hurt: 0 2 6 25 0 1 5 0 17 0
+Carnivores: 5 16 1 0 1
+GENERATION 74
+Herbivores: 338 296 360 280 296 160 219 160 292 92
+Health: 17 15 18 14 15 8 11 8 15 6
+Hurt: 2 4 0 0 4 0 1 0 8 28
+Carnivores: 3 4 4 5 1
+GENERATION 75
+Herbivores: 269 120 200 280 280 198 185 127 240 120
+Health: 14 6 10 14 14 10 11 7 12 6
+Hurt: 11 0 0 0 0 2 35 13 0 0
+Carnivores: 9 1 13 7 4
+GENERATION 76
+Herbivores: 260 260 200 154 220 199 236 100 96 120
+Health: 13 13 10 8 11 10 12 5 5 6
+Hurt: 0 0 0 6 0 1 4 0 4 0
+Carnivores: 2 4 2 1 0
+GENERATION 77
+Herbivores: 380 240 217 178 242 99 153 278 159 76
+Health: 19 12 11 9 13 5 8 14 8 4
+Hurt: 0 0 3 2 18 1 7 2 1 4
+Carnivores: 8 3 2 2 1
+GENERATION 78
+Herbivores: 392 317 155 220 197 140 320 216 140 138
+Health: 20 17 8 11 10 7 16 11 7 7
+Hurt: 8 23 5 0 3 0 0 4 0 2
+Carnivores: 4 3 4 5 2
+GENERATION 79
+Herbivores: 280 177 140 200 180 247 100 100 98 20
+Health: 14 9 7 10 9 14 5 5 7 1
+Hurt: 0 3 0 0 0 33 0 0 42 0
+Carnivores: 16 18 12 0 1
+GENERATION 80
+Herbivores: 297 166 217 135 238 240 140 117 98 -4
+Health: 15 9 11 7 12 12 7 6 5 0
+Hurt: 3 14 3 5 2 0 0 3 2 4
+Carnivores: 1 0 3 6 3
+GENERATION 81
+Herbivores: 180 139 200 100 95 24 140 92 -24 0
+Health: 9 7 10 10 5 4 7 6 2 0
+Hurt: 0 1 0 100 5 56 0 28 64 0
+Carnivores: 59 5 61 24 0
+GENERATION 82
+Herbivores: 180 187 180 220 159 157 100 99 98 -7
+Health: 9 10 9 11 8 8 5 5 5 0
+Hurt: 0 13 0 0 1 3 0 1 2 7
+Carnivores: 7 2 1 1 0
+GENERATION 83
+Herbivores: 378 180 138 76 200 280 220 198 135 60
+Health: 19 9 7 4 10 14 11 10 7 3
+Hurt: 2 0 2 4 0 0 0 2 5 0
+Carnivores: 0 1 0 0 5
+GENERATION 84
+Herbivores: 297 79 135 144 200 149 160 36 177 -28
+Health: 15 4 8 8 10 8 8 2 9 0
+Hurt: 3 1 25 16 0 11 0 4 3 28
+Carnivores: 13 25 5 7 2
+GENERATION 85
+Herbivores: 260 139 200 137 100 149 95 220 149 78
+Health: 13 7 10 7 5 8 5 11 8 5
+Hurt: 0 1 0 3 0 11 5 0 11 22
+Carnivores: 12 3 6 3 1
+GENERATION 86
+Herbivores: 276 65 300 39 149 21 205 66 96 85
+Health: 14 4 15 3 8 3 11 4 5 6
+Hurt: 4 15 0 21 11 39 15 14 4 35
+Carnivores: 19 23 18 9 11
+GENERATION 87
+Herbivores: 340 258 195 78 170 228 280 180 58 -13
+Health: 17 13 11 4 9 12 14 9 3 0
+Hurt: 0 2 25 2 10 12 0 0 2 13
+Carnivores: 1 0 6 3 0
+GENERATION 88
+Herbivores: 460 294 235 259 291 220 280 58 79 117
+Health: 23 15 12 13 15 11 14 8 6 6
+Hurt: 0 6 5 1 9 0 0 102 41 3
+Carnivores: 14 14 1 19 6
+GENERATION 89
+Herbivores: 236 155 240 116 160 60 315 180 220 160
+Health: 12 9 12 7 8 3 16 9 11 8
+Hurt: 4 25 0 24 0 0 5 0 0 0
+Carnivores: 26 3 5 0 7
+GENERATION 90
+Herbivores: 500 299 340 116 380 160 420 240 233 0
+Health: 25 15 17 8 19 8 21 12 12 0
+Hurt: 0 1 0 44 0 0 0 0 7 0
+Carnivores: 0 6 2 10 0
+GENERATION 91
+Herbivores: 340 220 171 220 236 157 217 197 276 -2
+Health: 17 11 9 11 12 8 11 10 14 0
+Hurt: 0 0 9 0 4 3 3 3 4 2
+Carnivores: 4 0 6 4 0
+GENERATION 92
+Herbivores: 331 272 200 220 180 99 234 260 178 -1
+Health: 17 14 10 11 9 5 12 13 10 0
+Hurt: 9 8 0 0 0 1 6 0 22 1
+Carnivores: 0 1 11 6 1
+GENERATION 93
+Herbivores: 338 218 258 320 260 249 239 117 139 40
+Health: 17 11 13 16 13 13 12 6 7 2
+Hurt: 2 2 2 0 0 11 1 3 1 0
+Carnivores: 6 4 0 0 0
+GENERATION 94
+Herbivores: 417 180 138 280 192 198 106 55 200 58
+Health: 21 9 7 14 10 10 6 3 10 3
+Hurt: 3 0 2 0 8 2 14 5 0 2
+Carnivores: 7 8 1 2 1
+GENERATION 95
+Herbivores: 160 260 180 200 120 164 200 80 178 100
+Health: 8 13 9 10 6 9 10 4 9 5
+Hurt: 0 0 0 0 0 16 0 0 2 0
+Carnivores: 5 0 2 0 0
+GENERATION 96
+Herbivores: 178 180 258 260 232 75 176 166 128 100
+Health: 9 9 13 13 12 4 9 9 7 5
+Hurt: 2 0 2 0 8 5 4 14 12 0
+Carnivores: 10 3 6 2 2
+GENERATION 97
+Herbivores: 296 200 151 180 147 153 80 120 220 99
+Health: 15 10 8 9 8 8 4 6 11 5
+Hurt: 4 0 9 0 13 7 0 0 0 1
+Carnivores: 1 4 8 7 0
+GENERATION 98
+Herbivores: 293 120 151 177 156 80 220 180 240 95
+Health: 15 6 9 9 8 4 11 9 12 5
+Hurt: 7 0 29 3 4 0 0 0 0 5
+Carnivores: 13 9 1 6 3
+GENERATION 99
+Herbivores: 180 117 51 99 160 217 160 257 159 12
+Health: 9 6 3 5 8 11 8 13 8 1
+Hurt: 0 3 9 1 0 3 0 3 1 8
+Carnivores: 10 1 4 0 0
+GENERATION 100
+Herbivores: 259 60 180 80 180 100 220 100 40 0
+Health: 13 3 9 4 9 5 11 5 2 0
+Hurt: 1 0 0 0 0 0 0 0 0 0
+Carnivores: 0 0 0 0 0
+GENERATION 101
+Herbivores: 320 220 160 140 -69 40 100 60 160 20
+Health: 16 11 8 7 5 2 5 3 8 1
+Hurt: 0 0 0 0 169 0 0 0 0 0
+Carnivores: 61 0 0 41 1
+GENERATION 102
+Herbivores: 259 299 220 358 196 98 -2 160 340 59
+Health: 13 15 11 18 10 5 1 8 17 3
+Hurt: 1 1 0 2 4 2 22 0 0 1
+Carnivores: 1 1 15 0 0
+GENERATION 103
+Herbivores: 311 77 73 139 97 199 110 180 132 -130
+Health: 16 4 4 7 5 10 8 9 7 3
+Hurt: 9 3 7 1 3 1 50 0 8 190
+Carnivores: 67 17 7 7 20
+GENERATION 104
+Herbivores: 150 118 160 69 136 40 220 177 40 73
+Health: 8 6 8 6 7 2 11 9 2 4
+Hurt: 10 2 0 51 4 0 0 3 0 7
+Carnivores: 0 15 7 17 4
+GENERATION 105
+Herbivores: 389 176 111 79 320 238 136 158 320 134
+Health: 20 9 6 5 16 12 7 8 16 7
+Hurt: 11 4 9 21 0 2 4 2 0 6
+Carnivores: 7 2 8 7 6
+GENERATION 106
+Herbivores: 166 237 99 60 160 158 198 35 120 78
+Health: 9 12 5 3 8 8 10 2 6 4
+Hurt: 14 3 1 0 0 2 2 5 0 2
+Carnivores: 1 0 4 0 6
+GENERATION 107
+Herbivores: 299 160 56 120 115 60 200 86 140 35
+Health: 15 8 3 6 6 3 10 5 7 2
+Hurt: 1 0 4 0 5 0 0 14 0 5
+Carnivores: 0 1 1 3 2
+GENERATION 108
+Herbivores: 79 120 163 200 137 100 19 94 18 59
+Health: 4 6 9 10 7 5 1 5 1 3
+Hurt: 1 0 17 0 3 0 1 6 2 1
+Carnivores: 4 2 5 1 0
+GENERATION 109
+Herbivores: 140 79 19 100 140 60 97 99 20 0
+Health: 7 4 1 5 7 3 5 5 1 1
+Hurt: 0 1 1 0 0 0 3 1 0 20
+Carnivores: 21 0 0 1 1
+GENERATION 110
+Herbivores: 300 57 15 80 40 94 119 60 200 20
+Health: 15 3 1 4 2 5 6 3 10 1
+Hurt: 0 3 5 0 0 6 1 0 0 0
+Carnivores: 3 2 0 0 0
+GENERATION 111
+Herbivores: 160 -2 59 71 62 43 77 38 80 -7
+Health: 8 2 3 4 5 3 4 2 4 0
+Hurt: 0 42 1 9 38 17 3 2 0 7
+Carnivores: 40 7 6 2 4
+GENERATION 112
+Herbivores: 77 0 40 100 0 87 -41 80 94 -52
+Health: 4 0 2 5 0 5 0 4 5 4
+Hurt: 3 0 0 0 0 13 41 0 6 132
+Carnivores: 38 47 2 5 2
+GENERATION 113
+Herbivores: 160 123 80 40 20 0 120 158 60 -25
+Health: 8 8 4 2 1 0 6 8 3 2
+Hurt: 0 37 0 0 0 0 0 2 0 65
+Carnivores: 65 3 0 0 0
+GENERATION 114
+Herbivores: 297 80 118 180 60 115 115 133 180 45
+Health: 15 4 6 9 3 6 6 7 9 3
+Hurt: 3 0 2 0 0 5 5 7 0 15
+Carnivores: 6 2 0 9 0
+GENERATION 115
+Herbivores: 312 120 160 194 119 152 300 118 120 120
+Health: 16 6 8 10 6 8 15 6 6 6
+Hurt: 8 0 0 6 1 8 0 2 0 0
+Carnivores: 2 1 1 2 1
+GENERATION 116
+Herbivores: 200 180 176 100 217 80 80 80 220 0
+Health: 10 9 9 5 11 4 4 4 12 0
+Hurt: 0 0 4 0 3 0 0 0 20 0
+Carnivores: 1 9 0 0 0
+GENERATION 117
+Herbivores: 340 135 238 266 178 220 140 213 100 169
+Health: 17 7 12 14 9 11 7 11 5 9
+Hurt: 0 5 2 14 2 0 0 7 0 11
+Carnivores: 4 3 0 9 0
+GENERATION 118
+Herbivores: 251 260 180 80 137 174 160 179 128 80
+Health: 13 13 9 4 7 9 8 9 7 4
+Hurt: 9 0 0 0 3 6 0 1 12 0
+Carnivores: 6 2 3 1 0
+GENERATION 119
+Herbivores: 237 160 259 220 140 169 139 156 191 157
+Health: 12 8 13 11 7 9 7 9 10 8
+Hurt: 3 0 1 0 0 11 1 24 9 3
+Carnivores: 10 3 8 0 5
+GENERATION 120
+Herbivores: 340 106 154 234 235 260 91 137 80 40
+Health: 17 6 8 12 12 13 5 7 4 2
+Hurt: 0 14 6 6 5 0 9 3 0 0
+Carnivores: 3 8 3 6 2
+GENERATION 121
+Herbivores: 279 257 279 277 175 52 256 167 240 100
+Health: 14 13 14 14 9 3 13 9 12 5
+Hurt: 1 3 1 3 5 8 4 13 0 0
+Carnivores: 7 0 7 1 2
+GENERATION 122
+Herbivores: 420 180 197 119 97 251 99 278 317 60
+Health: 21 9 10 6 5 13 5 14 16 3
+Hurt: 0 0 3 1 3 9 1 2 3 0
+Carnivores: 2 3 0 3 2
+GENERATION 123
+Herbivores: 264 181 113 152 77 138 74 77 159 40
+Health: 14 11 8 8 4 7 5 6 8 2
+Hurt: 16 39 47 8 3 2 26 43 1 0
+Carnivores: 47 2 0 1 3
+GENERATION 124
+Herbivores: 400 177 260 120 218 240 119 272 115 161
+Health: 20 9 13 6 11 12 6 14 6 9
+Hurt: 0 3 0 0 2 0 1 8 5 19
+Carnivores: 5 0 7 4 3
+GENERATION 125
+Herbivores: 360 275 293 258 238 218 280 254 212 118
+Health: 18 14 15 13 12 11 14 13 11 6
+Hurt: 0 5 7 2 2 2 0 6 8 2
+Carnivores: 4 6 2 6 2
+GENERATION 126
+Herbivores: 300 140 138 260 117 231 268 200 180 100
+Health: 15 7 7 13 6 12 15 10 9 5
+Hurt: 0 0 2 0 3 9 32 0 0 0
+Carnivores: 14 1 6 1 3
+GENERATION 127
+Herbivores: 300 140 120 99 117 180 69 58 358 52
+Health: 15 7 6 5 6 9 4 3 18 3
+Hurt: 0 0 0 1 3 0 11 2 2 8
+Carnivores: 0 9 0 2 0
+GENERATION 128
+Herbivores: 198 71 100 89 140 140 200 51 89 40
+Health: 10 4 5 5 7 7 10 3 5 2
+Hurt: 2 9 0 11 0 0 0 9 11 0
+Carnivores: 13 5 4 0 1
+GENERATION 129
+Herbivores: 180 3 80 160 80 178 38 100 80 19
+Health: 9 4 4 8 4 9 2 5 4 1
+Hurt: 0 77 0 0 0 2 2 0 0 1
+Carnivores: 76 2 0 0 0
+GENERATION 130
+Herbivores: 220 200 120 180 120 219 178 60 213 -1
+Health: 11 10 6 9 6 11 9 3 11 0
+Hurt: 0 0 0 0 0 1 2 0 7 1
+Carnivores: 2 1 0 2 0
+GENERATION 131
+Herbivores: 277 234 167 239 79 219 179 336 218 0
+Health: 14 12 9 12 4 11 9 17 12 0
+Hurt: 3 6 13 1 1 1 1 4 22 0
+Carnivores: 0 6 12 2 0
+GENERATION 132
+Herbivores: 320 180 225 200 259 277 117 238 140 0
+Health: 16 9 12 10 13 14 6 12 7 0
+Hurt: 0 0 15 0 1 3 3 2 0 0
+Carnivores: 4 0 4 5 0
+GENERATION 133
+Herbivores: 300 140 240 119 200 220 120 117 79 142
+Health: 15 7 12 6 10 11 6 6 4 8
+Hurt: 0 0 0 1 0 0 0 3 1 18
+Carnivores: 0 3 0 0 2
+GENERATION 134
+Herbivores: 258 115 24 72 105 72 160 200 111 119
+Health: 13 6 2 5 7 4 8 10 6 6
+Hurt: 2 5 16 28 35 8 0 0 9 1
+Carnivores: 6 4 8 6 0
+GENERATION 135
+Herbivores: 258 182 138 100 140 118 159 98 98 74
+Health: 13 10 7 5 7 6 8 5 5 4
+Hurt: 2 18 2 0 0 2 1 2 2 6
+Carnivores: 4 0 1 7 0
+GENERATION 136
+Herbivores: 220 100 260 160 120 117 160 156 100 80
+Health: 11 5 13 8 6 6 8 8 5 4
+Hurt: 0 0 0 0 0 3 0 4 0 0
+Carnivores: 0 1 0 0 0
+GENERATION 137
+Herbivores: 199 200 129 136 227 180 175 140 120 99
+Health: 10 10 7 7 12 9 9 7 6 5
+Hurt: 1 0 11 4 13 0 5 0 0 1
+Carnivores: 10 2 0 1 3
+GENERATION 138
+Herbivores: 200 100 79 240 57 89 160 77 159 52
+Health: 10 5 4 12 3 9 8 4 8 4
+Hurt: 0 0 1 0 3 91 0 3 1 28
+Carnivores: 45 6 7 6 4
+GENERATION 139
+Herbivores: 220 198 72 51 115 63 112 109 180 71
+Health: 11 10 4 3 7 4 6 7 9 4
+Hurt: 0 2 8 9 25 17 8 31 0 9
+Carnivores: 21 19 6 8 3
+GENERATION 140
+Herbivores: 176 120 170 118 220 56 120 179 160 15
+Health: 9 6 9 6 11 3 6 9 8 1
+Hurt: 4 0 10 2 0 4 0 1 0 5
+Carnivores: 1 8 0 0 0
+GENERATION 141
+Herbivores: 294 133 134 120 140 40 157 194 130 67
+Health: 15 7 7 6 7 2 8 10 7 4
+Hurt: 6 7 6 0 0 0 3 6 10 13
+Carnivores: 10 1 2 8 3
+GENERATION 142
+Herbivores: 129 95 180 157 116 198 98 99 140 117
+Health: 7 5 9 8 6 10 5 5 7 6
+Hurt: 11 5 0 3 4 2 2 1 0 3
+Carnivores: 2 8 5 0 5
+GENERATION 143
+Herbivores: 252 139 239 38 59 55 94 100 58 39
+Health: 13 7 12 2 3 3 5 5 3 2
+Hurt: 8 1 1 2 1 5 6 0 2 1
+Carnivores: 4 0 1 0 0
+GENERATION 144
+Herbivores: 62 111 57 -68 160 121 79 60 39 -87
+Health: 4 6 3 1 8 7 4 3 2 0
+Hurt: 18 9 3 88 0 19 1 0 1 87
+Carnivores: 19 4 6 7 1
+GENERATION 145
+Herbivores: 297 100 160 118 75 158 100 220 54 63
+Health: 15 5 8 6 5 8 5 11 3 4
+Hurt: 3 0 0 2 25 2 0 0 6 17
+Carnivores: 2 10 5 0 0
+GENERATION 146
+Herbivores: 234 40 236 80 60 160 133 198 100 60
+Health: 12 2 12 4 3 8 7 10 5 3
+Hurt: 6 0 4 0 0 0 7 2 0 0
+Carnivores: 0 0 2 0 2
+GENERATION 147
+Herbivores: 280 240 112 200 134 68 157 176 160 98
+Health: 14 12 6 10 7 4 9 9 8 5
+Hurt: 0 0 8 0 6 12 23 4 0 2
+Carnivores: 9 3 6 8 1
+GENERATION 148
+Herbivores: 198 20 60 59 106 20 -32 46 80 20
+Health: 10 1 3 3 9 1 1 4 4 1
+Hurt: 2 0 0 1 74 0 52 34 0 0
+Carnivores: 52 19 27 15 4
+GENERATION 149
+Herbivores: 159 200 160 114 180 131 235 80 198 79
+Health: 8 10 8 6 9 7 12 4 10 4
+Hurt: 1 0 0 6 0 9 5 0 2 1
+Carnivores: 1 2 2 7 0
+GENERATION 150
+Herbivores: 237 216 200 -6 180 140 116 79 259 0
+Health: 12 11 10 0 9 7 6 4 13 0
+Hurt: 3 4 0 6 0 0 4 1 1 0
+Carnivores: 3 0 2 3 0
+GENERATION 151
+Herbivores: 240 4 100 120 60 80 100 79 192 -36
+Health: 12 6 5 6 5 6 5 4 10 1
+Hurt: 0 116 0 0 40 40 0 1 8 56
+Carnivores: 56 0 0 2 0
+GENERATION 152
+Herbivores: 220 118 180 116 60 136 80 298 93 20
+Health: 11 6 9 6 3 7 4 15 5 1
+Hurt: 0 2 0 4 0 4 0 2 7 0
+Carnivores: 4 0 2 0 0
+GENERATION 153
+Herbivores: 240 60 -11 160 59 152 177 179 220 5
+Health: 12 3 4 9 3 8 9 9 11 3
+Hurt: 0 0 91 20 1 8 3 1 0 55
+Carnivores: 50 4 0 0 1
+GENERATION 154
+Herbivores: 237 80 133 31 195 160 176 180 197 -70
+Health: 12 4 7 2 10 8 9 9 10 3
+Hurt: 3 0 7 9 5 0 4 0 3 130
+Carnivores: 8 38 4 36 3
+GENERATION 155
+Herbivores: 243 237 200 200 80 111 156 20 76 80
+Health: 13 12 10 10 4 6 8 1 4 4
+Hurt: 17 3 0 0 0 9 4 0 4 0
+Carnivores: 12 0 5 5 0
+GENERATION 156
+Herbivores: 159 77 163 140 120 137 198 120 115 65
+Health: 8 4 9 7 6 7 10 7 6 4
+Hurt: 1 3 17 0 0 3 2 20 5 15
+Carnivores: 16 1 12 1 11
+GENERATION 157
+Herbivores: 240 185 91 190 136 79 60 160 160 58
+Health: 12 10 5 10 7 4 3 8 8 3
+Hurt: 0 15 9 10 4 1 0 0 0 2
+Carnivores: 2 8 6 6 0
+GENERATION 158
+Herbivores: 177 180 200 180 120 75 139 40 214 78
+Health: 9 9 10 9 6 4 7 2 12 4
+Hurt: 3 0 0 0 0 5 1 0 26 2
+Carnivores: 8 0 7 0 0
+GENERATION 159
+Herbivores: 275 150 60 100 117 200 60 180 37 55
+Health: 14 8 3 5 6 10 3 9 2 3
+Hurt: 5 10 0 0 3 0 0 0 3 5
+Carnivores: 0 3 2 8 0
+GENERATION 160
+Herbivores: 238 40 120 155 178 74 58 19 167 -1
+Health: 12 2 6 8 9 4 3 1 9 0
+Hurt: 2 0 0 5 2 6 2 1 13 1
+Carnivores: 4 1 2 0 0
+GENERATION 161
+Herbivores: 219 37 159 160 237 120 60 140 19 -3
+Health: 11 2 8 8 12 6 3 7 1 0
+Hurt: 1 3 1 0 3 0 0 0 1 3
+Carnivores: 3 0 2 1 3
+GENERATION 162
+Herbivores: 239 78 52 179 140 177 180 75 119 38
+Health: 12 5 3 9 7 9 9 4 6 2
+Hurt: 1 22 8 1 0 3 0 5 1 2
+Carnivores: 17 4 0 0 3
+GENERATION 163
+Herbivores: 168 160 159 80 180 5 108 61 179 57
+Health: 9 8 8 4 9 3 6 5 9 3
+Hurt: 12 0 1 0 0 55 12 39 1 3
+Carnivores: 34 1 10 1 0
+GENERATION 164
+Herbivores: 199 100 120 120 234 237 60 97 20 20
+Health: 10 5 6 6 12 12 3 5 1 1
+Hurt: 1 0 0 0 6 3 0 3 0 0
+Carnivores: 0 0 2 0 0
+GENERATION 165
+Herbivores: 187 140 97 100 120 181 137 40 40 -33
+Health: 10 7 5 5 6 10 7 2 2 2
+Hurt: 13 0 3 0 0 19 3 0 0 73
+Carnivores: 36 1 0 0 0
+GENERATION 166
+Herbivores: 260 272 79 138 118 52 80 140 76 35
+Health: 13 14 4 7 6 3 4 7 4 2
+Hurt: 0 8 1 2 2 8 0 0 4 5
+Carnivores: 7 1 9 0 1
+GENERATION 167
+Herbivores: 234 36 34 136 159 78 100 100 139 40
+Health: 12 2 2 7 8 4 5 5 7 2
+Hurt: 6 4 6 4 1 2 0 0 1 0
+Carnivores: 1 7 0 0 1
+GENERATION 168
+Herbivores: 328 139 218 280 100 208 159 231 67 118
+Health: 17 7 11 14 5 11 8 12 4 6
+Hurt: 12 1 2 0 0 12 1 9 13 2
+Carnivores: 0 5 9 8 3
+GENERATION 169
+Herbivores: 238 200 157 98 195 118 220 197 159 94
+Health: 12 10 8 5 10 6 11 10 8 5
+Hurt: 2 0 3 2 5 2 0 3 1 6
+Carnivores: 4 1 2 0 4
+GENERATION 170
+Herbivores: 319 97 278 259 315 139 31 216 216 -5
+Health: 16 5 14 13 16 7 2 11 11 0
+Hurt: 1 3 2 1 5 1 9 4 4 5
+Carnivores: 7 0 5 0 12
+GENERATION 171
+Herbivores: 336 160 252 118 91 179 94 296 240 -55
+Health: 17 8 13 6 5 9 5 15 12 0
+Hurt: 4 0 8 2 9 1 6 4 0 55
+Carnivores: 31 2 6 4 2
+GENERATION 172
+Herbivores: 274 140 155 100 300 20 175 109 90 20
+Health: 14 7 8 5 15 1 9 6 5 1
+Hurt: 6 0 5 0 0 0 5 11 10 0
+Carnivores: 4 1 11 4 1
+GENERATION 173
+Herbivores: 300 290 133 108 180 339 -5 173 196 17
+Health: 15 15 7 6 9 17 1 9 10 1
+Hurt: 0 10 7 12 0 1 25 7 4 3
+Carnivores: 8 1 11 15 0
+GENERATION 174
+Herbivores: 299 160 119 213 129 94 80 336 200 28
+Health: 15 8 7 11 7 5 4 17 10 3
+Hurt: 1 0 21 7 11 6 0 4 0 32
+Carnivores: 7 9 12 3 0
+GENERATION 175
+Herbivores: 339 199 159 114 120 135 79 80 340 55
+Health: 17 10 8 6 6 7 4 4 17 3
+Hurt: 1 1 1 6 0 5 1 0 0 5
+Carnivores: 0 2 0 0 2
+GENERATION 176
+Herbivores: 239 59 98 100 174 120 281 80 199 79
+Health: 12 3 5 5 9 7 15 4 10 4
+Hurt: 1 1 2 0 6 20 19 0 1 1
+Carnivores: 1 1 11 8 0
+GENERATION 177
+Herbivores: 194 200 255 300 99 171 116 236 200 132
+Health: 10 10 13 15 5 9 6 12 10 7
+Hurt: 6 0 5 0 1 9 4 4 0 8
+Carnivores: 8 0 0 5 0
+GENERATION 178
+Herbivores: 320 239 195 117 54 80 117 138 54 -5
+Health: 16 12 10 6 3 4 6 7 3 0
+Hurt: 0 1 5 3 6 0 3 2 6 5
+Carnivores: 7 0 0 2 4
+GENERATION 179
+Herbivores: 398 115 119 146 198 197 77 177 75 117
+Health: 20 6 6 8 10 10 4 9 4 7
+Hurt: 2 5 1 14 2 3 3 3 5 23
+Carnivores: 8 8 1 11 0
+GENERATION 180
+Herbivores: 93 257 111 78 113 160 260 172 109 28
+Health: 5 13 6 4 6 8 13 9 6 2
+Hurt: 7 3 9 2 7 0 0 8 11 12
+Carnivores: 19 9 10 1 1
+GENERATION 181
+Herbivores: 227 151 179 94 159 126 117 140 93 -16
+Health: 12 8 9 5 8 7 6 7 5 0
+Hurt: 13 9 1 6 1 14 3 0 7 16
+Carnivores: 7 5 4 13 0
+GENERATION 182
+Herbivores: 300 200 133 198 80 133 140 139 128 0
+Health: 15 10 7 10 4 7 7 7 7 0
+Hurt: 0 0 7 2 0 7 0 1 12 0
+Carnivores: 16 0 0 0 1
+GENERATION 183
+Herbivores: 297 160 80 256 116 110 197 45 120 40
+Health: 15 8 4 13 6 6 10 3 6 2
+Hurt: 3 0 0 4 4 10 3 15 0 0
+Carnivores: 8 2 2 0 7
+GENERATION 184
+Herbivores: 240 60 195 58 100 80 17 98 40 20
+Health: 12 3 10 3 5 4 1 5 2 1
+Hurt: 0 0 5 2 0 0 3 2 0 0
+Carnivores: 0 4 0 2 0
+GENERATION 185
+Herbivores: 220 120 220 138 219 158 180 98 137 60
+Health: 11 6 11 7 11 8 9 5 7 3
+Hurt: 0 0 0 2 1 2 0 2 3 0
+Carnivores: 1 2 0 1 0
+GENERATION 186
+Herbivores: 156 179 140 157 119 219 114 120 78 69
+Health: 8 9 7 8 6 11 6 6 4 4
+Hurt: 4 1 0 3 1 1 6 0 2 11
+Carnivores: 7 4 1 0 0
+GENERATION 187
+Herbivores: 320 117 134 196 140 120 198 180 214 98
+Health: 16 6 7 10 7 6 10 9 11 5
+Hurt: 0 3 6 4 0 0 2 0 6 2
+Carnivores: 8 2 0 0 2
+GENERATION 188
+Herbivores: 279 40 200 98 159 160 137 160 20 19
+Health: 14 2 10 5 8 8 7 8 1 1
+Hurt: 1 0 0 2 1 0 3 0 0 1
+Carnivores: 0 0 1 2 0
+GENERATION 189
+Herbivores: 200 176 120 120 176 35 177 73 147 116
+Health: 10 9 6 6 9 2 9 4 9 6
+Hurt: 0 4 0 0 4 5 3 7 33 4
+Carnivores: 2 7 2 2 0
+GENERATION 190
+Herbivores: 275 198 79 139 98 200 92 130 110 96
+Health: 14 10 4 7 5 10 5 7 6 5
+Hurt: 5 2 1 1 2 0 8 10 10 4
+Carnivores: 8 2 3 1 0
+GENERATION 191
+Herbivores: 196 119 59 95 79 80 74 238 175 0
+Health: 10 6 3 5 4 4 4 12 9 0
+Hurt: 4 1 1 5 1 0 6 2 5 0
+Carnivores: 1 1 1 1 2
+GENERATION 192
+Herbivores: 94 88 139 70 120 120 193 35 154 20
+Health: 5 5 7 4 6 6 10 2 8 1
+Hurt: 6 12 1 10 0 0 7 5 6 0
+Carnivores: 11 4 0 1 1
+GENERATION 193
+Herbivores: 180 112 80 98 158 38 120 40 171 39
+Health: 9 6 4 5 8 2 6 2 9 2
+Hurt: 0 8 0 2 2 2 0 0 9 1
+Carnivores: 12 0 0 2 0
+GENERATION 194
+Herbivores: 300 120 197 180 60 100 139 120 141 -1
+Health: 15 6 10 9 3 5 7 6 9 0
+Hurt: 0 0 3 0 0 0 1 0 39 1
+Carnivores: 16 0 3 0 2
+GENERATION 195
+Herbivores: 239 36 53 148 80 160 179 116 20 51
+Health: 12 2 3 8 4 8 9 6 1 3
+Hurt: 1 4 7 12 0 0 1 4 0 9
+Carnivores: 0 1 5 8 7
+GENERATION 196
+Herbivores: 196 120 72 112 100 92 100 199 160 98
+Health: 10 6 4 6 5 5 5 10 8 5
+Hurt: 4 0 8 8 0 8 0 1 0 2
+Carnivores: 17 3 4 0 0
+GENERATION 197
+Herbivores: 292 140 159 119 79 220 20 160 59 40
+Health: 15 7 8 6 4 11 1 8 3 2
+Hurt: 8 0 1 1 1 0 0 0 1 0
+Carnivores: 3 1 0 2 0
+GENERATION 198
+Herbivores: 155 100 160 97 76 178 87 135 33 16
+Health: 8 5 8 5 4 9 5 7 3 1
+Hurt: 5 0 0 3 4 2 13 5 27 4
+Carnivores: 18 6 5 1 3
+GENERATION 199
+Herbivores: 200 138 176 80 177 119 79 100 115 80
+Health: 10 7 9 4 9 6 4 5 6 4
+Hurt: 0 2 4 0 3 1 1 0 5 0
+Carnivores: 5 6 0 0 0
+GENERATION 200
+Herbivores: 240 57 38 140 91 157 118 100 148 -62
+Health: 12 4 2 7 6 8 6 5 8 0
+Hurt: 0 23 2 0 29 3 2 0 12 62
+Carnivores: 57 5 18 1 0
+GENERATION 201
+Herbivores: 320 116 176 159 158 200 59 160 140 -3
+Health: 16 6 9 8 8 10 3 8 7 0
+Hurt: 0 4 4 1 2 0 1 0 0 3
+Carnivores: 0 3 2 7 0
+GENERATION 202
+Herbivores: 400 135 159 139 33 60 138 108 40 7
+Health: 20 7 8 7 2 3 7 6 2 1
+Hurt: 0 5 1 1 7 0 2 12 0 13
+Carnivores: 2 14 8 1 2
+GENERATION 203
+Herbivores: 120 120 100 180 97 256 80 120 138 0
+Health: 6 6 5 9 5 14 4 6 7 0
+Hurt: 0 0 0 0 3 24 0 0 2 0
+Carnivores: 5 0 3 6 0
+GENERATION 204
+Herbivores: 180 86 140 100 107 120 195 69 98 80
+Health: 9 5 7 5 7 6 10 4 5 4
+Hurt: 0 14 0 0 33 0 5 11 2 0
+Carnivores: 10 15 16 2 2
+GENERATION 205
+Herbivores: 260 132 120 180 93 41 -18 280 80 -1
+Health: 13 7 6 9 7 4 2 14 4 0
+Hurt: 0 8 0 0 47 39 58 0 0 1
+Carnivores: 58 3 27 39 3
+GENERATION 206
+Herbivores: 239 100 118 174 125 60 100 140 140 40
+Health: 12 5 6 9 7 3 5 7 7 2
+Hurt: 1 0 2 6 15 0 0 0 0 0
+Carnivores: 0 2 9 5 0
+GENERATION 207
+Herbivores: 120 89 40 60 40 218 59 60 118 35
+Health: 6 5 2 3 2 11 3 3 6 2
+Hurt: 0 11 0 0 0 2 1 0 2 5
+Carnivores: 0 7 0 0 0
+GENERATION 208
+Herbivores: 157 56 38 60 37 179 140 77 145 39
+Health: 9 3 2 3 2 9 7 6 8 2
+Hurt: 23 4 2 0 3 1 0 43 15 1
+Carnivores: 42 3 3 13 2
+GENERATION 209
+Herbivores: 140 140 60 60 54 60 100 60 36 20
+Health: 7 7 3 3 3 3 5 3 2 1
+Hurt: 0 0 0 0 6 0 0 0 4 0
+Carnivores: 0 0 3 3 3
+GENERATION 210
+Herbivores: 140 75 -57 0 52 60 40 91 40 19
+Health: 7 4 2 0 3 3 2 5 2 1
+Hurt: 0 5 97 0 8 0 0 9 0 1
+Carnivores: 50 4 7 5 1
+GENERATION 211
+Herbivores: 80 60 80 -26 56 40 96 -11 60 20
+Health: 4 3 4 0 3 2 5 4 3 1
+Hurt: 0 0 0 26 4 0 4 91 0 0
+Carnivores: 46 26 0 7 0
+GENERATION 212
+Herbivores: 180 17 140 140 88 9 16 80 100 20
+Health: 9 3 7 7 5 1 2 4 5 1
+Hurt: 0 43 0 0 12 11 24 0 0 0
+Carnivores: 18 17 0 4 13
+GENERATION 213
+Herbivores: 100 40 16 100 71 31 58 40 -5 3
+Health: 5 2 4 5 4 2 3 2 0 1
+Hurt: 0 0 64 0 9 9 2 0 5 17
+Carnivores: 30 10 17 8 3
+GENERATION 214
+Herbivores: 159 100 66 77 119 80 118 159 40 32
+Health: 8 5 4 5 6 4 6 8 2 2
+Hurt: 1 0 14 23 1 0 2 1 0 8
+Carnivores: 16 0 13 0 4
+GENERATION 215
+Herbivores: 220 100 59 100 120 120 22 73 160 21
+Health: 11 5 3 5 6 6 2 4 8 3
+Hurt: 0 0 1 0 0 0 18 7 0 39
+Carnivores: 26 11 2 4 0
+GENERATION 216
+Herbivores: 200 83 35 75 80 124 38 40 60 -35
+Health: 10 5 2 4 4 7 2 2 3 0
+Hurt: 0 17 5 5 0 16 2 0 0 35
+Carnivores: 9 24 4 5 5
+GENERATION 217
+Herbivores: 100 74 97 80 100 95 24 40 80 -9
+Health: 5 4 5 4 5 5 3 2 4 0
+Hurt: 0 6 3 0 0 5 36 0 0 9
+Carnivores: 12 4 14 8 4
+GENERATION 218
+Herbivores: 120 12 20 40 -1 100 58 90 20 20
+Health: 6 2 1 2 6 5 3 5 1 1
+Hurt: 0 28 0 0 121 0 2 10 0 0
+Carnivores: 57 9 10 13 8
+GENERATION 219
+Herbivores: 120 60 86 92 96 59 -7 40 100 0
+Health: 6 3 5 5 5 3 2 2 5 0
+Hurt: 0 0 14 8 4 1 47 0 0 0
+Carnivores: 3 14 24 1 0
+GENERATION 220
+Herbivores: 100 140 120 52 78 80 175 96 120 20
+Health: 5 7 6 3 4 4 9 5 6 1
+Hurt: 0 0 0 8 2 0 5 4 0 0
+Carnivores: 5 3 5 0 0
+GENERATION 221
+Herbivores: 160 90 26 20 60 37 -5 9 75 20
+Health: 8 5 2 1 3 2 1 1 4 1
+Hurt: 0 10 14 0 0 3 25 11 5 0
+Carnivores: 33 0 8 11 0
+GENERATION 222
+Herbivores: 180 75 14 80 60 43 60 139 40 8
+Health: 9 4 1 4 3 3 3 7 2 1
+Hurt: 0 5 6 0 0 17 0 1 0 12
+Carnivores: 3 11 7 8 0
+GENERATION 223
+Herbivores: 78 52 100 77 80 40 20 93 49 -89
+Health: 4 3 5 4 4 2 1 5 3 1
+Hurt: 2 8 0 3 0 0 0 7 11 109
+Carnivores: 54 7 1 7 11
+GENERATION 224
+Herbivores: 169 132 100 100 55 56 120 160 -14 -9
+Health: 9 7 5 5 3 3 6 8 1 0
+Hurt: 11 8 0 0 5 4 0 0 34 9
+Carnivores: 29 9 1 20 0
+GENERATION 225
+Herbivores: 180 40 75 100 95 110 20 120 92 40
+Health: 9 2 5 5 5 6 1 6 5 2
+Hurt: 0 0 25 0 5 10 0 0 8 0
+Carnivores: 9 10 6 7 0
+GENERATION 226
+Herbivores: 100 60 -6 28 25 80 60 57 80 0
+Health: 5 3 3 2 3 4 3 3 4 0
+Hurt: 0 0 66 12 35 0 0 3 0 0
+Carnivores: 39 10 0 21 4
+GENERATION 227
+Herbivores: 200 80 40 60 40 77 30 80 140 -54
+Health: 10 4 2 3 2 5 2 4 7 2
+Hurt: 0 0 0 0 0 23 10 0 0 94
+Carnivores: 45 17 4 11 0
+GENERATION 228
+Herbivores: 96 85 100 160 100 53 0 140 129 10
+Health: 5 5 5 8 5 3 0 7 7 1
+Hurt: 4 15 0 0 0 7 0 0 11 10
+Carnivores: 19 8 4 0 0
+GENERATION 229
+Herbivores: 60 67 20 40 120 40 80 29 20 20
+Health: 3 4 1 2 6 2 4 2 1 1
+Hurt: 0 13 0 0 0 0 0 11 0 0
+Carnivores: 9 9 4 0 0
+GENERATION 230
+Herbivores: 80 93 100 -16 80 38 89 77 6 20
+Health: 4 5 5 0 4 2 5 4 1 1
+Hurt: 0 7 0 16 0 2 11 3 14 0
+Carnivores: 28 2 3 2 3
+GENERATION 231
+Herbivores: 99 40 60 20 80 140 129 95 140 20
+Health: 5 2 3 1 4 7 7 5 7 1
+Hurt: 1 0 0 0 0 0 11 5 0 0
+Carnivores: 5 0 6 5 0
+GENERATION 232
+Herbivores: 160 44 40 80 100 60 80 60 100 -64
+Health: 8 3 2 4 5 3 4 3 5 2
+Hurt: 0 16 0 0 0 0 0 0 0 104
+Carnivores: 61 0 3 2 0
+GENERATION 233
+Herbivores: 98 77 45 60 62 110 29 60 20 20
+Health: 5 4 3 3 4 6 2 3 1 1
+Hurt: 2 3 15 0 18 10 11 0 0 0
+Carnivores: 7 16 18 8 4
+GENERATION 234
+Herbivores: 120 58 40 40 100 31 104 60 6 0
+Health: 6 3 2 2 5 3 7 3 1 0
+Hurt: 0 2 0 0 0 29 36 0 14 0
+Carnivores: 18 16 8 21 2
+GENERATION 235
+Herbivores: 120 40 80 60 52 31 106 98 80 39
+Health: 6 2 4 3 3 3 6 5 4 2
+Hurt: 0 0 0 0 8 29 14 2 0 1
+Carnivores: 8 25 0 13 1
+GENERATION 236
+Herbivores: 96 20 20 0 60 19 80 20 23 -96
+Health: 5 1 1 0 3 2 4 1 3 1
+Hurt: 4 0 0 0 0 21 0 0 37 116
+Carnivores: 47 48 22 1 13
+GENERATION 237
+Herbivores: 160 -17 58 53 19 80 40 40 60 80
+Health: 8 2 3 3 3 4 2 2 3 4
+Hurt: 0 57 2 7 41 0 0 0 0 0
+Carnivores: 40 0 7 17 0
+GENERATION 238
+Herbivores: 140 22 40 68 -55 99 -12 13 0 6
+Health: 7 2 2 4 1 5 0 1 0 1
+Hurt: 0 18 0 12 75 1 12 7 0 14
+Carnivores: 68 5 18 23 8
+GENERATION 239
+Herbivores: 80 72 73 120 60 47 -8 40 82 20
+Health: 4 4 4 6 3 3 0 2 5 1
+Hurt: 0 8 7 0 0 13 8 0 18 0
+Carnivores: 7 14 7 7 12
+GENERATION 240
+Herbivores: 140 32 60 43 -9 80 40 65 36 98
+Health: 7 2 3 3 0 4 2 4 2 5
+Hurt: 0 8 0 17 9 0 0 15 4 2
+Carnivores: 8 5 22 14 1
+GENERATION 241
+Herbivores: 80 40 11 -90 20 100 79 28 -1 0
+Health: 4 2 1 1 1 5 4 2 1 0
+Hurt: 0 0 9 110 0 0 1 12 21 0
+Carnivores: 55 15 24 0 0
+GENERATION 242
+Herbivores: 80 60 20 -1 99 40 60 60 27 -4
+Health: 4 3 1 0 5 2 3 3 2 0
+Hurt: 0 0 0 1 1 0 0 0 13 4
+Carnivores: 0 11 0 4 0
+GENERATION 243
+Herbivores: 140 11 10 60 -2 40 65 78 100 -10
+Health: 7 1 2 3 1 2 4 4 5 1
+Hurt: 0 9 30 0 22 0 15 2 0 30
+Carnivores: 35 20 5 7 0
+GENERATION 244
+Herbivores: 180 32 55 60 34 10 40 19 35 -37
+Health: 9 2 3 3 2 1 2 1 2 1
+Hurt: 0 8 5 0 6 10 0 1 5 57
+Carnivores: 60 0 6 5 15
+GENERATION 245
+Herbivores: 0 80 19 39 40 40 20 40 -2 20
+Health: 0 4 1 2 2 2 1 2 0 1
+Hurt: 0 0 1 1 0 0 0 0 2 0
+Carnivores: 0 0 0 0 2
+GENERATION 246
+Herbivores: 60 20 26 40 -44 40 100 -23 60 -53
+Health: 3 1 2 2 2 2 5 0 3 0
+Hurt: 0 0 14 0 84 0 0 23 0 53
+Carnivores: 15 28 35 30 20
+GENERATION 247
+Herbivores: 80 40 62 0 20 20 80 56 60 -3
+Health: 4 2 4 0 1 1 4 4 3 0
+Hurt: 0 0 18 0 0 0 0 24 0 3
+Carnivores: 10 7 17 1 2
+GENERATION 248
+Herbivores: 120 100 40 54 40 12 32 19 6 -14
+Health: 6 5 2 3 2 2 2 1 2 0
+Hurt: 0 0 0 6 0 28 8 1 34 14
+Carnivores: 24 15 4 10 15
+GENERATION 249
+Herbivores: 120 120 52 60 20 6 60 140 100 10
+Health: 6 6 3 3 1 3 3 8 5 2
+Hurt: 0 0 8 0 0 54 0 20 0 30
+Carnivores: 29 9 19 14 14
+GENERATION 250
+Herbivores: 160 80 20 80 46 0 148 60 80 20
+Health: 8 4 1 4 3 0 8 3 4 1
+Hurt: 0 0 0 0 14 0 12 0 0 0
+Carnivores: 21 0 2 2 0
+GENERATION 251
+Herbivores: 180 69 83 80 40 -42 79 80 20 -4
+Health: 9 4 5 4 2 0 4 4 1 0
+Hurt: 0 11 17 0 0 42 1 0 0 4
+Carnivores: 18 0 0 34 1
+GENERATION 252
+Herbivores: 120 140 200 71 4 60 51 48 120 40
+Health: 6 7 10 4 1 3 3 3 6 2
+Hurt: 0 0 0 9 16 0 9 12 0 0
+Carnivores: 8 19 12 0 0
+GENERATION 253
+Herbivores: 240 40 60 31 80 120 60 120 80 60
+Health: 12 2 3 2 4 6 3 6 4 3
+Hurt: 0 0 0 9 0 0 0 0 0 0
+Carnivores: 0 4 0 0 0
+GENERATION 254
+Herbivores: 120 -41 80 34 140 8 0 57 0 -82
+Health: 6 1 4 3 7 1 0 3 0 1
+Hurt: 0 61 0 26 0 12 0 3 0 102
+Carnivores: 56 38 37 8 0
+GENERATION 255
+Herbivores: 120 -1 20 16 40 95 23 96 40 -62
+Health: 6 0 1 2 2 5 2 5 2 0
+Hurt: 0 1 0 24 0 5 17 4 0 62
+Carnivores: 63 0 0 17 3
+GENERATION 256
+Herbivores: 100 50 105 80 0 40 40 80 20 40
+Health: 5 4 6 4 0 2 2 4 1 2
+Hurt: 0 30 15 0 0 0 0 0 0 0
+Carnivores: 13 7 0 17 5
+GENERATION 257
+Herbivores: 138 66 120 40 29 60 11 86 20 0
+Health: 7 4 6 2 2 3 3 5 1 0
+Hurt: 2 14 0 0 11 0 49 14 0 0
+Carnivores: 13 11 17 18 12
+GENERATION 258
+Herbivores: 40 40 60 60 60 40 40 40 40 27
+Health: 2 2 3 3 3 2 2 2 2 3
+Hurt: 0 0 0 0 0 0 0 0 0 33
+Carnivores: 33 0 0 0 0
+GENERATION 259
+Herbivores: 160 60 -17 60 80 36 59 40 23 6
+Health: 8 3 0 3 4 2 3 2 2 1
+Hurt: 0 0 17 0 0 4 1 0 17 14
+Carnivores: 34 10 6 0 0
+GENERATION 260
+Herbivores: 100 43 19 18 18 100 80 36 0 -8
+Health: 5 3 1 1 1 5 4 2 0 0
+Hurt: 0 17 1 2 2 0 0 4 0 8
+Carnivores: 11 9 0 3 5
+GENERATION 261
+Herbivores: 80 33 10 0 40 20 -7 72 100 0
+Health: 4 2 1 0 3 1 0 4 5 0
+Hurt: 0 7 10 0 20 0 7 8 0 0
+Carnivores: 18 1 12 19 0
+GENERATION 262
+Herbivores: 109 74 51 80 40 60 40 40 60 -15
+Health: 6 4 3 4 2 3 2 2 3 3
+Hurt: 11 6 9 0 0 0 0 0 0 75
+Carnivores: 33 0 0 10 2
+GENERATION 263
+Herbivores: 120 37 38 20 100 36 69 100 51 0
+Health: 6 2 3 1 5 2 4 5 4 0
+Hurt: 0 3 22 0 0 4 11 0 29 0
+Carnivores: 21 14 9 3 4
+GENERATION 264
+Herbivores: 80 117 140 60 92 120 20 -4 60 -97
+Health: 4 6 8 3 5 6 1 3 3 0
+Hurt: 0 3 20 0 8 0 0 64 0 97
+Carnivores: 46 28 20 5 15
+GENERATION 265
+Herbivores: 160 10 -52 60 27 100 0 86 39 0
+Health: 8 1 1 3 3 5 0 5 3 0
+Hurt: 0 10 72 0 33 0 0 14 21 0
+Carnivores: 44 12 15 13 16
+GENERATION 266
+Herbivores: 120 20 79 -6 1 40 160 100 -3 -10
+Health: 6 1 4 0 1 2 8 5 0 0
+Hurt: 0 0 1 6 19 0 0 0 3 10
+Carnivores: 4 21 6 0 0
+GENERATION 267
+Herbivores: 57 100 79 20 31 60 80 80 35 -86
+Health: 3 5 4 1 2 3 4 4 2 1
+Hurt: 3 0 1 0 9 0 0 0 5 106
+Carnivores: 47 12 3 6 5
+GENERATION 268
+Herbivores: 53 58 60 100 100 60 -10 51 120 -92
+Health: 3 5 3 5 5 3 1 3 6 3
+Hurt: 7 42 0 0 0 0 30 9 0 152
+Carnivores: 77 19 8 23 6
+GENERATION 269
+Herbivores: 125 18 89 76 51 80 10 140 26 -2
+Health: 7 1 5 4 3 4 2 7 2 0
+Hurt: 15 2 11 4 9 0 30 0 14 2
+Carnivores: 18 18 11 15 0
+GENERATION 270
+Herbivores: 139 20 120 100 58 40 80 40 96 0
+Health: 7 1 6 5 3 2 5 2 5 0
+Hurt: 1 0 0 0 2 0 20 0 4 0
+Carnivores: 0 15 2 4 0
+GENERATION 271
+Herbivores: 160 80 51 140 80 60 91 40 100 17
+Health: 8 5 3 7 4 3 5 2 5 1
+Hurt: 0 20 9 0 0 0 9 0 0 3
+Carnivores: 21 0 7 7 0
+GENERATION 272
+Herbivores: 130 83 120 176 131 92 120 14 53 58
+Health: 7 5 6 9 7 5 6 1 3 3
+Hurt: 10 17 0 4 9 8 0 6 7 2
+Carnivores: 14 14 21 3 0
+GENERATION 273
+Herbivores: 160 38 99 62 36 40 60 180 18 -29
+Health: 8 2 5 5 2 2 3 9 1 0
+Hurt: 0 2 1 38 4 0 0 0 2 29
+Carnivores: 14 0 13 19 0
+GENERATION 274
+Herbivores: 140 19 60 100 139 120 80 60 28 38
+Health: 7 1 3 5 7 6 4 3 2 4
+Hurt: 0 1 0 0 1 0 0 0 12 42
+Carnivores: 32 4 0 0 0
+GENERATION 275
+Herbivores: 120 160 40 74 40 0 19 80 40 -3
+Health: 6 8 2 4 2 0 1 4 2 3
+Hurt: 0 0 0 6 0 0 1 0 0 63
+Carnivores: 26 0 0 9 6
+GENERATION 276
+Herbivores: 140 100 60 104 80 40 60 100 66 20
+Health: 7 5 3 6 4 2 3 5 4 1
+Hurt: 0 0 0 16 0 0 0 0 14 0
+Carnivores: 12 0 0 8 0
+GENERATION 277
+Herbivores: 111 80 37 120 120 120 80 94 140 5
+Health: 6 4 2 6 6 6 4 5 7 1
+Hurt: 9 0 3 0 0 0 0 6 0 15
+Carnivores: 7 2 6 9 9
+GENERATION 278
+Herbivores: 100 120 100 74 77 100 64 80 60 46
+Health: 5 6 5 4 4 5 4 4 3 3
+Hurt: 0 0 0 6 3 0 16 0 0 14
+Carnivores: 14 1 6 6 0
+GENERATION 279
+Herbivores: 140 40 108 58 80 34 100 100 20 -22
+Health: 7 2 6 3 4 2 5 5 1 0
+Hurt: 0 0 12 2 0 6 0 0 0 22
+Carnivores: 20 8 8 0 0
+GENERATION 280
+Herbivores: 199 15 75 50 100 160 80 89 120 1
+Health: 10 1 4 3 5 8 4 5 6 1
+Hurt: 1 5 5 10 0 0 0 11 0 19
+Carnivores: 14 11 6 2 0
+GENERATION 281
+Herbivores: 160 24 78 8 60 55 40 140 36 -2
+Health: 8 3 4 3 3 4 2 7 2 0
+Hurt: 0 36 2 52 0 25 0 0 4 2
+Carnivores: 49 27 0 4 0
+GENERATION 282
+Herbivores: 179 180 78 60 19 80 133 100 80 60
+Health: 9 9 4 3 1 4 7 5 4 3
+Hurt: 1 0 2 0 1 0 7 0 0 0
+Carnivores: 0 7 1 0 1
+GENERATION 283
+Herbivores: 179 79 100 20 115 72 100 35 20 -19
+Health: 10 5 5 1 6 4 5 2 1 1
+Hurt: 21 21 0 0 5 8 0 5 0 39
+Carnivores: 12 17 4 5 1
+GENERATION 284
+Herbivores: 140 23 20 100 80 60 100 40 147 9
+Health: 7 4 1 5 4 3 5 4 8 1
+Hurt: 0 57 0 0 0 0 0 40 13 11
+Carnivores: 22 9 13 18 5
+GENERATION 285
+Herbivores: 120 14 79 40 87 12 120 21 120 40
+Health: 6 1 4 2 6 1 6 3 6 2
+Hurt: 0 6 1 0 33 8 0 39 0 0
+Carnivores: 40 19 8 5 0
+GENERATION 286
+Herbivores: 115 15 99 33 100 120 39 120 40 0
+Health: 6 1 5 2 5 6 3 6 2 0
+Hurt: 5 5 1 7 0 0 21 0 0 0
+Carnivores: 6 1 3 6 11
+GENERATION 287
+Herbivores: 120 97 55 20 60 40 -19 159 0 -6
+Health: 6 5 3 1 3 2 0 8 0 1
+Hurt: 0 3 5 0 0 0 19 1 0 26
+Carnivores: 45 5 0 0 0
+GENERATION 288
+Herbivores: 180 43 71 72 68 88 49 120 100 31
+Health: 9 3 4 4 4 5 3 6 5 2
+Hurt: 0 17 9 8 12 12 11 0 0 9
+Carnivores: 15 2 7 9 8
+GENERATION 289
+Herbivores: 93 136 0 97 39 115 60 80 100 4
+Health: 5 7 0 5 2 6 3 4 5 1
+Hurt: 7 4 0 3 1 5 0 0 0 16
+Carnivores: 11 3 0 10 0
+GENERATION 290
+Herbivores: 100 40 29 60 -4 46 60 40 89 0
+Health: 5 2 2 3 0 3 3 2 5 0
+Hurt: 0 0 11 0 4 14 0 0 11 0
+Carnivores: 18 8 0 0 0
+GENERATION 291
+Herbivores: 120 100 71 91 -3 160 100 60 100 40
+Health: 6 5 4 5 0 8 5 3 5 2
+Hurt: 0 0 9 9 3 0 0 0 0 0
+Carnivores: 4 5 0 2 0
+GENERATION 292
+Herbivores: 160 100 120 98 39 117 94 120 120 40
+Health: 8 5 6 5 2 6 5 6 6 2
+Hurt: 0 0 0 2 1 3 6 0 0 0
+Carnivores: 2 1 6 0 0
+GENERATION 293
+Herbivores: 139 0 69 80 75 120 120 77 80 30
+Health: 7 0 4 4 4 6 6 4 4 2
+Hurt: 1 0 11 0 5 0 0 3 0 10
+Carnivores: 8 0 4 10 0
+GENERATION 294
+Herbivores: 140 180 100 140 105 140 136 97 116 40
+Health: 7 9 5 7 6 7 7 5 6 2
+Hurt: 0 0 0 0 15 0 4 3 4 0
+Carnivores: 0 7 4 3 3
+GENERATION 295
+Herbivores: 127 120 38 19 80 75 52 114 160 40
+Health: 7 6 3 1 4 4 3 6 8 2
+Hurt: 13 0 22 1 0 5 8 6 0 0
+Carnivores: 15 14 1 9 3
+GENERATION 296
+Herbivores: 100 60 115 80 137 60 80 77 119 77
+Health: 5 3 6 4 7 3 4 4 8 4
+Hurt: 0 0 5 0 3 0 0 3 41 3
+Carnivores: 24 0 3 4 3
+GENERATION 297
+Herbivores: 180 88 118 120 120 100 140 160 76 18
+Health: 9 5 6 6 6 5 7 8 4 2
+Hurt: 0 12 2 0 0 0 0 0 4 22
+Carnivores: 14 0 8 0 2
+GENERATION 298
+Herbivores: 180 123 53 94 50 70 79 140 100 35
+Health: 9 7 3 5 3 4 4 7 5 2
+Hurt: 0 17 7 6 10 10 1 0 0 5
+Carnivores: 16 7 8 3 2
+GENERATION 299
+Herbivores: 180 104 18 91 47 80 66 117 94 -22
+Health: 9 6 2 5 3 4 5 6 5 0
+Hurt: 0 16 22 9 13 0 34 3 6 22
+Carnivores: 25 10 1 22 16
+GENERATION 300
+Herbivores: 179 80 120 80 120 38 100 128 34 40
+Health: 9 4 6 4 6 2 5 7 2 2
+Hurt: 1 0 0 0 0 2 0 12 6 0
+Carnivores: 13 5 0 2 0
+GENERATION 301
+Herbivores: 100 40 94 80 20 158 100 137 40 0
+Health: 5 2 5 4 1 8 5 7 2 0
+Hurt: 0 0 6 0 0 2 0 3 0 0
+Carnivores: 0 6 0 1 0
+GENERATION 302
+Herbivores: 200 140 140 140 39 100 49 160 63 -3
+Health: 10 7 7 7 2 5 3 8 4 0
+Hurt: 0 0 0 0 1 0 11 0 17 3
+Carnivores: 14 10 0 0 0
+GENERATION 303
+Herbivores: 80 -41 -14 80 135 20 -23 20 60 -26
+Health: 4 2 2 4 7 1 0 1 3 0
+Hurt: 0 81 54 0 5 0 23 0 0 26
+Carnivores: 38 9 4 44 0
+GENERATION 304
+Herbivores: 118 40 114 160 160 8 120 58 178 40
+Health: 7 2 6 8 8 1 6 3 9 2
+Hurt: 22 0 6 0 0 12 0 2 2 0
+Carnivores: 4 5 9 3 8
+GENERATION 305
+Herbivores: 160 137 72 140 35 100 80 40 100 40
+Health: 8 7 4 7 4 5 4 2 5 2
+Hurt: 0 3 8 0 45 0 0 0 0 0
+Carnivores: 5 16 8 0 4
+GENERATION 306
+Herbivores: 120 -4 80 20 60 100 136 80 80 54
+Health: 7 2 4 1 3 5 7 4 4 3
+Hurt: 20 44 0 0 0 0 4 0 0 6
+Carnivores: 18 15 0 0 10
+GENERATION 307
+Herbivores: 240 60 104 60 200 40 60 100 41 39
+Health: 12 3 6 3 10 2 3 5 3 2
+Hurt: 0 0 16 0 0 0 0 0 19 1
+Carnivores: 3 0 6 12 5
+GENERATION 308
+Herbivores: 140 98 86 80 180 200 109 20 93 20
+Health: 7 5 5 4 9 10 6 1 6 1
+Hurt: 0 2 14 0 0 0 11 0 27 0
+Carnivores: 14 0 9 13 0
+GENERATION 309
+Herbivores: 138 180 96 138 5 16 69 100 68 60
+Health: 7 9 5 7 2 1 4 5 4 3
+Hurt: 2 0 4 2 35 4 11 0 12 0
+Carnivores: 12 18 14 2 4
+GENERATION 310
+Herbivores: 200 40 80 200 45 38 200 120 7 0
+Health: 10 2 4 10 3 2 10 6 2 0
+Hurt: 0 0 0 0 15 2 0 0 33 0
+Carnivores: 14 8 0 10 0
+GENERATION 311
+Herbivores: 116 140 100 160 53 83 120 40 76 0
+Health: 7 7 5 8 4 5 6 3 4 0
+Hurt: 24 0 0 0 27 17 0 20 4 0
+Carnivores: 23 12 7 5 16
+GENERATION 312
+Herbivores: 180 -9 60 119 -72 60 28 160 59 20
+Health: 9 0 3 6 3 3 3 8 3 1
+Hurt: 0 9 0 1 132 0 32 0 1 0
+Carnivores: 65 3 3 14 1
+GENERATION 313
+Herbivores: 210 160 98 80 160 160 100 112 80 40
+Health: 11 8 5 4 8 8 5 6 4 2
+Hurt: 10 0 2 0 0 0 0 8 0 0
+Carnivores: 0 4 4 8 0
+GENERATION 314
+Herbivores: 178 100 0 77 60 160 120 40 22 -7
+Health: 9 5 0 4 4 8 6 2 2 0
+Hurt: 2 0 0 3 20 0 0 0 18 7
+Carnivores: 2 6 21 0 5
+GENERATION 315
+Herbivores: 220 140 139 200 140 120 40 136 47 16
+Health: 11 7 8 10 7 6 2 7 3 1
+Hurt: 0 0 21 0 0 0 0 4 13 4
+Carnivores: 3 8 0 0 10
+GENERATION 316
+Herbivores: 140 109 40 120 80 80 100 136 180 100
+Health: 7 6 2 6 4 4 5 7 9 5
+Hurt: 0 11 0 0 0 0 0 4 0 0
+Carnivores: 2 0 5 0 0
+GENERATION 317
+Herbivores: 178 35 106 40 119 56 159 74 80 49
+Health: 9 3 6 2 6 3 8 4 4 3
+Hurt: 2 25 14 0 1 4 1 6 0 11
+Carnivores: 19 2 9 14 0
+GENERATION 318
+Herbivores: 140 120 80 80 78 113 48 56 59 20
+Health: 7 6 4 4 4 6 3 3 3 1
+Hurt: 0 0 0 0 2 7 12 4 1 0
+Carnivores: 0 4 0 0 8
+GENERATION 319
+Herbivores: 160 20 63 40 60 20 40 40 120 20
+Health: 8 1 4 2 3 1 2 2 6 1
+Hurt: 0 0 17 0 0 0 0 0 0 0
+Carnivores: 9 0 1 0 0
+GENERATION 320
+Herbivores: 140 33 82 79 80 50 80 120 180 -3
+Health: 7 2 5 4 4 3 4 6 9 0
+Hurt: 0 7 18 1 0 10 0 0 0 3
+Carnivores: 4 10 2 9 2
+GENERATION 321
+Herbivores: 140 0 80 55 55 63 4 140 59 0
+Health: 7 0 4 3 3 5 2 7 3 0
+Hurt: 0 0 0 5 5 37 36 0 1 0
+Carnivores: 27 3 20 4 0
+GENERATION 322
+Herbivores: 160 89 56 80 34 140 0 80 96 60
+Health: 8 6 3 4 2 7 0 4 5 3
+Hurt: 0 31 4 0 6 0 0 0 4 0
+Carnivores: 3 13 8 3 0
+GENERATION 323
+Herbivores: 104 5 93 -12 40 73 60 70 120 0
+Health: 6 1 5 1 2 4 3 4 6 0
+Hurt: 16 15 7 32 0 7 0 10 0 0
+Carnivores: 24 8 14 8 2
+GENERATION 324
+Herbivores: 140 130 100 40 99 80 60 105 -10 -89
+Health: 7 7 5 2 5 4 3 6 3 0
+Hurt: 0 10 0 0 1 0 0 15 70 89
+Carnivores: 44 7 41 13 0
+GENERATION 325
+Herbivores: 140 78 120 40 132 120 38 140 20 24
+Health: 7 4 6 2 7 6 3 7 1 2
+Hurt: 0 2 0 0 8 0 22 0 0 16
+Carnivores: 8 0 2 8 9
+GENERATION 326
+Herbivores: 120 96 20 20 40 120 40 37 40 39
+Health: 6 5 1 1 2 6 2 2 2 2
+Hurt: 0 4 0 0 0 0 0 3 0 1
+Carnivores: 0 0 0 0 2
+GENERATION 327
+Herbivores: 160 110 120 75 120 40 80 92 20 7
+Health: 8 6 6 4 6 2 4 5 1 1
+Hurt: 0 10 0 5 0 0 0 8 0 13
+Carnivores: 1 3 6 7 5
+GENERATION 328
+Herbivores: 140 20 100 160 120 80 60 59 51 9
+Health: 7 1 5 8 6 4 3 4 3 1
+Hurt: 0 0 0 0 0 0 0 21 9 11
+Carnivores: 18 0 6 3 0
+GENERATION 329
+Herbivores: 140 37 16 51 12 80 60 -5 27 -5
+Health: 7 2 3 3 1 4 3 3 2 1
+Hurt: 0 3 44 9 8 0 0 65 13 25
+Carnivores: 29 12 25 24 0
+GENERATION 330
+Herbivores: 140 120 80 99 100 113 0 75 50 20
+Health: 7 6 4 5 5 6 0 4 3 1
+Hurt: 0 0 0 1 0 7 0 5 10 0
+Carnivores: 10 1 0 5 0
+GENERATION 331
+Herbivores: 120 40 37 0 -2 60 120 60 100 -1
+Health: 6 2 2 0 0 3 6 3 5 0
+Hurt: 0 0 3 0 2 0 0 0 0 1
+Carnivores: 0 1 0 0 0
+GENERATION 332
+Herbivores: 172 60 40 100 0 80 145 117 80 16
+Health: 9 3 2 5 0 4 8 6 4 1
+Hurt: 8 0 0 0 0 0 15 3 0 4
+Carnivores: 10 0 3 1 0
+GENERATION 333
+Herbivores: 240 100 200 39 100 59 40 20 159 17
+Health: 12 5 10 3 5 3 2 1 9 1
+Hurt: 0 0 0 21 0 1 0 0 21 3
+Carnivores: 14 1 9 0 2
+GENERATION 334
+Herbivores: 140 134 154 120 60 80 20 160 98 11
+Health: 7 7 8 6 3 4 1 8 5 4
+Hurt: 0 6 6 0 0 0 0 0 2 69
+Carnivores: 30 4 5 10 0
+GENERATION 335
+Herbivores: 120 115 20 -4 74 200 22 60 11 -4
+Health: 6 6 1 1 4 10 2 3 3 0
+Hurt: 0 5 0 24 6 0 18 0 49 4
+Carnivores: 23 7 0 5 1
+GENERATION 336
+Herbivores: 97 140 149 40 76 15 80 14 80 20
+Health: 5 7 8 2 4 1 4 1 4 1
+Hurt: 3 0 11 0 4 5 0 6 0 0
+Carnivores: 19 0 0 3 0
+GENERATION 337
+Herbivores: 180 37 100 99 120 140 77 80 97 98
+Health: 9 2 5 5 6 7 4 4 6 5
+Hurt: 0 3 0 1 0 0 3 0 23 2
+Carnivores: 6 12 0 0 0
+GENERATION 338
+Herbivores: 149 120 100 80 107 100 116 179 75 14
+Health: 8 6 5 4 6 5 6 9 4 2
+Hurt: 11 0 0 0 13 0 4 1 5 26
+Carnivores: 31 1 5 1 0
+GENERATION 339
+Herbivores: 135 134 100 80 40 100 92 100 100 30
+Health: 8 7 5 4 2 5 5 5 5 2
+Hurt: 25 6 0 0 0 0 8 0 0 10
+Carnivores: 12 5 9 8 0
+GENERATION 340
+Herbivores: 140 4 0 125 137 44 80 120 120 20
+Health: 7 2 0 7 7 5 4 6 6 1
+Hurt: 0 36 0 15 3 56 0 0 0 0
+Carnivores: 18 0 14 0 0
+GENERATION 341
+Herbivores: 135 20 22 94 119 31 140 144 37 0
+Health: 7 1 2 5 6 2 7 8 2 0
+Hurt: 5 0 18 6 1 9 0 16 3 0
+Carnivores: 13 6 5 12 1
+GENERATION 342
+Herbivores: 160 20 120 30 80 77 100 -1 20 60
+Health: 8 1 6 2 4 4 5 4 1 3
+Hurt: 0 0 0 10 0 3 0 81 0 0
+Carnivores: 39 0 12 0 0
+GENERATION 343
+Herbivores: 220 180 100 120 29 20 59 -2 120 -87
+Health: 11 9 5 6 2 1 3 1 6 3
+Hurt: 0 0 0 0 11 0 1 22 0 147
+Carnivores: 48 32 50 1 0
+GENERATION 344
+Herbivores: 69 10 -3 76 140 80 47 40 40 14
+Health: 4 3 0 4 7 4 3 2 2 1
+Hurt: 11 50 3 4 0 0 13 0 0 6
+Carnivores: 27 6 15 8 0
+GENERATION 345
+Herbivores: 90 168 119 40 -10 94 20 13 20 20
+Health: 5 10 6 2 2 5 1 1 1 1
+Hurt: 10 32 1 0 50 6 0 7 0 0
+Carnivores: 38 0 0 11 0
+GENERATION 346
+Herbivores: 180 28 20 60 35 16 40 60 -4 30
+Health: 9 2 1 3 2 1 2 3 0 2
+Hurt: 0 12 0 0 5 4 0 0 4 10
+Carnivores: 3 13 3 0 1
+GENERATION 347
+Herbivores: 180 100 80 100 6 58 -20 55 20 -49
+Health: 9 5 4 5 1 3 1 3 1 1
+Hurt: 0 0 0 0 14 2 40 5 0 69
+Carnivores: 69 0 17 32 0
+GENERATION 348
+Herbivores: 60 120 100 120 136 80 140 86 56 40
+Health: 3 6 5 6 7 4 7 5 4 2
+Hurt: 0 0 0 0 4 0 0 14 24 0
+Carnivores: 4 10 9 0 2
+GENERATION 349
+Herbivores: 119 20 20 48 200 100 97 100 35 14
+Health: 6 1 1 3 10 5 5 5 2 1
+Hurt: 1 0 0 12 0 0 3 0 5 6
+Carnivores: 2 0 0 12 0
+GENERATION 350
+Herbivores: 120 56 169 86 114 120 140 31 51 20
+Health: 6 3 9 5 6 6 7 2 3 1
+Hurt: 0 4 11 14 6 0 0 9 9 0
+Carnivores: 12 8 0 5 2
+GENERATION 351
+Herbivores: 153 60 20 40 38 134 95 20 80 0
+Health: 8 3 1 2 2 7 5 1 4 0
+Hurt: 7 0 0 0 2 6 5 0 0 0
+Carnivores: 2 0 13 2 0
+GENERATION 352
+Herbivores: 140 16 -1 140 60 100 100 40 60 -54
+Health: 7 1 2 7 3 5 5 2 3 1
+Hurt: 0 4 41 0 0 0 0 0 0 74
+Carnivores: 36 14 15 0 4
+GENERATION 353
+Herbivores: 140 37 96 80 100 54 61 27 -65 -103
+Health: 7 2 5 5 5 3 4 4 1 2
+Hurt: 0 3 4 20 0 6 19 53 85 143
+Carnivores: 72 33 40 5 9
+GENERATION 354
+Herbivores: 151 57 60 60 67 111 0 60 90 12
+Health: 8 3 3 3 4 6 0 3 5 3
+Hurt: 9 3 0 0 13 9 0 0 10 48
+Carnivores: 25 6 18 9 0
+GENERATION 355
+Herbivores: 112 140 28 40 14 48 76 40 0 0
+Health: 6 7 2 2 1 3 4 2 0 0
+Hurt: 8 0 12 0 6 12 4 0 0 0
+Carnivores: 7 2 6 11 6
+GENERATION 356
+Herbivores: 200 120 43 140 112 80 160 80 137 45
+Health: 10 6 3 7 6 4 8 4 7 3
+Hurt: 0 0 17 0 8 0 0 0 3 15
+Carnivores: 25 5 4 0 0
+GENERATION 357
+Herbivores: 100 20 100 140 48 72 100 80 120 90
+Health: 5 1 5 7 3 4 5 4 6 5
+Hurt: 0 0 0 0 12 8 0 0 0 10
+Carnivores: 0 7 1 4 0
+GENERATION 358
+Herbivores: 176 86 100 100 59 134 53 60 78 56
+Health: 9 5 5 5 3 7 3 3 4 3
+Hurt: 4 14 0 0 1 6 7 0 2 4
+Carnivores: 15 0 5 0 4
+GENERATION 359
+Herbivores: 154 55 57 96 120 60 80 120 76 38
+Health: 8 3 3 5 6 3 4 6 4 2
+Hurt: 6 5 3 4 0 0 0 0 4 2
+Carnivores: 0 5 0 3 2
+GENERATION 360
+Herbivores: 120 80 80 31 78 120 120 8 100 40
+Health: 7 4 4 2 4 6 6 1 5 2
+Hurt: 20 0 0 9 2 0 0 12 0 0
+Carnivores: 19 0 8 0 6
+GENERATION 361
+Herbivores: 160 31 80 140 100 60 140 39 140 0
+Health: 8 2 4 7 5 3 7 2 7 0
+Hurt: 0 9 0 0 0 0 0 1 0 0
+Carnivores: 5 3 1 0 0
+GENERATION 362
+Herbivores: 178 76 60 80 78 140 140 118 80 -8
+Health: 9 4 3 4 4 7 7 6 4 0
+Hurt: 2 4 0 0 2 0 0 2 0 8
+Carnivores: 5 4 0 0 0
+GENERATION 363
+Herbivores: 180 46 99 138 73 120 120 151 117 118
+Health: 9 3 5 7 4 6 6 8 6 6
+Hurt: 0 14 1 2 7 0 0 9 3 2
+Carnivores: 17 0 7 2 0
+GENERATION 364
+Herbivores: 180 120 116 74 94 147 119 97 156 76
+Health: 9 6 6 4 5 8 6 5 8 4
+Hurt: 0 0 4 6 6 13 1 3 4 4
+Carnivores: 5 9 9 0 3
+GENERATION 365
+Herbivores: 133 96 96 96 40 59 156 100 120 33
+Health: 7 5 5 5 2 3 8 5 6 2
+Hurt: 7 4 4 4 0 1 4 0 0 7
+Carnivores: 4 3 2 10 5
+GENERATION 366
+Herbivores: 207 80 74 33 78 180 100 159 90 20
+Health: 11 4 6 2 4 9 5 8 5 1
+Hurt: 13 0 46 7 2 0 0 1 10 0
+Carnivores: 7 8 6 2 4
+GENERATION 367
+Herbivores: 140 22 84 120 74 99 139 180 89 40
+Health: 7 2 5 6 4 5 7 9 5 2
+Hurt: 0 18 16 0 6 1 1 0 11 0
+Carnivores: 9 16 8 0 0
+GENERATION 368
+Herbivores: 159 56 137 38 74 100 71 140 57 80
+Health: 8 3 7 2 4 5 4 7 3 4
+Hurt: 1 4 3 2 6 0 9 0 3 0
+Carnivores: 1 0 2 5 3
+GENERATION 369
+Herbivores: 179 120 139 118 120 119 133 130 100 73
+Health: 9 6 7 6 6 6 7 7 5 4
+Hurt: 1 0 1 2 0 1 7 10 0 7
+Carnivores: 1 7 6 2 3
+GENERATION 370
+Herbivores: 260 40 53 120 80 114 130 100 160 60
+Health: 13 2 5 6 4 6 7 5 8 3
+Hurt: 0 0 47 0 0 6 10 0 0 0
+Carnivores: 26 3 0 5 0
+GENERATION 371
+Herbivores: 196 171 60 63 70 160 118 140 136 -13
+Health: 10 9 3 4 4 8 6 7 7 0
+Hurt: 4 9 0 17 10 0 2 0 4 13
+Carnivores: 15 1 9 5 0
+GENERATION 372
+Herbivores: 180 78 40 80 160 8 180 20 139 76
+Health: 9 4 2 4 8 1 9 1 7 4
+Hurt: 0 2 0 0 0 12 0 0 1 4
+Carnivores: 11 0 0 0 0
+GENERATION 373
+Herbivores: 220 216 33 54 20 139 120 52 95 39
+Health: 11 11 2 3 1 7 6 3 5 2
+Hurt: 0 4 7 6 0 1 0 8 5 1
+Carnivores: 1 8 7 2 0
+GENERATION 374
+Herbivores: 120 98 200 129 120 60 120 117 40 40
+Health: 6 5 10 7 6 3 6 6 2 2
+Hurt: 0 2 0 11 0 0 0 3 0 0
+Carnivores: 6 1 0 0 0
+GENERATION 375
+Herbivores: 160 120 74 90 90 180 175 47 117 76
+Health: 8 6 4 5 5 9 9 3 6 4
+Hurt: 0 0 6 10 10 0 5 13 3 4
+Carnivores: 11 2 1 7 0
+GENERATION 376
+Herbivores: 200 100 72 200 120 60 131 116 133 39
+Health: 10 5 4 10 6 3 7 6 7 2
+Hurt: 0 0 8 0 0 0 9 4 7 1
+Carnivores: 5 4 0 0 1
+GENERATION 377
+Herbivores: 197 160 140 120 133 140 120 100 51 20
+Health: 10 8 7 6 7 7 6 5 3 1
+Hurt: 3 0 0 0 7 0 0 0 9 0
+Carnivores: 11 1 2 1 0
+GENERATION 378
+Herbivores: 160 80 58 100 118 137 60 97 117 35
+Health: 8 4 3 5 6 7 3 5 6 2
+Hurt: 0 0 2 0 2 3 0 3 3 5
+Carnivores: 2 0 2 0 0
+GENERATION 379
+Herbivores: 140 140 60 140 60 60 60 95 60 60
+Health: 7 7 3 7 3 3 3 5 3 3
+Hurt: 0 0 0 0 0 0 0 5 0 0
+Carnivores: 0 0 1 0 4
+GENERATION 380
+Herbivores: 160 138 130 100 180 60 40 98 117 0
+Health: 8 7 7 5 9 3 2 5 6 0
+Hurt: 0 2 10 0 0 0 0 2 3 0
+Carnivores: 0 2 2 0 0
+GENERATION 381
+Herbivores: 193 116 120 14 52 80 40 40 180 33
+Health: 10 6 6 1 3 4 2 2 9 2
+Hurt: 7 4 0 6 8 0 0 0 0 7
+Carnivores: 2 0 0 0 6
+GENERATION 382
+Herbivores: 158 99 151 120 133 160 100 180 59 139
+Health: 8 5 8 6 7 8 5 9 3 7
+Hurt: 2 1 9 0 7 0 0 0 1 1
+Carnivores: 7 1 0 6 0
+GENERATION 383
+Herbivores: 158 112 110 160 140 100 178 120 154 80
+Health: 8 6 7 8 7 5 9 6 8 4
+Hurt: 2 8 30 0 0 0 2 0 6 0
+Carnivores: 1 1 1 0 2
+GENERATION 384
+Herbivores: 160 60 34 34 79 1 106 60 140 -36
+Health: 8 3 2 2 4 1 6 3 7 1
+Hurt: 0 0 6 6 1 19 14 0 0 56
+Carnivores: 18 3 2 3 1
+GENERATION 385
+Herbivores: 180 89 37 45 60 71 20 100 100 11
+Health: 9 5 2 3 3 4 1 5 5 1
+Hurt: 0 11 3 15 0 9 0 0 0 9
+Carnivores: 15 5 0 0 3
+GENERATION 386
+Herbivores: 190 80 100 80 73 180 40 53 60 0
+Health: 10 4 5 4 4 9 2 3 3 0
+Hurt: 10 0 0 0 7 0 0 7 0 0
+Carnivores: 0 0 2 1 0
+GENERATION 387
+Herbivores: 280 93 160 68 60 37 73 64 200 -18
+Health: 14 5 8 4 3 2 4 4 10 0
+Hurt: 0 7 0 12 0 3 7 16 0 18
+Carnivores: 30 7 3 4 0
+GENERATION 388
+Herbivores: 134 100 24 74 100 154 18 140 100 49
+Health: 7 5 3 4 5 8 1 7 5 4
+Hurt: 6 0 36 6 0 6 2 0 0 31
+Carnivores: 13 14 10 3 4
+GENERATION 389
+Herbivores: 160 100 160 80 59 80 40 120 91 41
+Health: 8 5 8 4 4 4 2 6 5 3
+Hurt: 0 0 0 0 21 0 0 0 9 19
+Carnivores: 4 3 5 17 0
+GENERATION 390
+Herbivores: 193 134 157 60 140 60 55 100 39 -30
+Health: 10 7 8 3 7 3 3 5 2 1
+Hurt: 7 6 3 0 0 0 5 0 1 50
+Carnivores: 8 1 4 1 0
+GENERATION 391
+Herbivores: 150 120 100 0 100 140 140 80 171 0
+Health: 8 6 5 0 5 7 7 4 10 0
+Hurt: 10 0 0 0 0 0 0 0 29 0
+Carnivores: 0 0 5 4 0
+GENERATION 392
+Herbivores: 164 15 30 100 100 40 60 80 144 0
+Health: 9 1 2 5 5 2 3 4 8 0
+Hurt: 16 5 10 0 0 0 0 0 16 0
+Carnivores: 10 6 0 0 0
+GENERATION 393
+Herbivores: 200 35 77 156 136 160 34 80 140 40
+Health: 10 2 5 8 7 8 2 4 7 2
+Hurt: 0 5 23 4 4 0 6 0 0 0
+Carnivores: 13 0 2 7 0
+GENERATION 394
+Herbivores: 217 20 80 120 123 40 136 60 140 20
+Health: 11 1 4 6 8 2 7 3 7 1
+Hurt: 3 0 0 0 37 0 4 0 0 0
+Carnivores: 23 11 0 1 0
+GENERATION 395
+Herbivores: 100 120 80 54 60 100 66 34 55 12
+Health: 5 6 4 4 3 6 4 3 3 1
+Hurt: 0 0 0 26 0 20 14 26 5 8
+Carnivores: 0 4 13 13 5
+GENERATION 396
+Herbivores: 120 35 5 60 39 20 20 32 113 -23
+Health: 6 2 2 3 2 1 1 2 6 4
+Hurt: 0 5 35 0 1 0 0 8 7 103
+Carnivores: 51 21 18 0 0
+GENERATION 397
+Herbivores: 194 77 99 117 80 78 103 80 75 -28
+Health: 10 4 5 6 4 4 6 4 5 1
+Hurt: 6 3 1 3 0 2 17 0 25 48
+Carnivores: 6 15 25 10 1
+GENERATION 398
+Herbivores: 180 89 16 39 87 124 36 34 135 19
+Health: 9 5 3 2 5 7 2 2 7 1
+Hurt: 0 11 44 1 13 16 4 6 5 1
+Carnivores: 16 8 3 0 3
+GENERATION 399
+Herbivores: 160 60 0 117 112 100 80 48 80 -6
+Health: 8 3 0 6 6 5 4 3 4 5
+Hurt: 0 0 0 3 8 0 0 12 0 106
+Carnivores: 53 2 3 2 1
+GENERATION 400
+Herbivores: 155 60 127 58 100 96 80 80 119 0
+Health: 8 3 7 3 5 5 4 4 6 0
+Hurt: 5 0 13 2 0 4 0 0 1 0
+Carnivores: 0 3 0 4 8
+GENERATION 401
+Herbivores: 159 74 140 100 96 -11 114 140 24 0
+Health: 8 4 7 5 5 0 6 7 2 0
+Hurt: 1 6 0 0 4 11 6 0 16 0
+Carnivores: 4 6 2 3 0
+GENERATION 402
+Herbivores: 220 120 100 160 74 38 40 139 109 16
+Health: 11 6 5 8 4 2 2 8 6 1
+Hurt: 0 0 0 0 6 2 0 21 11 4
+Carnivores: 6 6 7 0 5
+GENERATION 403
+Herbivores: 160 60 80 126 40 100 149 120 40 74
+Health: 8 3 4 7 2 5 8 6 2 4
+Hurt: 0 0 0 14 0 0 11 0 0 6
+Carnivores: 19 0 6 0 1
+GENERATION 404
+Herbivores: 100 10 49 60 78 -3 60 36 120 -34
+Health: 5 1 4 3 4 1 3 4 6 0
+Hurt: 0 10 31 0 2 23 0 44 0 34
+Carnivores: 25 33 32 0 0
+GENERATION 405
+Herbivores: 180 97 78 65 80 100 39 50 93 99
+Health: 9 5 4 4 4 5 2 3 5 5
+Hurt: 0 3 2 15 0 0 1 10 7 1
+Carnivores: 7 3 4 3 0
+GENERATION 406
+Herbivores: 180 14 56 72 9 60 -2 79 160 -37
+Health: 9 2 3 4 1 3 0 6 8 0
+Hurt: 0 26 4 8 11 0 2 41 0 37
+Carnivores: 69 12 0 2 2
+GENERATION 407
+Herbivores: 178 73 156 40 60 120 160 60 155 0
+Health: 9 4 10 2 4 6 8 3 8 0
+Hurt: 2 7 44 0 20 0 0 0 5 0
+Carnivores: 8 15 0 20 0
+GENERATION 408
+Herbivores: 180 120 76 80 95 80 80 58 88 56
+Health: 9 6 4 4 5 4 4 4 5 4
+Hurt: 0 0 4 0 5 0 0 22 12 24
+Carnivores: 3 5 0 4 1
+GENERATION 409
+Herbivores: 219 200 160 178 120 120 97 140 51 60
+Health: 11 10 8 9 6 6 5 7 4 4
+Hurt: 1 0 0 2 0 0 3 0 29 20
+Carnivores: 12 7 0 10 6
+GENERATION 410
+Herbivores: 158 9 140 69 56 180 160 56 20 58
+Health: 8 4 7 4 3 9 8 4 1 3
+Hurt: 2 71 0 11 4 0 0 24 0 2
+Carnivores: 29 15 3 0 2
+GENERATION 411
+Herbivores: 160 80 120 100 80 100 200 65 140 120
+Health: 8 4 6 5 4 5 10 4 7 6
+Hurt: 0 0 0 0 0 0 0 15 0 0
+Carnivores: 1 0 0 10 0
+GENERATION 412
+Herbivores: 140 59 13 60 16 20 93 60 180 60
+Health: 7 3 1 3 1 1 5 3 9 4
+Hurt: 0 1 7 0 4 0 7 0 0 20
+Carnivores: 4 1 0 0 4
+GENERATION 413
+Herbivores: 140 58 80 11 20 66 80 28 66 0
+Health: 7 3 4 1 1 4 4 2 4 0
+Hurt: 0 2 0 9 0 14 0 12 14 0
+Carnivores: 4 5 5 0 9
+GENERATION 414
+Herbivores: 196 140 17 140 35 100 60 120 95 14
+Health: 10 7 1 7 2 5 3 6 5 1
+Hurt: 4 0 3 0 5 0 0 0 5 6
+Carnivores: 4 0 11 0 0
+GENERATION 415
+Herbivores: 135 100 60 37 80 40 80 100 140 35
+Health: 7 5 3 2 4 2 4 5 7 3
+Hurt: 5 0 0 3 0 0 0 0 0 25
+Carnivores: 15 5 0 4 0
+GENERATION 416
+Herbivores: 180 46 28 20 17 80 160 100 80 20
+Health: 9 3 2 1 1 4 8 5 4 1
+Hurt: 0 14 12 0 3 0 0 0 0 0
+Carnivores: 2 8 5 3 0
+GENERATION 417
+Herbivores: 80 100 93 40 80 140 80 100 60 0
+Health: 4 5 5 2 4 7 4 5 3 0
+Hurt: 0 0 7 0 0 0 0 0 0 0
+Carnivores: 0 0 0 4 0
+GENERATION 418
+Herbivores: 160 100 -5 20 120 136 36 80 80 6
+Health: 8 5 0 1 6 7 2 4 4 2
+Hurt: 0 0 5 0 0 4 4 0 0 34
+Carnivores: 23 0 8 1 0
+GENERATION 419
+Herbivores: 120 80 68 48 40 19 39 60 123 40
+Health: 6 4 4 3 2 2 2 3 7 2
+Hurt: 0 0 12 12 0 21 1 0 17 0
+Carnivores: 18 0 0 17 0
+GENERATION 420
+Herbivores: 100 -8 17 19 60 29 40 51 20 0
+Health: 5 0 1 1 3 2 2 3 1 0
+Hurt: 0 8 3 1 0 11 0 9 0 0
+Carnivores: 20 1 0 0 0
+GENERATION 421
+Herbivores: 160 80 -50 40 40 -20 76 15 80 39
+Health: 8 4 0 2 2 0 4 1 4 2
+Hurt: 0 0 50 0 0 20 4 5 0 1
+Carnivores: 61 2 0 0 0
+GENERATION 422
+Herbivores: 67 56 120 100 38 138 49 40 40 19
+Health: 4 3 6 5 2 7 3 2 2 2
+Hurt: 13 4 0 0 2 2 11 0 0 21
+Carnivores: 0 11 15 0 6
+GENERATION 423
+Herbivores: 160 80 32 20 20 35 88 20 40 0
+Health: 8 4 2 1 1 3 5 1 2 1
+Hurt: 0 0 8 0 0 25 12 0 0 20
+Carnivores: 10 0 0 9 0
+GENERATION 424
+Herbivores: 160 107 60 79 80 120 20 100 40 1
+Health: 8 6 3 4 4 6 1 5 2 3
+Hurt: 0 13 0 1 0 0 0 0 0 59
+Carnivores: 12 12 4 1 1
+GENERATION 425
+Herbivores: 120 111 5 92 139 52 100 40 100 0
+Health: 6 6 1 5 7 3 5 2 5 0
+Hurt: 0 9 15 8 1 8 0 0 0 0
+Carnivores: 4 21 8 4 0
+GENERATION 426
+Herbivores: 140 73 -4 21 115 60 29 106 135 0
+Health: 7 4 1 2 6 3 2 6 7 0
+Hurt: 0 7 24 19 5 0 11 14 5 0
+Carnivores: 6 14 10 7 0
+GENERATION 427
+Herbivores: 120 140 159 60 40 80 119 60 94 57
+Health: 6 7 8 3 2 4 6 3 5 3
+Hurt: 0 0 1 0 0 0 1 0 6 3
+Carnivores: 0 4 0 7 0
+GENERATION 428
+Herbivores: 160 120 51 64 39 64 34 -14 120 -6
+Health: 8 6 3 5 2 4 2 0 6 2
+Hurt: 0 0 9 36 1 16 6 14 0 46
+Carnivores: 23 15 13 16 3
+GENERATION 429
+Herbivores: 114 120 11 45 114 120 160 140 119 21
+Health: 6 6 1 3 6 6 8 7 6 2
+Hurt: 6 0 9 15 6 0 0 0 1 19
+Carnivores: 12 10 8 10 1
+GENERATION 430
+Herbivores: 140 60 58 40 80 8 170 140 -3 2
+Health: 7 3 3 2 4 1 9 7 0 1
+Hurt: 0 0 2 0 0 12 10 0 3 18
+Carnivores: 1 7 0 4 2
+GENERATION 431
+Herbivores: 159 68 20 120 -93 40 93 123 4 0
+Health: 8 4 1 6 2 2 5 7 1 0
+Hurt: 1 12 0 0 133 0 7 17 16 0
+Carnivores: 67 0 7 23 18
+GENERATION 432
+Herbivores: 140 19 120 34 160 180 100 120 129 0
+Health: 7 2 6 2 8 9 5 6 7 0
+Hurt: 0 21 0 6 0 0 0 0 11 0
+Carnivores: 12 0 0 4 0
+GENERATION 433
+Herbivores: 80 98 60 114 19 76 100 60 69 17
+Health: 4 5 3 6 3 4 5 3 4 1
+Hurt: 0 2 0 6 41 4 0 0 11 3
+Carnivores: 19 14 7 4 0
+GENERATION 434
+Herbivores: 160 60 180 100 4 159 60 70 160 -13
+Health: 8 3 9 5 1 8 3 4 8 2
+Hurt: 0 0 0 0 16 1 0 10 0 53
+Carnivores: 4 7 16 0 0
+GENERATION 435
+Herbivores: 120 140 75 89 125 51 120 13 60 89
+Health: 6 7 4 5 7 3 6 1 3 5
+Hurt: 0 0 5 11 15 9 0 7 0 11
+Carnivores: 8 4 11 5 1
+GENERATION 436
+Herbivores: 200 65 52 100 20 44 119 119 80 19
+Health: 10 4 3 5 1 3 6 6 4 1
+Hurt: 0 15 8 0 0 16 1 1 0 1
+Carnivores: 6 12 4 11 0
+GENERATION 437
+Herbivores: 200 60 92 25 20 11 20 15 -9 19
+Health: 10 3 5 2 1 1 1 1 0 1
+Hurt: 0 0 8 15 0 9 0 5 9 1
+Carnivores: 19 2 0 1 1
+GENERATION 438
+Herbivores: 200 100 120 95 100 80 80 160 39 29
+Health: 10 5 6 5 5 4 4 8 2 2
+Hurt: 0 0 0 5 0 0 0 0 1 11
+Carnivores: 0 7 0 0 0
+GENERATION 439
+Herbivores: 140 40 40 40 68 15 120 80 40 17
+Health: 7 2 2 2 4 1 6 4 2 2
+Hurt: 0 0 0 0 12 5 0 0 0 23
+Carnivores: 17 5 1 0 0
+GENERATION 440
+Herbivores: 100 109 94 40 40 20 32 80 57 0
+Health: 5 7 5 2 2 1 2 4 3 0
+Hurt: 0 31 6 0 0 0 8 0 3 0
+Carnivores: 23 5 0 2 0
+GENERATION 441
+Herbivores: 120 60 99 60 148 140 40 60 129 0
+Health: 6 3 5 3 8 7 2 3 7 0
+Hurt: 0 0 1 0 12 0 0 0 11 0
+Carnivores: 9 0 0 0 0
+GENERATION 442
+Herbivores: 120 8 22 120 100 100 140 140 120 -5
+Health: 6 1 4 6 5 5 7 7 6 0
+Hurt: 0 12 58 0 0 0 0 0 0 5
+Carnivores: 5 4 3 10 0
+GENERATION 443
+Herbivores: 128 100 60 134 100 4 48 0 76 57
+Health: 7 5 3 7 5 1 3 2 4 3
+Hurt: 12 0 0 6 0 16 12 40 4 3
+Carnivores: 22 6 11 11 5
+GENERATION 444
+Herbivores: 160 85 147 140 80 20 18 72 80 -34
+Health: 8 5 8 7 4 1 1 4 4 1
+Hurt: 0 15 13 0 0 0 2 8 0 54
+Carnivores: 56 10 3 0 0
+GENERATION 445
+Herbivores: 217 80 120 -41 54 -13 15 60 20 37
+Health: 11 4 6 1 3 0 1 3 1 2
+Hurt: 3 0 0 61 6 13 5 0 0 3
+Carnivores: 30 9 5 11 3
+GENERATION 446
+Herbivores: 136 35 58 136 55 76 58 60 40 60
+Health: 7 2 3 8 3 4 3 3 2 3
+Hurt: 4 5 2 24 5 4 2 0 0 0
+Carnivores: 11 7 0 0 0
+GENERATION 447
+Herbivores: 160 128 120 85 67 120 49 140 40 35
+Health: 8 7 6 5 4 6 3 7 2 2
+Hurt: 0 12 0 15 13 0 11 0 0 5
+Carnivores: 5 8 9 6 1
+GENERATION 448
+Herbivores: 140 180 87 62 120 79 93 100 79 46
+Health: 7 9 5 4 6 4 5 5 4 3
+Hurt: 0 0 13 18 0 1 7 0 1 14
+Carnivores: 19 7 15 0 0
+GENERATION 449
+Herbivores: 140 56 96 80 60 40 13 52 56 -59
+Health: 7 3 5 4 3 2 1 3 3 1
+Hurt: 0 4 4 0 0 0 7 8 4 79
+Carnivores: 39 17 0 3 3
+GENERATION 450
+Herbivores: 119 100 60 98 59 -62 80 34 -57 0
+Health: 6 5 3 5 3 0 4 2 1 0
+Hurt: 1 0 0 2 1 62 0 6 77 0
+Carnivores: 11 0 7 1 0
+GENERATION 451
+Herbivores: 138 71 40 120 113 80 80 20 60 -40
+Health: 7 4 2 6 6 4 4 1 3 0
+Hurt: 2 9 0 0 7 0 0 0 0 40
+Carnivores: 22 0 5 0 1
+GENERATION 452
+Herbivores: 140 -51 80 60 60 20 40 100 100 16
+Health: 7 2 4 3 3 1 2 5 5 1
+Hurt: 0 91 0 0 0 0 0 0 0 4
+Carnivores: 0 0 1 9 0
+GENERATION 453
+Herbivores: 137 73 34 97 40 18 200 80 140 56
+Health: 7 4 2 5 2 1 10 5 7 3
+Hurt: 3 7 6 3 0 2 0 20 0 4
+Carnivores: 13 10 0 1 0
+GENERATION 454
+Herbivores: 188 56 97 140 60 31 100 60 76 20
+Health: 10 3 5 7 3 2 5 3 4 1
+Hurt: 12 4 3 0 0 9 0 0 4 0
+Carnivores: 0 7 8 3 5
+GENERATION 455
+Herbivores: 219 20 39 40 38 21 20 134 14 20
+Health: 11 1 2 2 2 2 1 7 1 1
+Hurt: 1 0 1 0 2 19 0 6 6 0
+Carnivores: 11 1 2 4 6
+GENERATION 456
+Herbivores: 140 136 35 100 79 20 157 80 100 20
+Health: 7 7 2 5 4 1 8 4 5 1
+Hurt: 0 4 5 0 1 0 3 0 0 0
+Carnivores: 0 0 3 4 0
+GENERATION 457
+Herbivores: 175 40 76 100 120 40 140 96 20 0
+Health: 9 2 4 5 6 2 7 5 1 0
+Hurt: 5 0 4 0 0 0 0 4 0 0
+Carnivores: 4 1 1 0 0
+GENERATION 458
+Herbivores: 100 97 37 1 0 17 93 37 100 20
+Health: 5 5 2 1 0 1 5 2 5 1
+Hurt: 0 3 3 19 0 3 7 3 0 0
+Carnivores: 20 0 0 15 0
+GENERATION 459
+Herbivores: 160 173 40 37 46 100 95 120 120 40
+Health: 8 9 2 2 3 5 5 6 6 2
+Hurt: 0 7 0 3 14 0 5 0 0 0
+Carnivores: 9 2 6 0 1
+GENERATION 460
+Herbivores: 120 18 100 100 60 120 80 20 80 20
+Health: 6 1 5 5 4 6 4 1 4 1
+Hurt: 0 2 0 0 20 0 0 0 0 0
+Carnivores: 16 0 0 2 0
+GENERATION 461
+Herbivores: 140 130 120 0 60 75 62 80 24 0
+Health: 7 7 6 0 3 5 4 4 2 0
+Hurt: 0 10 0 0 0 25 18 0 16 0
+Carnivores: 25 10 2 2 0
+GENERATION 462
+Herbivores: 148 33 40 20 80 40 100 119 37 60
+Health: 8 2 2 1 4 2 5 6 2 3
+Hurt: 12 7 0 0 0 0 0 1 3 0
+Carnivores: 1 4 2 3 0
+GENERATION 463
+Herbivores: 120 98 137 72 80 66 59 100 80 20
+Health: 6 5 7 4 4 4 3 5 4 1
+Hurt: 0 2 3 8 0 14 1 0 0 0
+Carnivores: 14 0 2 0 0
+GENERATION 464
+Herbivores: 157 35 60 67 79 0 -4 80 40 -34
+Health: 8 2 3 4 4 0 0 4 2 4
+Hurt: 3 5 0 13 1 0 4 0 0 114
+Carnivores: 56 3 8 7 5
+GENERATION 465
+Herbivores: 140 31 20 40 120 94 40 15 40 -111
+Health: 7 3 1 2 6 5 2 1 2 3
+Hurt: 0 29 0 0 0 6 0 5 0 171
+Carnivores: 67 0 8 55 0
+GENERATION 466
+Herbivores: 55 0 55 51 100 40 53 80 40 60
+Health: 3 0 4 3 5 2 3 4 2 3
+Hurt: 5 0 25 9 0 0 7 0 0 0
+Carnivores: 2 14 10 7 0
+GENERATION 467
+Herbivores: 120 160 40 100 100 40 44 48 40 80
+Health: 6 8 2 5 5 2 3 3 2 4
+Hurt: 0 0 0 0 0 0 16 12 0 0
+Carnivores: 1 0 17 4 2
+GENERATION 468
+Herbivores: 120 58 120 93 24 20 20 18 87 0
+Health: 6 3 6 5 2 2 1 1 5 0
+Hurt: 0 2 0 7 16 20 0 2 13 0
+Carnivores: 17 0 21 7 2
+GENERATION 469
+Herbivores: 120 80 60 60 40 20 0 40 140 20
+Health: 6 4 3 3 2 1 0 2 7 1
+Hurt: 0 0 0 0 0 0 0 0 0 0
+Carnivores: 0 0 0 0 0
+GENERATION 470
+Herbivores: 177 100 29 20 37 60 40 160 115 54
+Health: 9 5 2 1 2 3 2 8 6 3
+Hurt: 3 0 11 0 3 0 0 0 5 6
+Carnivores: 0 16 5 0 2
+GENERATION 471
+Herbivores: 113 80 39 80 120 60 20 120 75 60
+Health: 6 4 2 4 6 3 1 6 4 3
+Hurt: 7 0 1 0 0 0 0 0 5 0
+Carnivores: 1 0 0 5 0
+GENERATION 472
+Herbivores: 140 40 80 27 76 33 69 37 9 0
+Health: 7 2 4 3 4 2 4 2 1 0
+Hurt: 0 0 0 33 4 7 11 3 11 0
+Carnivores: 32 0 7 15 0
+GENERATION 473
+Herbivores: 137 120 80 15 34 60 60 14 20 -1
+Health: 7 6 4 1 2 3 3 1 1 0
+Hurt: 3 0 0 5 6 0 0 6 0 1
+Carnivores: 0 0 9 1 0
+GENERATION 474
+Herbivores: 97 51 60 19 0 60 93 40 40 33
+Health: 5 3 3 1 0 3 5 2 2 2
+Hurt: 3 9 0 1 0 0 7 0 0 7
+Carnivores: 2 0 2 6 0
+GENERATION 475
+Herbivores: 99 120 0 18 20 60 77 55 19 8
+Health: 5 6 0 1 1 3 4 3 1 1
+Hurt: 1 0 0 2 0 0 3 5 1 12
+Carnivores: 13 0 0 2 0
+GENERATION 476
+Herbivores: 180 46 63 99 59 31 60 100 45 -13
+Health: 9 3 4 5 3 3 3 5 3 0
+Hurt: 0 14 17 1 1 29 0 0 15 13
+Carnivores: 17 28 17 2 2
+GENERATION 477
+Herbivores: 97 20 50 20 40 60 79 36 60 -42
+Health: 5 1 3 1 2 3 4 3 3 1
+Hurt: 3 0 10 0 0 0 1 24 0 62
+Carnivores: 27 0 3 10 0
+GENERATION 478
+Herbivores: 58 59 20 0 80 60 40 0 77 20
+Health: 3 3 1 0 4 3 2 0 4 1
+Hurt: 2 1 0 0 0 0 0 0 3 0
+Carnivores: 0 3 0 0 1
+GENERATION 479
+Herbivores: 177 106 51 100 3 40 180 80 40 20
+Health: 9 6 3 5 2 2 9 4 2 1
+Hurt: 3 14 9 0 37 0 0 0 0 0
+Carnivores: 17 7 11 3 0
+GENERATION 480
+Herbivores: 34 40 34 40 31 66 60 79 80 -20
+Health: 2 2 2 2 2 4 3 4 4 0
+Hurt: 6 0 6 0 9 14 0 1 0 20
+Carnivores: 19 0 0 16 0
+GENERATION 481
+Herbivores: 59 17 20 40 7 60 30 50 100 48
+Health: 3 1 1 2 1 3 2 3 5 3
+Hurt: 1 3 0 0 13 0 10 10 0 12
+Carnivores: 5 7 0 6 0
+GENERATION 482
+Herbivores: 140 40 0 38 40 100 23 -9 0 16
+Health: 7 2 0 2 2 5 2 2 0 1
+Hurt: 0 0 0 2 0 0 17 49 0 4
+Carnivores: 49 0 18 0 0
+GENERATION 483
+Herbivores: 140 100 20 40 20 59 0 55 54 10
+Health: 7 5 1 2 1 3 0 3 3 1
+Hurt: 0 0 0 0 0 1 0 5 6 10
+Carnivores: 1 5 3 0 0
+GENERATION 484
+Herbivores: 80 -6 38 60 80 60 50 20 60 40
+Health: 4 0 3 3 4 3 3 1 3 2
+Hurt: 0 6 22 0 0 0 10 0 0 0
+Carnivores: 0 9 7 0 4
+GENERATION 485
+Herbivores: 100 80 27 20 50 80 49 35 100 20
+Health: 5 4 2 1 3 4 3 2 5 1
+Hurt: 0 0 13 0 10 0 11 5 0 0
+Carnivores: 11 0 5 0 0
+GENERATION 486
+Herbivores: 40 53 60 39 60 39 80 60 20 -9
+Health: 2 3 3 2 3 3 4 3 1 0
+Hurt: 0 7 0 1 0 21 0 0 0 9
+Carnivores: 28 0 0 0 0
+GENERATION 487
+Herbivores: 169 22 60 80 20 0 0 80 -7 -27
+Health: 9 2 3 4 1 0 0 4 0 4
+Hurt: 11 18 0 0 0 0 0 0 7 107
+Carnivores: 54 2 23 4 4
+GENERATION 488
+Herbivores: 99 100 120 100 42 39 33 40 60 -25
+Health: 5 5 6 5 3 2 2 2 3 0
+Hurt: 1 0 0 0 18 1 7 0 0 25
+Carnivores: 0 8 12 22 2
+GENERATION 489
+Herbivores: 120 -16 60 0 40 0 5 40 84 -11
+Health: 6 0 3 0 2 0 1 2 5 0
+Hurt: 0 16 0 0 0 0 15 0 16 11
+Carnivores: 16 14 0 7 11
+GENERATION 490
+Herbivores: 200 33 8 17 100 2 60 80 39 -164
+Health: 10 2 3 2 5 1 3 4 2 1
+Hurt: 0 7 52 23 0 18 0 0 1 184
+Carnivores: 59 14 19 32 59
+GENERATION 491
+Herbivores: 51 20 80 100 80 60 0 40 0 -41
+Health: 3 1 4 5 4 3 0 2 0 0
+Hurt: 9 0 0 0 0 0 0 0 0 41
+Carnivores: 7 2 0 1 0
+GENERATION 492
+Herbivores: 80 80 60 20 20 80 -9 60 20 20
+Health: 4 4 3 1 1 4 3 3 1 1
+Hurt: 0 0 0 0 0 0 69 0 0 0
+Carnivores: 0 0 10 0 0
+GENERATION 493
+Herbivores: 120 14 100 93 60 95 61 40 80 18
+Health: 6 2 5 5 3 5 4 2 4 1
+Hurt: 0 26 0 7 0 5 19 0 0 2
+Carnivores: 26 0 0 0 1
+GENERATION 494
+Herbivores: 80 -8 0 15 73 28 51 21 20 -35
+Health: 4 2 0 1 4 2 3 2 1 1
+Hurt: 0 48 0 5 7 12 9 19 0 55
+Carnivores: 60 11 48 29 0
+GENERATION 495
+Herbivores: 100 40 14 40 23 40 40 20 36 -5
+Health: 5 2 2 2 3 2 2 1 2 2
+Hurt: 0 0 26 0 37 0 0 0 4 45
+Carnivores: 20 7 29 15 0
+GENERATION 496
+Herbivores: 138 40 28 40 20 40 20 0 20 -18
+Health: 7 2 2 2 1 2 1 0 1 2
+Hurt: 2 0 12 0 0 0 0 0 0 58
+Carnivores: 20 10 21 0 1
+GENERATION 497
+Herbivores: 80 0 15 20 -4 46 20 78 20 20
+Health: 4 0 2 1 1 3 1 4 1 1
+Hurt: 0 0 25 0 24 14 0 2 0 0
+Carnivores: 34 10 8 0 1
+GENERATION 498
+Herbivores: 139 42 106 60 40 -5 -6 20 0 2
+Health: 7 3 6 3 2 1 0 1 0 1
+Hurt: 1 18 14 0 0 25 6 0 0 18
+Carnivores: 19 10 0 12 6
+GENERATION 499
+Herbivores: 86 30 5 20 40 60 60 40 40 19
+Health: 5 3 1 1 2 3 3 2 2 1
+Hurt: 14 30 15 0 0 0 0 0 0 1
+Carnivores: 4 24 7 15 0
+GENERATION 500
+Herbivores: 80 0 0 20 0 39 -78 23 80 0
+Health: 4 0 0 1 0 2 0 2 4 0
+Hurt: 0 0 0 0 0 1 78 17 0 0
+Carnivores: 77 0 10 0 0
+GENERATION 501
+Herbivores: 92 40 36 20 40 24 0 29 79 0
+Health: 5 2 2 1 2 2 0 2 4 0
+Hurt: 8 0 4 0 0 16 0 11 1 0
+Carnivores: 0 13 1 0 9
+GENERATION 502
+Herbivores: 20 40 58 60 60 54 0 7 -33 -40
+Health: 1 2 3 3 3 3 0 1 1 0
+Hurt: 0 0 2 0 0 6 0 13 53 40
+Carnivores: 51 5 32 0 0
+GENERATION 503
+Herbivores: 145 53 62 20 0 40 40 99 100 0
+Health: 8 3 4 1 0 2 2 5 5 0
+Hurt: 15 7 18 0 0 0 0 1 0 0
+Carnivores: 4 6 14 0 3
+GENERATION 504
+Herbivores: 55 20 80 0 40 -10 20 54 72 -85
+Health: 3 1 4 0 2 0 1 3 4 0
+Hurt: 5 0 0 0 0 10 0 6 8 85
+Carnivores: 40 14 5 0 0
+GENERATION 505
+Herbivores: 117 60 31 40 60 18 40 -13 32 -23
+Health: 6 3 2 2 3 3 2 0 2 0
+Hurt: 3 0 9 0 0 42 0 13 8 23
+Carnivores: 18 19 7 18 6
+GENERATION 506
+Herbivores: 160 0 11 38 -15 0 59 0 18 40
+Health: 8 0 2 2 1 0 3 0 1 2
+Hurt: 0 0 29 2 35 0 1 0 2 0
+Carnivores: 27 7 0 15 0
+GENERATION 507
+Herbivores: 80 16 20 80 -3 40 13 21 40 -22
+Health: 4 1 1 4 0 2 1 2 2 0
+Hurt: 0 4 0 0 3 0 7 19 0 22
+Carnivores: 32 11 0 0 0
+GENERATION 508
+Herbivores: 55 0 20 0 -2 20 58 20 -4 -60
+Health: 3 0 1 0 0 1 3 1 0 0
+Hurt: 5 0 0 0 2 0 2 0 4 60
+Carnivores: 0 2 5 1 0
+GENERATION 509
+Herbivores: -4 60 31 19 60 10 20 40 40 28
+Health: 0 3 2 1 3 1 1 2 2 2
+Hurt: 4 0 9 1 0 10 0 0 0 12
+Carnivores: 0 0 11 9 3
+GENERATION 510
+Herbivores: 60 32 -3 48 -7 40 0 24 38 0
+Health: 3 2 0 3 0 2 0 2 2 0
+Hurt: 0 8 3 12 7 0 0 16 2 0
+Carnivores: 13 13 11 1 0
+GENERATION 511
+Herbivores: 80 40 0 40 40 40 36 15 0 40
+Health: 4 2 0 2 2 2 2 1 0 2
+Hurt: 0 0 0 0 0 0 4 5 0 0
+Carnivores: 2 0 0 0 4
+GENERATION 512
+Herbivores: 32 20 34 20 0 20 0 29 40 20
+Health: 2 1 2 1 0 1 0 2 2 1
+Hurt: 8 0 6 0 0 0 0 11 0 0
+Carnivores: 9 0 8 0 0
+GENERATION 513
+Herbivores: 34 64 40 20 20 39 0 20 31 -38
+Health: 2 4 2 1 1 2 1 1 2 1
+Hurt: 6 16 0 0 0 1 20 0 9 58
+Carnivores: 42 0 16 34 0
+GENERATION 514
+Herbivores: 72 -1 25 17 36 15 39 69 20 20
+Health: 4 0 2 1 2 1 2 4 1 1
+Hurt: 8 1 15 3 4 5 1 11 0 0
+Carnivores: 19 0 5 1 1
+GENERATION 515
+Herbivores: 69 20 -8 0 40 0 40 30 40 -4
+Health: 4 1 1 0 2 0 2 2 2 0
+Hurt: 11 0 28 0 0 0 0 10 0 4
+Carnivores: 27 9 11 0 0
+GENERATION 516
+Herbivores: 95 39 5 40 30 20 10 0 -15 -18
+Health: 5 2 1 2 2 1 1 0 1 0
+Hurt: 5 1 15 0 10 0 10 0 35 18
+Carnivores: 16 22 12 12 0
+GENERATION 517
+Herbivores: 77 -39 44 20 40 20 53 20 20 0
+Health: 4 1 3 1 2 1 3 1 1 0
+Hurt: 3 59 16 0 0 0 7 0 0 0
+Carnivores: 59 5 9 0 3
+GENERATION 518
+Herbivores: 100 57 108 94 80 60 40 80 0 0
+Health: 5 3 6 5 4 3 2 4 0 0
+Hurt: 0 3 12 6 0 0 0 0 0 0
+Carnivores: 0 10 6 0 0
+GENERATION 519
+Herbivores: 133 39 57 80 99 80 47 40 20 53
+Health: 7 2 3 4 5 4 3 3 1 3
+Hurt: 7 1 3 0 1 0 13 20 0 7
+Carnivores: 19 11 3 4 0
+GENERATION 520
+Herbivores: 100 78 10 20 40 53 3 80 55 -10
+Health: 5 4 1 1 2 3 1 4 3 1
+Hurt: 0 2 10 0 0 7 17 0 5 30
+Carnivores: 1 5 15 6 27
+GENERATION 521
+Herbivores: 94 18 16 48 37 0 60 56 40 -29
+Health: 5 1 1 4 2 0 3 4 2 0
+Hurt: 6 2 4 32 3 0 0 24 0 29
+Carnivores: 29 0 0 0 20
+GENERATION 522
+Herbivores: 100 6 40 11 40 80 55 80 56 20
+Health: 5 1 2 1 2 4 3 4 3 1
+Hurt: 0 14 0 9 0 0 5 0 4 0
+Carnivores: 7 19 0 0 0
+GENERATION 523
+Herbivores: 139 27 80 24 70 120 80 40 36 -2
+Health: 7 2 4 2 4 6 4 2 2 0
+Hurt: 1 13 0 16 10 0 0 0 4 2
+Carnivores: 18 14 0 1 3
+GENERATION 524
+Herbivores: 139 20 0 20 59 71 0 53 80 -6
+Health: 7 1 0 1 3 4 0 3 4 0
+Hurt: 1 0 0 0 1 9 0 7 0 6
+Carnivores: 0 8 3 5 0
+GENERATION 525
+Herbivores: 98 22 40 -1 31 15 0 20 137 -6
+Health: 5 2 2 0 2 1 0 1 7 0
+Hurt: 2 18 0 1 9 5 0 0 3 6
+Carnivores: 13 5 10 0 3
+GENERATION 526
+Herbivores: 77 60 40 34 0 40 16 44 0 13
+Health: 4 3 2 2 0 2 1 4 0 1
+Hurt: 3 0 0 6 0 0 4 36 0 7
+Carnivores: 25 6 8 3 2
+GENERATION 527
+Herbivores: 20 -10 2 0 0 20 11 0 44 -97
+Health: 1 1 1 0 0 1 2 0 3 0
+Hurt: 0 30 18 0 0 0 29 0 16 97
+Carnivores: 50 48 39 13 3
+GENERATION 528
+Herbivores: 95 80 19 20 9 57 40 96 40 1
+Health: 5 4 1 1 1 3 2 5 2 1
+Hurt: 5 0 1 0 11 3 0 4 0 19
+Carnivores: 6 0 9 6 1
+GENERATION 529
+Herbivores: 71 60 28 31 11 40 20 11 35 -4
+Health: 4 3 2 2 1 2 1 1 2 0
+Hurt: 9 0 12 9 9 0 0 9 5 4
+Carnivores: 4 5 7 9 3
+GENERATION 530
+Herbivores: 54 20 30 19 40 35 3 -9 67 77
+Health: 3 1 2 2 2 3 1 0 4 4
+Hurt: 6 0 10 21 0 25 17 9 13 3
+Carnivores: 11 1 9 20 12
+GENERATION 531
+Herbivores: 98 9 0 -36 20 37 20 60 31 35
+Health: 5 1 0 1 1 2 1 3 3 2
+Hurt: 2 11 0 56 0 3 0 0 29 5
+Carnivores: 49 0 1 43 1
+GENERATION 532
+Herbivores: 80 37 56 19 17 -5 -4 0 39 -18
+Health: 4 2 3 1 1 4 0 0 3 0
+Hurt: 0 3 4 1 3 85 4 0 21 18
+Carnivores: 39 20 12 8 0
+GENERATION 533
+Herbivores: 136 0 0 16 40 20 -16 59 -5 -87
+Health: 7 0 0 1 2 1 1 3 0 0
+Hurt: 4 0 0 4 0 0 36 1 5 87
+Carnivores: 87 22 4 0 7
+GENERATION 534
+Herbivores: 38 11 40 21 0 20 48 52 60 0
+Health: 2 2 2 2 0 1 3 3 3 0
+Hurt: 2 29 0 19 0 0 12 8 0 0
+Carnivores: 0 29 13 14 1
+GENERATION 535
+Herbivores: 20 53 19 0 32 40 12 20 31 -10
+Health: 1 3 1 0 2 2 1 1 2 3
+Hurt: 0 7 1 0 8 0 8 0 9 70
+Carnivores: 0 7 0 12 8
+GENERATION 536
+Herbivores: 60 0 13 -25 0 40 8 35 -16 0
+Health: 3 0 1 0 0 2 1 3 0 0
+Hurt: 0 0 7 25 0 0 12 25 16 0
+Carnivores: 20 21 23 3 0
+GENERATION 537
+Herbivores: 58 0 20 40 69 0 33 50 16 20
+Health: 3 0 1 2 4 0 3 3 1 1
+Hurt: 2 0 0 0 11 0 27 10 4 0
+Carnivores: 2 10 6 10 3
+GENERATION 538
+Herbivores: 40 31 20 0 0 11 60 60 0 -10
+Health: 2 2 1 0 0 1 4 3 0 1
+Hurt: 0 9 0 0 0 9 20 0 0 30
+Carnivores: 31 18 0 0 6
+GENERATION 539
+Herbivores: 74 17 17 40 0 40 -31 20 40 0
+Health: 4 1 1 2 0 2 0 1 2 0
+Hurt: 6 3 3 0 0 0 31 0 0 0
+Carnivores: 0 14 4 0 0
+GENERATION 540
+Herbivores: 79 17 0 40 -17 7 41 56 18 0
+Health: 4 1 0 2 0 1 3 3 1 0
+Hurt: 1 3 0 0 17 13 19 4 2 0
+Carnivores: 26 6 5 0 0
+GENERATION 541
+Herbivores: 80 56 40 0 40 57 75 60 20 -27
+Health: 4 3 2 0 2 3 4 3 1 1
+Hurt: 0 4 0 0 0 3 5 0 0 47
+Carnivores: 3 4 0 0 0
+GENERATION 542
+Herbivores: 59 40 0 31 20 20 0 20 17 40
+Health: 4 2 0 2 1 1 0 1 1 2
+Hurt: 21 0 0 9 0 0 0 0 3 0
+Carnivores: 8 0 14 0 0
+GENERATION 543
+Herbivores: 60 34 100 40 20 40 20 52 20 20
+Health: 3 2 5 2 1 2 1 4 1 1
+Hurt: 0 6 0 0 0 0 0 28 0 0
+Carnivores: 3 9 14 0 0
+GENERATION 544
+Herbivores: 80 20 0 20 20 20 0 40 79 1
+Health: 4 1 0 1 1 1 0 2 4 2
+Hurt: 0 0 0 0 0 0 0 0 1 39
+Carnivores: 4 6 1 5 10
+GENERATION 545
+Herbivores: 39 59 72 -6 39 40 21 27 51 -47
+Health: 2 3 4 1 2 2 2 2 3 1
+Hurt: 1 1 8 26 1 0 19 13 9 67
+Carnivores: 52 20 3 38 0
+GENERATION 546
+Herbivores: 40 20 20 36 60 59 49 20 40 0
+Health: 2 1 1 2 3 3 3 1 2 0
+Hurt: 0 0 0 4 0 1 11 0 0 0
+Carnivores: 0 10 2 0 1
+GENERATION 547
+Herbivores: 80 42 60 59 45 18 20 22 0 0
+Health: 4 3 3 3 3 1 1 2 0 0
+Hurt: 0 18 0 1 15 2 0 18 0 0
+Carnivores: 20 5 8 13 0
+GENERATION 548
+Herbivores: 99 0 6 -9 0 20 40 0 40 0
+Health: 5 0 1 1 0 1 2 0 2 0
+Hurt: 1 0 14 29 0 0 0 0 0 0
+Carnivores: 1 8 9 0 0
+GENERATION 549
+Herbivores: 140 20 100 20 6 60 34 0 19 0
+Health: 7 3 5 1 1 3 2 0 1 0
+Hurt: 0 40 0 0 14 0 6 0 1 0
+Carnivores: 4 6 14 8 6
+GENERATION 550
+Herbivores: 40 0 20 40 18 0 34 20 34 12
+Health: 2 0 1 2 1 0 2 1 2 1
+Hurt: 0 0 0 0 2 0 6 0 6 8
+Carnivores: 1 2 0 0 4
+GENERATION 551
+Herbivores: 60 20 40 20 20 40 19 0 43 10
+Health: 3 1 2 1 1 2 1 0 3 1
+Hurt: 0 0 0 0 0 0 1 0 17 10
+Carnivores: 4 11 0 0 1
+GENERATION 552
+Herbivores: 60 20 0 20 20 38 -2 38 35 11
+Health: 3 1 0 1 1 2 0 2 2 1
+Hurt: 0 0 0 0 0 2 2 2 5 9
+Carnivores: 8 3 0 0 4
+GENERATION 553
+Herbivores: 57 40 46 20 20 -57 37 20 16 -42
+Health: 3 2 3 1 1 0 2 1 1 1
+Hurt: 3 0 14 0 0 57 3 0 4 62
+Carnivores: 64 51 0 10 0
+GENERATION 554
+Herbivores: 60 -24 20 -5 20 -1 20 20 20 -89
+Health: 3 1 1 0 1 0 1 1 1 0
+Hurt: 0 44 0 5 0 1 0 0 0 89
+Carnivores: 94 18 0 4 0
+GENERATION 555
+Herbivores: 100 0 20 40 20 20 60 20 94 0
+Health: 5 0 1 2 1 1 3 1 5 0
+Hurt: 0 0 0 0 0 0 0 0 6 0
+Carnivores: 0 1 0 0 0
+GENERATION 556
+Herbivores: 60 -3 18 -2 52 25 16 60 20 -80
+Health: 3 0 1 0 3 2 1 3 1 0
+Hurt: 0 3 2 2 8 15 4 0 0 80
+Carnivores: 31 44 1 12 3
+GENERATION 557
+Herbivores: 99 0 35 20 20 60 69 40 35 55
+Health: 5 0 2 1 1 3 4 2 3 3
+Hurt: 1 0 5 0 0 0 11 0 25 5
+Carnivores: 1 6 4 17 0
+GENERATION 558
+Herbivores: 100 78 60 40 18 60 15 40 40 0
+Health: 5 4 3 2 1 3 1 2 2 0
+Hurt: 0 2 0 0 2 0 5 0 0 0
+Carnivores: 2 4 0 3 0
+GENERATION 559
+Herbivores: 56 49 20 20 -8 -3 40 20 39 1
+Health: 3 3 1 1 0 0 2 1 2 1
+Hurt: 4 11 0 0 8 3 0 0 1 19
+Carnivores: 18 2 9 0 0
+GENERATION 560
+Herbivores: 113 23 0 52 24 -5 60 80 60 0
+Health: 6 2 0 3 2 0 3 4 3 0
+Hurt: 7 17 0 8 16 5 0 0 0 0
+Carnivores: 5 11 10 7 0
+GENERATION 561
+Herbivores: 40 20 40 -12 20 56 40 20 20 0
+Health: 2 1 2 1 1 3 2 1 1 0
+Hurt: 0 0 0 32 0 4 0 0 0 0
+Carnivores: 26 2 0 0 0
+GENERATION 562
+Herbivores: 60 15 20 6 11 37 40 51 0 -26
+Health: 3 1 1 1 1 2 2 3 0 0
+Hurt: 0 5 0 14 9 3 0 9 0 26
+Carnivores: 0 8 8 15 0
+GENERATION 563
+Herbivores: 40 20 20 40 0 20 40 20 -12 0
+Health: 2 1 1 2 0 1 2 1 0 0
+Hurt: 0 0 0 0 0 0 0 0 12 0
+Carnivores: 3 9 0 0 0
+GENERATION 564
+Herbivores: 31 0 -8 0 -1 0 -20 0 40 -20
+Health: 2 0 0 0 0 0 0 0 2 0
+Hurt: 9 0 8 0 1 0 20 0 0 20
+Carnivores: 20 0 7 12 0
+GENERATION 565
+Herbivores: 92 19 13 20 0 -3 20 0 12 -33
+Health: 5 1 1 1 0 0 1 0 1 0
+Hurt: 8 1 7 0 0 3 0 0 8 33
+Carnivores: 33 0 2 5 6
+GENERATION 566
+Herbivores: 80 80 20 115 37 -8 -26 30 2 -28
+Health: 4 4 1 6 2 0 0 2 1 1
+Hurt: 0 0 0 5 3 8 26 10 18 48
+Carnivores: 42 15 11 17 0
+GENERATION 567
+Herbivores: 62 -9 20 29 20 39 0 40 18 -49
+Health: 4 0 1 2 1 3 0 2 1 0
+Hurt: 18 9 0 11 0 21 0 0 2 49
+Carnivores: 49 6 20 13 0
+GENERATION 568
+Herbivores: 80 80 40 98 20 46 0 39 36 -14
+Health: 4 4 2 5 1 3 0 2 2 0
+Hurt: 0 0 0 2 0 14 0 1 4 14
+Carnivores: 25 2 0 0 2
+GENERATION 569
+Herbivores: 98 34 0 17 20 29 -5 12 37 -14
+Health: 5 2 0 1 1 2 0 1 2 0
+Hurt: 2 6 0 3 0 11 5 8 3 14
+Carnivores: 20 8 0 0 0
+GENERATION 570
+Herbivores: 31 0 -5 14 5 20 26 -14 0 0
+Health: 2 0 0 1 1 1 2 0 0 0
+Hurt: 9 0 5 6 15 0 14 14 0 0
+Carnivores: 32 10 5 0 0
+GENERATION 571
+Herbivores: 200 12 5 -2 0 20 40 37 60 0
+Health: 10 1 2 0 0 1 2 2 3 1
+Hurt: 0 8 35 2 0 0 0 3 0 20
+Carnivores: 42 18 0 0 0
+GENERATION 572
+Herbivores: 8 58 15 0 36 31 20 50 -4 -12
+Health: 3 3 1 0 2 2 1 3 1 0
+Hurt: 52 2 5 0 4 9 0 10 24 12
+Carnivores: 7 4 16 11 7
+GENERATION 573
+Herbivores: 100 20 55 20 40 93 0 60 19 0
+Health: 5 1 3 1 2 5 0 3 1 0
+Hurt: 0 0 5 0 0 7 0 0 1 0
+Carnivores: 0 2 0 0 7
+GENERATION 574
+Herbivores: 40 20 60 64 20 21 20 9 40 -19
+Health: 2 1 3 4 1 2 1 1 2 0
+Hurt: 0 0 0 16 0 19 0 11 0 19
+Carnivores: 11 17 4 16 0
+GENERATION 575
+Herbivores: 73 20 -7 0 20 0 56 50 19 -1
+Health: 4 1 0 0 1 0 3 3 1 0
+Hurt: 7 0 7 0 0 0 4 10 1 1
+Carnivores: 5 4 13 1 0
+GENERATION 576
+Herbivores: 88 20 -2 20 40 20 0 -7 32 -4
+Health: 5 1 0 1 2 1 0 2 2 0
+Hurt: 12 0 2 0 0 0 0 47 8 4
+Carnivores: 47 12 0 5 0
+GENERATION 577
+Herbivores: 100 78 59 20 0 20 0 40 0 -142
+Health: 5 4 3 1 0 1 0 2 0 3
+Hurt: 0 2 1 0 0 0 0 0 0 202
+Carnivores: 79 1 45 0 0
+GENERATION 578
+Herbivores: 25 40 20 78 0 20 60 -2 46 20
+Health: 2 2 1 4 0 1 3 0 3 1
+Hurt: 15 0 0 2 0 0 0 2 14 0
+Carnivores: 16 0 0 10 0
+GENERATION 579
+Herbivores: 70 -12 18 -5 19 20 60 40 19 40
+Health: 4 0 1 1 1 1 3 2 1 2
+Hurt: 10 12 2 25 1 0 0 0 1 0
+Carnivores: 10 10 15 14 0
+GENERATION 580
+Herbivores: 40 40 20 20 -105 0 20 20 40 0
+Health: 2 2 1 1 0 0 1 1 2 0
+Hurt: 0 0 0 0 105 0 0 0 0 0
+Carnivores: 35 0 22 0 0
+GENERATION 581
+Herbivores: 80 37 39 19 0 -7 39 58 5 0
+Health: 4 2 2 2 0 0 2 4 1 0
+Hurt: 0 3 1 21 0 7 1 22 15 0
+Carnivores: 13 4 7 11 1
+GENERATION 582
+Herbivores: 29 20 -2 39 31 -9 53 20 20 0
+Health: 2 1 0 2 2 0 3 1 1 0
+Hurt: 11 0 2 1 9 9 7 0 0 0
+Carnivores: 13 3 0 4 0
+GENERATION 583
+Herbivores: 20 -3 17 -1 20 -38 0 0 0 -58
+Health: 1 0 1 0 1 1 0 0 0 0
+Hurt: 0 3 3 1 0 58 0 0 0 58
+Carnivores: 58 58 0 1 1
+GENERATION 584
+Herbivores: 132 -2 20 20 20 39 -9 0 20 0
+Health: 7 0 1 1 1 2 0 0 1 0
+Hurt: 8 2 0 0 0 1 9 0 0 0
+Carnivores: 0 0 5 7 0
+GENERATION 585
+Herbivores: 100 39 40 19 60 39 18 19 54 0
+Health: 5 2 2 1 3 2 2 1 3 0
+Hurt: 0 1 0 1 0 1 22 1 6 0
+Carnivores: 0 0 18 0 1
+GENERATION 586
+Herbivores: 69 5 20 35 12 -1 19 38 20 20
+Health: 4 1 1 2 1 0 1 2 1 1
+Hurt: 11 15 0 5 8 1 1 2 0 0
+Carnivores: 4 15 4 7 0
+GENERATION 587
+Herbivores: 73 40 -1 0 9 -4 20 -20 40 -20
+Health: 4 2 0 0 1 1 1 1 2 0
+Hurt: 7 0 1 0 11 24 0 40 0 20
+Carnivores: 29 20 40 0 0
+GENERATION 588
+Herbivores: 20 17 17 20 14 -1 12 55 17 -32
+Health: 1 1 1 1 1 0 1 3 1 0
+Hurt: 0 3 3 0 6 1 8 5 3 32
+Carnivores: 0 9 0 30 3
+GENERATION 589
+Herbivores: 60 20 17 39 18 18 19 3 3 -16
+Health: 3 1 2 2 1 1 1 1 1 0
+Hurt: 0 0 23 1 2 2 1 17 17 16
+Carnivores: 10 13 15 20 0
+GENERATION 590
+Herbivores: 140 48 18 20 10 -2 80 4 40 40
+Health: 7 3 1 1 1 0 4 1 2 2
+Hurt: 0 12 2 0 10 2 0 16 0 0
+Carnivores: 10 1 4 11 0
+GENERATION 591
+Herbivores: 67 5 -30 40 40 20 40 120 0 0
+Health: 4 1 0 2 2 1 2 6 0 0
+Hurt: 13 15 30 0 0 0 0 0 0 0
+Carnivores: 11 0 0 7 0
+GENERATION 592
+Herbivores: 20 40 40 -15 40 40 -3 18 39 20
+Health: 1 2 2 0 2 2 0 1 2 1
+Hurt: 0 0 0 15 0 0 3 2 1 0
+Carnivores: 0 0 5 4 2
+GENERATION 593
+Herbivores: 60 -8 60 -8 0 0 59 20 -18 20
+Health: 3 0 3 0 0 0 3 1 0 1
+Hurt: 0 8 0 8 0 0 1 0 18 0
+Carnivores: 0 10 0 2 1
+GENERATION 594
+Herbivores: 34 -37 20 20 -9 0 40 15 20 -6
+Health: 2 0 1 1 0 0 2 1 1 0
+Hurt: 6 37 0 0 9 0 0 5 0 6
+Carnivores: 10 10 0 0 0
+GENERATION 595
+Herbivores: 40 31 31 20 0 0 20 19 0 -3
+Health: 2 2 2 1 0 0 1 1 0 0
+Hurt: 0 9 9 0 0 0 0 1 0 3
+Carnivores: 10 0 0 0 0
+GENERATION 596
+Herbivores: 100 20 0 20 -5 13 80 20 40 0
+Health: 5 1 0 1 0 2 4 1 2 0
+Hurt: 0 0 0 0 5 27 0 0 0 0
+Carnivores: 0 6 0 0 0
+GENERATION 597
+Herbivores: 60 18 40 0 40 17 -1 20 0 0
+Health: 3 1 2 0 2 1 0 1 0 0
+Hurt: 0 2 0 0 0 3 1 0 0 0
+Carnivores: 1 0 0 0 0
+GENERATION 598
+Herbivores: 59 0 20 -12 10 20 15 59 0 -8
+Health: 3 0 1 0 1 1 1 3 0 0
+Hurt: 1 0 0 12 10 0 5 1 0 8
+Carnivores: 18 6 5 5 0
+GENERATION 599
+Herbivores: 59 0 -7 20 80 1 0 0 20 -1
+Health: 3 0 0 1 4 1 0 0 1 0
+Hurt: 1 0 7 0 0 19 0 0 0 1
+Carnivores: 0 11 0 9 0
+GENERATION 600
+Herbivores: 20 20 0 40 38 52 0 55 0 -2
+Health: 1 1 0 2 3 3 0 3 0 0
+Hurt: 0 0 0 0 22 8 0 5 0 2
+Carnivores: 19 1 6 2 0
+GENERATION 601
+Herbivores: 40 14 0 0 -5 40 20 20 -9 -47
+Health: 2 1 0 0 0 2 1 1 0 0
+Hurt: 0 6 0 0 5 0 0 0 9 47
+Carnivores: 27 0 0 3 0
+GENERATION 602
+Herbivores: 60 74 20 60 25 39 0 20 20 39
+Health: 3 4 1 3 2 2 0 1 1 2
+Hurt: 0 6 0 0 15 1 0 0 0 1
+Carnivores: 1 10 7 3 0
+GENERATION 603
+Herbivores: 20 20 20 -5 11 12 0 20 46 0
+Health: 1 1 1 0 1 1 0 1 3 0
+Hurt: 0 0 0 5 9 8 0 0 14 0
+Carnivores: 5 3 1 0 3
+GENERATION 604
+Herbivores: 60 20 17 -5 -19 40 -1 20 60 -22
+Health: 3 1 2 1 0 2 0 1 3 0
+Hurt: 0 0 23 25 19 0 1 0 0 22
+Carnivores: 20 20 4 14 0
+GENERATION 605
+Herbivores: 40 40 44 40 0 33 0 40 11 0
+Health: 2 2 3 2 0 2 0 2 2 0
+Hurt: 0 0 16 0 0 7 0 0 29 0
+Carnivores: 22 0 8 6 0
+GENERATION 606
+Herbivores: 80 40 20 60 20 40 80 15 51 -17
+Health: 4 2 1 3 1 2 4 1 3 0
+Hurt: 0 0 0 0 0 0 0 5 9 17
+Carnivores: 3 10 3 0 0
+GENERATION 607
+Herbivores: 20 0 13 -4 -4 2 40 6 20 -50
+Health: 1 0 1 1 0 1 2 1 1 0
+Hurt: 0 0 7 24 4 18 0 14 0 50
+Carnivores: 42 7 21 23 7
+GENERATION 608
+Herbivores: 59 0 20 0 19 0 0 40 18 40
+Health: 3 0 1 0 1 0 0 2 1 2
+Hurt: 1 0 0 0 1 0 0 0 2 0
+Carnivores: 0 1 0 0 0
+GENERATION 609
+Herbivores: 120 60 16 40 32 36 50 0 0 0
+Health: 6 3 1 2 2 2 3 0 0 0
+Hurt: 0 0 4 0 8 4 10 0 0 0
+Carnivores: 4 0 5 4 0
+GENERATION 610
+Herbivores: 60 11 0 20 57 20 20 12 11 0
+Health: 3 1 0 1 3 1 1 1 1 0
+Hurt: 0 9 0 0 3 0 0 8 9 0
+Carnivores: 8 5 0 0 0
+GENERATION 611
+Herbivores: 25 18 0 20 12 11 20 40 40 0
+Health: 2 1 0 1 1 1 1 2 2 0
+Hurt: 15 2 0 0 8 9 0 0 0 0
+Carnivores: 16 0 0 4 0
+GENERATION 612
+Herbivores: 59 16 60 20 40 20 0 -3 19 -11
+Health: 3 1 3 1 2 1 0 0 1 0
+Hurt: 1 4 0 0 0 0 0 3 1 11
+Carnivores: 12 0 0 4 0
+GENERATION 613
+Herbivores: 79 40 0 9 -2 49 5 13 11 0
+Health: 4 2 0 1 0 3 1 2 2 0
+Hurt: 1 0 0 11 2 11 15 27 29 0
+Carnivores: 28 3 26 17 1
+GENERATION 614
+Herbivores: 60 20 40 30 20 -6 20 20 52 0
+Health: 3 1 2 2 1 2 1 1 3 0
+Hurt: 0 0 0 10 0 46 0 0 8 0
+Carnivores: 46 0 6 6 2
+GENERATION 615
+Herbivores: 54 39 8 60 29 40 11 60 9 -5
+Health: 3 2 2 3 2 2 1 3 1 0
+Hurt: 6 1 32 0 11 0 9 0 11 5
+Carnivores: 0 7 4 11 14
+GENERATION 616
+Herbivores: 40 0 14 20 20 20 40 51 40 0
+Health: 2 0 1 1 1 1 2 3 2 0
+Hurt: 0 0 6 0 0 0 0 9 0 0
+Carnivores: 0 0 1 8 0
+GENERATION 617
+Herbivores: 40 39 40 0 20 40 20 24 16 0
+Health: 2 2 2 0 1 2 1 2 1 0
+Hurt: 0 1 0 0 0 0 0 16 4 0
+Carnivores: 20 0 1 0 0
+GENERATION 618
+Herbivores: 60 40 40 20 10 20 11 20 16 -5
+Health: 3 2 2 1 1 1 1 1 1 0
+Hurt: 0 0 0 0 10 0 9 0 4 5
+Carnivores: 2 6 11 0 1
+GENERATION 619
+Herbivores: 79 5 20 17 0 16 15 17 0 -20
+Health: 5 1 1 1 0 1 1 1 0 0
+Hurt: 21 15 0 3 0 4 5 3 0 20
+Carnivores: 17 12 0 21 5
+GENERATION 620
+Herbivores: 80 0 0 57 39 19 -4 40 17 0
+Health: 4 0 0 3 3 1 1 2 1 0
+Hurt: 0 0 0 3 21 1 24 0 3 0
+Carnivores: 15 3 0 0 0
+GENERATION 621
+Herbivores: 60 0 24 0 0 0 0 0 0 40
+Health: 3 0 2 0 0 0 0 0 0 2
+Hurt: 0 0 16 0 0 0 0 0 0 0
+Carnivores: 3 0 9 0 0
+GENERATION 622
+Herbivores: 60 20 14 34 0 -8 20 36 6 -13
+Health: 3 1 1 2 0 0 1 2 2 0
+Hurt: 0 0 6 6 0 8 0 4 34 13
+Carnivores: 26 6 2 9 1
+GENERATION 623
+Herbivores: 60 20 4 -12 20 20 8 40 38 -41
+Health: 3 1 1 0 1 1 1 2 2 0
+Hurt: 0 0 16 12 0 0 12 0 2 41
+Carnivores: 50 2 12 9 0
+GENERATION 624
+Herbivores: 20 26 -12 -14 -4 18 54 -2 19 -7
+Health: 1 2 1 0 1 1 3 0 2 0
+Hurt: 0 14 32 14 24 2 6 2 21 7
+Carnivores: 31 15 19 12 0
+GENERATION 625
+Herbivores: 77 48 60 30 20 20 40 15 20 -15
+Health: 4 3 3 2 1 1 2 1 1 0
+Hurt: 3 12 0 10 0 0 0 5 0 15
+Carnivores: 29 11 0 1 0
+GENERATION 626
+Herbivores: 40 17 40 53 52 20 20 46 17 5
+Health: 2 2 2 3 4 1 1 3 2 1
+Hurt: 0 23 0 7 28 0 0 14 23 15
+Carnivores: 22 14 14 18 18
+GENERATION 627
+Herbivores: 83 -20 0 0 -2 15 0 20 51 7
+Health: 5 0 0 0 0 2 0 1 3 1
+Hurt: 17 20 0 0 2 25 0 0 9 13
+Carnivores: 21 6 22 13 8
+GENERATION 628
+Herbivores: 76 34 31 -8 20 60 18 40 12 -1
+Health: 4 2 2 0 1 3 1 2 1 0
+Hurt: 4 6 9 8 0 0 2 0 8 1
+Carnivores: 7 16 0 0 3
+GENERATION 629
+Herbivores: 40 16 0 -1 0 20 0 20 20 -72
+Health: 2 1 0 1 0 1 0 1 1 0
+Hurt: 0 4 0 21 0 0 0 0 0 72
+Carnivores: 72 3 0 14 0
+GENERATION 630
+Herbivores: 58 20 0 -6 0 -8 9 -3 0 0
+Health: 3 1 0 2 0 0 1 0 0 0
+Hurt: 2 0 0 46 0 8 11 3 0 0
+Carnivores: 17 21 0 25 1
+GENERATION 631
+Herbivores: 31 -35 60 -1 40 0 0 20 38 0
+Health: 2 0 3 0 2 0 0 1 2 0
+Hurt: 9 35 0 1 0 0 0 0 2 0
+Carnivores: 33 2 0 0 0
+GENERATION 632
+Herbivores: 34 24 20 40 -2 59 20 0 20 -23
+Health: 2 2 1 2 0 3 1 0 1 0
+Hurt: 6 16 0 0 2 1 0 0 0 23
+Carnivores: 12 0 0 0 0
+GENERATION 633
+Herbivores: 53 40 -4 59 20 0 60 0 0 -36
+Health: 3 2 0 3 1 0 3 0 0 1
+Hurt: 7 0 4 1 0 0 0 0 0 56
+Carnivores: 37 0 0 4 0
+GENERATION 634
+Herbivores: 80 0 60 0 0 0 -4 60 0 -62
+Health: 4 0 3 0 0 0 0 3 0 0
+Hurt: 0 0 0 0 0 0 4 0 0 62
+Carnivores: 0 0 10 0 1
+GENERATION 635
+Herbivores: 80 0 -1 54 0 20 0 20 37 8
+Health: 5 0 0 3 0 1 0 1 2 1
+Hurt: 20 0 1 6 0 0 0 0 3 12
+Carnivores: 1 21 0 6 6
+GENERATION 636
+Herbivores: 60 40 0 0 20 10 20 -6 75 0
+Health: 3 2 0 0 1 2 1 0 4 0
+Hurt: 0 0 0 0 0 30 0 6 5 0
+Carnivores: 13 0 4 0 0
+GENERATION 637
+Herbivores: 74 20 45 17 0 0 0 39 24 0
+Health: 4 1 3 1 0 0 0 2 2 0
+Hurt: 6 0 15 3 0 0 0 1 16 0
+Carnivores: 3 3 3 6 3
+GENERATION 638
+Herbivores: 79 -4 0 25 35 40 20 19 20 0
+Health: 5 1 0 2 2 2 1 1 1 0
+Hurt: 21 24 0 15 5 0 0 1 0 0
+Carnivores: 29 14 0 0 1
+GENERATION 639
+Herbivores: 119 70 10 34 20 16 0 43 63 0
+Health: 6 4 1 2 1 1 0 3 4 0
+Hurt: 1 10 10 6 0 4 0 17 17 0
+Carnivores: 19 14 18 0 3
+GENERATION 640
+Herbivores: 40 0 20 -5 11 0 -6 0 -19 -3
+Health: 2 0 1 0 1 0 0 0 0 0
+Hurt: 0 0 0 5 9 0 6 0 19 3
+Carnivores: 11 0 2 10 0
+GENERATION 641
+Herbivores: 53 0 20 19 -2 -6 -1 20 3 20
+Health: 3 0 1 1 1 0 0 1 2 1
+Hurt: 7 0 0 1 22 6 1 0 37 0
+Carnivores: 28 0 9 19 0
+GENERATION 642
+Herbivores: 80 0 -13 -3 -1 46 24 -48 0 -15
+Health: 4 0 0 0 0 3 2 0 0 0
+Hurt: 0 0 13 3 1 14 16 48 0 15
+Carnivores: 40 12 20 11 0
+GENERATION 643
+Herbivores: 60 0 25 40 60 -10 0 20 40 -49
+Health: 3 0 3 2 3 0 0 1 2 0
+Hurt: 0 0 35 0 0 10 0 0 0 49
+Carnivores: 44 0 27 10 7
+GENERATION 644
+Herbivores: 69 57 15 20 20 40 0 0 60 0
+Health: 4 3 1 1 2 2 0 0 3 0
+Hurt: 11 3 5 0 20 0 0 0 0 0
+Carnivores: 8 0 9 8 0
+GENERATION 645
+Herbivores: 38 50 0 20 51 60 40 20 40 0
+Health: 2 3 0 1 3 3 2 1 2 0
+Hurt: 2 10 0 0 9 0 0 0 0 0
+Carnivores: 0 4 0 2 0
+GENERATION 646
+Herbivores: 59 20 66 40 53 20 73 0 40 0
+Health: 3 1 4 2 3 1 4 0 2 0
+Hurt: 1 0 14 0 7 0 7 0 0 0
+Carnivores: 0 7 5 11 0
+GENERATION 647
+Herbivores: 107 29 40 40 20 0 39 20 -1 -61
+Health: 6 2 2 2 1 0 2 1 0 1
+Hurt: 13 11 0 0 0 0 1 0 1 81
+Carnivores: 79 6 2 0 8
+GENERATION 648
+Herbivores: 33 4 30 20 9 -1 -9 19 0 -37
+Health: 2 1 2 1 1 0 0 1 0 1
+Hurt: 7 16 10 0 11 1 9 1 0 57
+Carnivores: 0 31 24 15 0
+GENERATION 649
+Herbivores: 60 0 0 20 40 19 -5 0 -1 -28
+Health: 3 0 0 1 2 1 0 0 0 2
+Hurt: 0 0 0 0 0 1 5 0 1 68
+Carnivores: 36 0 0 0 2
+GENERATION 650
+Herbivores: 94 19 -1 0 52 80 20 0 0 0
+Health: 6 1 0 0 3 4 1 0 0 0
+Hurt: 26 1 1 0 8 0 0 0 0 0
+Carnivores: 2 4 3 8 1
+GENERATION 651
+Herbivores: 21 0 6 18 0 20 -3 20 20 38
+Health: 2 0 1 1 0 1 0 1 1 3
+Hurt: 19 0 14 2 0 0 3 0 0 22
+Carnivores: 12 10 3 0 0
+GENERATION 652
+Herbivores: 95 0 20 40 97 98 0 20 20 20
+Health: 5 0 1 2 5 5 0 1 1 1
+Hurt: 5 0 0 0 3 2 0 0 0 0
+Carnivores: 5 0 3 0 0
+GENERATION 653
+Herbivores: 40 -4 0 11 0 0 0 0 31 -107
+Health: 2 0 0 1 0 0 0 0 2 0
+Hurt: 0 4 0 9 0 0 0 0 9 107
+Carnivores: 66 19 7 9 0
+GENERATION 654
+Herbivores: 60 0 40 19 -37 20 20 38 35 -42
+Health: 3 0 2 1 1 1 1 2 2 0
+Hurt: 0 0 0 1 57 0 0 2 5 42
+Carnivores: 0 0 24 0 5
+GENERATION 655
+Herbivores: 4 15 35 0 39 -43 -6 -4 -75 -79
+Health: 1 2 2 0 2 0 0 0 2 0
+Hurt: 16 25 5 0 1 43 6 4 115 79
+Carnivores: 74 67 44 74 17
+GENERATION 656
+Herbivores: 80 -21 60 0 0 -4 20 20 20 15
+Health: 4 2 3 0 0 1 1 1 1 1
+Hurt: 0 61 0 0 0 24 0 0 0 5
+Carnivores: 17 0 4 11 0
+GENERATION 657
+Herbivores: 38 34 20 20 20 0 40 -11 20 -10
+Health: 2 2 1 1 1 0 2 1 1 0
+Hurt: 2 6 0 0 0 0 0 31 0 10
+Carnivores: 31 0 0 6 0
+GENERATION 658
+Herbivores: 80 0 0 18 20 20 0 15 0 0
+Health: 4 0 0 2 1 1 0 1 0 0
+Hurt: 0 0 0 22 0 0 0 5 0 0
+Carnivores: 8 0 0 10 0
+GENERATION 659
+Herbivores: 98 20 0 0 40 39 20 -16 20 -10
+Health: 5 1 0 0 2 2 2 0 1 0
+Hurt: 2 0 0 0 0 1 20 16 0 10
+Carnivores: 34 0 3 0 0
+GENERATION 660
+Herbivores: 28 59 60 7 0 20 -24 30 40 -7
+Health: 2 3 3 1 0 1 2 2 2 0
+Hurt: 12 1 0 13 0 0 64 10 0 7
+Carnivores: 36 1 3 5 4
+GENERATION 661
+Herbivores: 59 0 37 80 20 -1 35 71 40 0
+Health: 3 0 2 4 1 0 2 4 2 0
+Hurt: 1 0 3 0 0 1 5 9 0 0
+Carnivores: 0 5 3 1 2
+GENERATION 662
+Herbivores: 80 100 19 59 0 60 15 15 40 0
+Health: 4 5 1 3 0 3 1 1 2 0
+Hurt: 0 0 1 1 0 0 5 5 0 0
+Carnivores: 0 8 0 0 0
+GENERATION 663
+Herbivores: 80 9 60 25 52 -9 19 0 -1 0
+Health: 4 1 3 2 4 0 1 0 0 0
+Hurt: 0 11 0 15 28 9 1 0 1 0
+Carnivores: 36 4 7 13 0
+GENERATION 664
+Herbivores: 80 -3 0 20 -1 0 40 9 74 -29
+Health: 4 0 0 1 0 0 2 1 4 0
+Hurt: 0 3 0 0 1 0 0 11 6 29
+Carnivores: 35 0 2 4 0
+GENERATION 665
+Herbivores: 68 0 -15 6 35 58 17 0 0 8
+Health: 4 0 1 1 2 3 1 0 0 1
+Hurt: 12 0 35 14 5 2 3 0 0 12
+Carnivores: 35 14 8 7 0
+GENERATION 666
+Herbivores: 60 7 18 15 0 40 20 40 0 -52
+Health: 3 2 1 1 0 2 1 2 0 0
+Hurt: 0 33 2 5 0 0 0 0 0 52
+Carnivores: 54 0 0 7 0
+GENERATION 667
+Herbivores: 78 60 20 0 15 20 80 0 40 20
+Health: 4 3 1 0 1 1 4 0 2 1
+Hurt: 2 0 0 0 5 0 0 0 0 0
+Carnivores: 0 2 0 0 0
+GENERATION 668
+Herbivores: 60 54 20 60 40 18 20 7 32 0
+Health: 3 3 1 3 2 1 1 1 2 0
+Hurt: 0 6 0 0 0 2 0 13 8 0
+Carnivores: 0 1 0 15 0
+GENERATION 669
+Herbivores: 60 16 0 60 -4 31 20 78 -17 -34
+Health: 3 1 1 3 0 2 1 4 0 0
+Hurt: 0 4 20 0 4 9 0 2 17 34
+Carnivores: 31 5 0 8 13
+GENERATION 670
+Herbivores: 40 0 36 0 0 0 -4 0 -5 0
+Health: 2 0 2 0 0 0 0 0 0 0
+Hurt: 0 0 4 0 0 0 4 0 5 0
+Carnivores: 6 0 0 0 0
+GENERATION 671
+Herbivores: 35 -2 40 40 20 3 0 19 20 0
+Health: 3 0 2 2 1 1 0 1 1 0
+Hurt: 25 2 0 0 0 17 0 1 0 0
+Carnivores: 12 7 0 16 0
+GENERATION 672
+Herbivores: 57 40 34 32 60 16 17 40 60 -21
+Health: 3 2 2 2 3 1 1 2 3 0
+Hurt: 3 0 6 8 0 4 3 0 0 21
+Carnivores: 23 0 10 0 9
+GENERATION 673
+Herbivores: 98 40 20 0 40 20 0 55 -14 -145
+Health: 5 2 1 0 2 1 0 3 1 0
+Hurt: 2 0 0 0 0 0 0 5 34 145
+Carnivores: 73 0 0 39 0
+GENERATION 674
+Herbivores: 80 0 4 0 3 60 -16 40 20 0
+Health: 4 0 1 0 1 3 0 2 1 0
+Hurt: 0 0 16 0 17 0 16 0 0 0
+Carnivores: 6 0 0 23 0
+GENERATION 675
+Herbivores: 35 7 19 0 -25 0 0 -5 20 0
+Health: 2 1 1 0 0 0 0 0 1 0
+Hurt: 5 13 1 0 25 0 0 5 0 0
+Carnivores: 15 10 8 0 0
+GENERATION 676
+Herbivores: 80 15 19 20 20 0 0 60 -5 -42
+Health: 4 1 1 1 1 0 0 3 0 0
+Hurt: 0 5 1 0 0 0 0 0 5 42
+Carnivores: 39 1 0 4 0
+GENERATION 677
+Herbivores: 40 20 0 30 -13 20 17 -39 0 -19
+Health: 2 1 0 2 0 1 1 0 0 0
+Hurt: 0 0 0 10 13 0 3 39 0 19
+Carnivores: 17 16 3 7 0
+GENERATION 678
+Herbivores: 60 -6 0 0 9 0 0 16 20 0
+Health: 3 1 0 0 1 0 0 1 1 0
+Hurt: 0 26 0 0 11 0 0 4 0 0
+Carnivores: 21 0 0 0 3
+GENERATION 679
+Herbivores: 59 -3 57 0 -3 -1 0 0 0 -88
+Health: 3 0 3 0 0 0 0 0 0 0
+Hurt: 1 3 3 0 3 1 0 0 0 88
+Carnivores: 45 0 0 0 0
+GENERATION 680
+Herbivores: 33 20 40 0 52 20 40 20 0 20
+Health: 2 1 2 0 3 1 2 1 0 1
+Hurt: 7 0 0 0 8 0 0 0 0 0
+Carnivores: 3 0 0 0 0
+GENERATION 681
+Herbivores: 57 0 40 9 -18 60 0 -36 -1 3
+Health: 3 0 2 1 0 3 0 0 0 2
+Hurt: 3 0 0 11 18 0 0 36 1 37
+Carnivores: 25 0 2 19 14
+GENERATION 682
+Herbivores: 40 0 20 24 31 3 -8 0 0 -3
+Health: 2 0 1 2 2 1 1 0 0 0
+Hurt: 0 0 0 16 9 17 28 0 0 3
+Carnivores: 26 0 0 18 6
+GENERATION 683
+Herbivores: 60 20 20 40 16 40 40 20 40 0
+Health: 3 1 1 2 1 2 2 1 2 0
+Hurt: 0 0 0 0 4 0 0 0 0 0
+Carnivores: 0 0 1 0 0
+GENERATION 684
+Herbivores: 40 -6 18 19 28 9 40 0 26 -5
+Health: 2 0 1 1 2 1 2 0 2 0
+Hurt: 0 6 2 1 12 11 0 0 14 5
+Carnivores: 14 11 10 0 0
+GENERATION 685
+Herbivores: 45 0 40 0 20 16 20 0 0 -45
+Health: 3 0 2 0 1 1 1 0 0 1
+Hurt: 15 0 0 0 0 4 0 0 0 65
+Carnivores: 46 0 0 14 0
+GENERATION 686
+Herbivores: 73 20 0 -5 40 40 18 40 9 -166
+Health: 4 1 0 0 2 2 1 2 1 1
+Hurt: 7 0 0 5 0 0 2 0 11 186
+Carnivores: 68 0 62 6 4
+GENERATION 687
+Herbivores: 20 20 20 -3 29 20 0 13 20 0
+Health: 2 1 1 0 3 1 0 1 1 0
+Hurt: 20 0 0 3 31 0 0 7 0 0
+Carnivores: 0 24 0 19 0
+GENERATION 688
+Herbivores: 18 15 -12 0 -2 18 0 0 0 -33
+Health: 2 1 0 0 0 1 0 0 0 0
+Hurt: 22 5 12 0 2 2 0 0 0 33
+Carnivores: 55 0 0 14 2
+GENERATION 689
+Herbivores: 78 38 40 33 59 36 80 40 40 54
+Health: 4 2 2 2 3 2 4 2 2 3
+Hurt: 2 2 0 7 1 4 0 0 0 6
+Carnivores: 0 0 0 1 7
+GENERATION 690
+Herbivores: 60 -10 20 40 0 39 60 -4 18 0
+Health: 3 0 1 2 0 2 4 0 1 0
+Hurt: 0 10 0 0 0 1 20 4 2 0
+Carnivores: 15 6 0 1 0
+GENERATION 691
+Herbivores: 56 20 20 40 20 60 20 57 20 -10
+Health: 3 1 1 2 1 3 1 3 1 0
+Hurt: 4 0 0 0 0 0 0 3 0 10
+Carnivores: 4 0 0 0 0
+GENERATION 692
+Herbivores: 20 15 0 -10 40 0 32 0 40 -10
+Health: 1 1 0 0 2 0 2 0 2 2
+Hurt: 0 5 0 10 0 0 8 0 0 50
+Carnivores: 31 8 0 5 0
+GENERATION 693
+Herbivores: 40 58 3 20 0 40 20 0 37 0
+Health: 2 3 2 1 0 2 1 0 2 1
+Hurt: 0 2 37 0 0 0 0 0 3 20
+Carnivores: 5 22 6 2 0
+GENERATION 694
+Herbivores: 118 55 20 19 8 40 19 27 -1 -12
+Health: 6 3 1 1 1 2 1 2 0 0
+Hurt: 2 5 0 1 12 0 1 13 1 12
+Carnivores: 13 0 10 11 2
+GENERATION 695
+Herbivores: 24 20 53 40 46 0 47 18 -1 -45
+Health: 2 1 3 2 3 0 3 1 0 2
+Hurt: 16 0 7 0 14 0 13 2 1 85
+Carnivores: 39 13 0 13 2
+GENERATION 696
+Herbivores: 60 -37 17 -7 22 20 20 59 0 -27
+Health: 3 1 1 0 2 1 1 3 0 1
+Hurt: 0 57 3 7 18 0 0 1 0 47
+Carnivores: 53 0 42 8 0
+GENERATION 697
+Herbivores: 53 20 40 20 0 32 20 20 6 -14
+Health: 3 1 2 1 0 2 1 1 1 0
+Hurt: 7 0 0 0 0 8 0 0 14 14
+Carnivores: 4 13 4 1 5
+GENERATION 698
+Herbivores: 60 20 40 29 19 19 0 0 20 20
+Health: 3 1 2 2 1 1 0 0 1 1
+Hurt: 0 0 0 11 1 1 0 0 0 0
+Carnivores: 1 3 0 5 0
+GENERATION 699
+Herbivores: 40 -2 20 0 20 -6 18 20 20 -1
+Health: 2 0 1 0 1 0 1 1 1 0
+Hurt: 0 2 0 0 0 6 2 0 0 1
+Carnivores: 0 0 0 8 1
+GENERATION 700
+Herbivores: 20 20 0 -5 14 0 20 -2 38 0
+Health: 1 1 0 0 1 0 1 0 2 0
+Hurt: 0 0 0 5 6 0 0 2 2 0
+Carnivores: 0 0 0 6 3
+GENERATION 701
+Herbivores: 78 -3 3 3 9 10 19 -2 39 0
+Health: 5 0 1 1 1 2 1 0 2 0
+Hurt: 22 3 17 17 11 30 1 2 1 0
+Carnivores: 13 12 19 21 2
+GENERATION 702
+Herbivores: 112 -26 17 0 59 18 -3 -1 20 -9
+Health: 6 0 1 0 3 1 0 0 4 0
+Hurt: 8 26 3 0 1 2 3 1 60 9
+Carnivores: 60 3 26 0 5
+GENERATION 703
+Herbivores: 76 40 18 9 0 40 40 58 25 -8
+Health: 4 2 1 1 0 2 2 3 2 0
+Hurt: 4 0 2 11 0 0 0 2 15 8
+Carnivores: 0 7 4 7 1
+GENERATION 704
+Herbivores: 77 20 57 0 -29 20 -8 20 60 -22
+Health: 4 1 3 0 0 1 0 1 3 0
+Hurt: 3 0 3 0 29 0 8 0 0 22
+Carnivores: 54 0 0 3 0
+GENERATION 705
+Herbivores: 75 29 -11 35 13 60 51 36 20 0
+Health: 4 2 1 2 1 3 3 2 1 0
+Hurt: 5 11 31 5 7 0 9 4 0 0
+Carnivores: 0 1 5 36 0
+GENERATION 706
+Herbivores: 86 19 37 31 38 58 22 60 19 20
+Health: 5 1 2 2 2 3 2 3 1 1
+Hurt: 14 1 3 9 2 2 18 0 1 0
+Carnivores: 8 12 4 0 10
+GENERATION 707
+Herbivores: 132 0 53 60 78 132 18 -7 60 0
+Health: 7 0 3 3 4 7 1 0 3 0
+Hurt: 8 0 7 0 2 8 2 7 0 0
+Carnivores: 0 0 0 0 5
+GENERATION 708
+Herbivores: 35 15 35 15 6 -9 19 19 -11 -51
+Health: 2 1 2 1 1 0 1 1 0 1
+Hurt: 5 5 5 5 14 9 1 1 11 71
+Carnivores: 36 7 0 13 7
+GENERATION 709
+Herbivores: 80 -4 10 -9 -1 19 19 20 0 -88
+Health: 4 2 1 0 0 1 1 1 0 0
+Hurt: 0 44 10 9 1 1 1 0 0 88
+Carnivores: 87 1 0 57 0
+GENERATION 710
+Herbivores: 85 18 0 13 97 57 51 40 -13 0
+Health: 5 1 0 1 5 3 3 2 0 0
+Hurt: 15 2 0 7 3 3 9 0 13 0
+Carnivores: 2 20 1 0 1
+GENERATION 711
+Herbivores: 74 -2 26 16 40 -2 0 42 0 0
+Health: 4 0 2 1 2 0 0 3 0 0
+Hurt: 6 2 14 4 0 2 0 18 0 0
+Carnivores: 0 0 0 4 4
+GENERATION 712
+Herbivores: 71 11 60 0 60 75 0 100 20 20
+Health: 4 1 3 0 3 4 0 5 1 1
+Hurt: 9 9 0 0 0 5 0 0 0 0
+Carnivores: 0 4 0 2 0
+GENERATION 713
+Herbivores: 54 54 60 40 40 80 16 59 100 0
+Health: 3 3 3 2 2 4 1 3 5 0
+Hurt: 6 6 0 0 0 0 4 1 0 0
+Carnivores: 0 0 4 1 0
+GENERATION 714
+Herbivores: 60 60 32 20 16 19 0 0 20 9
+Health: 4 3 2 1 1 1 0 0 1 2
+Hurt: 20 0 8 0 4 1 0 0 0 31
+Carnivores: 0 0 3 9 0
+GENERATION 715
+Herbivores: 160 20 14 40 60 40 93 -2 0 -8
+Health: 8 1 2 2 3 3 5 0 0 0
+Hurt: 0 0 26 0 0 20 7 2 0 8
+Carnivores: 33 0 5 0 0
+GENERATION 716
+Herbivores: 54 0 20 59 39 20 40 0 17 -4
+Health: 3 0 1 3 2 1 2 0 1 0
+Hurt: 6 0 0 1 1 0 0 0 3 4
+Carnivores: 0 0 4 0 0
+GENERATION 717
+Herbivores: 60 -10 20 -2 11 37 18 20 20 0
+Health: 3 1 1 0 1 2 1 1 1 0
+Hurt: 0 30 0 2 9 3 2 0 0 0
+Carnivores: 12 0 0 0 0
+GENERATION 718
+Herbivores: 100 38 40 17 0 60 20 40 0 0
+Health: 5 2 2 1 0 3 1 2 0 0
+Hurt: 0 2 0 3 0 0 0 0 0 0
+Carnivores: 2 0 0 0 0
+GENERATION 719
+Herbivores: 20 0 20 18 19 35 0 40 40 -1
+Health: 1 0 1 1 1 2 0 2 2 0
+Hurt: 0 0 0 2 1 5 0 0 0 1
+Carnivores: 0 6 0 0 2
+GENERATION 720
+Herbivores: 80 17 0 -1 20 17 20 37 0 0
+Health: 4 1 0 0 1 1 1 2 0 0
+Hurt: 0 3 0 1 0 3 0 3 0 0
+Carnivores: 0 0 0 0 1
+GENERATION 721
+Herbivores: 20 17 -54 0 20 40 -71 0 22 -37
+Health: 1 1 1 0 1 2 0 0 2 0
+Hurt: 0 3 74 0 0 0 71 0 18 37
+Carnivores: 71 0 74 1 0
+GENERATION 722
+Herbivores: 55 38 37 18 0 20 14 20 -5 -80
+Health: 3 2 2 1 0 1 1 1 0 0
+Hurt: 5 2 3 2 0 0 6 0 5 80
+Carnivores: 0 7 3 31 0
+GENERATION 723
+Herbivores: 16 0 40 -1 20 0 20 40 21 -5
+Health: 1 0 2 0 1 0 1 2 2 0
+Hurt: 4 0 0 1 0 0 0 0 19 5
+Carnivores: 4 16 0 0 0
+GENERATION 724
+Herbivores: 60 29 40 78 -2 0 26 0 20 -99
+Health: 3 2 2 4 0 0 2 0 1 0
+Hurt: 0 11 0 2 2 0 14 0 0 99
+Carnivores: 33 0 33 13 0
+GENERATION 725
+Herbivores: 97 7 -2 52 -1 -11 20 27 20 0
+Health: 5 1 0 3 0 1 1 2 1 0
+Hurt: 3 13 2 8 1 31 0 13 0 0
+Carnivores: 2 0 8 0 0
+GENERATION 726
+Herbivores: 80 60 20 69 20 -63 9 10 -1 -40
+Health: 4 3 1 4 1 0 1 1 0 0
+Hurt: 0 0 0 11 0 63 11 10 1 40
+Carnivores: 50 14 6 36 1
+GENERATION 727
+Herbivores: 20 20 60 20 23 20 52 0 0 -47
+Health: 1 1 3 1 2 1 3 0 0 0
+Hurt: 0 0 0 0 17 0 8 0 0 47
+Carnivores: 11 4 0 0 8
+GENERATION 728
+Herbivores: 55 19 12 0 20 0 -9 0 0 -7
+Health: 3 1 1 0 1 0 0 0 0 0
+Hurt: 5 1 8 0 0 0 9 0 0 7
+Carnivores: 0 15 0 0 0
+GENERATION 729
+Herbivores: 60 19 40 20 18 20 20 -2 0 0
+Health: 3 1 2 1 1 1 1 0 0 0
+Hurt: 0 1 0 0 2 0 0 2 0 0
+Carnivores: 0 0 0 2 0
+GENERATION 730
+Herbivores: 77 20 40 40 -97 0 60 30 40 20
+Health: 4 1 2 2 1 0 3 2 2 1
+Hurt: 3 0 0 0 117 0 0 10 0 0
+Carnivores: 60 0 0 4 0
+GENERATION 731
+Herbivores: 90 -76 -5 -21 40 20 -6 17 20 -6
+Health: 5 0 0 0 2 1 0 2 1 0
+Hurt: 10 76 5 21 0 0 6 23 0 6
+Carnivores: 81 5 5 40 0
+GENERATION 732
+Herbivores: 0 20 0 20 40 20 40 0 0 19
+Health: 0 1 0 1 2 1 2 0 0 1
+Hurt: 0 0 0 0 0 0 0 0 0 1
+Carnivores: 0 1 0 0 0
+GENERATION 733
+Herbivores: 100 -53 20 19 74 40 60 20 80 -28
+Health: 5 0 1 1 4 2 3 1 4 0
+Hurt: 0 53 0 1 6 0 0 0 0 28
+Carnivores: 70 3 0 0 0
+GENERATION 734
+Herbivores: 60 13 10 38 40 17 17 40 33 -5
+Health: 3 1 1 2 2 1 1 2 2 0
+Hurt: 0 7 10 2 0 3 3 0 7 5
+Carnivores: 8 12 6 1 0
+GENERATION 735
+Herbivores: 19 20 20 14 12 20 40 20 0 0
+Health: 1 1 1 1 1 1 2 1 0 0
+Hurt: 1 0 0 6 8 0 0 0 0 0
+Carnivores: 0 0 4 0 8
+GENERATION 736
+Herbivores: 40 40 20 -33 40 0 0 20 60 -25
+Health: 2 2 1 2 2 0 0 1 3 0
+Hurt: 0 0 0 73 0 0 0 0 0 25
+Carnivores: 33 2 1 3 0
+GENERATION 737
+Herbivores: 20 23 -28 20 0 33 20 38 20 -71
+Health: 1 2 0 1 0 2 1 2 1 0
+Hurt: 0 17 28 0 0 7 0 2 0 71
+Carnivores: 77 0 1 0 0
+GENERATION 738
+Herbivores: 60 0 20 0 0 1 20 0 0 17
+Health: 3 0 1 0 0 1 1 0 0 2
+Hurt: 0 0 0 0 0 19 0 0 0 23
+Carnivores: 0 15 0 13 0
+GENERATION 739
+Herbivores: 60 60 60 41 13 40 38 15 -4 20
+Health: 3 3 3 3 1 2 2 1 0 1
+Hurt: 0 0 0 19 7 0 2 5 4 0
+Carnivores: 0 0 4 9 0
+GENERATION 740
+Herbivores: 49 29 0 20 40 18 60 16 19 0
+Health: 3 2 0 1 2 1 3 1 1 0
+Hurt: 11 11 0 0 0 2 0 4 1 0
+Carnivores: 11 0 2 0 0
+GENERATION 741
+Herbivores: 40 20 0 15 38 -3 20 20 40 0
+Health: 2 1 0 1 2 0 1 1 2 0
+Hurt: 0 0 0 5 2 3 0 0 0 0
+Carnivores: 0 0 5 0 0
+GENERATION 742
+Herbivores: 120 19 40 0 -7 80 20 20 0 0
+Health: 6 1 2 0 3 4 1 1 0 0
+Hurt: 0 1 0 0 67 0 0 0 0 0
+Carnivores: 25 16 0 7 0
+GENERATION 743
+Herbivores: 120 52 0 60 40 20 9 40 2 5
+Health: 6 3 0 3 2 1 1 2 2 1
+Hurt: 0 8 0 0 0 0 11 0 38 15
+Carnivores: 19 18 0 9 0
+GENERATION 744
+Herbivores: 80 20 40 0 20 37 27 20 20 0
+Health: 4 1 2 0 1 2 2 1 1 0
+Hurt: 0 0 0 0 0 3 13 0 0 0
+Carnivores: 0 3 11 1 0
+GENERATION 745
+Herbivores: 37 37 0 13 38 0 20 58 6 -25
+Health: 2 2 0 1 2 0 1 3 1 1
+Hurt: 3 3 0 7 2 0 0 2 14 45
+Carnivores: 24 0 0 18 2
+GENERATION 746
+Herbivores: 80 20 78 0 0 3 32 0 17 -36
+Health: 4 1 4 0 0 1 2 0 2 1
+Hurt: 0 0 2 0 0 17 8 0 23 56
+Carnivores: 54 6 9 12 1
+GENERATION 747
+Herbivores: 76 43 26 24 16 40 55 79 39 0
+Health: 4 3 2 2 1 2 3 4 2 0
+Hurt: 4 17 14 16 4 0 5 1 1 0
+Carnivores: 0 8 4 14 0
+GENERATION 748
+Herbivores: 100 30 20 20 -8 38 55 40 60 20
+Health: 5 2 1 1 0 2 3 2 3 1
+Hurt: 0 10 0 0 8 2 5 0 0 0
+Carnivores: 0 6 13 1 1
+GENERATION 749
+Herbivores: 96 0 5 34 16 75 6 40 16 -37
+Health: 5 0 1 2 1 4 1 2 1 0
+Hurt: 4 0 15 6 4 5 14 0 4 37
+Carnivores: 45 14 7 0 0
+GENERATION 750
+Herbivores: 32 -13 20 20 40 10 32 19 20 -54
+Health: 2 0 1 1 2 1 2 1 1 2
+Hurt: 8 13 0 0 0 10 8 1 0 94
+Carnivores: 50 3 9 5 0
+GENERATION 751
+Herbivores: 60 -20 52 38 51 0 29 -4 40 -20
+Health: 3 0 3 2 3 0 2 0 2 1
+Hurt: 0 20 8 2 9 0 11 4 0 40
+Carnivores: 9 0 21 1 1
+GENERATION 752
+Herbivores: 80 -9 0 20 49 -1 -59 20 20 0
+Health: 4 1 0 1 3 0 1 1 1 0
+Hurt: 0 29 0 0 11 1 79 0 0 0
+Carnivores: 35 18 0 0 0
+GENERATION 753
+Herbivores: 0 -16 6 40 -6 0 80 -78 20 -160
+Health: 0 0 1 2 0 0 4 0 1 0
+Hurt: 0 16 14 0 6 0 0 78 0 160
+Carnivores: 83 9 2 0 12
+GENERATION 754
+Herbivores: 39 24 20 17 20 16 20 38 0 -74
+Health: 2 2 1 1 1 1 1 2 0 0
+Hurt: 1 16 0 3 0 4 0 2 0 74
+Carnivores: 74 9 6 1 0
+GENERATION 755
+Herbivores: 59 20 -8 11 15 60 37 0 37 6
+Health: 3 1 0 1 1 3 2 0 2 1
+Hurt: 1 0 8 9 5 0 3 0 3 14
+Carnivores: 1 17 3 10 0
+GENERATION 756
+Herbivores: 32 -3 3 -4 22 -1 -20 40 -3 9
+Health: 2 0 1 0 2 0 0 2 0 3
+Hurt: 8 3 17 4 18 1 20 0 3 51
+Carnivores: 12 48 0 25 0
+GENERATION 757
+Herbivores: 60 20 20 -2 1 26 20 19 14 -19
+Health: 3 1 1 0 2 2 1 2 1 0
+Hurt: 0 0 0 2 39 14 0 21 6 19
+Carnivores: 21 11 15 42 0
+GENERATION 758
+Herbivores: 180 20 26 -1 -5 20 0 60 16 0
+Health: 9 1 2 0 0 1 0 3 1 0
+Hurt: 0 0 14 1 5 0 0 0 4 0
+Carnivores: 12 0 0 0 1
+GENERATION 759
+Herbivores: -2 37 20 36 14 -2 24 -3 17 0
+Health: 0 2 1 2 1 1 3 1 1 0
+Hurt: 2 3 0 4 6 22 36 23 3 0
+Carnivores: 25 16 7 0 15
+GENERATION 760
+Herbivores: 120 20 24 20 60 40 20 20 53 38
+Health: 6 1 2 1 3 2 1 1 3 2
+Hurt: 0 0 16 0 0 0 0 0 7 2
+Carnivores: 4 0 0 7 1
+GENERATION 761
+Herbivores: 19 0 36 -46 3 14 31 20 39 0
+Health: 1 1 2 0 1 1 2 1 2 0
+Hurt: 1 20 4 46 17 6 9 0 1 0
+Carnivores: 27 0 4 12 1
+GENERATION 762
+Herbivores: 59 -14 0 14 13 0 40 60 35 -142
+Health: 3 0 0 1 1 0 2 3 2 0
+Hurt: 1 14 0 6 7 0 0 0 5 142
+Carnivores: 85 5 10 4 0
+GENERATION 763
+Herbivores: 60 0 -3 55 20 18 60 15 -7 -34
+Health: 3 0 1 3 1 1 3 2 0 0
+Hurt: 0 0 23 5 0 2 0 25 7 34
+Carnivores: 34 8 14 9 4
+GENERATION 764
+Herbivores: 60 20 0 -20 20 40 0 20 18 -78
+Health: 3 1 1 2 1 2 0 1 1 0
+Hurt: 0 0 20 60 0 0 0 0 2 78
+Carnivores: 59 30 33 2 8
+GENERATION 765
+Herbivores: 88 0 0 -19 0 82 14 59 -16 20
+Health: 5 0 0 0 0 5 1 3 0 1
+Hurt: 12 0 0 19 0 18 6 1 16 0
+Carnivores: 7 16 12 18 0
+GENERATION 766
+Herbivores: 60 -19 -12 -12 -6 20 0 20 20 -75
+Health: 3 0 2 1 0 1 0 1 1 2
+Hurt: 0 19 52 32 6 0 0 0 0 115
+Carnivores: 58 24 36 0 12
+GENERATION 767
+Herbivores: 80 75 20 14 36 37 0 40 20 20
+Health: 4 4 1 1 2 3 0 2 1 1
+Hurt: 0 5 0 6 4 23 0 0 0 0
+Carnivores: 25 0 0 3 3
+GENERATION 768
+Herbivores: 80 36 8 -14 40 0 22 14 0 -20
+Health: 4 2 2 0 3 0 2 1 0 0
+Hurt: 0 4 32 14 20 0 18 6 0 20
+Carnivores: 46 0 3 0 0
+GENERATION 769
+Herbivores: 60 16 -3 0 10 20 -12 -24 8 -34
+Health: 3 1 1 0 1 1 0 0 1 1
+Hurt: 0 4 23 0 10 0 12 24 12 54
+Carnivores: 53 41 5 6 0
+GENERATION 770
+Herbivores: 40 20 20 20 33 38 20 40 20 0
+Health: 2 1 1 1 2 5 1 2 1 0
+Hurt: 0 0 0 0 7 62 0 0 0 0
+Carnivores: 58 0 6 0 0
+GENERATION 771
+Herbivores: 87 38 0 38 17 6 20 55 29 0
+Health: 5 2 0 2 1 2 1 3 2 0
+Hurt: 13 2 0 2 3 34 0 5 11 0
+Carnivores: 2 15 21 10 0
+GENERATION 772
+Herbivores: 32 -9 20 36 -24 8 13 -45 20 -74
+Health: 2 0 1 2 0 1 1 1 1 0
+Hurt: 8 9 0 4 24 12 7 65 0 74
+Carnivores: 72 37 3 26 3
+GENERATION 773
+Herbivores: 120 0 8 20 -77 40 30 34 20 -66
+Health: 6 0 1 1 2 2 2 2 1 0
+Hurt: 0 0 12 0 117 0 10 6 0 66
+Carnivores: 45 40 0 71 8
+GENERATION 774
+Herbivores: 31 31 16 68 40 80 39 37 7 16
+Health: 3 2 1 4 2 4 2 2 1 1
+Hurt: 29 9 4 12 0 0 1 3 13 4
+Carnivores: 6 15 9 0 10
+GENERATION 775
+Herbivores: 40 33 20 0 40 37 0 20 54 0
+Health: 2 2 1 0 2 2 0 1 3 0
+Hurt: 0 7 0 0 0 3 0 0 6 0
+Carnivores: 0 8 3 0 0
+GENERATION 776
+Herbivores: 21 20 20 37 38 0 20 20 20 40
+Health: 2 1 1 2 2 1 1 1 1 2
+Hurt: 19 0 0 3 2 20 0 0 0 0
+Carnivores: 15 0 9 0 4
+GENERATION 777
+Herbivores: 80 20 40 20 40 -23 40 -20 37 -5
+Health: 4 1 2 1 2 1 2 2 2 0
+Hurt: 0 0 0 0 0 43 0 60 3 5
+Carnivores: 52 43 5 0 0
+GENERATION 778
+Herbivores: 20 40 27 1 31 -14 -28 64 -7 0
+Health: 1 2 2 1 2 0 0 5 1 0
+Hurt: 0 0 13 19 9 14 28 36 27 0
+Carnivores: 18 21 20 30 5
+GENERATION 779
+Herbivores: 73 58 40 20 40 40 40 40 16 20
+Health: 4 4 2 1 2 2 2 2 1 1
+Hurt: 7 22 0 0 0 0 0 0 4 0
+Carnivores: 0 0 10 0 6
+GENERATION 780
+Herbivores: 19 -4 0 20 12 39 6 -21 -9 40
+Health: 1 0 0 1 1 2 1 0 0 2
+Hurt: 1 4 0 0 8 1 14 21 9 0
+Carnivores: 18 9 3 2 1
+GENERATION 781
+Herbivores: 80 19 0 40 -8 60 58 0 20 20
+Health: 4 1 0 2 2 3 3 0 1 1
+Hurt: 0 1 0 0 48 0 2 0 0 0
+Carnivores: 47 2 1 0 0
+GENERATION 782
+Herbivores: 73 14 60 36 0 0 -33 80 40 -11
+Health: 4 1 3 2 0 0 2 4 2 0
+Hurt: 7 6 0 4 0 0 73 0 0 11
+Carnivores: 0 24 12 0 0
+GENERATION 783
+Herbivores: 60 80 60 0 0 0 80 20 19 -12
+Health: 3 4 3 0 0 0 4 1 1 0
+Hurt: 0 0 0 0 0 0 0 0 1 12
+Carnivores: 9 0 0 0 0
+GENERATION 784
+Herbivores: 60 10 20 0 15 14 19 34 60 -9
+Health: 3 1 1 0 1 1 1 2 3 0
+Hurt: 0 10 0 0 5 6 1 6 0 9
+Carnivores: 5 0 10 4 0
+GENERATION 785
+Herbivores: 60 60 0 36 2 16 2 40 0 5
+Health: 3 3 0 2 1 1 1 2 0 1
+Hurt: 0 0 0 4 18 4 18 0 0 15
+Carnivores: 19 19 4 4 0
+GENERATION 786
+Herbivores: 60 20 21 20 20 20 17 18 40 0
+Health: 3 1 3 1 1 1 1 1 2 0
+Hurt: 0 0 39 0 0 0 3 2 0 0
+Carnivores: 28 6 0 0 1
+GENERATION 787
+Herbivores: 57 24 0 -4 40 40 0 0 19 -14
+Health: 3 2 0 0 2 2 0 0 1 0
+Hurt: 3 16 0 4 0 0 0 0 1 14
+Carnivores: 15 0 1 0 0
+GENERATION 788
+Herbivores: 20 7 40 17 20 -24 7 32 20 0
+Health: 2 1 2 1 1 0 1 2 1 0
+Hurt: 20 13 0 3 0 24 13 8 0 0
+Carnivores: 21 16 3 0 1
+GENERATION 789
+Herbivores: 20 15 20 14 20 -15 13 -10 24 -143
+Health: 1 1 1 1 1 0 1 0 2 0
+Hurt: 0 5 0 6 0 15 7 10 16 143
+Carnivores: 81 18 0 14 0
+GENERATION 790
+Herbivores: 58 20 20 9 60 36 7 60 -5 0
+Health: 3 1 1 1 3 2 1 3 0 0
+Hurt: 2 0 0 11 0 4 13 0 5 0
+Carnivores: 4 0 15 1 0
+GENERATION 791
+Herbivores: 54 20 14 60 0 32 40 40 14 20
+Health: 3 1 1 3 0 2 2 2 1 1
+Hurt: 6 0 6 0 0 8 0 0 6 0
+Carnivores: 6 10 3 1 0
+GENERATION 792
+Herbivores: 49 28 18 -1 58 20 -1 40 17 -27
+Health: 4 2 1 0 3 1 0 2 1 1
+Hurt: 31 12 2 1 2 0 1 0 3 47
+Carnivores: 6 2 3 9 2
+GENERATION 793
+Herbivores: 74 10 40 40 11 20 35 -1 0 -22
+Health: 4 2 2 2 1 1 2 0 0 0
+Hurt: 6 30 0 0 9 0 5 1 0 22
+Carnivores: 52 3 0 4 0
+GENERATION 794
+Herbivores: 80 51 0 0 18 26 26 40 11 20
+Health: 4 3 0 0 3 2 2 2 1 1
+Hurt: 0 9 0 0 42 14 14 0 9 0
+Carnivores: 0 25 5 24 4
+GENERATION 795
+Herbivores: 70 0 0 33 20 -8 20 0 18 -3
+Health: 4 0 0 2 1 0 1 0 1 0
+Hurt: 10 0 0 7 0 8 0 0 2 3
+Carnivores: 0 2 18 0 0
+GENERATION 796
+Herbivores: 77 60 40 54 20 100 80 20 0 0
+Health: 4 3 2 3 1 5 4 1 0 0
+Hurt: 3 0 0 6 0 0 0 0 0 0
+Carnivores: 0 0 0 0 1
+GENERATION 797
+Herbivores: 60 -4 13 40 40 -1 53 19 0 -12
+Health: 3 0 2 2 2 0 3 1 1 0
+Hurt: 0 4 27 0 0 1 7 1 20 12
+Carnivores: 29 1 4 0 0
+GENERATION 798
+Herbivores: 60 57 -2 18 10 20 20 31 39 -28
+Health: 3 3 0 1 2 1 1 2 2 0
+Hurt: 0 3 2 2 30 0 0 9 1 28
+Carnivores: 23 2 5 1 9
+GENERATION 799
+Herbivores: 59 77 19 0 2 39 20 40 -1 -18
+Health: 3 4 1 0 1 2 1 2 0 1
+Hurt: 1 3 1 0 18 1 0 0 1 38
+Carnivores: 24 0 0 2 0
+GENERATION 800
+Herbivores: 79 -18 33 -2 40 72 40 20 40 20
+Health: 4 1 2 0 2 4 2 1 2 1
+Hurt: 1 38 7 2 0 8 0 0 0 0
+Carnivores: 6 0 0 8 0
+GENERATION 801
+Herbivores: 60 80 40 99 20 20 19 20 60 18
+Health: 3 4 2 5 1 1 1 1 3 1
+Hurt: 0 0 0 1 0 0 1 0 0 2
+Carnivores: 0 0 0 0 0
+GENERATION 802
+Herbivores: 80 20 20 20 0 40 0 0 38 0
+Health: 4 1 1 1 0 2 0 0 2 0
+Hurt: 0 0 0 0 0 0 0 0 2 0
+Carnivores: 0 0 0 0 0
+GENERATION 803
+Herbivores: 20 -7 0 -1 40 4 32 20 22 -52
+Health: 1 0 0 0 2 2 2 1 2 1
+Hurt: 0 7 0 1 0 36 8 0 18 72
+Carnivores: 24 22 33 9 13
+GENERATION 804
+Herbivores: 80 -1 0 19 0 0 20 0 0 -108
+Health: 4 0 0 1 0 0 1 0 0 1
+Hurt: 0 1 0 1 0 0 0 0 0 128
+Carnivores: 66 1 0 0 0
+GENERATION 805
+Herbivores: 40 -26 50 60 40 60 0 60 23 20
+Health: 2 0 3 3 2 3 0 3 2 1
+Hurt: 0 26 10 0 0 0 0 0 17 0
+Carnivores: 17 12 8 4 0
+GENERATION 806
+Herbivores: 70 0 0 0 40 56 18 0 -14 6
+Health: 4 0 0 0 2 3 1 0 0 1
+Hurt: 10 0 0 0 0 4 2 0 14 14
+Carnivores: 0 5 0 14 0
+GENERATION 807
+Herbivores: 40 60 80 0 20 40 20 20 20 0
+Health: 2 3 4 0 1 2 1 1 1 0
+Hurt: 0 0 0 0 0 0 0 0 0 0
+Carnivores: 0 0 0 0 0
+GENERATION 808
+Herbivores: 60 -1 20 0 55 -7 12 17 59 -62
+Health: 3 0 1 0 3 0 2 1 3 0
+Hurt: 0 1 0 0 5 7 28 3 1 62
+Carnivores: 50 6 0 0 0
+GENERATION 809
+Herbivores: 54 0 59 62 60 -1 14 20 20 14
+Health: 3 0 3 4 3 0 1 1 1 1
+Hurt: 6 0 1 18 0 1 6 0 0 6
+Carnivores: 11 0 15 0 0
+GENERATION 810
+Herbivores: 40 40 20 60 40 36 60 38 20 20
+Health: 2 2 1 3 2 2 3 3 1 1
+Hurt: 0 0 0 0 0 4 0 22 0 0
+Carnivores: 5 5 0 9 0
+GENERATION 811
+Herbivores: 80 26 40 0 20 20 39 60 20 0
+Health: 4 2 2 0 1 1 3 3 1 0
+Hurt: 0 14 0 0 0 0 21 0 0 0
+Carnivores: 21 6 0 0 0
+GENERATION 812
+Herbivores: 83 60 37 0 0 -12 -17 20 16 0
+Health: 5 3 2 0 0 0 0 1 1 0
+Hurt: 17 0 3 0 0 12 17 0 4 0
+Carnivores: 20 0 6 15 0
+GENERATION 813
+Herbivores: 98 31 40 60 38 -4 0 -15 20 -1
+Health: 5 2 2 3 2 1 0 0 1 2
+Hurt: 2 9 0 0 2 24 0 15 0 41
+Carnivores: 54 0 13 0 4
+GENERATION 814
+Herbivores: 59 53 -1 34 60 17 0 20 84 0
+Health: 3 3 0 2 3 1 0 1 5 0
+Hurt: 1 7 1 6 0 3 0 0 16 0
+Carnivores: 0 1 17 0 0
+GENERATION 815
+Herbivores: 60 -30 25 -3 22 54 26 40 80 0
+Health: 3 0 2 2 2 3 2 2 4 0
+Hurt: 0 30 15 43 18 6 14 0 0 0
+Carnivores: 44 32 8 10 0
+GENERATION 816
+Herbivores: 100 20 25 40 13 40 20 0 55 0
+Health: 5 1 3 2 2 2 1 0 3 0
+Hurt: 0 0 35 0 27 0 0 0 5 0
+Carnivores: 28 0 0 0 0
+GENERATION 817
+Herbivores: 39 36 20 20 20 56 55 -68 -3 -66
+Health: 2 2 1 1 1 3 3 1 0 0
+Hurt: 1 4 0 0 0 4 5 88 3 66
+Carnivores: 34 26 1 3 2
+GENERATION 818
+Herbivores: 79 32 20 37 -6 35 20 43 -5 -1
+Health: 4 2 1 2 0 2 1 3 0 1
+Hurt: 1 8 0 3 6 5 0 17 5 21
+Carnivores: 11 8 17 9 1
+GENERATION 819
+Herbivores: 100 8 54 60 80 63 20 40 60 0
+Health: 5 1 3 3 4 4 1 2 3 0
+Hurt: 0 12 6 0 0 17 0 0 0 0
+Carnivores: 14 0 0 0 9
+GENERATION 820
+Herbivores: 93 40 36 75 74 -4 3 -6 20 0
+Health: 5 2 2 4 4 0 3 1 1 0
+Hurt: 7 0 4 5 6 4 57 26 0 0
+Carnivores: 32 8 12 12 0
+GENERATION 821
+Herbivores: 98 15 16 -15 0 0 38 18 40 0
+Health: 5 2 1 0 0 0 2 1 2 0
+Hurt: 2 25 4 15 0 0 2 2 0 0
+Carnivores: 43 0 0 1 0
+GENERATION 822
+Herbivores: 118 40 80 0 60 22 20 40 54 20
+Health: 6 3 4 0 3 2 1 2 3 1
+Hurt: 2 20 0 0 0 18 0 0 6 0
+Carnivores: 0 11 1 10 0
+GENERATION 823
+Herbivores: 80 40 20 40 57 24 20 58 100 -2
+Health: 4 2 1 2 3 2 2 3 5 0
+Hurt: 0 0 0 0 3 16 20 2 0 2
+Carnivores: 7 4 11 8 0
+GENERATION 824
+Herbivores: 80 91 80 40 32 60 57 38 79 0
+Health: 4 5 5 2 2 3 3 2 4 0
+Hurt: 0 9 20 0 8 0 3 2 1 0
+Carnivores: 7 1 5 8 0
+GENERATION 825
+Herbivores: 105 73 55 60 39 60 100 20 35 19
+Health: 6 4 3 3 2 3 5 1 2 1
+Hurt: 15 7 5 0 1 0 0 0 5 1
+Carnivores: 1 6 7 4 0
+GENERATION 826
+Herbivores: 97 67 20 60 40 20 79 20 20 0
+Health: 5 4 1 3 2 1 5 1 1 0
+Hurt: 3 13 0 0 0 0 21 0 0 0
+Carnivores: 0 11 1 9 1
+GENERATION 827
+Herbivores: 100 35 0 14 0 27 30 20 -4 11
+Health: 5 2 0 1 0 3 2 1 0 1
+Hurt: 0 5 0 6 0 33 10 0 4 9
+Carnivores: 24 17 0 1 0
+GENERATION 828
+Herbivores: 60 80 -32 60 20 0 40 0 -26 -33
+Health: 3 4 0 3 1 0 2 0 3 0
+Hurt: 0 0 32 0 0 0 0 0 86 33
+Carnivores: 33 30 18 29 0
+GENERATION 829
+Herbivores: 60 23 34 19 -4 40 23 -13 20 -72
+Health: 3 2 2 2 0 2 2 0 1 0
+Hurt: 0 17 6 21 4 0 17 13 0 72
+Carnivores: 42 34 2 12 0
+GENERATION 830
+Herbivores: 40 69 20 36 40 -8 64 0 -32 -5
+Health: 2 4 1 2 2 0 4 0 0 0
+Hurt: 0 11 0 4 0 8 16 0 32 5
+Carnivores: 42 9 0 8 0
+GENERATION 831
+Herbivores: 44 -8 -5 60 -23 56 16 72 80 -17
+Health: 3 0 1 3 0 3 1 4 4 0
+Hurt: 16 8 25 0 23 4 4 8 0 17
+Carnivores: 3 14 37 24 5
+GENERATION 832
+Herbivores: 92 18 17 34 20 0 20 35 40 0
+Health: 5 1 1 2 1 0 1 2 2 0
+Hurt: 8 2 3 6 0 0 0 5 0 0
+Carnivores: 0 6 0 10 0
+GENERATION 833
+Herbivores: 40 60 -5 53 40 16 40 13 0 -55
+Health: 2 3 1 3 2 2 2 2 0 0
+Hurt: 0 0 25 7 0 24 0 27 0 55
+Carnivores: 43 11 26 27 1
+GENERATION 834
+Herbivores: 56 8 54 20 60 20 17 -8 40 40
+Health: 3 2 3 1 3 1 1 2 2 2
+Hurt: 4 32 6 0 0 0 3 48 0 0
+Carnivores: 30 6 12 22 0
+GENERATION 835
+Herbivores: 60 75 57 60 34 71 21 12 11 -1
+Health: 3 4 3 3 2 4 2 2 1 0
+Hurt: 0 5 3 0 6 9 19 28 9 1
+Carnivores: 16 9 6 17 0
+GENERATION 836
+Herbivores: 85 38 60 57 20 20 19 0 10 -53
+Health: 5 2 3 3 2 1 1 0 1 0
+Hurt: 15 2 0 3 20 0 1 0 10 53
+Carnivores: 6 30 14 9 0
+GENERATION 837
+Herbivores: 100 38 53 0 3 20 35 35 98 20
+Health: 5 2 4 0 2 1 2 2 5 1
+Hurt: 0 2 27 0 37 0 5 5 2 0
+Carnivores: 40 11 4 0 2
+GENERATION 838
+Herbivores: 76 -18 -2 40 37 27 21 40 65 -9
+Health: 4 0 1 2 2 2 2 2 4 0
+Hurt: 4 18 22 0 3 13 19 0 15 9
+Carnivores: 13 30 13 12 3
+GENERATION 839
+Herbivores: 140 98 12 11 0 20 50 40 40 0
+Health: 7 5 4 1 0 1 3 2 2 0
+Hurt: 0 2 68 9 0 0 10 0 0 0
+Carnivores: 32 4 8 1 4
+GENERATION 840
+Herbivores: 100 40 30 20 71 80 70 -10 -30 20
+Health: 5 2 2 1 4 4 4 0 1 1
+Hurt: 0 0 10 0 9 0 10 10 50 0
+Carnivores: 35 16 25 6 1
+GENERATION 841
+Herbivores: 20 -1 39 -11 0 20 0 35 0 0
+Health: 1 1 2 0 0 1 0 3 0 0
+Hurt: 0 21 1 11 0 0 0 25 0 0
+Carnivores: 5 0 11 3 0
+GENERATION 842
+Herbivores: 59 40 80 40 40 13 13 57 9 -52
+Health: 3 2 4 2 2 1 1 3 1 1
+Hurt: 1 0 0 0 0 7 7 3 11 72
+Carnivores: 73 0 5 3 0
+GENERATION 843
+Herbivores: 140 100 39 35 52 0 7 54 -7 -8
+Health: 7 5 2 2 3 0 1 3 0 0
+Hurt: 0 0 1 5 8 0 13 6 7 8
+Carnivores: 0 14 9 11 0
+GENERATION 844
+Herbivores: 68 0 20 32 52 0 0 52 40 2
+Health: 4 0 1 5 3 0 0 3 2 1
+Hurt: 12 0 0 68 8 0 0 8 0 18
+Carnivores: 41 5 4 12 6
+GENERATION 845
+Herbivores: 76 20 60 0 15 28 59 -5 17 -1
+Health: 4 2 3 0 1 3 3 2 1 0
+Hurt: 4 20 0 0 5 32 1 45 3 1
+Carnivores: 24 0 25 22 0
+GENERATION 846
+Herbivores: 20 20 40 20 20 0 20 -5 -67 -126
+Health: 1 1 2 1 1 1 1 0 0 1
+Hurt: 0 0 0 0 0 20 0 5 67 146
+Carnivores: 57 9 40 0 21
+GENERATION 847
+Herbivores: 120 0 -7 0 -10 40 20 37 33 -3
+Health: 6 0 1 0 0 2 1 3 2 2
+Hurt: 0 0 27 0 10 0 0 23 7 43
+Carnivores: 19 9 30 8 7
+GENERATION 848
+Herbivores: 80 60 19 40 -65 -2 0 54 36 -54
+Health: 4 3 1 2 0 0 0 3 3 0
+Hurt: 0 0 1 0 65 2 0 6 24 54
+Carnivores: 65 0 0 22 0
+GENERATION 849
+Herbivores: 33 14 53 25 0 59 40 7 49 -21
+Health: 2 1 3 2 1 3 2 1 3 1
+Hurt: 7 6 7 15 20 1 0 13 11 41
+Carnivores: 7 36 17 15 6
+GENERATION 850
+Herbivores: 40 -9 40 20 40 38 20 -23 -18 0
+Health: 2 1 2 1 2 2 1 0 0 0
+Hurt: 0 29 0 0 0 2 0 23 18 0
+Carnivores: 43 10 0 0 0
+GENERATION 851
+Herbivores: 60 0 28 20 20 40 20 40 22 -3
+Health: 3 0 2 1 1 2 1 2 2 0
+Hurt: 0 0 12 0 0 0 0 0 18 3
+Carnivores: 0 3 8 11 2
+GENERATION 852
+Herbivores: 20 60 20 20 20 9 3 19 8 -58
+Health: 1 3 1 1 1 1 1 1 1 0
+Hurt: 0 0 0 0 0 11 17 1 12 58
+Carnivores: 60 8 9 0 5
+GENERATION 853
+Herbivores: 80 20 20 40 36 0 40 60 60 0
+Health: 4 1 1 2 3 0 2 3 3 0
+Hurt: 0 0 0 0 24 0 0 0 0 0
+Carnivores: 14 0 0 0 0
+GENERATION 854
+Herbivores: 40 40 29 0 48 11 0 40 0 -58
+Health: 2 2 2 0 3 1 0 2 0 0
+Hurt: 0 0 11 0 12 9 0 0 0 58
+Carnivores: 33 4 4 17 0
+GENERATION 855
+Herbivores: 80 -1 20 -10 40 80 0 50 13 -70
+Health: 4 0 1 2 2 4 0 3 1 1
+Hurt: 0 1 0 50 0 0 0 10 7 90
+Carnivores: 45 6 44 5 9
+GENERATION 856
+Herbivores: 80 13 -46 77 39 9 -8 60 -3 -13
+Health: 4 1 0 4 2 2 0 3 0 0
+Hurt: 0 7 46 3 1 31 8 0 3 13
+Carnivores: 49 35 3 5 0
+GENERATION 857
+Herbivores: 24 30 40 -2 3 20 20 17 18 -95
+Health: 2 2 2 0 1 1 1 2 1 1
+Hurt: 16 10 0 2 17 0 0 23 2 115
+Carnivores: 73 7 17 50 1
+GENERATION 858
+Herbivores: 58 60 39 17 0 22 60 0 2 -40
+Health: 3 3 2 1 0 2 3 0 2 1
+Hurt: 2 0 1 3 0 18 0 0 38 60
+Carnivores: 1 30 22 2 12
+GENERATION 859
+Herbivores: 60 34 -5 0 -7 -6 40 60 0 -59
+Health: 3 2 0 0 0 1 2 3 0 0
+Hurt: 0 6 5 0 7 26 0 0 0 59
+Carnivores: 68 14 0 0 0
+GENERATION 860
+Herbivores: 117 60 32 60 80 0 100 0 25 60
+Health: 6 3 2 3 4 0 5 0 2 3
+Hurt: 3 0 8 0 0 0 0 0 15 0
+Carnivores: 2 3 0 10 0
+GENERATION 861
+Herbivores: 100 40 0 0 20 -2 -42 20 0 -25
+Health: 5 2 0 0 1 0 2 1 0 2
+Hurt: 0 0 0 0 0 2 82 0 0 65
+Carnivores: 80 0 30 0 0
+GENERATION 862
+Herbivores: 60 99 40 -1 60 40 24 39 10 -21
+Health: 3 5 2 0 3 2 2 2 1 0
+Hurt: 0 1 0 1 0 0 16 1 10 21
+Carnivores: 0 17 0 19 0
+GENERATION 863
+Herbivores: 75 40 19 60 20 60 60 40 60 26
+Health: 4 2 1 3 1 3 3 2 3 2
+Hurt: 5 0 1 0 0 0 0 0 0 14
+Carnivores: 4 3 0 0 0
+GENERATION 864
+Herbivores: 57 60 -2 17 57 0 46 20 0 -21
+Health: 3 3 0 1 3 0 3 1 0 0
+Hurt: 3 0 2 3 3 0 14 0 0 21
+Carnivores: 6 1 0 3 2
+GENERATION 865
+Herbivores: 80 0 20 14 76 17 39 19 20 -20
+Health: 4 0 1 1 4 2 2 1 1 0
+Hurt: 0 0 0 6 4 23 1 1 0 20
+Carnivores: 18 2 2 0 5
+GENERATION 866
+Herbivores: 98 25 39 38 59 20 16 47 50 0
+Health: 5 2 2 2 3 1 1 3 3 0
+Hurt: 2 15 1 2 1 0 4 13 10 0
+Carnivores: 14 12 0 0 0
+GENERATION 867
+Herbivores: 120 95 20 60 54 40 40 14 -4 25
+Health: 6 5 1 3 3 2 2 2 0 2
+Hurt: 0 5 0 0 6 0 0 26 4 15
+Carnivores: 28 0 0 4 0
+GENERATION 868
+Herbivores: 95 74 37 114 60 10 57 80 20 14
+Health: 5 4 2 6 3 2 3 4 1 1
+Hurt: 5 6 3 6 0 30 3 0 0 6
+Carnivores: 2 7 7 11 9
+GENERATION 869
+Herbivores: 20 20 50 -3 -22 13 -24 20 40 -43
+Health: 1 1 3 0 0 1 0 1 2 0
+Hurt: 0 0 10 3 22 7 24 0 0 43
+Carnivores: 32 0 14 0 0
+GENERATION 870
+Herbivores: 60 20 16 20 18 40 49 25 40 20
+Health: 3 1 2 1 1 2 3 2 2 1
+Hurt: 0 0 24 0 2 0 11 15 0 0
+Carnivores: 20 0 10 8 0
+GENERATION 871
+Herbivores: 79 20 -17 17 39 20 15 40 60 -3
+Health: 5 1 0 1 2 1 2 2 3 0
+Hurt: 21 0 17 3 1 0 25 0 0 3
+Carnivores: 25 5 0 12 0
+GENERATION 872
+Herbivores: 57 19 0 20 57 0 40 59 20 32
+Health: 3 1 0 1 3 0 2 3 1 2
+Hurt: 3 1 0 0 3 0 0 1 0 8
+Carnivores: 0 0 3 8 0
+GENERATION 873
+Herbivores: 40 40 20 -9 15 20 32 -29 19 -43
+Health: 2 2 1 0 1 1 2 0 1 1
+Hurt: 0 0 0 9 5 0 8 29 1 63
+Carnivores: 67 0 0 25 0
+GENERATION 874
+Herbivores: 80 40 40 40 39 26 20 60 62 0
+Health: 4 2 2 2 2 2 1 3 4 0
+Hurt: 0 0 0 0 1 14 0 0 18 0
+Carnivores: 0 10 0 13 0
+GENERATION 875
+Herbivores: 80 68 10 100 39 21 8 20 10 -66
+Health: 4 4 1 5 2 2 1 1 1 1
+Hurt: 0 12 10 0 1 19 12 0 10 86
+Carnivores: 45 16 11 7 0
+GENERATION 876
+Herbivores: 112 60 94 40 36 35 20 26 55 -56
+Health: 6 3 5 2 2 2 1 2 3 2
+Hurt: 8 0 6 0 4 5 0 14 5 96
+Carnivores: 16 52 8 7 0
+GENERATION 877
+Herbivores: 100 40 40 15 74 -4 39 6 -5 -42
+Health: 5 2 2 2 4 0 2 1 0 1
+Hurt: 0 0 0 25 6 4 1 14 5 62
+Carnivores: 31 16 9 2 0
+GENERATION 878
+Herbivores: 118 -4 100 40 20 60 58 20 39 1
+Health: 6 0 5 2 1 3 3 1 2 1
+Hurt: 2 4 0 0 0 0 2 0 1 19
+Carnivores: 7 0 1 4 3
+GENERATION 879
+Herbivores: 60 20 11 40 40 20 31 23 59 0
+Health: 3 1 2 2 2 1 2 2 3 0
+Hurt: 0 0 29 0 0 0 9 17 1 0
+Carnivores: 9 17 11 8 0
+GENERATION 880
+Herbivores: 40 40 20 0 26 0 20 40 -41 25
+Health: 2 2 1 0 2 0 1 2 0 2
+Hurt: 0 0 0 0 14 0 0 0 41 15
+Carnivores: 41 0 4 13 0
+GENERATION 881
+Herbivores: 74 20 20 0 20 40 37 51 32 20
+Health: 4 1 1 0 1 2 3 3 2 1
+Hurt: 6 0 0 0 0 0 23 9 8 0
+Carnivores: 6 5 11 8 0
+GENERATION 882
+Herbivores: 59 -7 34 40 25 10 40 20 45 -12
+Health: 3 0 2 2 2 1 2 1 3 2
+Hurt: 1 7 6 0 15 10 0 0 15 52
+Carnivores: 43 9 12 0 0
+GENERATION 883
+Herbivores: 60 0 31 -8 80 1 20 0 -9 -41
+Health: 3 0 3 1 4 1 1 0 0 0
+Hurt: 0 0 29 28 0 19 0 0 9 41
+Carnivores: 25 14 9 16 17
+GENERATION 884
+Herbivores: 100 20 20 4 20 60 9 76 60 14
+Health: 5 1 1 4 1 3 1 4 3 1
+Hurt: 0 0 0 76 0 0 11 4 0 6
+Carnivores: 21 7 10 0 0
+GENERATION 885
+Herbivores: 120 80 100 80 15 -5 115 46 3 0
+Health: 6 4 5 4 1 2 6 3 2 0
+Hurt: 0 0 0 0 5 45 5 14 37 0
+Carnivores: 25 18 14 12 5
+GENERATION 886
+Herbivores: 60 62 20 40 14 36 26 19 20 -18
+Health: 3 4 1 2 2 3 2 1 2 0
+Hurt: 0 18 0 0 26 24 14 1 20 18
+Carnivores: 45 0 16 18 12
+GENERATION 887
+Herbivores: 120 -6 58 -16 -6 40 37 15 23 -44
+Health: 6 2 3 1 0 2 2 1 2 0
+Hurt: 0 46 2 36 6 0 3 5 17 44
+Carnivores: 50 9 36 33 4
+GENERATION 888
+Herbivores: 80 40 51 40 14 60 55 -20 40 -52
+Health: 4 2 3 2 1 3 3 0 2 1
+Hurt: 0 0 9 0 6 0 5 20 0 72
+Carnivores: 30 4 17 23 14
+GENERATION 889
+Herbivores: 120 20 40 -33 39 0 39 37 80 4
+Health: 6 1 2 0 2 0 2 2 4 2
+Hurt: 0 0 0 33 1 0 1 3 0 36
+Carnivores: 27 1 0 35 0
+GENERATION 890
+Herbivores: 60 40 -12 90 40 54 0 60 20 0
+Health: 3 2 2 5 2 4 0 3 1 0
+Hurt: 0 0 52 10 0 26 0 0 0 0
+Carnivores: 52 13 2 9 0
+GENERATION 891
+Herbivores: 40 20 -12 -4 20 16 -14 13 20 -1
+Health: 2 1 1 2 1 2 0 1 1 0
+Hurt: 0 0 32 44 0 24 14 7 0 1
+Carnivores: 34 0 31 0 23
+GENERATION 892
+Herbivores: 80 -8 20 15 7 19 80 32 0 20
+Health: 4 0 1 1 1 1 4 2 0 1
+Hurt: 0 8 0 5 13 1 0 8 0 0
+Carnivores: 20 0 8 0 0
+GENERATION 893
+Herbivores: 80 10 60 54 19 60 39 27 39 6
+Health: 4 1 3 3 2 3 2 3 2 1
+Hurt: 0 10 0 6 21 0 1 33 1 14
+Carnivores: 17 0 18 12 0
+GENERATION 894
+Herbivores: 80 22 18 37 40 9 -53 60 60 -47
+Health: 4 3 1 2 2 1 0 3 3 1
+Hurt: 0 38 2 3 0 11 53 0 0 67
+Carnivores: 39 2 20 27 8
+GENERATION 895
+Herbivores: 136 60 113 60 -4 80 -10 16 77 0
+Health: 7 3 6 3 0 4 0 3 4 2
+Hurt: 4 0 7 0 4 0 10 44 3 40
+Carnivores: 58 18 0 0 9
+GENERATION 896
+Herbivores: 60 38 17 43 20 57 24 40 27 0
+Health: 4 2 3 3 1 3 2 2 2 0
+Hurt: 20 2 43 17 0 3 16 0 13 0
+Carnivores: 1 9 20 15 12
+GENERATION 897
+Herbivores: 80 -8 -6 60 30 0 5 20 54 -32
+Health: 5 0 0 3 2 0 1 1 3 0
+Hurt: 20 8 6 0 10 0 15 0 6 32
+Carnivores: 20 16 12 5 13
+GENERATION 898
+Herbivores: 134 40 60 5 60 20 20 6 20 0
+Health: 7 2 3 1 3 1 1 1 1 0
+Hurt: 6 0 0 15 0 0 0 14 0 0
+Carnivores: 5 0 9 13 3
+GENERATION 899
+Herbivores: 40 28 -21 35 20 20 -17 37 29 8
+Health: 2 2 1 2 1 1 1 2 2 2
+Hurt: 0 12 41 5 0 0 37 3 11 32
+Carnivores: 47 5 9 15 8
+GENERATION 900
+Herbivores: 80 0 17 8 60 77 23 18 40 -6
+Health: 4 0 1 2 3 4 4 1 2 0
+Hurt: 0 0 3 32 0 3 57 2 0 6
+Carnivores: 23 6 20 21 3
+GENERATION 901
+Herbivores: 60 98 23 0 18 20 17 14 60 0
+Health: 3 5 2 0 1 1 1 1 3 0
+Hurt: 0 2 17 0 2 0 3 6 0 0
+Carnivores: 15 4 0 2 0
+GENERATION 902
+Herbivores: 120 92 60 54 9 42 74 20 -15 -15
+Health: 6 5 3 3 2 3 4 1 1 0
+Hurt: 0 8 0 6 31 18 6 0 35 15
+Carnivores: 43 13 16 6 12
+GENERATION 903
+Herbivores: 78 5 38 20 54 40 -9 80 19 -38
+Health: 4 1 2 1 3 2 0 4 2 1
+Hurt: 2 15 2 0 6 0 9 0 21 58
+Carnivores: 35 17 16 10 0
+GENERATION 904
+Herbivores: 121 100 80 46 0 15 33 20 0 -9
+Health: 7 5 4 3 0 2 2 1 0 1
+Hurt: 19 0 0 14 0 25 7 0 0 29
+Carnivores: 39 4 15 6 4
+GENERATION 905
+Herbivores: 100 20 -2 59 -1 34 34 11 26 9
+Health: 5 1 0 3 1 2 3 1 2 2
+Hurt: 0 0 2 1 21 6 26 9 14 31
+Carnivores: 27 36 5 16 0
+GENERATION 906
+Herbivores: 73 40 31 55 39 20 0 25 16 0
+Health: 4 2 2 3 2 1 0 3 2 0
+Hurt: 7 0 9 5 1 0 0 35 24 0
+Carnivores: 45 5 14 7 4
+GENERATION 907
+Herbivores: 120 45 36 35 47 18 -6 10 40 -2
+Health: 6 3 2 2 3 1 0 1 2 0
+Hurt: 0 15 4 5 13 2 6 10 0 2
+Carnivores: 13 0 1 8 5
+GENERATION 908
+Herbivores: 80 8 40 -2 20 40 40 12 19 10
+Health: 5 1 2 0 1 2 2 1 1 3
+Hurt: 20 12 0 2 0 0 0 8 1 50
+Carnivores: 50 8 3 0 5
+GENERATION 909
+Herbivores: 37 14 53 60 20 20 31 43 8 0
+Health: 2 1 3 3 1 2 2 3 1 0
+Hurt: 3 6 7 0 0 20 9 17 12 0
+Carnivores: 24 13 7 10 0
+GENERATION 910
+Herbivores: 60 20 16 18 -32 20 0 55 -6 20
+Health: 3 1 1 1 0 1 0 6 1 1
+Hurt: 0 0 4 2 32 0 0 65 26 0
+Carnivores: 19 32 23 21 2
+GENERATION 911
+Herbivores: 100 -2 -9 5 20 0 31 27 93 20
+Health: 5 1 0 1 1 1 2 3 5 1
+Hurt: 0 22 9 15 0 20 9 33 7 0
+Carnivores: 36 16 33 7 3
+GENERATION 912
+Herbivores: 72 72 0 60 40 20 20 74 40 20
+Health: 4 4 0 3 2 1 1 4 2 1
+Hurt: 8 8 0 0 0 0 0 6 0 0
+Carnivores: 5 9 2 0 0
+GENERATION 913
+Herbivores: 100 16 40 -16 80 36 40 60 24 -55
+Health: 5 1 2 0 4 2 2 3 2 2
+Hurt: 0 4 0 16 0 4 0 0 16 95
+Carnivores: 77 4 0 13 12
+GENERATION 914
+Herbivores: 48 0 -14 0 -37 60 -19 0 20 -131
+Health: 3 0 1 0 2 3 0 0 1 0
+Hurt: 12 0 34 0 77 0 19 0 0 131
+Carnivores: 43 44 29 74 32
+GENERATION 915
+Herbivores: 94 47 -2 16 19 40 50 48 20 -4
+Health: 5 3 0 1 1 2 3 3 1 1
+Hurt: 6 13 2 4 1 0 10 12 0 24
+Carnivores: 9 0 0 14 5
+GENERATION 916
+Herbivores: 21 54 40 42 48 20 -2 0 20 0
+Health: 2 3 2 3 3 1 0 0 2 0
+Hurt: 19 6 0 18 12 0 2 0 20 0
+Carnivores: 31 6 13 10 5
+GENERATION 917
+Herbivores: 128 20 20 20 20 20 60 55 -62 -121
+Health: 7 1 1 1 1 1 3 4 1 0
+Hurt: 12 0 0 0 0 0 0 25 82 121
+Carnivores: 55 34 29 21 10
+GENERATION 918
+Herbivores: 97 58 -4 0 40 18 62 20 26 40
+Health: 5 4 1 0 2 1 4 1 2 2
+Hurt: 3 22 24 0 0 2 18 0 14 0
+Carnivores: 34 13 0 16 0
+GENERATION 919
+Herbivores: 19 9 42 36 19 40 -6 -1 33 20
+Health: 1 2 3 2 1 2 0 0 2 1
+Hurt: 1 31 18 4 1 0 6 1 7 0
+Carnivores: 19 21 2 9 0
+GENERATION 920
+Herbivores: 76 37 33 19 40 -8 20 39 66 -16
+Health: 4 2 2 1 3 2 1 2 4 0
+Hurt: 4 3 7 1 20 48 0 1 14 16
+Carnivores: 35 12 3 18 1
+GENERATION 921
+Herbivores: 112 40 40 74 39 -56 37 0 0 17
+Health: 6 2 2 4 4 1 2 0 0 1
+Hurt: 8 0 0 6 41 76 3 0 0 3
+Carnivores: 35 3 31 5 1
+GENERATION 922
+Herbivores: 40 20 0 -1 75 0 -24 80 76 0
+Health: 2 1 0 0 4 0 1 4 4 0
+Hurt: 0 0 0 1 5 0 44 0 4 0
+Carnivores: 42 0 0 0 3
+GENERATION 923
+Herbivores: 78 -3 20 27 40 60 20 23 40 -31
+Health: 5 0 1 2 2 3 1 3 2 0
+Hurt: 22 3 0 13 0 0 0 37 0 31
+Carnivores: 31 10 32 15 0
+GENERATION 924
+Herbivores: 120 2 3 60 52 54 40 120 60 35
+Health: 6 1 1 3 3 4 2 6 3 2
+Hurt: 0 18 17 0 8 26 0 0 0 5
+Carnivores: 18 0 22 10 0
+GENERATION 925
+Herbivores: -1 44 18 -3 14 20 -10 -4 20 -4
+Health: 1 3 2 0 2 2 0 0 1 0
+Hurt: 21 16 22 3 26 20 10 4 0 4
+Carnivores: 26 7 8 18 11
+GENERATION 926
+Herbivores: 59 11 40 20 52 0 59 20 20 20
+Health: 3 1 2 2 3 0 3 1 1 1
+Hurt: 1 9 0 20 8 0 1 0 0 0
+Carnivores: 0 17 3 11 0
+GENERATION 927
+Herbivores: 80 32 20 16 20 10 -7 10 13 11
+Health: 4 2 1 1 1 1 0 2 1 1
+Hurt: 0 8 0 4 0 10 7 30 7 9
+Carnivores: 29 6 0 0 14
+GENERATION 928
+Herbivores: 40 40 34 -30 8 -14 0 30 0 -52
+Health: 2 2 2 0 1 1 0 2 0 3
+Hurt: 0 0 6 30 12 34 0 10 0 112
+Carnivores: 59 25 2 28 1
+GENERATION 929
+Herbivores: 44 46 -1 11 -19 -13 0 20 0 -33
+Health: 3 3 0 2 0 0 0 1 0 0
+Hurt: 16 14 1 29 19 13 0 0 0 33
+Carnivores: 36 39 19 4 0
+GENERATION 930
+Herbivores: 70 47 35 4 54 51 58 40 44 20
+Health: 4 3 2 1 4 3 3 2 3 1
+Hurt: 10 13 5 16 26 9 2 0 16 0
+Carnivores: 24 8 6 14 1
+GENERATION 931
+Herbivores: 138 19 20 0 34 0 15 40 40 20
+Health: 7 1 1 0 2 1 1 2 2 1
+Hurt: 2 1 0 0 6 20 5 0 0 0
+Carnivores: 0 0 0 15 1
+GENERATION 932
+Herbivores: 31 77 20 32 0 40 20 0 -2 -28
+Health: 2 4 1 2 0 2 1 0 1 0
+Hurt: 9 3 0 8 0 0 0 0 22 28
+Carnivores: 21 16 0 12 1
+GENERATION 933
+Herbivores: 0 0 20 33 40 0 20 0 40 -139
+Health: 0 0 1 3 2 0 1 0 2 1
+Hurt: 0 0 0 27 0 0 0 0 0 159
+Carnivores: 48 6 22 51 2
+GENERATION 934
+Herbivores: 60 0 7 60 18 57 0 0 40 -47
+Health: 3 0 1 3 1 4 0 0 2 0
+Hurt: 0 0 13 0 2 23 0 0 0 47
+Carnivores: 30 2 14 16 0
+GENERATION 935
+Herbivores: 98 0 26 17 -6 12 31 20 40 4
+Health: 5 0 2 1 1 1 2 1 2 1
+Hurt: 2 0 14 3 26 8 9 0 0 16
+Carnivores: 0 13 11 9 10
+GENERATION 936
+Herbivores: 80 15 40 27 -6 40 0 15 38 0
+Health: 4 1 2 2 1 2 0 1 2 0
+Hurt: 0 5 0 13 26 0 0 5 2 0
+Carnivores: 21 0 9 0 4
+GENERATION 937
+Herbivores: 60 -13 -81 -4 20 27 36 20 -7 -105
+Health: 3 0 3 0 1 2 2 1 0 0
+Hurt: 0 13 141 4 0 13 4 0 7 105
+Carnivores: 82 23 32 17 6
+GENERATION 938
+Herbivores: 58 40 16 40 23 38 35 20 74 60
+Health: 3 2 1 2 3 2 2 1 4 3
+Hurt: 2 0 4 0 37 2 5 0 6 0
+Carnivores: 0 30 3 1 1
+GENERATION 939
+Herbivores: 89 39 0 19 20 0 20 17 60 18
+Health: 5 3 0 1 1 0 1 1 3 1
+Hurt: 11 21 0 1 0 0 0 3 0 2
+Carnivores: 21 3 0 8 0
+GENERATION 940
+Herbivores: 28 40 -2 7 31 20 -26 60 -36 20
+Health: 2 2 0 1 2 1 0 3 0 1
+Hurt: 12 0 2 13 9 0 26 0 36 0
+Carnivores: 4 7 2 19 3
+GENERATION 941
+Herbivores: 80 -5 59 60 15 15 -3 5 40 20
+Health: 4 0 3 3 1 1 0 1 2 1
+Hurt: 0 5 1 0 5 5 3 15 0 0
+Carnivores: 14 0 4 0 9
+GENERATION 942
+Herbivores: 31 20 13 15 59 0 40 40 41 -20
+Health: 2 1 1 1 4 0 2 2 4 0
+Hurt: 9 0 7 5 21 0 0 0 39 20
+Carnivores: 43 21 17 0 3
+GENERATION 943
+Herbivores: 80 20 40 20 0 26 15 31 80 -18
+Health: 4 1 2 1 0 2 1 3 4 0
+Hurt: 0 0 0 0 0 14 5 29 0 18
+Carnivores: 0 5 18 25 0
+GENERATION 944
+Herbivores: 50 30 40 28 76 35 40 40 40 0
+Health: 3 3 2 3 5 2 2 2 2 0
+Hurt: 10 30 0 32 24 5 0 0 0 0
+Carnivores: 48 3 2 0 19
+GENERATION 945
+Herbivores: 80 12 -16 0 -29 20 -8 19 47 -7
+Health: 4 2 1 0 1 1 0 1 3 0
+Hurt: 0 28 36 0 49 0 8 1 13 7
+Carnivores: 40 29 1 21 11
+GENERATION 946
+Herbivores: 80 20 80 34 -2 56 20 46 66 -20
+Health: 4 1 4 3 0 3 1 3 4 0
+Hurt: 0 0 0 26 2 4 0 14 14 20
+Carnivores: 11 0 16 16 13
+GENERATION 947
+Herbivores: 100 0 14 0 71 20 40 2 20 22
+Health: 5 0 3 0 4 1 2 1 1 3
+Hurt: 0 0 46 0 9 0 0 18 0 38
+Carnivores: 46 25 11 10 0
+GENERATION 948
+Herbivores: 35 20 0 -33 19 -14 -5 80 39 -32
+Health: 2 1 0 0 1 0 1 4 2 1
+Hurt: 5 0 0 33 1 14 25 0 1 52
+Carnivores: 52 1 25 22 0
+GENERATION 949
+Herbivores: 80 100 -1 60 10 -23 0 -6 22 -41
+Health: 4 5 0 3 1 0 0 1 2 0
+Hurt: 0 0 1 0 10 23 0 26 18 41
+Carnivores: 21 0 24 21 11
+GENERATION 950
+Herbivores: 20 -19 18 7 20 39 60 33 39 19
+Health: 1 0 1 1 1 2 3 2 3 1
+Hurt: 0 19 2 13 0 1 0 7 21 1
+Carnivores: 0 9 12 15 0
+GENERATION 951
+Herbivores: 100 20 40 -3 31 34 12 30 47 0
+Health: 5 2 2 0 2 2 1 2 3 0
+Hurt: 0 20 0 3 9 6 8 10 13 0
+Carnivores: 11 6 5 14 1
+GENERATION 952
+Herbivores: 75 5 40 80 40 -7 40 20 75 20
+Health: 4 2 2 4 2 0 2 1 4 1
+Hurt: 5 35 0 0 0 7 0 0 5 0
+Carnivores: 27 1 12 3 0
+GENERATION 953
+Herbivores: 20 0 40 40 20 38 20 40 20 -91
+Health: 1 0 2 2 1 2 1 2 1 0
+Hurt: 0 0 0 0 0 2 0 0 0 91
+Carnivores: 40 0 0 0 0
+GENERATION 954
+Herbivores: 40 40 20 27 5 37 80 6 60 24
+Health: 2 2 1 2 1 2 4 2 3 2
+Hurt: 0 0 0 13 15 3 0 34 0 16
+Carnivores: 17 23 4 0 2
+GENERATION 955
+Herbivores: 140 0 14 58 40 40 15 58 -11 0
+Health: 7 0 2 3 2 2 1 3 2 0
+Hurt: 0 0 26 2 0 0 5 2 51 0
+Carnivores: 51 8 4 0 5
+GENERATION 956
+Herbivores: 80 20 28 0 40 40 -8 -11 20 0
+Health: 4 1 2 0 2 2 1 0 1 0
+Hurt: 0 0 12 0 0 0 28 11 0 0
+Carnivores: 28 0 0 0 4
+GENERATION 957
+Herbivores: 138 56 20 0 118 74 72 33 40 0
+Health: 7 3 1 0 6 4 5 2 2 0
+Hurt: 2 4 0 0 2 6 28 7 0 0
+Carnivores: 26 10 0 4 2
+GENERATION 958
+Herbivores: 133 53 67 10 60 65 53 40 32 -43
+Health: 7 3 4 1 3 5 3 2 2 0
+Hurt: 7 7 13 10 0 35 7 0 8 43
+Carnivores: 54 19 5 30 12
+GENERATION 959
+Herbivores: 33 49 19 60 60 0 55 20 40 20
+Health: 2 3 2 3 3 0 3 1 2 1
+Hurt: 7 11 21 0 0 0 5 0 0 0
+Carnivores: 9 0 3 3 0
+GENERATION 960
+Herbivores: 86 10 20 40 35 40 60 0 13 0
+Health: 5 1 1 5 2 2 3 0 1 0
+Hurt: 14 10 0 60 5 0 0 0 7 0
+Carnivores: 33 8 2 18 2
+GENERATION 961
+Herbivores: 80 60 -4 36 73 100 40 40 20 -16
+Health: 4 3 1 2 4 5 2 2 1 0
+Hurt: 0 0 24 4 7 0 0 0 0 16
+Carnivores: 6 0 21 0 2
+GENERATION 962
+Herbivores: 60 -11 43 53 -8 -21 -8 0 8 26
+Health: 3 0 3 3 0 1 1 0 1 3
+Hurt: 0 11 17 7 8 41 28 0 12 34
+Carnivores: 41 20 23 8 11
+GENERATION 963
+Herbivores: 80 20 35 98 -4 40 80 99 -47 -58
+Health: 4 1 2 5 0 2 4 5 0 0
+Hurt: 0 0 5 2 4 0 0 1 47 58
+Carnivores: 49 1 3 48 1
+GENERATION 964
+Herbivores: 89 17 -36 -7 -1 -8 20 0 20 -3
+Health: 5 1 0 0 0 1 1 0 1 0
+Hurt: 11 3 36 7 1 28 0 0 0 3
+Carnivores: 60 0 7 0 0
+GENERATION 965
+Herbivores: 16 0 -1 0 -2 0 20 39 15 -6
+Health: 1 0 0 0 0 0 2 2 1 0
+Hurt: 4 0 1 0 2 0 20 1 5 6
+Carnivores: 8 0 11 11 0
+GENERATION 966
+Herbivores: 80 20 18 20 23 20 57 20 38 -8
+Health: 5 1 2 1 2 1 3 1 2 1
+Hurt: 20 0 22 0 17 0 3 0 2 28
+Carnivores: 22 2 18 11 17
+GENERATION 967
+Herbivores: 100 38 132 20 20 20 38 40 20 0
+Health: 5 2 7 1 1 1 2 2 1 0
+Hurt: 0 2 8 0 0 0 2 0 0 0
+Carnivores: 0 1 0 1 0
+GENERATION 968
+Herbivores: 60 0 50 -21 -1 17 17 60 59 -8
+Health: 3 0 3 0 0 1 1 3 3 0
+Hurt: 0 0 10 21 1 3 3 0 1 8
+Carnivores: 8 1 8 0 3
+GENERATION 969
+Herbivores: 14 48 0 59 36 -3 0 18 43 -24
+Health: 1 3 0 3 2 0 0 2 3 0
+Hurt: 6 12 0 1 4 3 0 22 17 24
+Carnivores: 26 15 8 8 5
+GENERATION 970
+Herbivores: 80 -8 31 0 -3 20 -34 -1 20 0
+Health: 4 0 2 0 0 1 1 1 1 0
+Hurt: 0 8 9 0 3 0 54 21 0 0
+Carnivores: 12 6 18 6 2
+GENERATION 971
+Herbivores: 151 20 2 -1 20 13 40 37 40 -64
+Health: 8 1 1 0 1 1 2 3 2 0
+Hurt: 9 0 18 1 0 7 0 23 0 64
+Carnivores: 71 6 7 15 0
+GENERATION 972
+Herbivores: 40 37 -11 57 9 27 40 19 17 7
+Health: 2 3 0 4 1 2 2 1 1 3
+Hurt: 0 23 11 23 11 13 0 1 3 53
+Carnivores: 12 10 15 38 12
+GENERATION 973
+Herbivores: 86 20 20 16 35 0 60 11 40 -12
+Health: 5 1 1 1 2 0 3 1 2 2
+Hurt: 14 0 0 4 5 0 0 9 0 52
+Carnivores: 51 3 2 2 3
+GENERATION 974
+Herbivores: 77 57 42 35 8 40 -14 11 60 4
+Health: 4 3 3 4 1 2 0 1 3 1
+Hurt: 3 3 18 45 12 0 14 9 0 16
+Carnivores: 27 7 3 22 7
+GENERATION 975
+Herbivores: 80 37 39 17 66 -2 -8 31 40 -15
+Health: 4 2 2 2 4 0 0 2 2 3
+Hurt: 0 3 1 23 14 2 8 9 0 75
+Carnivores: 71 21 10 0 5
+GENERATION 976
+Herbivores: 80 40 0 30 -1 0 58 80 40 -6
+Health: 4 2 0 2 0 0 3 4 2 0
+Hurt: 0 0 0 10 1 0 2 0 0 6
+Carnivores: 0 0 0 0 3
+GENERATION 977
+Herbivores: 100 -10 60 100 28 36 0 40 79 -30
+Health: 5 1 3 5 2 3 0 2 4 0
+Hurt: 0 30 0 0 12 24 0 0 1 30
+Carnivores: 55 11 0 26 0
+GENERATION 978
+Herbivores: 70 38 58 -6 5 64 55 15 0 10
+Health: 4 2 3 0 1 4 4 1 1 1
+Hurt: 10 2 2 6 15 16 25 5 20 10
+Carnivores: 4 12 14 14 15
+GENERATION 979
+Herbivores: 91 60 100 40 40 66 39 38 33 0
+Health: 5 3 5 2 2 4 2 2 2 0
+Hurt: 9 0 0 0 0 14 1 2 7 0
+Carnivores: 3 1 4 6 4
+GENERATION 980
+Herbivores: 180 45 45 57 51 109 54 120 18 40
+Health: 9 3 3 3 3 6 3 6 2 2
+Hurt: 0 15 15 3 9 11 6 0 22 0
+Carnivores: 10 6 11 12 0
+GENERATION 981
+Herbivores: 35 32 36 -35 80 53 14 76 54 0
+Health: 2 2 2 1 4 3 1 4 3 0
+Hurt: 5 8 4 55 0 7 6 4 6 0
+Carnivores: 59 1 2 10 1
+GENERATION 982
+Herbivores: 114 80 76 83 98 40 115 3 58 -102
+Health: 6 4 4 5 5 2 6 2 3 1
+Hurt: 6 0 4 17 2 0 5 37 2 122
+Carnivores: 71 22 4 7 0
+GENERATION 983
+Herbivores: 115 40 18 100 40 50 20 40 0 16
+Health: 7 2 1 5 2 3 1 2 0 1
+Hurt: 25 0 2 0 0 10 0 0 0 4
+Carnivores: 0 6 6 4 9
+GENERATION 984
+Herbivores: 105 -3 59 15 33 52 -35 7 60 -4
+Health: 6 0 3 2 2 3 1 1 3 0
+Hurt: 15 3 1 25 7 8 55 13 0 4
+Carnivores: 14 49 2 25 6
+GENERATION 985
+Herbivores: 75 37 46 60 20 48 -13 40 19 -3
+Health: 4 2 3 3 1 3 1 2 2 0
+Hurt: 5 3 14 0 0 12 33 0 21 3
+Carnivores: 34 5 1 0 3
+GENERATION 986
+Herbivores: 190 75 30 53 71 74 16 153 57 33
+Health: 10 4 2 3 4 4 1 8 3 2
+Hurt: 10 5 10 7 9 6 4 7 3 7
+Carnivores: 4 14 6 1 0
+GENERATION 987
+Herbivores: 143 12 33 16 33 7 60 17 53 -16
+Health: 8 2 2 1 2 1 3 1 3 1
+Hurt: 17 28 7 4 7 13 0 3 7 36
+Carnivores: 62 7 13 1 8
+GENERATION 988
+Herbivores: 138 15 60 38 -1 125 50 60 99 -66
+Health: 7 1 3 2 2 7 3 3 5 3
+Hurt: 2 5 0 2 41 15 10 0 1 126
+Carnivores: 79 45 45 6 0
+GENERATION 989
+Herbivores: 140 20 80 94 136 9 97 122 40 20
+Health: 7 1 4 5 7 1 5 7 2 1
+Hurt: 0 0 0 6 4 11 3 18 0 0
+Carnivores: 7 3 3 5 1
+GENERATION 990
+Herbivores: 238 36 92 68 217 138 42 80 37 20
+Health: 12 2 5 4 11 7 3 4 2 1
+Hurt: 2 4 8 12 3 2 18 0 3 0
+Carnivores: 20 0 2 2 0
+GENERATION 991
+Herbivores: 65 95 79 80 69 57 147 71 160 48
+Health: 4 5 4 4 4 3 8 4 8 3
+Hurt: 15 5 1 0 11 3 13 9 0 12
+Carnivores: 5 13 4 2 0
+GENERATION 992
+Herbivores: 220 20 39 25 -49 79 -34 100 38 58
+Health: 11 1 2 2 0 4 2 5 2 3
+Hurt: 0 0 1 15 49 1 74 0 2 2
+Carnivores: 0 6 12 0 15
+GENERATION 993
+Herbivores: 200 36 31 140 40 60 0 79 -7 -60
+Health: 10 2 2 7 2 3 0 4 0 0
+Hurt: 0 4 9 0 0 0 0 1 7 60
+Carnivores: 8 6 5 0 0
+GENERATION 994
+Herbivores: 138 138 107 46 159 60 80 26 139 8
+Health: 7 8 7 5 8 3 5 2 7 1
+Hurt: 2 22 33 54 1 0 20 14 1 12
+Carnivores: 33 8 18 13 3
+GENERATION 995
+Herbivores: 220 105 117 38 57 69 120 73 -25 6
+Health: 11 6 6 2 5 4 6 5 1 1
+Hurt: 0 15 3 2 43 11 0 27 45 14
+Carnivores: 50 3 15 44 6
+GENERATION 996
+Herbivores: 160 90 135 127 140 56 66 180 -3 53
+Health: 8 5 7 7 7 3 4 9 7 3
+Hurt: 0 10 5 13 0 4 14 0 143 7
+Carnivores: 49 46 25 9 1
+GENERATION 997
+Herbivores: 216 77 85 77 160 59 44 94 132 -69
+Health: 11 4 5 4 8 3 3 5 7 1
+Hurt: 4 3 15 3 0 1 16 6 8 89
+Carnivores: 14 6 3 2 6
+GENERATION 998
+Herbivores: 39 160 7 23 -1 27 12 80 29 -12
+Health: 2 8 1 2 2 2 1 4 3 4
+Hurt: 1 0 13 17 41 13 8 0 31 92
+Carnivores: 46 22 22 16 0
+GENERATION 999
+Herbivores: 215 124 100 109 92 79 78 91 75 36
+Health: 11 7 5 6 5 4 4 5 4 2
+Hurt: 5 16 0 11 8 1 2 9 5 4
+Carnivores: 8 4 11 2 9
+GENERATION 1000
+Herbivores: 200 40 56 0 60 41 0 30 34 -2
+Health: 10 2 3 0 3 4 0 2 2 0
+Hurt: 0 0 4 0 0 39 0 10 6 2
+Carnivores: 4 0 1 13 0
