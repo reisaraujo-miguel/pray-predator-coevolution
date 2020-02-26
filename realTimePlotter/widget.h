@@ -68,6 +68,14 @@ private:
     QVector<float> averageCarnTime2;
     QVector<float> averageCarnTime3;
 
+    QVector<float> averageHerbFitTime1;
+    QVector<float> averageHerbFitTime2;
+    QVector<float> averageHerbFitTime3;
+
+    QVector<float> averageCarnFitTime1;
+    QVector<float> averageCarnFitTime2;
+    QVector<float> averageCarnFitTime3;
+
 };
 
 #endif // WIDGET_H

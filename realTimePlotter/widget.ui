@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>879</width>
-    <height>681</height>
+    <height>670</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -369,7 +369,7 @@
     </font>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="rawDataTab">
     <attribute name="title">
@@ -452,7 +452,7 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>40</y>
+       <y>30</y>
        <width>819</width>
        <height>257</height>
       </rect>
@@ -487,7 +487,7 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>310</y>
+       <y>560</y>
        <width>819</width>
        <height>17</height>
       </rect>
@@ -506,7 +506,39 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>340</y>
+       <y>580</y>
+       <width>819</width>
+       <height>257</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+    <widget class="QCustomPlot" name="graphHerbProFit" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>290</y>
+       <width>819</width>
+       <height>257</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+    <widget class="QCustomPlot" name="graphCarnProFit" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>840</y>
        <width>819</width>
        <height>257</height>
       </rect>

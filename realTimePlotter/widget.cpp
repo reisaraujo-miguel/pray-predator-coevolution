@@ -33,6 +33,13 @@ Widget::Widget(QWidget *parent) :
     averageHerbTime2.resize(0);
     averageHerbTime3.resize(0);
 
+    averageCarnFitTime1.resize(0);
+    averageCarnFitTime2.resize(0);
+    averageCarnFitTime3.resize(0);
+    averageHerbFitTime1.resize(0);
+    averageHerbFitTime2.resize(0);
+    averageHerbFitTime3.resize(0);
+
     b_herbDisp = true;
     b_herbMean = true;
     b_herbFit = true;
@@ -158,6 +165,14 @@ void Widget::on_importButton_clicked()
     averageHerbTime2.resize(g+1);
     averageHerbTime3.resize(g+1);
 
+    averageCarnFitTime1.resize(g+1);
+    averageCarnFitTime2.resize(g+1);
+    averageCarnFitTime3.resize(g+1);
+
+    averageHerbFitTime1.resize(g+1);
+    averageHerbFitTime2.resize(g+1);
+    averageHerbFitTime3.resize(g+1);
+
 
     for(i=0; i<(g+1); i++){
         energyHerb[i].resize(h);
@@ -206,21 +221,31 @@ void Widget::on_importButton_clicked()
         }
         averageCarn[i] = averageCarn[i]/h;
 
-        // Mean value over interval TIME_1
+        // Mean value of mean and fittest energy over interval TIME_1
 
         if(i >= (TIME_1 - 1)){
             averageHerbTime1[i] = 0;
             averageCarnTime1[i] = 0;
+            averageHerbFitTime1[i] = 0;
+            averageCarnFitTime1[i] = 0;
+
             for(k = (i - TIME_1 + 1); k<=i; k++){
                 averageHerbTime1[i] = averageHerbTime1[i] + averageHerb[k];
                 averageCarnTime1[i] = averageCarnTime1[i] + averageCarn[k];
+
+                averageHerbFitTime1[i] = averageHerbFitTime1[i] + energyHerb[k][0];
+                averageCarnFitTime1[i] = averageCarnFitTime1[i] + energyCarn[k][0];
             }
             averageHerbTime1[i] = averageHerbTime1[i]/TIME_1;
             averageCarnTime1[i] = averageCarnTime1[i]/TIME_1;
+            averageHerbFitTime1[i] = averageHerbFitTime1[i]/TIME_1;
+            averageCarnFitTime1[i] = averageCarnFitTime1[i]/TIME_1;
         }
         else{
             averageHerbTime1[i] = 0;
             averageCarnTime1[i] = 0;
+            averageHerbFitTime1[i] = 0;
+            averageCarnFitTime1[i] = 0;
         }
 
         // Mean value over interval TIME_2
@@ -228,16 +253,26 @@ void Widget::on_importButton_clicked()
         if(i >= (TIME_2 - 1)){
             averageHerbTime2[i] = 0;
             averageCarnTime2[i] = 0;
+            averageHerbFitTime2[i] = 0;
+            averageCarnFitTime2[i] = 0;
+
             for(k = (i - TIME_2 + 1); k<=i; k++){
                 averageHerbTime2[i] = averageHerbTime2[i] + averageHerb[k];
                 averageCarnTime2[i] = averageCarnTime2[i] + averageCarn[k];
+
+                averageHerbFitTime2[i] = averageHerbFitTime2[i] + energyHerb[k][0];
+                averageCarnFitTime2[i] = averageCarnFitTime2[i] + energyCarn[k][0];
             }
-            averageHerbTime2[i] = averageHerbTime2[i]/TIME_1;
-            averageCarnTime2[i] = averageCarnTime2[i]/TIME_1;
+            averageHerbTime2[i] = averageHerbTime2[i]/TIME_2;
+            averageCarnTime2[i] = averageCarnTime2[i]/TIME_2;
+            averageHerbFitTime2[i] = averageHerbFitTime2[i]/TIME_2;
+            averageCarnFitTime2[i] = averageCarnFitTime2[i]/TIME_2;
         }
         else{
             averageHerbTime2[i] = 0;
             averageCarnTime2[i] = 0;
+            averageHerbFitTime2[i] = 0;
+            averageCarnFitTime2[i] = 0;
         }
 
         // Mean value over interval TIME_3
@@ -245,16 +280,26 @@ void Widget::on_importButton_clicked()
         if(i >= (TIME_3 - 1)){
             averageHerbTime3[i] = 0;
             averageCarnTime3[i] = 0;
+            averageHerbFitTime3[i] = 0;
+            averageCarnFitTime3[i] = 0;
+
             for(k = (i - TIME_3 + 1); k<=i; k++){
                 averageHerbTime3[i] = averageHerbTime3[i] + averageHerb[k];
                 averageCarnTime3[i] = averageCarnTime3[i] + averageCarn[k];
+
+                averageHerbFitTime3[i] = averageHerbFitTime3[i] + energyHerb[k][0];
+                averageCarnFitTime3[i] = averageCarnFitTime3[i] + energyCarn[k][0];
             }
-            averageHerbTime3[i] = averageHerbTime3[i]/TIME_1;
-            averageCarnTime3[i] = averageCarnTime3[i]/TIME_1;
+            averageHerbTime3[i] = averageHerbTime3[i]/TIME_3;
+            averageCarnTime3[i] = averageCarnTime3[i]/TIME_3;
+            averageHerbFitTime3[i] = averageHerbFitTime3[i]/TIME_3;
+            averageCarnFitTime3[i] = averageCarnFitTime3[i]/TIME_3;
         }
         else{
             averageHerbTime3[i] = 0;
             averageCarnTime3[i] = 0;
+            averageHerbFitTime3[i] = 0;
+            averageCarnFitTime3[i] = 0;
         }
 
         if(in.atEnd()==true){
@@ -282,6 +327,8 @@ void Widget::updatePlot()
     ui->graphHerbHealth->clearGraphs();
     ui->graphCarnPro->clearGraphs();
     ui->graphHerbPro->clearGraphs();
+    ui->graphCarnProFit->clearGraphs();
+    ui->graphHerbProFit->clearGraphs();
 
     int i, j, g, h, c;
     g = ui->editGen->text().toInt();
@@ -314,6 +361,8 @@ void Widget::updatePlot()
     ui->graphCarnPro->xAxis->setLabel("Generation");
     ui->graphCarnPro->legend->setVisible(true);
     ui->graphCarnPro->setFont(QFont("Helvetica", 9));
+    // LEGEND ALIGNMENT
+    //ui->graphCarnPro->axisRect()->insetLayout()->setInsetAlignment(0, Qt::AlignLeft|Qt::AlignTop);
 
     ui->graphHerbPro->yAxis->setTickLabels(true);
     ui->graphHerbPro->xAxis->setTickLabels(true);
@@ -321,6 +370,20 @@ void Widget::updatePlot()
     ui->graphHerbPro->xAxis->setLabel("Generation");
     ui->graphHerbPro->legend->setVisible(true);
     ui->graphHerbPro->setFont(QFont("Helvetica", 9));
+
+    ui->graphCarnProFit->yAxis->setTickLabels(true);
+    ui->graphCarnProFit->xAxis->setTickLabels(true);
+    ui->graphCarnProFit->yAxis->setLabel("Fittest energy value");
+    ui->graphCarnProFit->xAxis->setLabel("Generation");
+    ui->graphCarnProFit->legend->setVisible(true);
+    ui->graphCarnProFit->setFont(QFont("Helvetica", 9));
+
+    ui->graphHerbProFit->yAxis->setTickLabels(true);
+    ui->graphHerbProFit->xAxis->setTickLabels(true);
+    ui->graphHerbProFit->yAxis->setLabel("Fittest energy value");
+    ui->graphHerbProFit->xAxis->setLabel("Generation");
+    ui->graphHerbProFit->legend->setVisible(true);
+    ui->graphHerbProFit->setFont(QFont("Helvetica", 9));
 
 
     // HERBIVORE GRAPH
@@ -530,6 +593,20 @@ void Widget::updatePlot()
         ui->graphHerbPro->graph(0)->rescaleValueAxis(true,true);
     //}
 
+    ui->graphHerbProFit->addGraph();
+    ui->graphHerbProFit->graph(0)->setPen(QPen(QColor(255,0,0,255)/*,2*/));
+    ui->graphHerbProFit->graph(0)->setLineStyle(QCPGraph::LineStyle(QCPGraph::lsLine));
+    ui->graphHerbProFit->graph(0)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 1));
+    ui->graphHerbProFit->graph(0)->setName(QString::number(TIME_1) + " generation interval");
+
+    //if(b_herbFit == true){
+        for(j=0; j<(g+1); j++){
+            ui->graphHerbProFit->graph(0)->addData(j,averageHerbFitTime1[j]);
+        }
+        ui->graphHerbProFit->graph(0)->rescaleKeyAxis(true);
+        ui->graphHerbProFit->graph(0)->rescaleValueAxis(true,true);
+    //}
+
     // time2
     ui->graphHerbPro->addGraph();
     ui->graphHerbPro->graph(1)->setPen(QPen(QColor(0,255,0,255)/*,2*/));
@@ -545,6 +622,20 @@ void Widget::updatePlot()
         ui->graphHerbPro->graph(1)->rescaleValueAxis(true,true);
     //}
 
+    ui->graphHerbProFit->addGraph();
+    ui->graphHerbProFit->graph(1)->setPen(QPen(QColor(0,255,0,255)/*,2*/));
+    ui->graphHerbProFit->graph(1)->setLineStyle(QCPGraph::LineStyle(QCPGraph::lsLine));
+    ui->graphHerbProFit->graph(1)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 1));
+    ui->graphHerbProFit->graph(1)->setName(QString::number(TIME_2) + " generation interval");
+
+    //if(b_herbFit == true){
+        for(j=0; j<(g+1); j++){
+            ui->graphHerbProFit->graph(1)->addData(j,averageHerbFitTime2[j]);
+        }
+        ui->graphHerbProFit->graph(1)->rescaleKeyAxis(true);
+        ui->graphHerbProFit->graph(1)->rescaleValueAxis(true,true);
+    //}
+
     // time3
     ui->graphHerbPro->addGraph();
     ui->graphHerbPro->graph(2)->setPen(QPen(QColor(0,0,255,255)/*,2*/));
@@ -558,6 +649,20 @@ void Widget::updatePlot()
         }
         ui->graphHerbPro->graph(2)->rescaleKeyAxis(true);
         ui->graphHerbPro->graph(2)->rescaleValueAxis(true,true);
+    //}
+
+    ui->graphHerbProFit->addGraph();
+    ui->graphHerbProFit->graph(2)->setPen(QPen(QColor(0,0,255,255)/*,2*/));
+    ui->graphHerbProFit->graph(2)->setLineStyle(QCPGraph::LineStyle(QCPGraph::lsLine));
+    ui->graphHerbProFit->graph(2)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 1));
+    ui->graphHerbProFit->graph(2)->setName(QString::number(TIME_3) + " generation interval");
+
+    //if(b_herbFit == true){
+        for(j=0; j<(g+1); j++){
+            ui->graphHerbProFit->graph(2)->addData(j,averageHerbFitTime3[j]);
+        }
+        ui->graphHerbProFit->graph(2)->rescaleKeyAxis(true);
+        ui->graphHerbProFit->graph(2)->rescaleValueAxis(true,true);
     //}
 
     // CARNIVORES
@@ -577,6 +682,20 @@ void Widget::updatePlot()
         ui->graphCarnPro->graph(0)->rescaleValueAxis(true,true);
     //}
 
+    ui->graphCarnProFit->addGraph();
+    ui->graphCarnProFit->graph(0)->setPen(QPen(QColor(255,0,0,255)/*,2*/));
+    ui->graphCarnProFit->graph(0)->setLineStyle(QCPGraph::LineStyle(QCPGraph::lsLine));
+    ui->graphCarnProFit->graph(0)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 1));
+    ui->graphCarnProFit->graph(0)->setName(QString::number(TIME_1) + " generation interval");
+
+    //if(b_herbFit == true){
+        for(j=0; j<(g+1); j++){
+            ui->graphCarnProFit->graph(0)->addData(j,averageCarnFitTime1[j]);
+        }
+        ui->graphCarnProFit->graph(0)->rescaleKeyAxis(true);
+        ui->graphCarnProFit->graph(0)->rescaleValueAxis(true,true);
+    //}
+
     // time2
     ui->graphCarnPro->addGraph();
     ui->graphCarnPro->graph(1)->setPen(QPen(QColor(0,255,0,255)/*,2*/));
@@ -590,6 +709,20 @@ void Widget::updatePlot()
         }
         ui->graphCarnPro->graph(1)->rescaleKeyAxis(true);
         ui->graphCarnPro->graph(1)->rescaleValueAxis(true,true);
+    //}
+
+    ui->graphCarnProFit->addGraph();
+    ui->graphCarnProFit->graph(1)->setPen(QPen(QColor(0,255,0,255)/*,2*/));
+    ui->graphCarnProFit->graph(1)->setLineStyle(QCPGraph::LineStyle(QCPGraph::lsLine));
+    ui->graphCarnProFit->graph(1)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 1));
+    ui->graphCarnProFit->graph(1)->setName(QString::number(TIME_2) + " generation interval");
+
+    //if(b_herbFit == true){
+        for(j=0; j<(g+1); j++){
+            ui->graphCarnProFit->graph(1)->addData(j,averageCarnFitTime2[j]);
+        }
+        ui->graphCarnProFit->graph(1)->rescaleKeyAxis(true);
+        ui->graphCarnProFit->graph(1)->rescaleValueAxis(true,true);
     //}
 
     // time3
@@ -607,12 +740,28 @@ void Widget::updatePlot()
         ui->graphCarnPro->graph(2)->rescaleValueAxis(true,true);
     //}
 
+    ui->graphCarnProFit->addGraph();
+    ui->graphCarnProFit->graph(2)->setPen(QPen(QColor(0,0,255,255)/*,2*/));
+    ui->graphCarnProFit->graph(2)->setLineStyle(QCPGraph::LineStyle(QCPGraph::lsLine));
+    ui->graphCarnProFit->graph(2)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 1));
+    ui->graphCarnProFit->graph(2)->setName(QString::number(TIME_3) + " generation interval");
+
+    //if(b_herbFit == true){
+        for(j=0; j<(g+1); j++){
+            ui->graphCarnProFit->graph(2)->addData(j,averageCarnFitTime3[j]);
+        }
+        ui->graphCarnProFit->graph(2)->rescaleKeyAxis(true);
+        ui->graphCarnProFit->graph(2)->rescaleValueAxis(true,true);
+    //}
+
     ui->graphHerb->replot();
     ui->graphCarn->replot();
     ui->graphHerbHurt->replot();
     ui->graphHerbHealth->replot();
     ui->graphHerbPro->replot();
     ui->graphCarnPro->replot();
+    ui->graphHerbProFit->replot();
+    ui->graphCarnProFit->replot();
 }
 
 
@@ -725,6 +874,12 @@ void Widget::timeOutSlot(){
         averageHerbTime1.resize(0);
         averageHerbTime2.resize(0);
         averageHerbTime3.resize(0);
+        averageCarnFitTime1.resize(0);
+        averageCarnFitTime2.resize(0);
+        averageCarnFitTime3.resize(0);
+        averageHerbFitTime1.resize(0);
+        averageHerbFitTime2.resize(0);
+        averageHerbFitTime3.resize(0);
 
         QFile file(fileName);
         file.open(QIODevice::ReadOnly);
@@ -795,6 +950,14 @@ void Widget::timeOutSlot(){
         averageHerbTime2.resize(g+1);
         averageHerbTime3.resize(g+1);
 
+        averageCarnFitTime1.resize(g+1);
+        averageCarnFitTime2.resize(g+1);
+        averageCarnFitTime3.resize(g+1);
+
+        averageHerbFitTime1.resize(g+1);
+        averageHerbFitTime2.resize(g+1);
+        averageHerbFitTime3.resize(g+1);
+
 
         for(i=0; i<(g+1); i++){
             energyHerb[i].resize(h);
@@ -843,21 +1006,31 @@ void Widget::timeOutSlot(){
             }
             averageCarn[i] = averageCarn[i]/h;
 
-            // Mean value over interval TIME_1
+            // Mean value of mean and fittest energy over interval TIME_1
 
             if(i >= (TIME_1 - 1)){
                 averageHerbTime1[i] = 0;
                 averageCarnTime1[i] = 0;
+                averageHerbFitTime1[i] = 0;
+                averageCarnFitTime1[i] = 0;
+
                 for(k = (i - TIME_1 + 1); k<=i; k++){
                     averageHerbTime1[i] = averageHerbTime1[i] + averageHerb[k];
                     averageCarnTime1[i] = averageCarnTime1[i] + averageCarn[k];
+
+                    averageHerbFitTime1[i] = averageHerbFitTime1[i] + energyHerb[k][0];
+                    averageCarnFitTime1[i] = averageCarnFitTime1[i] + energyCarn[k][0];
                 }
                 averageHerbTime1[i] = averageHerbTime1[i]/TIME_1;
                 averageCarnTime1[i] = averageCarnTime1[i]/TIME_1;
+                averageHerbFitTime1[i] = averageHerbFitTime1[i]/TIME_1;
+                averageCarnFitTime1[i] = averageCarnFitTime1[i]/TIME_1;
             }
             else{
                 averageHerbTime1[i] = 0;
                 averageCarnTime1[i] = 0;
+                averageHerbFitTime1[i] = 0;
+                averageCarnFitTime1[i] = 0;
             }
 
             // Mean value over interval TIME_2
@@ -865,16 +1038,26 @@ void Widget::timeOutSlot(){
             if(i >= (TIME_2 - 1)){
                 averageHerbTime2[i] = 0;
                 averageCarnTime2[i] = 0;
+                averageHerbFitTime2[i] = 0;
+                averageCarnFitTime2[i] = 0;
+
                 for(k = (i - TIME_2 + 1); k<=i; k++){
                     averageHerbTime2[i] = averageHerbTime2[i] + averageHerb[k];
                     averageCarnTime2[i] = averageCarnTime2[i] + averageCarn[k];
+
+                    averageHerbFitTime2[i] = averageHerbFitTime2[i] + energyHerb[k][0];
+                    averageCarnFitTime2[i] = averageCarnFitTime2[i] + energyCarn[k][0];
                 }
-                averageHerbTime2[i] = averageHerbTime2[i]/TIME_1;
-                averageCarnTime2[i] = averageCarnTime2[i]/TIME_1;
+                averageHerbTime2[i] = averageHerbTime2[i]/TIME_2;
+                averageCarnTime2[i] = averageCarnTime2[i]/TIME_2;
+                averageHerbFitTime2[i] = averageHerbFitTime2[i]/TIME_2;
+                averageCarnFitTime2[i] = averageCarnFitTime2[i]/TIME_2;
             }
             else{
                 averageHerbTime2[i] = 0;
                 averageCarnTime2[i] = 0;
+                averageHerbFitTime2[i] = 0;
+                averageCarnFitTime2[i] = 0;
             }
 
             // Mean value over interval TIME_3
@@ -882,16 +1065,26 @@ void Widget::timeOutSlot(){
             if(i >= (TIME_3 - 1)){
                 averageHerbTime3[i] = 0;
                 averageCarnTime3[i] = 0;
+                averageHerbFitTime3[i] = 0;
+                averageCarnFitTime3[i] = 0;
+
                 for(k = (i - TIME_3 + 1); k<=i; k++){
                     averageHerbTime3[i] = averageHerbTime3[i] + averageHerb[k];
                     averageCarnTime3[i] = averageCarnTime3[i] + averageCarn[k];
+
+                    averageHerbFitTime3[i] = averageHerbFitTime3[i] + energyHerb[k][0];
+                    averageCarnFitTime3[i] = averageCarnFitTime3[i] + energyCarn[k][0];
                 }
-                averageHerbTime3[i] = averageHerbTime3[i]/TIME_1;
-                averageCarnTime3[i] = averageCarnTime3[i]/TIME_1;
+                averageHerbTime3[i] = averageHerbTime3[i]/TIME_3;
+                averageCarnTime3[i] = averageCarnTime3[i]/TIME_3;
+                averageHerbFitTime3[i] = averageHerbFitTime3[i]/TIME_3;
+                averageCarnFitTime3[i] = averageCarnFitTime3[i]/TIME_3;
             }
             else{
                 averageHerbTime3[i] = 0;
                 averageCarnTime3[i] = 0;
+                averageHerbFitTime3[i] = 0;
+                averageCarnFitTime3[i] = 0;
             }
 
             if(in.atEnd()==true){

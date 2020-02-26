@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = realTimePlotter1.0.0
-DISTDIR = /home/alice/Desktop/Evolutionary\ Algorithms/pray_predator/pray_predator6/realTimePlotter/.tmp/realTimePlotter1.0.0
+DISTDIR = /home/alice/Desktop/Evolutionary\ Algorithms/pray_predator/pray_predator7_moreData/realTimePlotter/.tmp/realTimePlotter1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-rpath,/home/alice/Qt/5.12.6/gcc_64/lib
 LIBS          = $(SUBLIBS) /home/alice/Qt/5.12.6/gcc_64/lib/libQt5PrintSupport.so /home/alice/Qt/5.12.6/gcc_64/lib/libQt5Widgets.so /home/alice/Qt/5.12.6/gcc_64/lib/libQt5Gui.so /home/alice/Qt/5.12.6/gcc_64/lib/libQt5Core.so -lGL -lpthread   
@@ -1213,7 +1213,7 @@ moc_qcustomplot.cpp: qcustomplot.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtPrintSupport/qtprintsupportversion.h \
 		moc_predefs.h \
 		/home/alice/Qt/5.12.6/gcc_64/bin/moc
-	/home/alice/Qt/5.12.6/gcc_64/bin/moc $(DEFINES) --include '/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator6/realTimePlotter/moc_predefs.h' -I/home/alice/Qt/5.12.6/gcc_64/mkspecs/linux-g++ -I'/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator6/realTimePlotter' -I/home/alice/Qt/5.12.6/gcc_64/include -I/home/alice/Qt/5.12.6/gcc_64/include/QtPrintSupport -I/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets -I/home/alice/Qt/5.12.6/gcc_64/include/QtGui -I/home/alice/Qt/5.12.6/gcc_64/include/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include qcustomplot.h -o moc_qcustomplot.cpp
+	/home/alice/Qt/5.12.6/gcc_64/bin/moc $(DEFINES) --include '/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator7_moreData/realTimePlotter/moc_predefs.h' -I/home/alice/Qt/5.12.6/gcc_64/mkspecs/linux-g++ -I'/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator7_moreData/realTimePlotter' -I/home/alice/Qt/5.12.6/gcc_64/include -I/home/alice/Qt/5.12.6/gcc_64/include/QtPrintSupport -I/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets -I/home/alice/Qt/5.12.6/gcc_64/include/QtGui -I/home/alice/Qt/5.12.6/gcc_64/include/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include qcustomplot.h -o moc_qcustomplot.cpp
 
 moc_widget.cpp: widget.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/QWidget \
@@ -1328,7 +1328,7 @@ moc_widget.cpp: widget.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtCore/qbasictimer.h \
 		moc_predefs.h \
 		/home/alice/Qt/5.12.6/gcc_64/bin/moc
-	/home/alice/Qt/5.12.6/gcc_64/bin/moc $(DEFINES) --include '/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator6/realTimePlotter/moc_predefs.h' -I/home/alice/Qt/5.12.6/gcc_64/mkspecs/linux-g++ -I'/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator6/realTimePlotter' -I/home/alice/Qt/5.12.6/gcc_64/include -I/home/alice/Qt/5.12.6/gcc_64/include/QtPrintSupport -I/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets -I/home/alice/Qt/5.12.6/gcc_64/include/QtGui -I/home/alice/Qt/5.12.6/gcc_64/include/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include widget.h -o moc_widget.cpp
+	/home/alice/Qt/5.12.6/gcc_64/bin/moc $(DEFINES) --include '/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator7_moreData/realTimePlotter/moc_predefs.h' -I/home/alice/Qt/5.12.6/gcc_64/mkspecs/linux-g++ -I'/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator7_moreData/realTimePlotter' -I/home/alice/Qt/5.12.6/gcc_64/include -I/home/alice/Qt/5.12.6/gcc_64/include/QtPrintSupport -I/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets -I/home/alice/Qt/5.12.6/gcc_64/include/QtGui -I/home/alice/Qt/5.12.6/gcc_64/include/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include widget.h -o moc_widget.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
