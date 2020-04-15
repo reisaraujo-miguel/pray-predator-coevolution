@@ -31,7 +31,7 @@ a variable of value __n__ corresponds to a rotation of n hundredths of a full ci
 
 ## Fitness score
 
-An entity's fitness score is its energy, and it's calculated differently for herbivores and carnivores.
+An entity's fitness score is its energy, and it's computed differently for herbivores and carnivores.
 
 - __Carnivores__
 <br/>Each time a carnivore attacks a herbivore its energy is increased by 1. However, if a herbivore bumps into a carnivore
