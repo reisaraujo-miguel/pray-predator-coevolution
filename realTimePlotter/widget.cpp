@@ -1,3 +1,5 @@
+// AVERAGE OVER TIME CONSIDERING FITTEST
+
 #include "widget.h"
 #include "ui_widget.h"
 #include <QFileDialog>
@@ -48,6 +50,12 @@ Widget::Widget(QWidget *parent) :
     b_carnFit = true;
 
     updateData = false;
+
+    TIME_1 = 5;
+    TIME_2 = 10;
+    TIME_3 = 50;
+
+    generations = 0;
 
     scrollArea = new QScrollArea(this);
     //scrollArea->setBackgroundRole(QPalette::Dark);
@@ -137,6 +145,9 @@ void Widget::on_importButton_clicked()
     line = in.readLine();
     fields = line.split(" ");
     ui->editHerCarn->setText(fields.back());
+    line = in.readLine();
+    fields = line.split(" ");
+    ui->editEvaluate->setText(fields.back());
 
 
 
@@ -144,6 +155,7 @@ void Widget::on_importButton_clicked()
     line = in.readLine(); // empty line
     int i, j, k, g, h, c;
     g = ui->editGen->text().toInt();
+    generations = g;
     h = ui->editHerb->text().toInt();
     c = ui->editCarn->text().toInt();
 
@@ -304,11 +316,19 @@ void Widget::on_importButton_clicked()
 
         if(in.atEnd()==true){
             g = i;
+            generations = g;
             ui->editGen->setText(QString::number(g));
             //printf("%d\n",g);
         }
 
     }
+    ui->interval1SpinBox->setMaximum(generations);
+    ui->interval2SpinBox->setMaximum(generations);
+    ui->interval3SpinBox->setMaximum(generations);
+
+    ui->interval1SpinBox->setValue(TIME_1);
+    ui->interval2SpinBox->setValue(TIME_2);
+    ui->interval3SpinBox->setValue(TIME_3);
 
     file.close();
 
@@ -922,6 +942,9 @@ void Widget::timeOutSlot(){
         line = in.readLine();
         fields = line.split(" ");
         ui->editHerCarn->setText(fields.back());
+        line = in.readLine();
+        fields = line.split(" ");
+        ui->editEvaluate->setText(fields.back());
 
 
 
@@ -929,6 +952,7 @@ void Widget::timeOutSlot(){
         line = in.readLine(); // empty line
         int i, j, k, g, h, c;
         g = ui->editGen->text().toInt();
+        generations = g;
         h = ui->editHerb->text().toInt();
         c = ui->editCarn->text().toInt();
 
@@ -1089,11 +1113,19 @@ void Widget::timeOutSlot(){
 
             if(in.atEnd()==true){
                 g = i;
+                generations = g;
                 ui->editGen->setText(QString::number(g));
                 //printf("%d\n",g);
             }
 
         }
+        ui->interval1SpinBox->setMaximum(generations);
+        ui->interval2SpinBox->setMaximum(generations);
+        ui->interval3SpinBox->setMaximum(generations);
+
+        ui->interval1SpinBox->setValue(TIME_1);
+        ui->interval2SpinBox->setValue(TIME_2);
+        ui->interval3SpinBox->setValue(TIME_3);
 
         file.close();
 
@@ -1101,4 +1133,138 @@ void Widget::timeOutSlot(){
         updatePlot();
     }
 
+}
+
+
+void Widget::on_interval1SpinBox_valueChanged(int arg1)
+{
+    TIME_1 = arg1;
+
+    averageCarnTime1.resize(0);
+    averageHerbTime1.resize(0);
+    averageCarnFitTime1.resize(0);
+    averageHerbFitTime1.resize(0);
+
+    averageCarnTime1.resize(generations+1);
+    averageHerbTime1.resize(generations+1);
+    averageCarnFitTime1.resize(generations+1);
+    averageHerbFitTime1.resize(generations+1);
+
+
+    int i, k;
+    for(i=0; i<(generations+1); i++){
+        if(i >= (TIME_1 - 1)){
+            averageHerbTime1[i] = 0;
+            averageCarnTime1[i] = 0;
+            averageHerbFitTime1[i] = 0;
+            averageCarnFitTime1[i] = 0;
+
+            for(k = (i - TIME_1 + 1); k<=i; k++){
+                averageHerbTime1[i] = averageHerbTime1[i] + averageHerb[k];
+                averageCarnTime1[i] = averageCarnTime1[i] + averageCarn[k];
+
+                averageHerbFitTime1[i] = averageHerbFitTime1[i] + energyHerb[k][0];
+                averageCarnFitTime1[i] = averageCarnFitTime1[i] + energyCarn[k][0];
+            }
+            averageHerbTime1[i] = averageHerbTime1[i]/TIME_1;
+            averageCarnTime1[i] = averageCarnTime1[i]/TIME_1;
+            averageHerbFitTime1[i] = averageHerbFitTime1[i]/TIME_1;
+            averageCarnFitTime1[i] = averageCarnFitTime1[i]/TIME_1;
+        }
+        else{
+            averageHerbTime1[i] = 0;
+            averageCarnTime1[i] = 0;
+            averageHerbFitTime1[i] = 0;
+            averageCarnFitTime1[i] = 0;
+        }
+    }
+    updatePlot();
+}
+
+void Widget::on_interval2SpinBox_valueChanged(int arg1)
+{
+    TIME_2 = arg1;
+
+    averageCarnTime2.resize(0);
+    averageHerbTime2.resize(0);
+    averageCarnFitTime2.resize(0);
+    averageHerbFitTime2.resize(0);
+
+    averageCarnTime2.resize(generations+1);
+    averageHerbTime2.resize(generations+1);
+    averageCarnFitTime2.resize(generations+1);
+    averageHerbFitTime2.resize(generations+1);
+
+    int i, k;
+    for(i=0; i<(generations+1); i++){
+        if(i >= (TIME_2 - 1)){
+            averageHerbTime2[i] = 0;
+            averageCarnTime2[i] = 0;
+            averageHerbFitTime2[i] = 0;
+            averageCarnFitTime2[i] = 0;
+
+            for(k = (i - TIME_2 + 1); k<=i; k++){
+                averageHerbTime2[i] = averageHerbTime2[i] + averageHerb[k];
+                averageCarnTime2[i] = averageCarnTime2[i] + averageCarn[k];
+
+                averageHerbFitTime2[i] = averageHerbFitTime2[i] + energyHerb[k][0];
+                averageCarnFitTime2[i] = averageCarnFitTime2[i] + energyCarn[k][0];
+            }
+            averageHerbTime2[i] = averageHerbTime2[i]/TIME_2;
+            averageCarnTime2[i] = averageCarnTime2[i]/TIME_2;
+            averageHerbFitTime2[i] = averageHerbFitTime2[i]/TIME_2;
+            averageCarnFitTime2[i] = averageCarnFitTime2[i]/TIME_2;
+        }
+        else{
+            averageHerbTime2[i] = 0;
+            averageCarnTime2[i] = 0;
+            averageHerbFitTime2[i] = 0;
+            averageCarnFitTime2[i] = 0;
+        }
+    }
+    updatePlot();
+}
+
+void Widget::on_interval3SpinBox_valueChanged(int arg1)
+{
+    TIME_3 = arg1;
+
+    averageCarnTime3.resize(0);
+    averageHerbTime3.resize(0);
+    averageCarnFitTime3.resize(0);
+    averageHerbFitTime3.resize(0);
+
+    averageCarnTime3.resize(generations+1);
+    averageHerbTime3.resize(generations+1);
+    averageCarnFitTime3.resize(generations+1);
+    averageHerbFitTime3.resize(generations+1);
+
+    int i, k;
+    for(i=0; i<(generations+1); i++){
+        if(i >= (TIME_3 - 1)){
+            averageHerbTime3[i] = 0;
+            averageCarnTime3[i] = 0;
+            averageHerbFitTime3[i] = 0;
+            averageCarnFitTime3[i] = 0;
+
+            for(k = (i - TIME_3 + 1); k<=i; k++){
+                averageHerbTime3[i] = averageHerbTime3[i] + averageHerb[k];
+                averageCarnTime3[i] = averageCarnTime3[i] + averageCarn[k];
+
+                averageHerbFitTime3[i] = averageHerbFitTime3[i] + energyHerb[k][0];
+                averageCarnFitTime3[i] = averageCarnFitTime3[i] + energyCarn[k][0];
+            }
+            averageHerbTime3[i] = averageHerbTime3[i]/TIME_3;
+            averageCarnTime3[i] = averageCarnTime3[i]/TIME_3;
+            averageHerbFitTime3[i] = averageHerbFitTime3[i]/TIME_3;
+            averageCarnFitTime3[i] = averageCarnFitTime3[i]/TIME_3;
+        }
+        else{
+            averageHerbTime3[i] = 0;
+            averageCarnTime3[i] = 0;
+            averageHerbFitTime3[i] = 0;
+            averageCarnFitTime3[i] = 0;
+        }
+    }
+    updatePlot();
 }

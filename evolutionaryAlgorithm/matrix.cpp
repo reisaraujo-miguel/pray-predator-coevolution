@@ -64,7 +64,7 @@ void initialize_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]){
         }
 
         ind.speed = rand()%MAX_SPEED;
-        if(i == 0)ind.speed = 20;
+        //if(i == 0)ind.speed = 20;
         ind.angle = (float)(rand()%628)/100;  // 628 = 2*PI*100
         //printf("%f",ind.angle);
         ind.energy = 0;
@@ -88,22 +88,22 @@ void initialize_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]){
         ind.h_count = 0;
 
         ind.plant_const = rand()%MAX_CONST; // up to 100
-        if(i == 0)ind.plant_const = 0;
+        //if(i == 0)ind.plant_const = 0;
 
         ind.wond_const = rand()%MAX_CONST;
-        if(i == 0) ind.wond_const = 30;
+        //if(i == 0) ind.wond_const = 30;
 
         ind.carn_const = rand()%MAX_CONST; 
-        if(i == 0)ind.carn_const = 30;
+        //if(i == 0)ind.carn_const = 30;
 
         ind.plant_weight = rand()%MAX_WEIGHT;
-        if(i == 0) ind.plant_weight = 10;
+        //if(i == 0) ind.plant_weight = 10;
 
         ind.wond_weight = rand()%MAX_WEIGHT;
-        if(i == 0) ind.wond_weight = 0;
+        //if(i == 0) ind.wond_weight = 0;
 
         ind.carn_weight = rand()%MAX_WEIGHT;
-        if(i == 0) ind.carn_weight = 0;
+        //if(i == 0) ind.carn_weight = 0;
 
         ind.height_limit = rand()%2; // 0(false) or 1(true)
         ind.height = rand()%BIG_SIZE;

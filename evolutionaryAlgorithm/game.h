@@ -10,6 +10,7 @@ using namespace std;
 // MAX CONST 
 ////////////////////////// MUTATION /////////////////////////////////////
 // mutate by how much:
+#define DYNAMIC_PROPORTION 5 // for dynamic cycle
 #define ANGLE_MUTATION 1
 #define WEIGHT_MUTATION 1
 #define SPEED_MUTATION 1
@@ -28,6 +29,18 @@ using namespace std;
 #define HEIGHT 20
 //////////////////////////////////////////////////////////////////////////
 
+#define AVERAGE_INTERVAL 20 
+// in order to analise stagnation or detarioration of the system, an average 
+// of the fittest individual's energy over <AVERAGE_INTERVAL> generations
+// will be taken
+
+#define EVALUATE_INTERVAL 20
+// if the average energy of the fittest individuals over <AVERAGE_INTERVAL>
+// deteriorates during a <EVALUATE_INTERVAL> period, than dynamic mutation 
+// shall be activated
+
+#define DYNAMIC_DURATION 20
+
 #define HERITAGE_WANDER 5
 #define HERITAGE_CARN 5
 
@@ -35,7 +48,7 @@ using namespace std;
 
 #define GENERATION 10000
 
-// MIGRATION must be greater then HERITAGE, in order to the migrant to have a chance of competing with
+// MIGRATION must be greater then HERITAGE, in order for the migrant to have a chance of competing with
 // a full heritage queue
 
 #define MIGRATION 10
@@ -81,10 +94,10 @@ using namespace std;
 #define MAX_CONST 101
 
 #define N 0   // empty
-#define H 1   // herbivore
+#define H 1   // herbivore ??
 #define C 2   // carnivore
 #define P 3   // plant
-#define W 4   // wonderer
+#define W 4   // wonderer ??
 
 typedef int Type;      // matrix data type
 
@@ -185,3 +198,11 @@ void best_carnivore_heritage(std::vector<population> &pop);
 /********************************* GUI ********************************************************/
 Mat print_wanderers(std::vector<population> &pop);
 Mat print_img(std::vector<population> &wond_pop, std::vector<plants> &plants_pop, std::vector<population> &carn_pop);
+
+/******************************** DINAMIC MUTATION ********************************************/
+void initialize_historic(deque<int> &wand_historic, deque<int> &carn_historic);
+void update_historic(vector<population> pop);
+void carnivores_update_historic(vector<population> pop);
+void check_for_deterioration(int* deteriorate_count, int average, int prev_average);
+void mutation_evaluation_carnivores();
+void mutation_evaluation();

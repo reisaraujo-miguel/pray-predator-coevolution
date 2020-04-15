@@ -5,9 +5,6 @@
 #include <QScrollArea>
 #include <QTimer>
 
-#define TIME_1 5
-#define TIME_2 10
-#define TIME_3 50
 
 namespace Ui {
 class Widget;
@@ -42,6 +39,12 @@ private slots:
 
     void timeOutSlot();
 
+    void on_interval1SpinBox_valueChanged(int arg1);
+
+    void on_interval2SpinBox_valueChanged(int arg1);
+
+    void on_interval3SpinBox_valueChanged(int arg1);
+
 private:
     void updatePlot();
     Ui::Widget *ui;
@@ -75,6 +78,11 @@ private:
     QVector<float> averageCarnFitTime1;
     QVector<float> averageCarnFitTime2;
     QVector<float> averageCarnFitTime3;
+
+    int TIME_1;
+    int TIME_2;
+    int TIME_3;
+    int generations;
 
 };
 

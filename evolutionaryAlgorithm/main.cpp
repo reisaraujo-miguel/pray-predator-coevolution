@@ -1,3 +1,4 @@
+// TURN SIMULATION INTERFACE ON-1 AND OFF-0
 #define GUI_ON 0
 
 #include <time.h>
@@ -24,9 +25,25 @@ Type matrix[YSIZE][XSIZE];
 
 vector<plants> plants_pop;
 vector<population> wanderers;
-vector<population> carnivores; 
+vector<population> carnivores;
 
-const char *environment = "Predator-Prey Environment";
+// PUSH FRONT and POP BACK only:
+deque<int> wanderers_historic;
+deque<int> carnivores_historic; 
+
+int average_wand_historic = 0;
+int prev_average_wand_historic = 0;
+int wand_deteriorate_count = 0;
+bool dynamic_mute_wand = false;
+int dynamic_wand_count = 0;
+
+int average_carn_historic = 0;
+int prev_average_carn_historic = 0;
+int carn_deteriorate_count = 0;
+bool dynamic_mute_carn = false;
+int dynamic_carn_count = 0;
+
+const char *environment = "Prey-Predator Coevolution";
 
 int COUNT = 0;
 
@@ -37,16 +54,11 @@ bool set_opencv = false;
 
 int main(int argc, char** argv){
 
-    /*
-    WARNING:
-    The updating and sorting of the individual's heritage, is happening outside mating block (function callings
-    commented out) for plotting purposes!
-    */
 
                 //------------PLOTTER DATA--------------//
 
                 char plotterFileName[100];
-                sprintf(plotterFileName, "./plotterData/%dgen_%dint_%dcarn_%dherb_%dplan_%dheritHerb_%dheritCarn_%dhealth.txt",GENERATION,MATING_INTERVAL,POP_CARN,POP_WANDER,POP_PLANTS,HERITAGE_WANDER,HERITAGE_CARN,HEALTH_CONST);
+                sprintf(plotterFileName, "./plotterData/%dgen_%dint_%dcarn_%dherb_%dplan_%dheritHerb_%dheritCarn_%dhealth_%dev.txt",GENERATION,MATING_INTERVAL,POP_CARN,POP_WANDER,POP_PLANTS,HERITAGE_WANDER,HERITAGE_CARN,HEALTH_CONST,AVERAGE_INTERVAL);
                 const char *plotterData = plotterFileName;
 
                 FILE *PlotterArq;
@@ -60,6 +72,7 @@ int main(int argc, char** argv){
                 fprintf(PlotterArq,"FramesPerGeneration: %d\n",MATING_INTERVAL);
                 fprintf(PlotterArq,"HerbivoresHeritage: %d\n",HERITAGE_WANDER);
                 fprintf(PlotterArq,"CarnivoresHeritage: %d\n",HERITAGE_WANDER);
+                fprintf(PlotterArq,"EvaluationInterval: %d\n",AVERAGE_INTERVAL);
                 fprintf(PlotterArq,"\n");
 
                 //--------------------------------------//
@@ -71,6 +84,7 @@ int main(int argc, char** argv){
     //import_wanderers(wanderers,matrix);
     initialize_plants(plants_pop,matrix);
     initialize_carnivores(carnivores,matrix);
+    initialize_historic(wanderers_historic, carnivores_historic);
     //import_carnivores(carnivores,matrix);
 
     int size = wanderers.size();
@@ -106,8 +120,8 @@ int main(int argc, char** argv){
 
                 char arq1FileName[100];
                 char arq2FileName[100];
-                sprintf(arq1FileName,"./data/wanderers_%dgen_%dint_%dcarn_%dherb_%dplan_%dheritHerb_%dheritCarn_%dhealth.txt",GENERATION,MATING_INTERVAL,POP_CARN,POP_WANDER,POP_PLANTS,HERITAGE_WANDER,HERITAGE_CARN,HEALTH_CONST);
-                sprintf(arq2FileName,"./data/carnivores_%dgen_%dint_%dcarn_%dherb_%dplan_%dheritHerb_%dheritCarn_%dhealth.txt",GENERATION,MATING_INTERVAL,POP_CARN,POP_WANDER,POP_PLANTS,HERITAGE_WANDER,HERITAGE_CARN,HEALTH_CONST);
+                sprintf(arq1FileName,"./data/wanderers_%dgen_%dint_%dcarn_%dherb_%dplan_%dheritHerb_%dheritCarn_%dhealth_%dev.txt",GENERATION,MATING_INTERVAL,POP_CARN,POP_WANDER,POP_PLANTS,HERITAGE_WANDER,HERITAGE_CARN,HEALTH_CONST,AVERAGE_INTERVAL);
+                sprintf(arq2FileName,"./data/carnivores_%dgen_%dint_%dcarn_%dherb_%dplan_%dheritHerb_%dheritCarn_%dhealth_%devt.txt",GENERATION,MATING_INTERVAL,POP_CARN,POP_WANDER,POP_PLANTS,HERITAGE_WANDER,HERITAGE_CARN,HEALTH_CONST,AVERAGE_INTERVAL);
                 const char *arq1 = arq1FileName;
                 const char *arq2 = arq2FileName;
 
@@ -220,6 +234,12 @@ int main(int argc, char** argv){
             carnivores_elitism_heritage(carnivores,matrix);
             //carnivores_tournament(carnivores,matrix);
 
+                        // ---------------- DYNAMIC MUTATION ------------- //
+                        printf("Generation:%d\n",COUNT/MATING_INTERVAL);
+                        printf("Wanderers => prev_average:%d average:%d deterioration:%d dynamic_mutation:%d regressive_count:%d\n",prev_average_wand_historic,average_wand_historic,wand_deteriorate_count,dynamic_mute_wand,dynamic_wand_count);
+                        printf("Carnivores => prev_average:%d average:%d deterioration:%d dynamic_mutation:%d regressive_count:%d\n\n",prev_average_carn_historic,average_carn_historic,carn_deteriorate_count,dynamic_mute_carn,dynamic_carn_count);
+                        // ----------------------------------------------- //
+
             new_plants(plants_pop,matrix);
 
             printf("%d\n",COUNT/MATING_INTERVAL);
@@ -261,31 +281,7 @@ int main(int argc, char** argv){
                 frame = print_img(wanderers,plants_pop,carnivores);
                 imshow(environment, frame);
 
-                
 
-                /*
-                while(true){
-                    int k = waitKey(1);
-                    if(k == 10) // if ENTER
-                        break;
-                    else if(k == 27) // if ESC
-                        goto end;
-                    else if(k == 32){ // if SPACE
-                        FILE* Arq1;
-                        Arq1 = fopen("./data/data1.txt","a+");
-                        int s;
-                        s = wanderers.size();
-                        fprintf(Arq1,"\n%d\n",COUNT);
-                        for(s=0; s<size; s++){
-                            fprintf(Arq1,"(%2d) %2d",s,wanderers[s].plant_const);
-                        }
-                        fclose(Arq1);
-                    }
-                }
-                */
-                
-
-                //if(COUNT%MATING_INTERVAL == 0){
                     int k = waitKey(WAIT);
                     if(k == 27){ // if ESC
                         fclose(PlotterArq);
@@ -330,20 +326,9 @@ int main(int argc, char** argv){
         default:
             break;
         }
-        //}*/
-        /*
-       if(COUNT == 1000*MATING_INTERVAL)
-            goto end;
-        */
         
         COUNT++;
-        //end = time(NULL);
-        //printf("%lf\n",difftime(end,start));
     }
-/*
-    end:
-    destroyWindow(environment);
-*/
 
     return 0;
 }

@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = realTimePlotter1.0.0
-DISTDIR = /home/alice/Desktop/Evolutionary\ Algorithms/pray_predator/pray_predator7_moreData/realTimePlotter/.tmp/realTimePlotter1.0.0
+DISTDIR = /home/alice/Desktop/Evolutionary\ Algorithms/pray_predator/pray_predator12_classicDynamicMutation/realTimePlotter/.tmp/realTimePlotter1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-rpath,/home/alice/Qt/5.12.6/gcc_64/lib
 LIBS          = $(SUBLIBS) /home/alice/Qt/5.12.6/gcc_64/lib/libQt5PrintSupport.so /home/alice/Qt/5.12.6/gcc_64/lib/libQt5Widgets.so /home/alice/Qt/5.12.6/gcc_64/lib/libQt5Gui.so /home/alice/Qt/5.12.6/gcc_64/lib/libQt5Core.so -lGL -lpthread   
@@ -1213,7 +1213,7 @@ moc_qcustomplot.cpp: qcustomplot.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtPrintSupport/qtprintsupportversion.h \
 		moc_predefs.h \
 		/home/alice/Qt/5.12.6/gcc_64/bin/moc
-	/home/alice/Qt/5.12.6/gcc_64/bin/moc $(DEFINES) --include '/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator7_moreData/realTimePlotter/moc_predefs.h' -I/home/alice/Qt/5.12.6/gcc_64/mkspecs/linux-g++ -I'/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator7_moreData/realTimePlotter' -I/home/alice/Qt/5.12.6/gcc_64/include -I/home/alice/Qt/5.12.6/gcc_64/include/QtPrintSupport -I/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets -I/home/alice/Qt/5.12.6/gcc_64/include/QtGui -I/home/alice/Qt/5.12.6/gcc_64/include/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include qcustomplot.h -o moc_qcustomplot.cpp
+	/home/alice/Qt/5.12.6/gcc_64/bin/moc $(DEFINES) --include '/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator12_classicDynamicMutation/realTimePlotter/moc_predefs.h' -I/home/alice/Qt/5.12.6/gcc_64/mkspecs/linux-g++ -I'/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator12_classicDynamicMutation/realTimePlotter' -I/home/alice/Qt/5.12.6/gcc_64/include -I/home/alice/Qt/5.12.6/gcc_64/include/QtPrintSupport -I/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets -I/home/alice/Qt/5.12.6/gcc_64/include/QtGui -I/home/alice/Qt/5.12.6/gcc_64/include/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include qcustomplot.h -o moc_qcustomplot.cpp
 
 moc_widget.cpp: widget.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/QWidget \
@@ -1328,7 +1328,7 @@ moc_widget.cpp: widget.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtCore/qbasictimer.h \
 		moc_predefs.h \
 		/home/alice/Qt/5.12.6/gcc_64/bin/moc
-	/home/alice/Qt/5.12.6/gcc_64/bin/moc $(DEFINES) --include '/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator7_moreData/realTimePlotter/moc_predefs.h' -I/home/alice/Qt/5.12.6/gcc_64/mkspecs/linux-g++ -I'/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator7_moreData/realTimePlotter' -I/home/alice/Qt/5.12.6/gcc_64/include -I/home/alice/Qt/5.12.6/gcc_64/include/QtPrintSupport -I/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets -I/home/alice/Qt/5.12.6/gcc_64/include/QtGui -I/home/alice/Qt/5.12.6/gcc_64/include/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include widget.h -o moc_widget.cpp
+	/home/alice/Qt/5.12.6/gcc_64/bin/moc $(DEFINES) --include '/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator12_classicDynamicMutation/realTimePlotter/moc_predefs.h' -I/home/alice/Qt/5.12.6/gcc_64/mkspecs/linux-g++ -I'/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator12_classicDynamicMutation/realTimePlotter' -I/home/alice/Qt/5.12.6/gcc_64/include -I/home/alice/Qt/5.12.6/gcc_64/include/QtPrintSupport -I/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets -I/home/alice/Qt/5.12.6/gcc_64/include/QtGui -I/home/alice/Qt/5.12.6/gcc_64/include/QtCore -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include widget.h -o moc_widget.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -2593,8 +2593,6 @@ widget.o: widget.cpp widget.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qcheckbox.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qabstractbutton.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtGui/qicon.h \
-		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/QGroupBox \
-		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qgroupbox.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/QLabel \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qlabel.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/QLineEdit \
@@ -2605,6 +2603,11 @@ widget.o: widget.cpp widget.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtGui/qtextoption.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/QPushButton \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qpushbutton.h \
+		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/QSpinBox \
+		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qspinbox.h \
+		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/home/alice/Qt/5.12.6/gcc_64/include/QtGui/qvalidator.h \
+		/home/alice/Qt/5.12.6/gcc_64/include/QtCore/qregularexpression.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/QTabWidget \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qtabwidget.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/QVBoxLayout \
@@ -2682,7 +2685,6 @@ widget.o: widget.cpp widget.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtCore/qcborarray.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtCore/qcborvalue.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtCore/qcborcommon.h \
-		/home/alice/Qt/5.12.6/gcc_64/include/QtCore/qregularexpression.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtCore/quuid.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtCore/qcbormap.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtCore/qcborstream.h \
@@ -2847,13 +2849,11 @@ widget.o: widget.cpp widget.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtGui/qtextdocumentwriter.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtGui/qtextlist.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtGui/qtexttable.h \
-		/home/alice/Qt/5.12.6/gcc_64/include/QtGui/qvalidator.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtGui/qtguiversion.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/QtWidgets \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/QtWidgetsDepends \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qstyleoption.h \
-		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qslider.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qabstractslider.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qstyle.h \
@@ -2906,6 +2906,7 @@ widget.o: widget.cpp widget.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qgraphicstransform.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtGui/QVector3D \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qgraphicsview.h \
+		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qgroupbox.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qheaderview.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qinputdialog.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qitemdelegate.h \
@@ -2938,7 +2939,6 @@ widget.o: widget.cpp widget.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtCore/QMetaType \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qshortcut.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qsizegrip.h \
-		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qspinbox.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qsplashscreen.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qsplitter.h \
 		/home/alice/Qt/5.12.6/gcc_64/include/QtWidgets/qstackedlayout.h \

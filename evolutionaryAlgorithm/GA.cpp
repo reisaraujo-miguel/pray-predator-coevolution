@@ -289,6 +289,12 @@ population cross_over(std::vector<population> &pop, int p1, int p2){
 
 void mutation(population* ind){
 
+    extern bool dynamic_mute_wand;
+    int k = 1;
+
+    if(dynamic_mute_wand == true)
+        k = DYNAMIC_PROPORTION;
+
     // distribuicao das mutacoes
     srand(time(0));
 
@@ -296,31 +302,31 @@ void mutation(population* ind){
     
     prob = rand()%100;
     if(prob < CONST_UP){
-        (*ind).plant_const = (*ind).plant_const + ANGLE_MUTATION;
+        (*ind).plant_const = (*ind).plant_const + k*ANGLE_MUTATION;
         //printf("Mutated constant\n");
     }
     else if(prob < (CONST_UP+CONST_DOWN)){
-        (*ind).plant_const = (*ind).plant_const - ANGLE_MUTATION;
+        (*ind).plant_const = (*ind).plant_const - k*ANGLE_MUTATION;
         //printf("Mutated constant\n");
     }
 
     prob = rand()%100;
     if(prob < CONST_UP){
-        (*ind).wond_const = (*ind).wond_const + ANGLE_MUTATION;
+        (*ind).wond_const = (*ind).wond_const + k*ANGLE_MUTATION;
         //printf("Mutated constant\n");
     }
     else if(prob < (CONST_UP+CONST_DOWN)){
-        (*ind).wond_const = (*ind).wond_const - ANGLE_MUTATION;
+        (*ind).wond_const = (*ind).wond_const - k*ANGLE_MUTATION;
         //printf("Mutated constant\n");
     }
 
     prob = rand()%100;
     if(prob < CONST_UP){
-        (*ind).carn_const = (*ind).carn_const + ANGLE_MUTATION;
+        (*ind).carn_const = (*ind).carn_const + k*ANGLE_MUTATION;
         //printf("Mutated constant\n");
     }
     else if(prob < (CONST_UP+CONST_DOWN)){
-        (*ind).carn_const = (*ind).carn_const - ANGLE_MUTATION;
+        (*ind).carn_const = (*ind).carn_const - k*ANGLE_MUTATION;
         //printf("Mutated constant\n");
     }
 
@@ -329,42 +335,42 @@ void mutation(population* ind){
 
     prob = rand()%100;
     if(prob < WEIGHT_UP){
-        (*ind).plant_weight = (*ind).plant_weight + WEIGHT_MUTATION;
+        (*ind).plant_weight = (*ind).plant_weight + k*WEIGHT_MUTATION;
         //printf("Mutated constant\n");
     }
     else if(prob < (WEIGHT_UP+WEIGHT_DOWN)){
-        (*ind).plant_weight = (*ind).plant_weight - WEIGHT_MUTATION;
+        (*ind).plant_weight = (*ind).plant_weight - k*WEIGHT_MUTATION;
         //printf("Mutated constant\n");
     }
 
     prob = rand()%100;
     if(prob < WEIGHT_UP){
-        (*ind).wond_weight = (*ind).wond_weight + WEIGHT_MUTATION;
+        (*ind).wond_weight = (*ind).wond_weight + k*WEIGHT_MUTATION;
         //printf("Mutated constant\n");
     }
     else if(prob < (WEIGHT_UP+WEIGHT_DOWN)){
-        (*ind).wond_weight = (*ind).wond_weight - WEIGHT_MUTATION;
+        (*ind).wond_weight = (*ind).wond_weight - k*WEIGHT_MUTATION;
         //printf("Mutated constant\n");
     }
 
     prob = rand()%100;
     if(prob < WEIGHT_UP){
-        (*ind).carn_weight = (*ind).carn_weight + WEIGHT_MUTATION;
+        (*ind).carn_weight = (*ind).carn_weight + k*WEIGHT_MUTATION;
         //printf("Mutated constant\n");
     }
     else if(prob < (WEIGHT_UP+WEIGHT_DOWN)){
-        (*ind).carn_weight = (*ind).carn_weight - WEIGHT_MUTATION;
+        (*ind).carn_weight = (*ind).carn_weight - k*WEIGHT_MUTATION;
         //printf("Mutated constant\n");
     }
 
 
     prob = rand()%100;
     if(prob < SPEED_UP){
-        (*ind).speed = (*ind).speed + SPEED_MUTATION;
+        (*ind).speed = (*ind).speed + k*SPEED_MUTATION;
         //printf("Mutated speed\n");
     }
     else if(prob < (SPEED_UP+SPEED_DOWN)){
-        (*ind).speed = (*ind).speed - SPEED_MUTATION;
+        (*ind).speed = (*ind).speed - k*SPEED_MUTATION;
         //printf("Mutated speed\n");
     }
 
@@ -375,11 +381,12 @@ void mutation(population* ind){
 
     prob = rand()%100;
     if(prob < HEIGHT){
-        (*ind).height = (*ind).height + HEIGHT_MUTATION;
+        (*ind).height = (*ind).height + k*HEIGHT_MUTATION;
     }
     else if(prob < 2*HEIGHT){
-        (*ind).height = (*ind).height - HEIGHT_MUTATION;
+        (*ind).height = (*ind).height - k*HEIGHT_MUTATION;
     }
+
 }
 
 void best_wonderer(std::vector<population> &pop){
@@ -434,6 +441,8 @@ void elitism_heritage(std::vector<population> &pop, Type matrix[][XSIZE]){
     // CLONE BEST
     //best_wonderer_heritage(pop); // considering average energy
     NewPop.push_back(pop[0]);
+
+    mutation_evaluation();
 
     // CHOOSE PARENTS
     int i;
@@ -777,4 +786,64 @@ void best_wonderer_heritage(std::vector<population> &pop){
         }
     }
     pop[0].best = true;
+
+    update_historic(pop);    
+}
+
+
+void initialize_historic(deque<int> &wand_historic, deque<int> &carn_historic){
+    int i;
+
+    for(i=0; i<AVERAGE_INTERVAL; i++){
+        wand_historic.push_front(0);
+        carn_historic.push_front(0);
+    }
+}
+
+void update_historic(vector<population> pop){
+
+    extern deque<int> wanderers_historic;
+    extern int average_wand_historic;
+    extern int prev_average_wand_historic;
+    extern int wand_deteriorate_count;
+
+    prev_average_wand_historic = average_wand_historic;
+
+    average_wand_historic = average_wand_historic*AVERAGE_INTERVAL - wanderers_historic.back();
+
+    wanderers_historic.pop_back();
+    wanderers_historic.push_front(pop[0].energy);
+
+    average_wand_historic = (average_wand_historic + pop[0].energy)/AVERAGE_INTERVAL;
+
+    check_for_deterioration(&wand_deteriorate_count, average_wand_historic, prev_average_wand_historic);
+}
+
+void check_for_deterioration(int* deteriorate_count, int average, int prev_average){
+    
+    if(average <= prev_average)
+        (*deteriorate_count)++;
+    else
+        (*deteriorate_count) = 0;
+
+}
+
+void mutation_evaluation(){
+    extern bool dynamic_mute_wand;
+    extern int dynamic_wand_count;
+    extern int wand_deteriorate_count;
+    int k = 1;
+
+    if(dynamic_wand_count <= 0)
+        dynamic_mute_wand = false;
+
+    if(dynamic_mute_wand == false){
+        if(wand_deteriorate_count >= EVALUATE_INTERVAL){
+            dynamic_mute_wand = true;
+            dynamic_wand_count = DYNAMIC_DURATION;
+        }
+    }
+
+    if(dynamic_mute_wand == true)
+        dynamic_wand_count--;
 }

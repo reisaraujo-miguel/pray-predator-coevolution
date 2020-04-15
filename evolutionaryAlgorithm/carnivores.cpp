@@ -369,6 +369,12 @@ population carnivores_cross_over(std::vector<population> &pop, int p1, int p2){
 
 void carnivores_mutation(population* ind){
 
+    extern bool dynamic_mute_carn;
+    int k = 1;
+
+    if(dynamic_mute_carn == true)
+        k = DYNAMIC_PROPORTION;
+
     // distribuicao das mutacoes
     srand(time(0));
 
@@ -376,31 +382,31 @@ void carnivores_mutation(population* ind){
     
     prob = rand()%100;
     if(prob < CONST_UP){
-        (*ind).plant_const = (*ind).plant_const + ANGLE_MUTATION;
+        (*ind).plant_const = (*ind).plant_const + k*ANGLE_MUTATION;
         //printf("Mutated constant\n");
     }
     else if(prob < (CONST_UP+CONST_DOWN)){
-        (*ind).plant_const = (*ind).plant_const - ANGLE_MUTATION;
+        (*ind).plant_const = (*ind).plant_const - k*ANGLE_MUTATION;
         //printf("Mutated constant\n");
     }
 
     prob = rand()%100;
     if(prob < CONST_UP){
-        (*ind).wond_const = (*ind).wond_const + ANGLE_MUTATION;
+        (*ind).wond_const = (*ind).wond_const + k*ANGLE_MUTATION;
         //printf("Mutated constant\n");
     }
     else if(prob < (CONST_UP+CONST_DOWN)){
-        (*ind).wond_const = (*ind).wond_const - ANGLE_MUTATION;
+        (*ind).wond_const = (*ind).wond_const - k*ANGLE_MUTATION;
         //printf("Mutated constant\n");
     }
 
     prob = rand()%100;
     if(prob < CONST_UP){
-        (*ind).carn_const = (*ind).carn_const + ANGLE_MUTATION;
+        (*ind).carn_const = (*ind).carn_const + k*ANGLE_MUTATION;
         //printf("Mutated constant\n");
     }
     else if(prob < (CONST_UP+CONST_DOWN)){
-        (*ind).carn_const = (*ind).carn_const - ANGLE_MUTATION;
+        (*ind).carn_const = (*ind).carn_const - k*ANGLE_MUTATION;
         //printf("Mutated constant\n");
     }
 
@@ -409,42 +415,42 @@ void carnivores_mutation(population* ind){
 
     prob = rand()%100;
     if(prob < WEIGHT_UP){
-        (*ind).plant_weight = (*ind).plant_weight + WEIGHT_MUTATION;
+        (*ind).plant_weight = (*ind).plant_weight + k*WEIGHT_MUTATION;
         //printf("Mutated constant\n");
     }
     else if(prob < (WEIGHT_UP+WEIGHT_DOWN)){
-        (*ind).plant_weight = (*ind).plant_weight - WEIGHT_MUTATION;
+        (*ind).plant_weight = (*ind).plant_weight - k*WEIGHT_MUTATION;
         //printf("Mutated constant\n");
     }
 
     prob = rand()%100;
     if(prob < WEIGHT_UP){
-        (*ind).wond_weight = (*ind).wond_weight + WEIGHT_MUTATION;
+        (*ind).wond_weight = (*ind).wond_weight + k*WEIGHT_MUTATION;
         //printf("Mutated constant\n");
     }
     else if(prob < (WEIGHT_UP+WEIGHT_DOWN)){
-        (*ind).wond_weight = (*ind).wond_weight - WEIGHT_MUTATION;
+        (*ind).wond_weight = (*ind).wond_weight - k*WEIGHT_MUTATION;
         //printf("Mutated constant\n");
     }
 
     prob = rand()%100;
     if(prob < WEIGHT_UP){
-        (*ind).carn_weight = (*ind).carn_weight + WEIGHT_MUTATION;
+        (*ind).carn_weight = (*ind).carn_weight + k*WEIGHT_MUTATION;
         //printf("Mutated constant\n");
     }
     else if(prob < (WEIGHT_UP+WEIGHT_DOWN)){
-        (*ind).carn_weight = (*ind).carn_weight - WEIGHT_MUTATION;
+        (*ind).carn_weight = (*ind).carn_weight - k*WEIGHT_MUTATION;
         //printf("Mutated constant\n");
     }
 
 
     prob = rand()%100;
     if(prob < SPEED_UP){
-        (*ind).speed = (*ind).speed + SPEED_MUTATION;
+        (*ind).speed = (*ind).speed + k*SPEED_MUTATION;
         //printf("Mutated speed\n");
     }
     else if(prob < (SPEED_UP+SPEED_DOWN)){
-        (*ind).speed = (*ind).speed - SPEED_MUTATION;
+        (*ind).speed = (*ind).speed - k*SPEED_MUTATION;
         //printf("Mutated speed\n");
     }
 
@@ -455,12 +461,11 @@ void carnivores_mutation(population* ind){
 
     prob = rand()%100;
     if(prob < HEIGHT){
-        (*ind).height = (*ind).height + HEIGHT_MUTATION;
+        (*ind).height = (*ind).height + k*HEIGHT_MUTATION;
     }
     else if(prob < 2*HEIGHT){
-        (*ind).height = (*ind).height - HEIGHT_MUTATION;
+        (*ind).height = (*ind).height - k*HEIGHT_MUTATION;
     }
-
 }
 
 void best_carnivore(std::vector<population> &pop){
@@ -798,6 +803,7 @@ void carnivores_elitism_heritage(std::vector<population> &pop, Type matrix[][XSI
     // CLONE BEST
     //best_carnivore_heritage(pop);
     NewPop.push_back(pop[0]);
+    mutation_evaluation_carnivores();
 
     // CHOOSE PARENTS
     int i;
@@ -1122,4 +1128,45 @@ void best_carnivore_heritage(std::vector<population> &pop){
     }
 
     pop[0].best = true;
+
+    carnivores_update_historic(pop);
+}
+
+void carnivores_update_historic(vector<population> pop){
+
+    extern deque<int> carnivores_historic; 
+    extern int average_carn_historic;
+    extern int prev_average_carn_historic;
+    extern int carn_deteriorate_count;
+
+    prev_average_carn_historic = average_carn_historic;
+
+    average_carn_historic = average_carn_historic*AVERAGE_INTERVAL - carnivores_historic.back();
+
+    carnivores_historic.pop_back();
+    carnivores_historic.push_front(pop[0].energy);
+
+    average_carn_historic = (average_carn_historic + pop[0].energy)/AVERAGE_INTERVAL;
+
+    check_for_deterioration(&carn_deteriorate_count, average_carn_historic, prev_average_carn_historic);
+}
+
+void mutation_evaluation_carnivores(){
+
+    extern bool dynamic_mute_carn;
+    extern int dynamic_carn_count;
+    extern int carn_deteriorate_count;
+
+    if(dynamic_carn_count <= 0)
+        dynamic_mute_carn = false;
+
+    if(dynamic_mute_carn == false){
+        if(carn_deteriorate_count >= EVALUATE_INTERVAL){
+            dynamic_mute_carn = true;
+            dynamic_carn_count = DYNAMIC_DURATION;
+        }
+    }
+
+    if(dynamic_mute_carn == true)
+        dynamic_carn_count--;
 }
