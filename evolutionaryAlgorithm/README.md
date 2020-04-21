@@ -18,8 +18,8 @@ The graphical simulation can be turned _on_ or _off_ by setting the following ma
 ```cpp
 #define GUI_ON 0
 ```
-When the GUI is turned _on_, in order to start the simulation, click _ENTER_. While the simulation is running the following keys can be used:
-- _ESC_: stop program;
+When the GUI is turned _on_, in order to start the simulation, click _enter_. While the simulation is running the following keys can be used:
+- _esc_: stop program;
 - _x_: turn off GUI, but continue running program;
-- _UP ARROW_: speed up frame rate;
-- _DOWN ARROW_: slow down frame rate.
+- _up arrow_: speed up frame rate;
+- _down arrow_: slow down frame rate.
