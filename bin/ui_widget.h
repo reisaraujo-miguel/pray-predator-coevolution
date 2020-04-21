@@ -67,6 +67,8 @@ public:
     QCustomPlot *graphCarnPro;
     QCustomPlot *graphHerbProFit;
     QCustomPlot *graphCarnProFit;
+    QWidget *tab_2;
+    QCustomPlot *graphBoth;
     QTabWidget *tabWidget;
     QWidget *tab1;
     QLabel *label1;
@@ -203,15 +205,15 @@ public:
         label21->setFont(font2);
         interval1SpinBox = new QSpinBox(tab);
         interval1SpinBox->setObjectName(QString::fromUtf8("interval1SpinBox"));
-        interval1SpinBox->setGeometry(QRect(100, 60, 42, 26));
+        interval1SpinBox->setGeometry(QRect(130, 60, 42, 26));
         interval1SpinBox->setFont(font2);
         interval2SpinBox = new QSpinBox(tab);
         interval2SpinBox->setObjectName(QString::fromUtf8("interval2SpinBox"));
-        interval2SpinBox->setGeometry(QRect(100, 110, 42, 26));
+        interval2SpinBox->setGeometry(QRect(130, 110, 42, 26));
         interval2SpinBox->setFont(font2);
         interval3SpinBox = new QSpinBox(tab);
         interval3SpinBox->setObjectName(QString::fromUtf8("interval3SpinBox"));
-        interval3SpinBox->setGeometry(QRect(100, 160, 42, 26));
+        interval3SpinBox->setGeometry(QRect(130, 160, 42, 26));
         interval3SpinBox->setFont(font2);
         graphManagerTabs->addTab(tab, QString());
         graphWidget = new QTabWidget(Widget);
@@ -304,6 +306,14 @@ public:
         sizePolicy1.setHeightForWidth(graphCarnProFit->sizePolicy().hasHeightForWidth());
         graphCarnProFit->setSizePolicy(sizePolicy1);
         graphWidget->addTab(processedDataTab, QString());
+        tab_2 = new QWidget();
+        tab_2->setObjectName(QString::fromUtf8("tab_2"));
+        graphBoth = new QCustomPlot(tab_2);
+        graphBoth->setObjectName(QString::fromUtf8("graphBoth"));
+        graphBoth->setGeometry(QRect(10, 20, 819, 257));
+        sizePolicy1.setHeightForWidth(graphBoth->sizePolicy().hasHeightForWidth());
+        graphBoth->setSizePolicy(sizePolicy1);
+        graphWidget->addTab(tab_2, QString());
         tabWidget = new QTabWidget(Widget);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
         tabWidget->setGeometry(QRect(20, 0, 251, 281));
@@ -422,8 +432,8 @@ public:
 
         retranslateUi(Widget);
 
-        graphManagerTabs->setCurrentIndex(0);
-        graphWidget->setCurrentIndex(0);
+        graphManagerTabs->setCurrentIndex(1);
+        graphWidget->setCurrentIndex(1);
         tabWidget->setCurrentIndex(0);
 
 
@@ -460,6 +470,7 @@ public:
         label16->setText(QApplication::translate("Widget", "Herbivores", nullptr));
         label17->setText(QApplication::translate("Widget", "Carnivores", nullptr));
         graphWidget->setTabText(graphWidget->indexOf(processedDataTab), QApplication::translate("Widget", "Processed data", nullptr));
+        graphWidget->setTabText(graphWidget->indexOf(tab_2), QApplication::translate("Widget", "Comparison", nullptr));
         label1->setText(QApplication::translate("Widget", "File name :", nullptr));
         importButton->setText(QApplication::translate("Widget", "Import File", nullptr));
         label2->setText(QApplication::translate("Widget", "Qty herbivores:", nullptr));

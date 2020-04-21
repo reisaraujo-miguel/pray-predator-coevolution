@@ -332,6 +332,19 @@ void Widget::on_importButton_clicked()
 
     file.close();
 
+    //----- when getting data from new file -----//
+    ui->graphCarn->xAxis->setRange(0,1);
+    ui->graphCarn->yAxis->setRange(0,1);
+
+    ui->graphHerb->xAxis->setRange(0,1);
+    ui->graphHerb->yAxis->setRange(0,1);
+
+    ui->graphHerbHealth->xAxis->setRange(0,1);
+    ui->graphHerbHealth->yAxis->setRange(0,1);
+
+    ui->graphHerbHurt->xAxis->setRange(0,1);
+    ui->graphHerbHurt->yAxis->setRange(0,1);
+
 
     updatePlot();
 }
@@ -349,6 +362,7 @@ void Widget::updatePlot()
     ui->graphHerbPro->clearGraphs();
     ui->graphCarnProFit->clearGraphs();
     ui->graphHerbProFit->clearGraphs();
+    ui->graphBoth->clearGraphs();
 
     int i, j, g, h, c;
     g = ui->editGen->text().toInt();
@@ -405,6 +419,13 @@ void Widget::updatePlot()
     ui->graphHerbProFit->legend->setVisible(true);
     ui->graphHerbProFit->setFont(QFont("Helvetica", 9));
 
+    ui->graphBoth->yAxis->setTickLabels(true);
+    ui->graphBoth->xAxis->setTickLabels(true);
+    ui->graphBoth->yAxis->setLabel("Mean energy value");
+    ui->graphBoth->xAxis->setLabel("Generation");
+    ui->graphBoth->legend->setVisible(true);
+    ui->graphBoth->setFont(QFont("Helvetica",9));
+
 
     // HERBIVORE GRAPH
 
@@ -422,6 +443,7 @@ void Widget::updatePlot()
         ui->graphHerb->graph(0)->rescaleKeyAxis(true);
         ui->graphHerb->graph(0)->rescaleValueAxis(true,true);
     }
+
 
     for(i=1; i<h; i++){
         ui->graphHerb->addGraph();
@@ -594,7 +616,7 @@ void Widget::updatePlot()
         ui->graphCarn->graph(c)->rescaleValueAxis(true,true);
     }
 
-    // PROCESSED DATA
+    //------------------------- PROCESSED DATA -------------------------//
 
     // HERBIVORES
 
@@ -609,8 +631,8 @@ void Widget::updatePlot()
         for(j=0; j<(g+1); j++){
             ui->graphHerbPro->graph(0)->addData(j,averageHerbTime1[j]);
         }
-        ui->graphHerbPro->graph(0)->rescaleKeyAxis(true);
-        ui->graphHerbPro->graph(0)->rescaleValueAxis(true,true);
+        ui->graphHerbPro->graph(0)->rescaleKeyAxis(false);
+        ui->graphHerbPro->graph(0)->rescaleValueAxis(false,true);
     //}
 
     ui->graphHerbProFit->addGraph();
@@ -623,8 +645,8 @@ void Widget::updatePlot()
         for(j=0; j<(g+1); j++){
             ui->graphHerbProFit->graph(0)->addData(j,averageHerbFitTime1[j]);
         }
-        ui->graphHerbProFit->graph(0)->rescaleKeyAxis(true);
-        ui->graphHerbProFit->graph(0)->rescaleValueAxis(true,true);
+        ui->graphHerbProFit->graph(0)->rescaleKeyAxis(false);
+        ui->graphHerbProFit->graph(0)->rescaleValueAxis(false,true);
     //}
 
     // time2
@@ -698,8 +720,8 @@ void Widget::updatePlot()
         for(j=0; j<(g+1); j++){
             ui->graphCarnPro->graph(0)->addData(j,averageCarnTime1[j]);
         }
-        ui->graphCarnPro->graph(0)->rescaleKeyAxis(true);
-        ui->graphCarnPro->graph(0)->rescaleValueAxis(true,true);
+        ui->graphCarnPro->graph(0)->rescaleKeyAxis(false);
+        ui->graphCarnPro->graph(0)->rescaleValueAxis(false,true);
     //}
 
     ui->graphCarnProFit->addGraph();
@@ -712,8 +734,8 @@ void Widget::updatePlot()
         for(j=0; j<(g+1); j++){
             ui->graphCarnProFit->graph(0)->addData(j,averageCarnFitTime1[j]);
         }
-        ui->graphCarnProFit->graph(0)->rescaleKeyAxis(true);
-        ui->graphCarnProFit->graph(0)->rescaleValueAxis(true,true);
+        ui->graphCarnProFit->graph(0)->rescaleKeyAxis(false);
+        ui->graphCarnProFit->graph(0)->rescaleValueAxis(false,true);
     //}
 
     // time2
@@ -764,7 +786,7 @@ void Widget::updatePlot()
     ui->graphCarnProFit->graph(2)->setPen(QPen(QColor(0,0,255,255)/*,2*/));
     ui->graphCarnProFit->graph(2)->setLineStyle(QCPGraph::LineStyle(QCPGraph::lsLine));
     ui->graphCarnProFit->graph(2)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 1));
-    ui->graphCarnProFit->graph(2)->setName(QString::number(TIME_3) + " generation interval");
+    ui->graphCarnProFit->graph(2)->setName(QString::number(TIME_3) + " generation interval (HERBIVORES)");
 
     //if(b_herbFit == true){
         for(j=0; j<(g+1); j++){
@@ -772,6 +794,36 @@ void Widget::updatePlot()
         }
         ui->graphCarnProFit->graph(2)->rescaleKeyAxis(true);
         ui->graphCarnProFit->graph(2)->rescaleValueAxis(true,true);
+    //}
+
+    //------------------------- COMPARISON -------------------------//
+
+    ui->graphBoth->addGraph();
+    ui->graphBoth->graph(0)->setPen(QPen(QColor(255,0,0,255)));
+    ui->graphBoth->graph(0)->setLineStyle(QCPGraph::LineStyle(QCPGraph::lsLine));
+    ui->graphBoth->graph(0)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 1));
+    ui->graphBoth->graph(0)->setName("Carnivores - " + QString::number(TIME_3) + " generation interval");
+
+    //if(b_herbFit == true){
+        for(j=0; j<(g+1); j++){
+            ui->graphBoth->graph(0)->addData(j,averageCarnTime3[j]);
+        }
+        ui->graphBoth->graph(0)->rescaleKeyAxis(false);
+        ui->graphBoth->graph(0)->rescaleValueAxis(false,true);
+    //}
+
+    ui->graphBoth->addGraph();
+    ui->graphBoth->graph(1)->setPen(QPen(QColor(0,0,255,255)));
+    ui->graphBoth->graph(1)->setLineStyle(QCPGraph::LineStyle(QCPGraph::lsLine));
+    ui->graphBoth->graph(1)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, 1));
+    ui->graphBoth->graph(1)->setName("Herbivores - " + QString::number(TIME_3) + " generation interval");
+
+    //if(b_herbFit == true){
+        for(j=0; j<(g+1); j++){
+            ui->graphBoth->graph(1)->addData(j,averageHerbTime3[j]);
+        }
+        ui->graphBoth->graph(1)->rescaleKeyAxis(true);
+        ui->graphBoth->graph(1)->rescaleValueAxis(true,true);
     //}
 
     ui->graphHerb->replot();
@@ -782,6 +834,7 @@ void Widget::updatePlot()
     ui->graphCarnPro->replot();
     ui->graphHerbProFit->replot();
     ui->graphCarnProFit->replot();
+    ui->graphBoth->replot();
 }
 
 
@@ -1268,3 +1321,5 @@ void Widget::on_interval3SpinBox_valueChanged(int arg1)
     }
     updatePlot();
 }
+
+

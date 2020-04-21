@@ -1,5 +1,5 @@
 TEMPLATE = app
-TARGET = realTimePlotter
+TARGET = plotter
 
 QT  = core gui
 
