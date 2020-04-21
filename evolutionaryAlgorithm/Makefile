@@ -5,9 +5,9 @@ CFLAGS=-I. -g -Wall -Ofast -march=native -fopenmp `pkg-config --cflags --libs op
 
 LIBS=-lm
 
-DEPS=game.h				# dependency on the include files		
+DEPS=game.h	macros.h			# dependency on the include files		
 
-OBJ= matrix.o interface.o bfs.o GA.o carnivores.o main.o 
+OBJ= output.o matrix.o interface.o bfs.o GA.o carnivores.o main.o 
 
 
 # rule for files ending in .o (.o file depends upon the .c version of the file and the .h files in the DEPS macro)

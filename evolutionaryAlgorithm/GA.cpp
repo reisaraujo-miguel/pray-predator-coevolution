@@ -725,14 +725,14 @@ population cross_over_heritage(std::vector<population> &pop, int p1, int p2){
     }
     
     ///////////////////////////////////////////////////////////////////////////////////
-    extern int COUNT;
-    FILE* ArqHeritage;
-    ArqHeritage = fopen("./data/heritage_wanderers.txt","a+");
-    fprintf(ArqHeritage,"NEW INDIVIDUAL - Generation:%d\n",COUNT/MATING_INTERVAL);
-    fprintf(ArqHeritage,"Parent1(%d) Energy:%d Average energy:%d Heritage:%d %d %d %d %d\n",p1,pop[p1].energy,pop[p1].average_energy,pop[p1].heritage[0],pop[p1].heritage[1],pop[p1].heritage[2],pop[p1].heritage[3],pop[p1].heritage[4]);
-    fprintf(ArqHeritage,"Parent2(%d) Energy:%d Average energy:%d Heritage:%d %d %d %d %d\n",p2,pop[p2].energy,pop[p2].average_energy,pop[p2].heritage[0],pop[p2].heritage[1],pop[p2].heritage[2],pop[p2].heritage[3],pop[p2].heritage[4]);
-    fprintf(ArqHeritage,"Child heritage:%d %d %d %d %d\n",ind.heritage[0],ind.heritage[1],ind.heritage[2],ind.heritage[3],ind.heritage[4]);
-    fclose(ArqHeritage);
+    // extern int COUNT;
+    // FILE* ArqHeritage;
+    // ArqHeritage = fopen("./data/heritage_wanderers.txt","a+");
+    // fprintf(ArqHeritage,"NEW INDIVIDUAL - Generation:%d\n",COUNT/MATING_INTERVAL);
+    // fprintf(ArqHeritage,"Parent1(%d) Energy:%d Average energy:%d Heritage:%d %d %d %d %d\n",p1,pop[p1].energy,pop[p1].average_energy,pop[p1].heritage[0],pop[p1].heritage[1],pop[p1].heritage[2],pop[p1].heritage[3],pop[p1].heritage[4]);
+    // fprintf(ArqHeritage,"Parent2(%d) Energy:%d Average energy:%d Heritage:%d %d %d %d %d\n",p2,pop[p2].energy,pop[p2].average_energy,pop[p2].heritage[0],pop[p2].heritage[1],pop[p2].heritage[2],pop[p2].heritage[3],pop[p2].heritage[4]);
+    // fprintf(ArqHeritage,"Child heritage:%d %d %d %d %d\n",ind.heritage[0],ind.heritage[1],ind.heritage[2],ind.heritage[3],ind.heritage[4]);
+    // fclose(ArqHeritage);
     ///////////////////////////////////////////////////////////////////////////////////
     
     

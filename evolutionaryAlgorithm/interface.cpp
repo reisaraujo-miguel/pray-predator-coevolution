@@ -16,6 +16,87 @@
 using namespace std;
 using namespace cv;
 
+int WAIT = 1;
+const char *environment = "Prey-Predator Coevolution";
+bool set_opencv = true;
+Mat frame;
+
+int initialize_GUI(vector<population> wanderers, vector<population> carnivores, vector<plants> plants_pop){
+
+
+    switch (GUI_ON)
+    {
+    case 1:
+        
+        set_opencv = true;
+        namedWindow(environment, WINDOW_AUTOSIZE );
+        moveWindow(environment, 0, 0);
+        frame = print_img(wanderers,plants_pop,carnivores);
+        imshow(environment, frame);
+
+        while(true){
+            int k = waitKey(1);
+            if(k == 10) // if ENTER
+                break;
+            else if(k == 27){ // if ESC
+                destroyWindow(environment);
+                return 0;
+                //goto end;
+            }
+        }
+
+    default:
+        break;
+    }
+
+    return 1;
+}
+
+int refresh_GUI(vector<population> wanderers, vector<population> carnivores, vector<plants> plants_pop, int COUNT){
+
+    int size, s;
+
+    switch (GUI_ON)
+    {
+    case 1:
+
+        if(set_opencv == true){
+            frame = print_img(wanderers,plants_pop,carnivores);
+            imshow(environment, frame);
+
+            int k = waitKey(WAIT);
+            if(k == 27){ // if ESC
+                close_files();
+                destroyWindow(environment);
+                return 0;
+                //goto end;
+            }
+            if(k == 120){ // if x
+                set_opencv = false;
+                destroyWindow(environment);
+            }
+            if(k == 82){ // if ARROW UP (speed up)
+                if(WAIT > 1)
+                    WAIT--;
+                printf("%d miliseconds\n",WAIT);
+            }
+            if(k == 84){ // IF ARROW DOWN (slow down)
+                WAIT++;
+                printf("%d miliseconds\n",WAIT);
+            }
+        }
+        
+    default:
+        break;
+    }
+
+    return 1;
+}
+
+void close_GUI(){
+    destroyWindow(environment);
+}
+
 
 Mat print_wanderers(std::vector<population> &pop){
 
