@@ -400,3 +400,97 @@ void obstacles_bfs_restricted(int startx, int starty, bool* b_plant, bool* b_won
     }
     return;
 }
+
+void closest_obstacles(int index, int startx, int starty, bool* b_plant, bool* b_wond, bool* b_carn, int* xplant, int* yplant, int* xwond, int* ywond, int* xcarn, int* ycarn, bool limit, int height){
+
+
+    extern vector<population> wanderers;
+    extern vector<plants> plants_pop;
+    extern vector<population> carnivores; 
+
+    *b_plant = *b_wond = *b_carn = true;
+
+
+    int i,size;
+
+    float distance, closest, ref;
+    float wand_dist, carn_dist, plant_dist, dist_lim;
+    int index_closest;
+    int x_diff, y_diff;
+
+    ref = XSIZE*XSIZE + YSIZE*YSIZE + 1;
+    // find closest obstacle of each kind
+
+    size = wanderers.size();
+    if(size == 0){
+        (*b_wond) = false;
+    }
+    closest = ref;
+    for(i=0; i<size; i++){
+        x_diff = wanderers[i].x - startx;
+        y_diff = wanderers[i].y - starty;
+        distance = x_diff*x_diff + y_diff*y_diff;   // no need to take the square root
+
+        if(distance != 0 && distance < closest){
+            closest = distance;
+            index_closest = i;
+        }
+    }
+    wand_dist = closest;
+    *xwond = wanderers[index_closest].x;
+    *ywond = wanderers[index_closest].y;
+
+    size = carnivores.size();
+    if(size == 0){
+        (*b_carn) = false;
+    }
+    closest = ref;
+    for(i=0; i<size; i++){
+        x_diff = carnivores[i].x - startx;
+        y_diff = carnivores[i].y - starty;
+        distance = x_diff*x_diff + y_diff*y_diff;   // no need to take the square root
+
+        if(distance != 0 && distance < closest){
+            closest = distance;
+            index_closest = i;
+        }
+    }
+    carn_dist = closest;
+    *xcarn = carnivores[index_closest].x;
+    *ycarn = carnivores[index_closest].y;
+
+    size = plants_pop.size();
+    if(size == 0){
+        (*b_plant) = false;
+    }
+    closest = ref;
+    for(i=0; i<size; i++){
+        x_diff = plants_pop[i].x - startx;
+        y_diff = plants_pop[i].y - starty;
+        distance = x_diff*x_diff + y_diff*y_diff;   // no need to take the square root
+
+        if(distance < closest){
+            closest = distance;
+            index_closest = i;
+        }
+    }
+    plant_dist = closest;
+    *xplant = plants_pop[index_closest].x;
+    *yplant = plants_pop[index_closest].y;
+
+    // check search height limit
+    if(limit == true){
+        dist_lim = height*height;
+
+        if(wand_dist > dist_lim)
+            *b_wond = false;
+
+        if(carn_dist > dist_lim)
+            *b_carn = false;
+        
+        if(plant_dist > dist_lim)
+            *b_plant = false;
+
+    }
+
+}

@@ -14,7 +14,7 @@ FILE* Arq2;
 void plotter_header(){
 
     char plotterFileName[100];
-    sprintf(plotterFileName, "./plotterData/%dgen_%dint_%dcarn_%dherb_%dplan_%dheritHerb_%dheritCarn_%dhealth_%dev.txt",GENERATION,MATING_INTERVAL,POP_CARN,POP_WANDER,POP_PLANTS,HERITAGE_WANDER,HERITAGE_CARN,HEALTH_CONST,AVERAGE_INTERVAL);
+    sprintf(plotterFileName, "./plotterData/%dgen_%dint_%dcarn_%dherb_%dplan_%dheritHerb_%dheritCarn_%dhealth_%dev(%d).txt",GENERATION,MATING_INTERVAL,POP_CARN,POP_WANDER,POP_PLANTS,HERITAGE_WANDER,HERITAGE_CARN,HEALTH_CONST,AVERAGE_INTERVAL,FILE_NUMBER);
     const char *plotterData = plotterFileName;
 
     PlotterArq = fopen(plotterData,"w+");
@@ -42,8 +42,8 @@ void simulation_data_header(vector<population> wanderers, vector<population> car
 
     char arq1FileName[100];
     char arq2FileName[100];
-    sprintf(arq1FileName,"./data/wanderers_%dgen_%dint_%dcarn_%dherb_%dplan_%dheritHerb_%dheritCarn_%dhealth_%dev.txt",GENERATION,MATING_INTERVAL,POP_CARN,POP_WANDER,POP_PLANTS,HERITAGE_WANDER,HERITAGE_CARN,HEALTH_CONST,AVERAGE_INTERVAL);
-    sprintf(arq2FileName,"./data/carnivores_%dgen_%dint_%dcarn_%dherb_%dplan_%dheritHerb_%dheritCarn_%dhealth_%devt.txt",GENERATION,MATING_INTERVAL,POP_CARN,POP_WANDER,POP_PLANTS,HERITAGE_WANDER,HERITAGE_CARN,HEALTH_CONST,AVERAGE_INTERVAL);
+    sprintf(arq1FileName,"./data/wanderers_%dgen_%dint_%dcarn_%dherb_%dplan_%dheritHerb_%dheritCarn_%dhealth_%dev(%d).txt",GENERATION,MATING_INTERVAL,POP_CARN,POP_WANDER,POP_PLANTS,HERITAGE_WANDER,HERITAGE_CARN,HEALTH_CONST,AVERAGE_INTERVAL,FILE_NUMBER);
+    sprintf(arq2FileName,"./data/carnivores_%dgen_%dint_%dcarn_%dherb_%dplan_%dheritHerb_%dheritCarn_%dhealth_%dev(%d).txt",GENERATION,MATING_INTERVAL,POP_CARN,POP_WANDER,POP_PLANTS,HERITAGE_WANDER,HERITAGE_CARN,HEALTH_CONST,AVERAGE_INTERVAL,FILE_NUMBER);
     const char *arq1 = arq1FileName;
     const char *arq2 = arq2FileName;
 
@@ -95,14 +95,14 @@ void update_simulation_data(vector<population> wanderers, vector<population> car
     size = wanderers.size();
     fprintf(Arq1,"\n%d\n",(COUNT/MATING_INTERVAL)-1);
     for(s=0; s<size; s++){
-        fprintf(Arq1,"(%d) %2d %2d %2d %2d %2d %2d %2d %2d %d %d %2d Energy: %d\n",s,wanderers[s].plant_const, wanderers[s].plant_weight, wanderers[s].wond_const, wanderers[s].wond_weight, wanderers[s].carn_const, wanderers[s].carn_weight, wanderers[s].height_limit, wanderers[s].height, wanderers[s].speed, wanderers[s].health, wanderers[s].hurt, ((HEALTH_CONST*wanderers[s].health)-(HURT_CONST*wanderers[s].hurt)));
+        fprintf(Arq1,"(%d) %d %d %d %d %d %d %d %d %d %d %d Energy: %d\n",s,wanderers[s].plant_const, wanderers[s].plant_weight, wanderers[s].wond_const, wanderers[s].wond_weight, wanderers[s].carn_const, wanderers[s].carn_weight, wanderers[s].height_limit, wanderers[s].height, wanderers[s].speed, wanderers[s].health, wanderers[s].hurt, ((HEALTH_CONST*wanderers[s].health)-(HURT_CONST*wanderers[s].hurt)));
     }
     fflush(Arq1);
 
     size = carnivores.size();
     fprintf(Arq2,"\n%d\n",(COUNT/MATING_INTERVAL)-1);
     for(s=0; s<size; s++){
-        fprintf(Arq2,"(%d) %2d %2d %2d %2d %2d %2d %d %d %2d Energy: %d\n",s,carnivores[s].plant_const, carnivores[s].plant_weight, carnivores[s].wond_const, carnivores[s].wond_weight, carnivores[s].carn_const, carnivores[s].carn_weight, carnivores[s].height_limit, carnivores[s].height, carnivores[s].speed, carnivores[s].energy);
+        fprintf(Arq2,"(%d) %d %d %d %d %d %d %d %d %d Energy: %d\n",s,carnivores[s].plant_const, carnivores[s].plant_weight, carnivores[s].wond_const, carnivores[s].wond_weight, carnivores[s].carn_const, carnivores[s].carn_weight, carnivores[s].height_limit, carnivores[s].height, carnivores[s].speed, carnivores[s].energy);
     }
     fflush(Arq2);
 }

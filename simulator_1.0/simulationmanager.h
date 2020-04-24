@@ -85,9 +85,7 @@ private:
 
     void genetic_rotation(QVector<entity>& pop, QVector<QVector<individual>>& primary_pop, int index);
     float calculate_angle(int x, int y, int xobs, int yobs, float dir_angle);
-
-    void obstacles_bfs(int startx, int starty, int* xplant, int* yplant, int* xwond, int* ywond, int* xcarn, int* ycarn);
-    void obstacles_bfs_restricted(int startx, int starty, bool* b_plant, bool* b_wond, bool* b_carn, int* xplant, int* yplant, int* xwond, int* ywond, int* xcarn, int* ycarn, int height);
+    void closest_obstacles(int index, int startx, int starty, bool* b_plant, bool* b_wond, bool* b_carn, int* xplant, int* yplant, int* xwond, int* ywond, int* xcarn, int* ycarn, bool limit, int height);
 
     void move_wanderers(QVector<entity>& pop, QVector<QVector<individual>>& primary_pop);
     void move_carnivores(QVector<entity>& pop, QVector<QVector<individual>>& primary_pop);

@@ -67,18 +67,18 @@ void initialize_carnivores(std::vector<population> &pop, Type matrix[][XSIZE]){
         ind.h_count = 0;
 
         ind.plant_const = rand()%101;
-        if(i == 0) ind.plant_const = 30;
+        //if(i == 0) ind.plant_const = 30;
         ind.wond_const = rand()%101;
-        if(i == 0) ind.wond_const = 0;
+        //if(i == 0) ind.wond_const = 0;
         ind.carn_const = rand()%101;
-        if(i == 0) ind.carn_const = 30;
+        //if(i == 0) ind.carn_const = 30;
 
         ind.plant_weight = rand()%11;
-        if(i == 0) ind.plant_weight = 0;
+        //if(i == 0) ind.plant_weight = 0;
         ind.wond_weight = rand()%11;
-        if(i == 0) ind.wond_weight = 10;
+        //if(i == 0) ind.wond_weight = 10;
         ind.carn_weight = rand()%11;
-        if(i == 0) ind.carn_weight = 0;
+        //if(i == 0) ind.carn_weight = 0;
 
         ind.height_limit = rand()%2; // 0(false) or 1(true)
         ind.height = rand()%BIG_SIZE;

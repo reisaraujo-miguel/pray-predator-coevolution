@@ -16,7 +16,7 @@
 using namespace std;
 using namespace cv;
 
-int WAIT = 1;
+int WAIT = 50;
 const char *environment = "Prey-Predator Coevolution";
 bool set_opencv = true;
 Mat frame;

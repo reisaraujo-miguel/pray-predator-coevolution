@@ -91,15 +91,21 @@ int check_disponibility(Type matrix[][XSIZE], int x, int y);
 
 bool check_for_obstacles(int x0, int y0, float Cos, float Sin, int speed, int* type);
 void first_obstacle_bfs(int startx, int starty, int* xobs, int* yobs, int* type_obs);
+
 float calculate_angle(int x, int y, int xobs, int yobs, float dir_angle);
+
 void first_plant_bfs(int startx, int starty, int* xobs, int* yobs);
 void first_wonderer_bfs(int startx, int starty, int* xobs, int* yobs);
 void obstacles_bfs(int startx, int starty, int* xplant, int* yplant, int* xwond, int* ywond, int* xcarn, int* ycarn);
 void obstacles_bfs_restricted(int startx, int starty, bool* b_plant, bool* b_wond, bool* b_carn, int* xplant, int* yplant, int* xwond, int* ywond, int* xcarn, int* ycarn, int height);
 
+void closest_obstacles(int index, int startx, int starty, bool* b_plant, bool* b_wond, bool* b_carn, int* xplant, int* yplant, int* xwond, int* ywond, int* xcarn, int* ycarn, bool limit, int height);
+
 
 /********************************* WANDERERS **************************************************/
 void initialize_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]);
+void initialize_fixed_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]);
+void reposition_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]);
 void import_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]);
 void move_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]);
 void random_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]);

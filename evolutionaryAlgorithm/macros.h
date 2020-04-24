@@ -1,6 +1,8 @@
 
 #define GUI_ON 1
 
+#define FILE_NUMBER 1
+
 
 #define HERITAGE_WANDER 5
 #define HERITAGE_CARN 5
@@ -32,7 +34,7 @@
 #define DYNAMIC_DURATION 20 // duration of a dynamic_mutation cycle
 
 // mutate by how much:
-#define DYNAMIC_PROPORTION 2 
+#define DYNAMIC_PROPORTION 1 
 // for dynamic cycle, the mutation increments/decrements will be multiplied by <DYNAMIC_PROPORTION>
 // 1 = OFF
 

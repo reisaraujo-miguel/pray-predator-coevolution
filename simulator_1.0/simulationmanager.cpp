@@ -58,7 +58,7 @@ SimulationManager::SimulationManager(QWidget *parent)
 
     DataTimer = new QTimer(this);
     connect(DataTimer, SIGNAL(timeout()), this, SLOT(timeOutSlot()));
-    DataTimer->start(400); // timeout() at 5 milisseconds interval
+    DataTimer->start(10); // timeout() at 10 milisseconds interval
 }
 
 SimulationManager::~SimulationManager()
@@ -600,8 +600,9 @@ void SimulationManager::timeOutSlot(){
                     simulate();
                 }
             }
-            else{
-                //reposition individuals?
+            else{   // loop == true
+                //reposition individuals
+                initialize_populations();
             }
             timeOutCount = 0;
         }
@@ -722,10 +723,6 @@ void SimulationManager::simulate(){
     //start = time(NULL);
 
     // TIME IN MILISSECONDS
-    // Taking too long! Around 0.35 seconds!
-    // One call to BFS takes around 0.02 seconds! 0.02 * 15 = 0.3 (15 calls for 15 entities)
-    // BFS is taking up most of the time!
-
     // struct timespec tstart={0,0}, tend={0,0};
     // clock_gettime(CLOCK_MONOTONIC, &tstart);
 
@@ -1169,7 +1166,7 @@ void SimulationManager::genetic_rotation(QVector<entity>& pop, QVector<QVector<i
         //struct timespec tstart={0,0}, tend={0,0};
         //clock_gettime(CLOCK_MONOTONIC, &tstart);
 
-        obstacles_bfs(pop[index].x, pop[index].y, &xplant, &yplant, &xwond, &ywond, &xcarn, &ycarn);
+        closest_obstacles(index, pop[index].x, pop[index].y, &b_plant, &b_wond, &b_carn, &xplant, &yplant, &xwond, &ywond, &xcarn, &ycarn, primary_pop[sim_gen][index].search_height_limit, primary_pop[sim_gen][index].search_height);
 
         //clock_gettime(CLOCK_MONOTONIC, &tend);
         //printf("BFS took %.5f seconds\n",
@@ -1217,7 +1214,7 @@ void SimulationManager::genetic_rotation(QVector<entity>& pop, QVector<QVector<i
         //struct timespec tstart={0,0}, tend={0,0};
         //clock_gettime(CLOCK_MONOTONIC, &tstart);
 
-        obstacles_bfs_restricted(pop[index].x, pop[index].y, &b_plant, &b_wond, &b_carn, &xplant, &yplant, &xwond, &ywond, &xcarn, &ycarn, primary_pop[sim_gen][index].search_height);
+        closest_obstacles(index, pop[index].x, pop[index].y, &b_plant, &b_wond, &b_carn, &xplant, &yplant, &xwond, &ywond, &xcarn, &ycarn, primary_pop[sim_gen][index].search_height_limit, primary_pop[sim_gen][index].search_height);
 
         //clock_gettime(CLOCK_MONOTONIC, &tend);
         //printf("BFS took %.5f seconds\n",
@@ -1320,195 +1317,94 @@ float SimulationManager::calculate_angle(int x, int y, int xobs, int yobs, float
     return angle;
 }
 
-void SimulationManager::obstacles_bfs(int startx, int starty, int* xplant, int* yplant, int* xwond, int* ywond, int* xcarn, int* ycarn){
+void SimulationManager::closest_obstacles(int index, int startx, int starty, bool* b_plant, bool* b_wond, bool* b_carn, int* xplant, int* yplant, int* xwond, int* ywond, int* xcarn, int* ycarn, bool limit, int height){
 
-    const int dir[4][2] = {{1,0},
-                           {-1,0},
-                           {0,1},
-                           {0,-1}};
 
-    //time_t start, end;
-    //start = time(NULL);
-    // stores whether obstacle was already found or not
-    bool plant = false;
-    bool wond = false;
-    bool carn = false;
+    *b_plant = *b_wond = *b_carn = true;
 
-    *xplant = *yplant = *xwond = *ywond = *xcarn = *ycarn = 0;
 
-    queue <pair<int,int>> fila;
+    int i,size;
 
-    bool visited[Y][X];   // stores whether the position has been visited or not
-    //int altura[Y][X];     // stores the search height of position
-    int nextX, nextY;
+    float distance, closest, ref;
+    float wand_dist, carn_dist, plant_dist, dist_lim;
+    int index_closest;
+    int x_diff, y_diff;
 
-    fila.push(make_pair(startx, starty));
+    ref = X*X + Y*Y + 1;
+    // find closest obstacle of each kind
 
-    int i,j;
-    for(i=0; i<Y; i++){
-        for(j=0; j<X; j++){
-            visited[i][j] = false;
+    size = herb_sim.size();
+    if(size == 0){
+        (*b_wond) = false;
+    }
+    closest = ref;
+    for(i=0; i<size; i++){
+        x_diff = herb_sim[i].x - startx;
+        y_diff = herb_sim[i].y - starty;
+        distance = x_diff*x_diff + y_diff*y_diff;   // no need to take the square root
+
+        if(distance != 0 && distance < closest){
+            closest = distance;
+            index_closest = i;
         }
     }
+    wand_dist = closest;
+    *xwond = herb_sim[index_closest].x;
+    *ywond = herb_sim[index_closest].y;
 
-    visited[starty][startx] = true;
-    //altura[starty][startx] = 0;
+    size = carn_sim.size();
+    if(size == 0){
+        (*b_carn) = false;
+    }
+    closest = ref;
+    for(i=0; i<size; i++){
+        x_diff = carn_sim[i].x - startx;
+        y_diff = carn_sim[i].y - starty;
+        distance = x_diff*x_diff + y_diff*y_diff;   // no need to take the square root
 
-
-    while(!fila.empty()){
-        // pop off the queue's front
-        pair <int, int> curr = fila.front();    // curr -> current
-        fila.pop();
-
-        // 4 direction
-        for(int i=0;i<4;i++){
-            // next Y
-            nextY = dir[i][0] + curr.second;
-            // next X
-            nextX = dir[i][1] + curr.first;
-
-            // if it isn't on the matrix...
-            if(nextX < 0 || nextY < 0 || nextX >= X || nextY >= Y)
-                continue;   // forces execution of next iteration
-
-            // if it wasn't visited, puts on the matrix
-            if(!visited[nextY][nextX]){
-                if(matrix[nextY][nextX] != 0){
-                    if((matrix[nextY][nextX] == 3) && (plant == false)){
-                        *xplant = nextX;
-                        *yplant = nextY;
-                        plant = true;
-
-                        if(wond == true && carn == true){
-                            return;
-                        }
-                    }
-                    if((matrix[nextY][nextX] == 1) && (wond == false)){
-                        *xwond = nextX;
-                        *ywond = nextY;
-                        wond = true;
-
-                        if(plant == true && carn == true){
-                            return;
-                        }
-                    }
-                    if((matrix[nextY][nextX] == 2) && (carn == false)){
-                        *xcarn = nextX;
-                        *ycarn = nextY;
-                        carn = true;
-
-                        if(plant == true && wond == true){
-                            return;
-                        }
-                    }
-                }
-                fila.push(make_pair(nextX, nextY));
-                // marks as visited
-                visited[nextY][nextX] = true;
-                //altura[nextY][nextX] = altura[curr.second][curr.first] + 1;
-            }
+        if(distance != 0 && distance < closest){
+            closest = distance;
+            index_closest = i;
         }
     }
-    return;
-}
+    carn_dist = closest;
+    *xcarn = carn_sim[index_closest].x;
+    *ycarn = carn_sim[index_closest].y;
 
-void SimulationManager::obstacles_bfs_restricted(int startx, int starty, bool* b_plant, bool* b_wond, bool* b_carn, int* xplant, int* yplant, int* xwond, int* ywond, int* xcarn, int* ycarn, int height){
+    size = plant_sim.size();
+    if(size == 0){
+        (*b_plant) = false;
+    }
+    closest = ref;
+    for(i=0; i<size; i++){
+        x_diff = plant_sim[i].x - startx;
+        y_diff = plant_sim[i].y - starty;
+        distance = x_diff*x_diff + y_diff*y_diff;   // no need to take the square root
 
-    const int dir[4][2] = {{1,0},
-                           {-1,0},
-                           {0,1},
-                           {0,-1}};
-    //time_t start, end;
-    //start = time(NULL);
-    // stores whether obstacle was already found or not
-    bool plant = false;
-    bool wond = false;
-    bool carn = false;
-
-    *xplant = *yplant = *xwond = *ywond = *xcarn = *ycarn = 0;
-    *b_plant = *b_wond = *b_carn = false;
-
-    queue <pair<int,int>> fila;
-
-    bool visited[Y][X];   // stores whether the position has been visited or not
-    int heightMatrix[Y][X];     // stores the search height of position
-    int nextX, nextY;
-
-    fila.push(make_pair(startx, starty));
-
-    int i,j;
-    for(i=0; i<Y; i++){
-        for(j=0; j<X; j++){
-            visited[i][j] = false;
+        if(distance < closest){
+            closest = distance;
+            index_closest = i;
         }
     }
+    plant_dist = closest;
+    *xplant = plant_sim[index_closest].x;
+    *yplant = plant_sim[index_closest].y;
 
-    visited[starty][startx] = true;
-    heightMatrix[starty][startx] = 0;
+    // check search height limit
+    if(limit == true){
+        dist_lim = height*height;
 
+        if(wand_dist > dist_lim)
+            *b_wond = false;
 
-    while(!fila.empty()){
-        // pop off the queue's front
-        pair <int, int> curr = fila.front();    // curr -> current
-        fila.pop();
+        if(carn_dist > dist_lim)
+            *b_carn = false;
 
-        if(heightMatrix[curr.second][curr.first] > height){
-            return;
-        }
+        if(plant_dist > dist_lim)
+            *b_plant = false;
 
-        // 4 direction
-        for(int i=0;i<4;i++){
-            // next Y
-            nextY = dir[i][0] + curr.second;
-            // next X
-            nextX = dir[i][1] + curr.first;
-
-            // if it isn't on the matrix...
-            if(nextX < 0 || nextY < 0 || nextX >= X || nextY >= Y)
-                continue;   // forces execution of next iteration
-
-            // if it wasn't visited, puts on the matrix
-            if(!visited[nextY][nextX]){
-                if(matrix[nextY][nextX] != 0){
-                    if((matrix[nextY][nextX] == 3) && (plant == false)){
-                        *xplant = nextX;
-                        *yplant = nextY;
-                        plant = true;
-                        *b_plant = true;
-
-                        if(wond == true && carn == true){
-                            return;
-                        }
-                    }
-                    if((matrix[nextY][nextX] == 1) && (wond == false)){
-                        *xwond = nextX;
-                        *ywond = nextY;
-                        wond = true;
-                        *b_wond = true;
-
-                        if(plant == true && carn == true){
-                            return;
-                        }
-                    }
-                    if((matrix[nextY][nextX] == 2) && (carn == false)){
-                        *xcarn = nextX;
-                        *ycarn = nextY;
-                        carn = true;
-                        *b_carn = true;
-
-                        if(plant == true && wond == true){
-                            return;
-                        }
-                    }
-                }
-                fila.push(make_pair(nextX, nextY));
-                // marks as visited
-                visited[nextY][nextX] = true;
-                heightMatrix[nextY][nextX] = heightMatrix[curr.second][curr.first] + 1;
-            }
-        }
     }
-    return;
+
 }
 
 

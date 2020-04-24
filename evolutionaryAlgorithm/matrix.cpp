@@ -37,6 +37,7 @@ int check_disponibility(Type matrix[][XSIZE], int x, int y){
     return OK;
 }
 
+
 void initialize_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]){
 
     Vec3b red = Vec3b(0,0,255); 
@@ -126,6 +127,114 @@ void initialize_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]){
         printf("\n");
         */
         //////////////////////////////////////////////////
+    }
+}
+
+void initialize_fixed_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]){
+
+    // FILE: "variable_mutation_on_deterioration/wanderers_10000gen_100int_5carn_10herb_10plan_5heritHerb_5heritCarn_20health_10ev(1).txt
+    // GENERATION: 6615
+    // INDIVIDUAL: 0
+    // CHARACTERISTICS: 
+    //      plant_const plant_weight wond_const wond_weight carn_const carn_weight height_bool height_limit speed health hurt energy
+    //      0 30 -7  5 12  0  0 20 24 16  4 Energy:316
+
+    Vec3b red = Vec3b(0,0,255); 
+    Vec3b green = Vec3b(0,255,0); 
+    Vec3b blue = Vec3b(255,0,0); 
+    Vec3b pink = Vec3b(77,0,230);
+    Vec3b black = Vec3b(0,0,0);
+    Vec3b orange = Vec3b(0,108,238);
+    Vec3b violet = Vec3b(200,0,119);
+    Vec3b yellow = Vec3b(0,184,196);
+
+    int i, prob;
+    for(i=0; i<POP_WANDER; i++){
+
+        srand(time(0)+i);
+
+        population ind;
+
+        retry:    
+        ind.x = rand()%XRESTRAINT;
+        ind.y = rand()%YRESTRAINT;
+
+        if(check_disponibility(matrix, ind.x, ind.y) == ERROR){
+            goto retry;
+        }
+
+        ind.angle = (float)(rand()%628)/100;  // 628 = 2*PI*100
+        ind.energy = 0;
+        ind.health = 0;
+        ind.hurt = 0;
+        ind.average_energy = 0;
+        ind.h_count = 0;
+        
+        int j;
+        for(j=0; j<HERITAGE_WANDER; j++){
+            ind.heritage.push_front(0);
+        }
+
+        ind.speed = 24;
+        ind.plant_const = 0;
+        ind.wond_const = -7;
+        ind.carn_const = 12;; 
+
+        ind.plant_weight = 30;
+        ind.wond_weight = 5;
+        ind.carn_weight = 0;
+
+        ind.height_limit = 0;
+        ind.height = 20;
+
+        ind.best = false;
+        ind.color = blue;
+
+        matrix[ind.y][ind.x] = W;
+
+        pop.push_back(ind);
+    }
+}
+
+void reposition_wanderers(std::vector<population> &pop, Type matrix[][XSIZE]){
+
+    Vec3b red = Vec3b(0,0,255); 
+    Vec3b green = Vec3b(0,255,0); 
+    Vec3b blue = Vec3b(255,0,0); 
+    Vec3b pink = Vec3b(77,0,230);
+    Vec3b black = Vec3b(0,0,0);
+    Vec3b orange = Vec3b(0,108,238);
+    Vec3b violet = Vec3b(200,0,119);
+    Vec3b yellow = Vec3b(0,184,196);
+
+    int i, prob;
+    for(i=0; i<POP_WANDER; i++){
+
+        srand(time(0)+i);
+
+        retry:    
+        pop[i].x = rand()%XRESTRAINT;
+        pop[i].y = rand()%YRESTRAINT;
+
+        if(check_disponibility(matrix, pop[i].x, pop[i].y) == ERROR){
+            goto retry;
+        }
+
+        pop[i].angle = (float)(rand()%628)/100;  // 628 = 2*PI*100
+        pop[i].energy = 0;
+        pop[i].health = 0;
+        pop[i].hurt = 0;
+        pop[i].average_energy = 0;
+        pop[i].h_count = 0;
+        
+        int j;
+        for(j=0; j<HERITAGE_WANDER; j++){
+            pop[i].heritage.push_front(0);
+        }
+
+        pop[i].color = blue;
+
+        matrix[pop[i].y][pop[i].x] = W;
     }
 }
 
@@ -590,6 +699,8 @@ void rotation_equation(std::vector<population> &pop, int index, int obs_type, fl
 
 void genetic_rotation(std::vector<population> &pop, int index){
 
+    //extern double BFS;
+
     float plant_rotation;
     float wond_rotation;
     float carn_rotation;
@@ -636,7 +747,20 @@ void genetic_rotation(std::vector<population> &pop, int index){
     //time_t start,end;
     //start = time(NULL);
     if(pop[index].height_limit == false){
-        obstacles_bfs(pop[index].x, pop[index].y, &xplant, &yplant, &xwond, &ywond, &xcarn, &ycarn);
+
+        //struct timespec tstart={0,0}, tend={0,0};
+        //clock_gettime(CLOCK_MONOTONIC, &tstart);
+
+        //obstacles_bfs(pop[index].x, pop[index].y, &xplant, &yplant, &xwond, &ywond, &xcarn, &ycarn);
+        closest_obstacles(index, pop[index].x, pop[index].y, &b_plant, &b_wond, &b_carn, &xplant, &yplant, &xwond, &ywond, &xcarn, &ycarn, pop[index].height_limit, pop[index].height);
+
+        //clock_gettime(CLOCK_MONOTONIC, &tend);
+        //printf("BFS took %.5f seconds\n",
+        //      ((double)tend.tv_sec + 1.0e-9*tend.tv_nsec) -
+        //      ((double)tstart.tv_sec + 1.0e-9*tstart.tv_nsec));
+    
+        //BFS += ((double)tend.tv_sec + 1.0e-9*tend.tv_nsec) - ((double)tstart.tv_sec + 1.0e-9*tstart.tv_nsec);
+        
 
         // AQUI SURGE NAN
         //printf("(%d)\t",index);
@@ -675,7 +799,19 @@ void genetic_rotation(std::vector<population> &pop, int index){
         }
     }
     else{   // if there is a height limit
-        obstacles_bfs_restricted(pop[index].x, pop[index].y, &b_plant, &b_wond, &b_carn, &xplant, &yplant, &xwond, &ywond, &xcarn, &ycarn, pop[index].height);
+        
+        //struct timespec tstart={0,0}, tend={0,0};
+        //clock_gettime(CLOCK_MONOTONIC, &tstart);
+
+        //obstacles_bfs_restricted(pop[index].x, pop[index].y, &b_plant, &b_wond, &b_carn, &xplant, &yplant, &xwond, &ywond, &xcarn, &ycarn, pop[index].height);
+        closest_obstacles(index, pop[index].x, pop[index].y, &b_plant, &b_wond, &b_carn, &xplant, &yplant, &xwond, &ywond, &xcarn, &ycarn, pop[index].height_limit, pop[index].height);
+
+        //clock_gettime(CLOCK_MONOTONIC, &tend);
+        //printf("BFS took %.5f seconds\n",
+        //      ((double)tend.tv_sec + 1.0e-9*tend.tv_nsec) -
+        //      ((double)tstart.tv_sec + 1.0e-9*tstart.tv_nsec));
+        //BFS += ((double)tend.tv_sec + 1.0e-9*tend.tv_nsec) - ((double)tstart.tv_sec + 1.0e-9*tstart.tv_nsec);
+        
 
         if(b_plant == true){
             plant_angle = calculate_angle(pop[index].x, pop[index].y, xplant, yplant, pop[index].angle);
