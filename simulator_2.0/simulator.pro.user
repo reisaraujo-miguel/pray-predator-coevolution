@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.11.0, 2020-04-23T21:09:48. -->
+<!-- Written by QtCreator 4.11.0, 2020-04-25T16:32:21. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -286,8 +286,9 @@
     </valuelist>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator18_stepEvolution2/simulator_2.0/simulator.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator18_stepEvolution2/simulator_2.0/simulator.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">simulator2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator20_stepEvolution/simulator_2.0/simulator.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator20_stepEvolution/simulator_2.0/simulator.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -298,7 +299,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator18_stepEvolution2/bin2</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/home/alice/Desktop/Evolutionary Algorithms/pray_predator/pray_predator20_stepEvolution/bin2</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
