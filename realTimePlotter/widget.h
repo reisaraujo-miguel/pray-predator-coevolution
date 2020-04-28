@@ -45,8 +45,16 @@ private slots:
 
     void on_interval3SpinBox_valueChanged(int arg1);
 
+    void on_carnScaleSpinBox_valueChanged(int arg1);
+
+    void on_timeBegin_valueChanged(int arg1);
+
+    void on_timeEnd_valueChanged(int arg1);
+
 private:
     void updatePlot();
+    void update_comparison_plot();
+    void update_processed_comparison_plot();
     Ui::Widget *ui;
     QString fileName;
     QTimer *DataTimer;
@@ -83,6 +91,9 @@ private:
     int TIME_2;
     int TIME_3;
     int generations;
+    int comparison_carn_scale;
+    int time_begin;
+    int time_end;
 
 };
 
