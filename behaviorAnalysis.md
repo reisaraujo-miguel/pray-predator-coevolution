@@ -5,5 +5,7 @@ The environment whre the genetic algorithm is tested and evaluated is highly noi
 Plotting the graphs corresponding to average over 50 generations of the population's mean energy, the following pattern was obtained:
 
 <p align="center">
-<img src="https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/img/50graph.jpg?raw=true" height="300">
+<img src="https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/img/noise.png?raw=true" height="300">
 </p>
+
+which is due to the performance fluctuations caused by the environments' noise.
