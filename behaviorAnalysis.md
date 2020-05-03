@@ -77,3 +77,5 @@ Some of those behaviors are listed bellow. All of them reflect increased energy 
 
 
 ## Only herbivores evolving
+
+## Inheritance influence on stability
