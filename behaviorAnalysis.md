@@ -39,11 +39,41 @@ It can be seen that the herbivore's and carnivore's performance are mostly mirro
 In general, the following cycle was observed throughout the simulations:
 
 <p align="center">
-<img src="https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/img/diagram.png?raw=true" height="200" title="Simulation 2">
+<img src="https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/img/diagram.png?raw=true" height="300" title="Simulation 2">
 </p>
 
 However, the constant changes in the populations due to the presure of coevolution, made it hard to analyse specific behaviors developed by each of the populations, and set apart evolutive successes from trasitional states. In order to accomplish this analysis, each of the populations were let to evolve with the other kept fixed. The result was the development of a variety of behaviors.
 
 ## Only carnivores evolving
+
+For the simulations with evolving carnivores, apt herbivores were initialized and maintained fixed.
+
+The herbivore's genetic configuration was the following:
+
+Gene type | Value 
+--- | --- 
+Plant constant | 0
+Herbivore constant | -7
+Carnivore constant | 12
+Plant weight | 30
+Herbivore weight | 5
+Carnivore weight | 0
+Search height limit | None
+Speed | 24
+Health | 31
+Hurt | 10
+
+meaning that they prioritize eating and didn't even perceive the presence of carnivores. This genetic configuration was taken out of a previous simulation and it corresponded to a peak in the herbivores' performance.
+
+For this same hervibore condition, the carnivores showed a variety of responses. Those diverse behaviors developed might be due to the different nudges noise causes on evolution, but they were also influenced by changes in non-evolutive parameters, such as population size, inheritance, and the number of frames the populations were let to interact during each generation. 
+
+Some of those behaviors are listed bellow. All of them reflect increased energy values that stabilized for a while, corresponding to plateaus on the graphs plotted.
+
+- carnivores agglomerated around plants or circled around them, waiting for the herbivores to come \[[video1](https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/evolutionaryAlgorithm/plotterData/only_carnivores_evolving_mutation_bug/%404037_circle_around_plants_10000gen_200int_10carn_10herb_10plan_5heritHerb_5heritCarn_20health_20ev(1).txt.mp4)\], in some cases, in addition to that, they also developed sawrm behavior, moving around in groups \[[video2](https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/evolutionaryAlgorithm/plotterData/only_carnivores_evolving_mutation_bug/%401999_plant_aglomeration_group_chasing_10000gen_200int_10carn_10herb_10plan_5heritHerb_5heritCarn_20health_20ev(1).txt.mp4)\]\[[video3](https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/evolutionaryAlgorithm/plotterData/only_carnivores_evolving_mutation_bug/%401999_plant_contouring_group_chasing_10000gen_200int_10carn_10herb_10plan_5heritHerb_10heritCarn_20health_20ev(2).txt.mp4)\];
+- in some simulations, the carnivores restricted significantly their vision range, but developed diverse reactions to extern stimuli, such as:
+  - following whatever came close, be it carnivore, herbivore or plant \[[video4](https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/evolutionaryAlgorithm/plotterData/only_carnivores_evolving_mutation_bug/%408254_follow_whatever_comes_close_10000gen_200int_10carn_10herb_10plan_5heritHerb_5heritCarn_20health_20ev(1).txt.mp4)\];
+  - avoiding other carnivores (hunting alone), circling around plants and chasing herbivores\[[video5](https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/evolutionaryAlgorithm/plotterData/only_carnivores_evolving_mutation_bug/%401971_limited_view_hunt_alone_circle_plants_chase_herb_10000gen_200int_5carn_10herb_10plan_5heritHerb_5heritCarn_20health_20ev(3).txt.mp4)/];
+- carnivores exclusively hunted herbivores \[[video6](https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/evolutionaryAlgorithm/plotterData/only_carnivores_evolving_mutation_bug/%405000_just_chase_10000gen_200int_5carn_10herb_10plan_5heritHerb_10heritCarn_20health_20ev(4).txt.mp4)/] \[[video7](https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/evolutionaryAlgorithm/plotterData/only_carnivores_evolving_mutation_bug/%408000_carn_chase_herb_10000gen_200int_10carn_10herb_10plan_5heritHerb_5heritCarn_20health_20ev(1).txt.mp4)/].
+
 
 ## Only herbivores evolving
