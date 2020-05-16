@@ -6,7 +6,7 @@ An evolutionary algorithm written in c++ to evolve a pray-predator environment.
 <p align="center">
 <img src="https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/img/evolution.gif?raw=true" height="300">
 </p>
-The goal of this project was do develop an environment consisting of plants (green), herbivores (blue) and carnivores (pink), so that the herbivores and carnivores would coevolve over time learning to interact with each other. To achieve this an evolutionary algorithm was implemented. The elitism selection method with mutation was employed, as well as predation and inheritance techniques. 
+The goal of this project was to develop an environment consisting of plants (green), herbivores (blue) and carnivores (pink), so that the herbivores and carnivores would coevolve over time learning to interact with each other. To achieve this an evolutionary algorithm was implemented. The elitism selection method with mutation was employed, as well as predation and inheritance techniques. 
 
 Further details can be found on:
 [documentation.md](https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/documentation.md)
