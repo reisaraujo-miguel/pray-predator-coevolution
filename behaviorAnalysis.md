@@ -2,11 +2,14 @@
 
 ## Noise analysis
 
+[teste](##coevolution-implications)
+
+
 The environment where the genetic algorithm is tested and evaluated is highly noisy since an individual's score depends not only on its own fitness but also on its surroundings. If ignored, this characteristic of the simulations can impair data analysis, since much of the oscilations perceived in the population's score overtime is due to noise. 
 
-In order to establish a threshold that allows pinpointing actual changes in a population's behavior as oposed to performance fluctuations due to noise, some simulations were run with fixed herbivores and carnivores. This means that the populations weren't evolving (therefore there were no changes in behavior), they were let to interact during the normal duration of a generation and when this interval was over, the environment was simply reset (the individuals were placed in random positions), those operations were repeated over a determined number of generations as when running the GA. 
+In order to establish a threshold that allows pinpointing actual changes in a population's behavior as oposed to performance fluctuations due to noise, some simulations were run with fixed herbivores and carnivores. This means that the populations weren't evolving (therefore there were no changes in behavior), they were let to interact during the normal duration of a generation and when this interval was over, the environment was simply reset (the individuals were placed in random positions), those operations were repeated over a determined number of generations, as when running the GA. 
 
-Plotting the graphs corresponding to the moving average over 50 generations of the each of population's mean energy, the following pattern was obtained:
+Plotting the graphs corresponding to the _moving average_ over 50 generations of the each of population's _mean energy_ ([genetic configuration](https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/ref/genes.md#noise-analysis)), the following pattern was obtained:
 
 <p align="center">
 <img src="https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/img/noise.png?raw=true" height="300">
@@ -18,7 +21,24 @@ on a smaller time window:
 <img src="https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/img/noise_smaller_interval.png?raw=true" height="300">
 </p>
 
-The fluctuation observed are solely due to the environments' noise.
+The fluctuation observed are solely due to the environments' noise. Now plotting the graphs corresponding to the fittest individual's scores overtime, we still observe large oscilations:
+
+<p align="center">
+<img src="https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/img/noise_fittest_score.png?raw=true" height="300">
+</p>
+
+This observations seem to indicate that the algorithm has robustness problems. The fittest individual score sets a upper bound on the whole population's score, so when it drops, this means that all other individuals achived still lower scores. Such oscilations pose problems to the evolution process, because it becomes highly susceptible to luck. 
+
+Searching for possible causes for such oscilations, we came across the frequent formation of clusters, that can be seen on the animation bellow:
+
+<br/>
+<p align="center">
+<img src="https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/img/clusters_small.gif?raw=true" height="300">
+</p>
+
+Those clusters are probably the cause of the undesirable oscilations observed. Such lockings occur because the individuals cannot go over obstacles, they must deviate. The objective is that the indivuduals gradullay learn/evolve this behavior, but the amount of noise implicated wasn't expected. 
+In order to verify there supositions and the actual impacts of clusterings, further simulations shall be run enabling the individuals to [pass over obstacles](##no-obstacle-simulations).
+
 
 ## Coevolution implications
 
@@ -42,7 +62,7 @@ In general, the following cycle was observed throughout the simulations:
 <img src="https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/img/diagram.png?raw=true" height="300" title="Simulation 2">
 </p>
 
-However, the constant changes in the populations due to the presure of coevolution, made it hard to analyse specific behaviors developed by each of the populations, and set apart evolutive successes from trasitional states. In order to accomplish this analysis, each of the populations were let to evolve with the other kept fixed. The result was the development of a variety of behaviors.
+However, the constant changes in the populations due to the presure of coevolution, made it hard to analyse specific behaviors developed by each of the populations, and set apart evolutive successes from trasitional states. In order to accomplish this analysis, each of the populations were let to evolve with the other kept fixed. The result was the development of a variety of behaviors. 
 
 ## Only carnivores evolving
 
@@ -60,12 +80,10 @@ Herbivore weight | 5
 Carnivore weight | 0
 Search height limit | None
 Speed | 24
-Health | 31
-Hurt | 10
 
-meaning that they prioritize eating and didn't even perceive the presence of carnivores. This genetic configuration was taken out of a previous simulation and it corresponded to a peak in the herbivores' performance.
+meaning that they prioritize eating and didn't even perceive the presence of carnivores. This genetic configuration was taken out of a previous simulation and it corresponded to a peak in herbivores' performance.
 
-For this same hervibore condition, the carnivores showed a variety of responses. Those diverse behaviors developed might be due to the different nudges noise causes on evolution, but they were also influenced by changes in non-evolutive parameters, such as population size, inheritance, and the number of frames the populations were let to interact during each generation. 
+For this same hervibore condition, the carnivores showed a variety of responses. The development of those diverse behaviors are due to the different nudges noise causes on evolution, but they were also influenced by changes in non-evolutive parameters, such as population size, inheritance, and the number of frames the populations were let to interact during each generation. 
 
 Some of those behaviors are listed bellow. All of them reflect increased energy values that stabilized for a while, corresponding to plateaus on the graphs plotted.
 
@@ -75,7 +93,15 @@ Some of those behaviors are listed bellow. All of them reflect increased energy 
   - avoiding other carnivores (hunting alone), circling around plants and chasing herbivores\[[video5](https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/evolutionaryAlgorithm/plotterData/only_carnivores_evolving_mutation_bug/%401971_limited_view_hunt_alone_circle_plants_chase_herb_10000gen_200int_5carn_10herb_10plan_5heritHerb_5heritCarn_20health_20ev(3).txt.mp4)\];
 - carnivores exclusively hunted herbivores \[[video6](https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/evolutionaryAlgorithm/plotterData/only_carnivores_evolving_mutation_bug/%405000_just_chase_10000gen_200int_5carn_10herb_10plan_5heritHerb_10heritCarn_20health_20ev(4).txt.mp4)\] \[[video7](https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/evolutionaryAlgorithm/plotterData/only_carnivores_evolving_mutation_bug/%408000_carn_chase_herb_10000gen_200int_10carn_10herb_10plan_5heritHerb_5heritCarn_20health_20ev(1).txt.mp4)\].
 
+It is worth commenting that the simulations corresponding to the analysis above showed unexpected downward slopes on the ponctuation of carnivore's. This wasn't expected as the herbivore's weren't evolving, therefore, the carnviores should improve gradually and possibly reach a stagnation point, susceptible only to noise fluctuations. Nevertheless, patterns such as highlightes bellow were recurrent:
+
+
+
 
 ## Only herbivores evolving
 
+## Alternating evolution
+
 ## Inheritance influence on stability
+
+## No-obstacle simulations
