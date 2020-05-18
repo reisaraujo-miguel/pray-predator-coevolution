@@ -37,7 +37,7 @@ Searching for possible causes for such oscilations, we came across the frequent 
 </p>
 
 Those clusters are probably the cause of the undesirable oscilations observed. Such lockings occur because the individuals cannot go over obstacles, they must deviate. The objective is that the indivuduals gradullay learn/evolve this behavior, but the amount of noise implicated wasn't expected. 
-In order to verify these supositions and the actual impacts of clusterings, further simulations shall be run enabling the individuals to [pass over obstacles](##no-obstacle-simulations).
+In order to verify these supositions and the actual impacts of clusterings, further simulations shall be run enabling the individuals to [pass over obstacles](#no-obstacle-simulations).
 
 
 ## Coevolution implications
