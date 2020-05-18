@@ -29,7 +29,7 @@ The fluctuation observed are solely due to the environments' noise. Now plotting
 
 This observations seem to indicate that the algorithm has robustness problems. The fittest individual score sets a upper bound on the whole population's score, so when it drops, this means that all other individuals achived still lower scores. Such oscilations pose problems to the evolution process, because it becomes highly susceptible to luck. 
 
-Searching for possible causes for such oscilations, we came across the frequent formation of clusters, that can be seen on the animation bellow:
+Searching for possible causes for such oscilations, we came across the frequent formation of clusters, as seen on the animation bellow:
 
 <br/>
 <p align="center">
@@ -37,7 +37,7 @@ Searching for possible causes for such oscilations, we came across the frequent 
 </p>
 
 Those clusters are probably the cause of the undesirable oscilations observed. Such lockings occur because the individuals cannot go over obstacles, they must deviate. The objective is that the indivuduals gradullay learn/evolve this behavior, but the amount of noise implicated wasn't expected. 
-In order to verify there supositions and the actual impacts of clusterings, further simulations shall be run enabling the individuals to [pass over obstacles](##no-obstacle-simulations).
+In order to verify these supositions and the actual impacts of clusterings, further simulations shall be run enabling the individuals to [pass over obstacles](##no-obstacle-simulations).
 
 
 ## Coevolution implications
