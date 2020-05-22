@@ -2,9 +2,6 @@
 
 ## Noise analysis
 
-[teste](##coevolution-implications)
-
-
 The environment where the genetic algorithm is tested and evaluated is highly noisy since an individual's score depends not only on its own fitness but also on its surroundings. If ignored, this characteristic of the simulations can impair data analysis, since much of the oscilations perceived in the population's score overtime is due to noise. 
 
 In order to establish a threshold that allows pinpointing actual changes in a population's behavior as oposed to performance fluctuations due to noise, some simulations were run with fixed herbivores and carnivores. This means that the populations weren't evolving (therefore there were no changes in behavior), they were let to interact during the normal duration of a generation and when this interval was over, the environment was simply reset (the individuals were placed in random positions), those operations were repeated over a determined number of generations, as when running the GA. 
@@ -93,10 +90,13 @@ Some of those behaviors are listed bellow. All of them reflect increased energy 
   - avoiding other carnivores (hunting alone), circling around plants and chasing herbivores\[[video5](https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/evolutionaryAlgorithm/plotterData/only_carnivores_evolving_mutation_bug/%401971_limited_view_hunt_alone_circle_plants_chase_herb_10000gen_200int_5carn_10herb_10plan_5heritHerb_5heritCarn_20health_20ev(3).txt.mp4)\];
 - carnivores exclusively hunted herbivores \[[video6](https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/evolutionaryAlgorithm/plotterData/only_carnivores_evolving_mutation_bug/%405000_just_chase_10000gen_200int_5carn_10herb_10plan_5heritHerb_10heritCarn_20health_20ev(4).txt.mp4)\] \[[video7](https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/evolutionaryAlgorithm/plotterData/only_carnivores_evolving_mutation_bug/%408000_carn_chase_herb_10000gen_200int_10carn_10herb_10plan_5heritHerb_5heritCarn_20health_20ev(1).txt.mp4)\].
 
-It is worth commenting that the simulations corresponding to the analysis above showed unexpected downward slopes on the ponctuation of carnivore's. This wasn't expected as the herbivore's weren't evolving, therefore, the carnviores should improve gradually and possibly reach a stagnation point, susceptible only to noise fluctuations. Nevertheless, patterns such as highlightes bellow were recurrent:
+It is worth remarking that the simulations corresponding to the analysis above showed unexpected downward slopes on the ponctuation of carnivore's. This wasn't expected as the herbivore's weren't evolving, therefore, the carnivores should improve gradually and possibly reach a stagnation point, susceptible only to noise fluctuations. Nevertheless, patterns such as highlightes bellow were recurrent:
 
+<p align="center">
+<img src="https://github.com/AliceDeLorenci/pray-predator-coevolution/blob/master/img/downward_slope.png?raw=true" height="300">
+</p>
 
-
+It was later identified that this was due to a mutation bug, which was fixed. Afterwards, the carnivore's plots became much more stable. However, the downward slopes were still observed, though much less frequently. For hypotesis about the causes of those unexpected regressions refer to [noise analysis](#noise-analysis), where the high impact of noise on the environment is discussed, and to the [no-obstable simulations](#no-obstacle-simulations), where we try to solve this problem.
 
 ## Only herbivores evolving
 
