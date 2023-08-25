@@ -36,7 +36,7 @@ int initialize_GUI(vector<population> wanderers, vector<population> carnivores, 
 
         while(true){
             int k = waitKey(1);
-            if(k == 10) // if ENTER
+            if(k == 13) // if ENTER
                 break;
             else if(k == 27){ // if ESC
                 destroyWindow(environment);

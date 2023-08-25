@@ -1,43 +1,38 @@
-CC=g++					# C compiler
+CC = g++          # C++ compiler
 
-CFLAGS=-I. -g -Wall -Ofast -march=native -fopenmp `pkg-config --cflags --libs opencv` # list of flags
+CPPFLAGS = -I. -g -Wall -O3 -march=native -lglut -lGLU -lGL -fopenmp `pkg-config --cflags opencv4`
 # include after "-march=native" if needed: -I/usr/local/include -L/usr/lib -lglut -lGLU -lGL
 
-LIBS=-lm
+LDFLAGS = -fopenmp
+LDLIBS = -lm `pkg-config --libs opencv`
 
-DEPS=game.h	macros.h			# dependency on the include files		
+DEPS = game.h macros.h   # dependency on the include files
 
-OBJ= output.o matrix.o interface.o bfs.o GA.o carnivores.o main.o 
+OBJ = output.o matrix.o interface.o bfs.o GA.o carnivores.o main.o
 
-
-# rule for files ending in .o (.o file depends upon the .c version of the file and the .h files in the DEPS macro)
-
-%.o: %.c $(DEPS)		
-	$(CC) -c -o $@ $< $(CFLAGS)
+# Rule for building object files
+%.o: %.cpp $(DEPS)
+	$(CC) $(CPPFLAGS) -c -o $@ $<
 
 ### -o $@ puts the output on the left side of the :
 ### $< is the first item in the dependencies list
 
 
-
-
+# The main program target
 prog: $(OBJ)
-	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
+	$(CC) $(LDFLAGS) -o $@ $^ $(LDLIBS)
 
 ### $@ left side of :
 ### $^ right side of the :
 
-.PHONY: run
+
+.PHONY: run clean debug
 
 run:
 	./prog
 
-.PHONY: clean
-
 clean:
-	rm -f *.o  
-
-.PHONY: debug
+	rm -f *.o prog
 
 debug:
 	gdb ./prog
